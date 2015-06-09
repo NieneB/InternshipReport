@@ -22,7 +22,7 @@ body {
     color: #737373;
     background-color: white;
     margin: 10px 13px 10px 13px;
-    counter-reset:h1counter, figcounter, tablecouter, codecounter;
+    counter-reset: h1counter, figcounter, tablecouter, codecounter;
 }
 
 
@@ -201,24 +201,15 @@ h2.nocount:before {
     }
     
     
-    .code{
+.code{
       counter-increment: codecounter 1 ;
       font-weight: bold;
     }
     
-    .code:before{
+.code:before{
       content: 'Code snip ' counter(codecounter) ".  ";
     }
-.title{
-    	font-weight: 700;
-    	text-transform: uppercase;
-    	letter-spacing: 2px;
-    	font-size: 0.8em;
-    	padding: .5em;
-    	text-align: center;
-    	color: #fff;
-    	background: #f5bca8;
-    }
+
 </style>
 <title>Introduction</title>
 
