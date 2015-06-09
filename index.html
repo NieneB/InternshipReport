@@ -1,0 +1,1119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+    counter-reset:h1counter, figcounter, tablecouter, codecounter;
+}
+
+
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    counter-reset: h2counter;
+}
+h2 {
+    font-size: 24px;
+    counter-reset: h3counter;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+h1:before {
+    content: "Chapter " counter(h1counter) ".  ";
+    counter-increment: h1counter;
+    counter-reset: h2counter;
+}
+h2:before {
+    content: counter(h1counter) "." counter(h2counter) ". ";
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+}
+h3:before {
+    content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ". ";
+    counter-increment: h3counter;
+    counter-reset: h4counter;
+}
+h1.nocount:before {
+        content: none;
+        counter-increment: none;
+    }
+h2.nocount:before {
+        content: none;
+        counter-increment: none;
+    }  
+    
+
+.fig{
+  counter-increment: figcounter 1 ;
+  font-weight: bold;
+    }
+
+.fig:before{
+      content: 'Figure ' counter(figcounter) ".  ";
+    }
+
+.table{
+    counter-increment: tablecounter 1 ;
+    font-weight:bold  ;
+    }
+    
+.table:before{
+      content: 'Table ' counter(tablecounter) ".  ";
+    }
+    
+    
+    .code{
+      counter-increment: codecounter 1 ;
+      font-weight: bold;
+    }
+    
+    .code:before{
+      content: 'Code snip ' counter(codecounter) ".  ";
+    }
+.title{
+    	font-weight: 700;
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	font-size: 0.8em;
+    	padding: .5em;
+    	text-align: center;
+    	color: #fff;
+    	background: #f5bca8;
+    }
+</style>
+<title>Introduction</title>
+
+</head>
+<body>
+
+
+<h1 class =nocount> Master Geo-Information Science </h1>
+
+
+<hr />
+
+<h1 class =nocount> Internship report</h1>
+
+
+<hr />
+
+<h1 class ="nocount"> Geo-visualization of heritage data</h1>
+
+
+<hr />
+
+<h1 class ="nocount"> At Waag Society, project Heritage & Location</h1>
+
+
+
+
+<h1 class="nocount"> Niene Boeijen 900918-070-088</h1>
+
+
+
+
+<h1 class ="nocount"> June 2015</h1>
+
+
+<hr />
+
+<h1 class ="nocount"> Index</h1>
+
+
+
+
+<div id="toc">
+        <h1 class = "nocount">Table of Contents </h1>
+</div>
+
+
+
+
+<h1 class ="nocount"> Abstract</h1>
+
+
+<hr />
+
+<h1>Introduction</h1>
+
+<hr />
+
+<p>Nowadays, the amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps. (MacEachren &amp; Kraak, 2001; Tensen, 2014) Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data. (Cartwright, Miller, &amp; Pettit, 2004; Tensen, 2014) Already a wide range of domains, use geo information systems for management and decision-making purposes and the fields of application are still expanding.</p>
+
+<p>There is a big relevance of using geospatial data and geo information systems for the field of Cultural Heritage conservation purposes. (Droj, 2010) Safeguarding and exploiting cultural heritage [CH] is high on the agenda and includes the use of digital management systems. (Meyer, Grussenmeyer, Perrin, Durand, &amp; Drap, 2007) Before this was a hand-made task, but with the growing computer science there are new ways for the digital preservation, innovation and updating cultural heritage data. (Deal, 2014)
+The next step is to document cultural heritage data across geographic space to preserve and safeguard the amount of cultural heritage data on another level. More and more central and local authorities responsible for cultural heritage use GIS as one of the main infrastructure components when digitalizing CH data.  (Droj, 2010; Meyer et al., 2007; Petrescu, 2007)
+There are several reasons why a GIS system can be beneficial for digitalizing CH data;
+One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. (Karavia &amp; Georgopoulos, 2013; Meyer et al., 2007)
+Second, such a system can be used for research aims. (Karavia &amp; Georgopoulos, 2013) Implementing analysis on the spatial correlation of the CH data. The geographical relation and connection among various cultural heritages can be studied as well as the evolution through time and space and relationships between different datasets.. ((Karavia &amp; Georgopoulos, 2013; Lai, Luo, &amp; Zhang, n.d.) So GIS can help to correlate and exploit heritage spatial relations and enrich the knowledge already existing. (Karavia &amp; Georgopoulos, 2013)
+This is also the third and the main goal of the Heritage &amp; Location [H&amp;L] project, for which this research is intended, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.)</p>
+
+<p>For cultural heritage data, the issue of the representation of the results of inventories in mapping systems and updating and maintaining the data, remains open. (Martin, Reynard, Pellitero Ondicol, &amp; Ghiraldi, 2014)  Web-mapping applications can be used to make open access-easy to use formats, for the assessment and promotion of heritage data. (Martin et al., 2014) Web-mapping is a suitable tool for visualizing and updating geo heritage data.
+As stated by Deal:</p>
+
+<blockquote><p>Visualizations have the potential to greatly improve search and
+discovery for online collections, transforming how users interact with digital
+collections. Furthermore, changing technology is making it easier than ever to
+incorporate visualizations into search interfaces and websites. The time is ripe
+for cultural heritage institutions to begin experimenting with data visualization
+in earnest.</p></blockquote>
+
+<p>Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren &amp; Kraak, 2001) Here focusing on the presentation of cultural heritage data in the scope of the E&amp;L project. The E&amp;L project provides a new tool to explore, use and represent spatial cultural heritage data and so the opportunity for geo data visualization of digital heritage collections.</p>
+
+<p>In general, much of the spatial data being created and shared is strongly visual in nature, including photographs, video, maps and art (Elwood, 2011)</p>
+
+<p>This raises the interest for geo-visualization in publishing geo-referenced information on the web and getting the enormous amount of available data to the general public (Lin, Gong, &amp; Wang, 1999; Tensen, 2014) Geo-visualization makes it possible to take large heterogeneous data volumes and turn it into information and, subsequently, into knowledge. (MacEachren &amp; Kraak, 2001)</p>
+
+<p>(data -> information → knowledge -> wisdom)</p>
+
+<p class="fig"> DIKW pyramid. From data to wisdom </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/DIKWPyramid.jpg" title="DIKW pyramid&quot; class=&quot;figure" alt="Alt text " /></p>
+
+<p><em>(Shedroff, 1999)</em></p>
+
+<p>The World Wide Web has become a extremely efficient channel for transferring data and has great visual capabilities. (Cartwright et al., 2004) The web is being used to produce new visual applications, going beyond the status of maps and other representations of geographic information. Potentially emerging a new generation of ‘lay’ cartographers. New visual forms and practices emerge, but how and why do they differ from the more conventional cartographic forms? Few methodologies specifically directed and web geo visualizations emerge which emphasized the scientific information visualization techniques as a way to handle these very large and complex data sets. The use of the enormous amount of data to inform the general public is still in development. (Tensen, 2014)</p>
+
+<p>Spatial-temporal data visualization assumes and important role in the data presentation to users. The three dimensional data form of geo data (spatial, temporal and descriptive) helps users understand and gain knowledge in the discovery process. In some fields, like Cultural Heritage, the temporal dimension plays an important role to explore data. (Cerasuolo, Cutugno, &amp; Leano, 2012)</p>
+
+<p>In this research a theoretic framework is composed to visualize geo data on the web and apply this to intangible cultural heritage data, in the scope of the E&amp;L project. What kind of heritage data is available?  How to make a good spatial temporal web based geo visualization of this heritage data?</p>
+
+<h2>Problem / context</h2>
+
+<p>The magnitude and complexity of data sets wit geospatial reference are a he challenge in the information science, how to transform this data into information and subsequently into knowledge.
+Geo-visualization is still underdeveloped and but has a good potential for the exploiting of geospatial data. (MacEachren &amp; Kraak, 2001)
+There is a need for creating user-centered designs to ensure that usable geospatial products are created and delivered. (Cartwright et al., 2004)
+Visualization should be more considered in the GIS science, to be able to build visualizations atop of the results of geospatial analysis. (Cartwright et al., 2004)</p>
+
+<h2>Design goal</h2>
+
+<p>The goal of this study is to provide an attractive application on the project Heritage &amp; Location to show its potential, by making a surprising, playful and attractive web based geo visualization build on the system, of an intangible cultural heritage data set.</p>
+
+<h2>Design requirments</h2>
+
+<p>The internship research will be constructed in 3 main parts, all to build onto a final product in the form of a webpage.
+First a deeper research is done into geo visualization techniques and already available researches. A short framework will be constructed for visualizing interactive geo data on the web.
+Second, the collected ICH dataset will be described and explored. A choice of a story to visualize will be made and implemented into the developed framework. There will be focused on building the webpage and finding the best way to visualize the ICH data with the framework.
+Third, a small test will be held to see if the product complies with the set goals. Through an iterative process the web visualization will be adjusted and tested again until the project ends.</p>
+
+<p>This results into the following research questions:</p>
+
+<ol>
+<li><p>Which techniques are used to visualize geospatial data on the web in an interactive or animated way?</p></li>
+<li><p>What kind of story can be told with the intangible cultural heritage dataset?</p>
+
+<ol type="a">
+<li>Which characteristics/variables are interesting to represent?</li>
+<li>How can these variables be animated/visualized?</li>
+</ol>
+</li>
+</ol>
+
+
+<p>Testing the developed framework through the build application:</p>
+
+<ol>
+<li><p>Is the application usable?</p>
+
+<ol type="a">
+<li>Intuitive to use, control, without special training? Clicking, scrolling, exploring?</li>
+</ol>
+</li>
+<li><p>Is the application understandable?</p>
+
+<ol type="a">
+<li>Clear concise presentation of the data, which can be understood by the general public?</li>
+</ol>
+</li>
+<li><p>Is the application attractive?</p>
+
+<ol type="a">
+<li>Is there some sort of emotional engagement?</li>
+<li>Are people attracted to play?</li>
+</ol>
+</li>
+</ol>
+
+
+<h1>Background</h1>
+
+<hr />
+
+<h2>The H&amp;L project</h2>
+
+<p>One of the goals of the H&amp;L project is to make heritage data, geo located and so link it in time and space to other heritage data sets and enrich knowledge. A Historical geocoder is being build at the Waag Society, which combines multiple geo data sets through time and can be used easily to locate heritage data with a place notification. Big heritage collections with a place indication, no geo data needed, can be linked to geometries.
+The H&amp;L project aims to develop a uniform system to link CH collections to existing geometries, with the use of place indicators in the metadata of the CH data. The project is developed for Rijksdienst voor het Cultureel Erfgoed [RCE] and only covers the Netherlands.</p>
+
+<p>Figure # shows the overview of the whole E&amp;L project. Now focusing on the historical geocoder.</p>
+
+<p class="fig"> Erfgoed en Locatie</p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/EL-producten-en-diensten-schema_v8.jpg" height="400" alt="Alt text" /></p>
+
+<p><em>Source: (“erfgoedenlocatie.nl,” n.d.)</em></p>
+
+<p>The geometries used are</p>
+
+<ul>
+<li>The BAG</li>
+<li>Geonames</li>
+<li>Gemeentegeschiedenis</li>
+<li>Getty TGN</li>
+<li>Verdwenen dorpen</li>
+<li>Atlas verstedelijking</li>
+</ul>
+
+
+<p>Until recent date of writing, the historical geocoder only contains places and municipalities and their considered historical toponyms. Soon, streets and addresses will be added and possibilities are there for French departments and counties.
+The data can be called at the API and so used for multiple applications.</p>
+
+<h2>Heritage and location</h2>
+
+<p>The assumption is that the places referred to in historical documents, probably refer to the identical real-world place if they are related in name.</p>
+
+<p>Digitalizing heritage as linked data contains the following key aspects:</p>
+
+<ol>
+<li>Identification, making the objects unique and identifiable.</li>
+<li>Make it accessible through the Internet</li>
+<li>Searchable, making it possible to index by search engines.</li>
+<li>Re-usability. Linked-data makes it easy to use the data.</li>
+</ol>
+
+
+<p>(“DEN | DE BASIS vindbaarheid,” n.d.)</p>
+
+<p>Hard ware and software develop quickly, so digital heritage gets lost in terms. (“digital cultureel erfgoed is bedreigd erfgoed,” n.d.)
+We need new ways to safeguard digital heritage in a sustainable way.
+The collection and conservation is not developed much in the Dutch heritage institutions.
+The internet needs high quality content of reliable resources.</p>
+
+<h2>Intangible cultural heritage</h2>
+
+<p>When talking about CH, this can be divided into 4 kinds of cultural heritage categories according to volkscultuur institution;</p>
+
+<ol>
+<li>The physical environment. Including monuments, archeology sites and cultural landscapes.</li>
+<li>Paper heritage; Stored in archives and libraries in the form of paper documents, maps and books.</li>
+<li>Object collections, owned and displayed by museums. Only focusing on objects.</li>
+<li>Living heritage; habits, traditions, religions and cultural events that people experience.</li>
+</ol>
+
+
+<p>From: (“volkscultuur,” n.d.)</p>
+
+<p>Categories 1,2 and 3 are tangible substances while category 4 is intangible heritage.</p>
+
+<p>UNESCO introduces the concept of intangible heritage data in 2003, to safeguard the importance of intangible cultural heritage and distinct it form tangible heritage and natural heritage. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-a)</p>
+
+<p>The Convention of UNESCO introduces five domains of ICH:</p>
+
+<ul>
+<li>oral traditions and expressions including language as a vehicle of the ICH</li>
+<li>performing arts (dance, music, theater)</li>
+<li>social practices, rituals and festive events</li>
+<li>knowledge and practices concerning nature and the universe</li>
+<li>traditional craftsmanship, meaning the skills and knowledge involved rather than the craft product itself.</li>
+</ul>
+
+
+<p>The boundaries between those domains are extremely fluid (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-b).</p>
+
+<p>In the scope of the H&amp;L project this research will focus on the connection of place and time in intangible cultural heritage [ICH]. ICH can be shortly explained as all traditions and rituals of normal life, (Zeijden, 2011) which gives people a sense of identity and continuity. ICH is transmitted from generation to generation and can be constantly recreated by communities due to interaction with their environment. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-b)
+Intangible heritage is strongly depended on the features of space and influenced by the space. Of course these traditions, habits etc. have a place where they take place. Or they are about a place, have a spreading, an origin, a continuation, can cover multiple places, through time. (Karavia &amp; Georgopoulos, 2013) ICH evolves through time and space,</p>
+
+<p>When safeguarding CH, there is a lot to find about digitalizing physical environment heritage, like architecture, places, monuments and archeology. (Droj, 2010; “erfgoedenlocatie.nl,” n.d.; Meschino, Nabte, Gesualdo, Monjeau, &amp; Passoni, 2014) According to a list of countries using GIS for CH data storage, the main fields of applications for using GIS for heritage are archeology and historic monuments, listed in (Petrescu, 2007).</p>
+
+<h1>Theoretical framework</h1>
+
+<hr />
+
+<h2>From data to knowledge</h2>
+
+<p>Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. {see figure # DIKW pyramid} According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. (Shedroff, 1999)
+In this chapter, the story is told to go from geo data to knowledge, by using geo visualization to display the story behind the data. Knowledge is created by representation of the derived geographical phenomena, their classification and the inter-relationships they have. (Mennis, Peuquet, &amp; Qian, 2000; Shedroff, 1999) The focus in this research is on dynamic and interactive visualizations of geo data on the web.</p>
+
+<h2>Geo data</h2>
+
+<p>Geo data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive. (Mennis et al., 2000)
+The spatial dimension can be used to interpret the spatial dimensions and relation of data entities, an absolute and enclosed ‘space’ wherein the geographic phenomena exists. The temporal dimension can be used to interpret the change in the data through time. The thematic dimension is to interpret what the data is about, a property that can be measured and assigned. (Mennis et al., 2000)
+The data component only concerns the raw observational data, with location, time and attributes. (Mennis et al., 2000) These three characteristics will be explained in detail in the next sections.</p>
+
+<h3>Spatial dimension</h3>
+
+<p>Geo data is different from other data because it is inherently structured with a spatial dimension. An X and Y location and sometimes a Z dimension. This contains the ‘ where ‘ of a particular phenomenon.
+Spatial objects can be physical, real objects in the world, or non-physical phenomena, like administrative boundaries. Continuous data fields cover large areas with no clear boundaries, like rainfall or temperature. A single object on the earth is discrete; they have sharp boundaries, like a house. But also the spatial structure tells a lot about the phenomena, is it random or regular clustered. The general assumption of spatial correlation tells that close things are more collated then far things.</p>
+
+<h3>Temporal dimension</h3>
+
+<p>The time of happening of phenomena can be divided into 3 forms, it can happen/exist as a point in time, a period in time or on a certain interval in time. Also time can be classified into the four measurement classes, nominal ordinal discrete or continuous time model.
+Nominal would be; the 90ties, Christmas or the WWII.
+Ordinal contains relative order time statements like; before, after.
+Discrete is in years, seconds, minutes etc.
+Easter Christmas
+Seconds minutes</p>
+
+<h4>Linear / cyclic.</h4>
+
+<p>Linear ordered path. Cyclic time follows a path of periodic turn phases. Like seasons, day and night.
+Serial periodic data is periodic time represented on a linear path.</p>
+
+<h3>Thematic dimension</h3>
+
+<p>The theme or attribute of a phenomena. The ‘what’ is happening in the world. This data is often stored in the attributes of the data, more then one attributes can exist.
+Qualitative/quantitative
+Nominal ordinal discrete continuous</p>
+
+<p>Steady state, oscillating(cycles and rhythms), chaotic and random. (Peuquet, 1994)</p>
+
+<h2>Change</h2>
+
+<p>Change Spatial- temporal and thematic</p>
+
+<p><strong>Spatial-temporal</strong></p>
+
+<ul>
+<li>appearance/disappearance</li>
+<li>movement</li>
+<li>expanding</li>
+<li>merging</li>
+<li>contracting</li>
+<li>splitting</li>
+<li>transformation</li>
+</ul>
+
+
+<p><strong>Thematic</strong></p>
+
+<ul>
+<li>mutation/ thematic change</li>
+</ul>
+
+
+<p><strong>No change</strong></p>
+
+<h2>Geo visualization</h2>
+
+<p>Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, &amp; Reeves, 1992) Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. (MacEachren &amp; Kraak, 2001) It comes after geo data collection and analysis. Figure #.</p>
+
+<p class="fig"> </p>
+
+
+<blockquote><p>Data acquisition → Preprocessing → Data analysis → quality assessment → visualization</p></blockquote>
+
+<p>Every map is a selective representation of reality. (Dibiase et al., 1992)</p>
+
+<p>Here we will focus on the information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design.</p>
+
+<p>First, the early conventional cartography models are explained as a basis for geographical visualization. Later the more dynamic visualization forms are explained in the form of animation. The word animation, refers to map animation; the shift when data display changes from one stage to the other, and not to animation as video.
+In the end of the chapter#, user centered and web based visualization will be explained; the word wide web has become an extremely efficient channel for showing data and has great visual capabilities to show on-line geo-data. (Cartwright et al., 2004) It lets the user explore the geo-data and be in control and not depended on the cartographer. (Ogao &amp; Kraak, 2002) Therefore, the focus will be on a dynamic user-centered visualization form on the web.</p>
+
+<h3>Static geo visualization</h3>
+
+<p>Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment. (Dibiase et al., 1992) Bertin’s theory provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. See figure #. Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps. (Dibiase et al., 1992)</p>
+
+<h4>Conventional cartography</h4>
+
+<p>Point, lines and polygons.
+Scale. Spatial extent.</p>
+
+<p><strong>Bertin’s theory (Bertin, 2000)</strong></p>
+
+<ul>
+<li>position</li>
+<li>size</li>
+<li>color</li>
+<li>texture</li>
+<li>color hue</li>
+<li>orientation</li>
+</ul>
+
+
+<p class="fig"> Bertin's theory </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/Screen%20Shot%202015-05-07%20at%2011.16.03%20AM.png" height="400" alt="Alt text" /></p>
+
+<p><em>(Dibiase et al., 1992)</em></p>
+
+<h3>Dynamic geo-visualizations or change phenomena</h3>
+
+<p>Kobben and Yaman define a few categories of cartographic animation that show dynamic phenomena. First to display dynamic phenomena, a static map or a series of static maps can be used. But why use static maps for dynamic data? The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
+The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  (Köbben &amp; Yaman, 1996)
+Kraak and Klomp give a slightly different categorization, but can be compared to the kobben &amp; Yaman. Kraak &amp; Klomp talk about time-series, successive build-up and changing representations. See table #.</p>
+
+<p class="table"> Categories of possible animations for dynamic phenomena. </p>
+
+
+
+
+<table>
+    <tr>
+        <th colspan="2">Köbben & Yaman</th>
+        <th colspan="2">Kraak & Klomp</th>
+    </tr>
+    <tr>
+        <td rowspan = "3"> Temporal</td>
+        <td rowspan = "3"> Direct relation between world time and display time</td>
+        <td rowspan = "3"> Time-series </td>
+        <td> World time </td>                
+    </tr>
+    <tr>
+        <td> Aggregated time </td> 
+        
+    </tr>
+    <tr>
+        <td> Database time </td> 
+        
+    </tr>
+    <tr> 
+        <td rowspan = "2"> Non - Temporal</td>
+        <td rowspan = "2"> No direct relation between world time and display time </td>
+        <td colspan = "2"> Successive build-up </td>            
+    </tr>
+    <tr>
+    <td colspan="2"> Changing representations</td>
+    </tr>
+</table>
+
+
+<p><em>Information from (Köbben &amp; Yaman, 1996; Kraak &amp; Klomp, 1996)</em></p>
+
+<p>Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)</p>
+
+<p>Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Ormeling, 1996)</p>
+
+<p>Dynamic visualization variables are identified by Dibiase et al. 1992,  MacEachren 1994 Kobben and Yaman …. and Blok 2000.</p>
+
+<p>Kobben and Yaman defined the following dynamic visual variables:</p>
+
+<ul>
+<li>moment</li>
+<li>duration</li>
+<li>frequency</li>
+<li>order</li>
+<li>rate of change</li>
+<li>synchronisation</li>
+</ul>
+
+
+<p>They state that the dynamic visual variables will only give the right results when combined with the traditional static visual variables. (Köbben &amp; Yaman, 1996)</p>
+
+<p>Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) She provides a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships.  Blok’s framework more aims at the exploratory use of visualization while this research, aims at the display and communication part of the geo-spatial phenomena for explanatory use. Though, this author finds that Blok’s dynamic visualization variables can be applied for both purposes. As Blok also states; the ultimate goal is to contribute to the development of representation methods and interaction tools, which are also found in the explanatory visualization forms.
+Blok describes the next dynamic variables:
+In the spatial domain:</p>
+
+<ul>
+<li>Appearance/disappearance</li>
+<li>Mutation
+
+<ul>
+<li>nominal level</li>
+<li>increase/decrease ordinal, interval ratio</li>
+</ul>
+</li>
+<li>Movement
+
+<ul>
+<li>along trajectory</li>
+<li>boundary shift</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In the temporal domain</p>
+
+<ul>
+<li>moment in time</li>
+<li>pace</li>
+<li>duration</li>
+<li>sequence</li>
+<li>frequency</li>
+</ul>
+
+
+<p>cycle
+trend
+‘world time’ vs ‘display time’ (Blok, 2000)</p>
+
+<h2>Web based geo visualizations</h2>
+
+<p>Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992)</p>
+
+<ul>
+<li>Interactive. Zoom filter queries. details</li>
+<li>navigate, zoom scroll, pan.</li>
+<li>google maps/earth</li>
+<li>leaflet</li>
+</ul>
+
+
+<p>A user interface for a web page should have the following basic components:<br/>
+geobrowser – the map. Spatial dimension. Let users navigate.<br/>
+Timebar – temporal dimension. <br/>
+Filters – selecting information, filter. Thematic dimension.</p>
+
+<h2>User centered cartography</h2>
+
+<p>“Cartographers normally don’t make maps for other cartographers, but for map-users. .. “What do we want the user to learn from this map?” “ (Köbben &amp; Yaman, 1996)</p>
+
+<p>The user is no longer depended on what the cartographer puts on the map. (Ogao &amp; Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao &amp; Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Indentify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.</p>
+
+<p class="table"> Visualization operators from Ogao & Kraak </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/Screen%20Shot%202015-05-06%20at%202.26.40%20PM.png" height="300" alt="Alt text" /></p>
+
+<p><em>(Ogao &amp; Kraak, 2002)</em></p>
+
+<h1>Methodology</h1>
+
+<hr />
+
+<p>First, literature study will be done to already existing geo-visualization techniques. Interactive, animation techniques and web based applications. These will be summarized into the theoretical framework, which will be later on used to build the main application; A web-page with a interactive visualization of a intangible cultural heritage data set.
+Meanwhile, the E&amp;L data will be explored as well as heritage institutions will be contacted to find interesting data sets about intangible cultural heritage.
+This data will be described and visually explored to form a good view on the potential story to tell.
+The data will be analyzed according to the theoretical framework.</p>
+
+<p>Second, the application will be build with the theoretical background and the available dataset. Both the technical building will be done by the researcher as the visualization techniques applied.
+In the end, the application will be tested on usability, clearness and attraction and, if time available, be corrected.
+See figure # for an overview of the working procedure.</p>
+
+<p>we focus on interactive animations and their use by domain experts to perform exploratory tasks of unraveling hidden meaning in the raw data.
+narrowing down to a set of items of interest that satisfies a given user need.</p>
+
+<p class="fig">Methodology overview</p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/flowchart_Method.jpg" width="400" alt="Alt text" /></p>
+
+<h2>Description of the data</h2>
+
+<p>From the Cultural Heritage Agency of the Netherlands a dataset with field-names in Drenthe was supplied. This data contained field geometries that have a field-name, a name or toponym given to the plot or area by the people living in the neighborhood from around 1830. These field-names were derived from studies by Naarding and Wieringa. Together with het Drenthe Archief and het Meertens-Instituut. Further reference about the field names in Drenthe can be found in the book “Van Jeruzalem tot Ezelakker, Levende valdnamenatlas van de Drentse Aa”.  (Spek, Elerie, &amp; Kosian, 2009)</p>
+
+<p>The most important factors influencing the forming of field-names are ; natural relief, natural water and the vegetation structure. (Spek et al., 2009)</p>
+
+<p>Also data about the field plots from the cadastre and buildings from 1830 were supplied.</p>
+
+<p>Therefore, the following research location is determined, consisting of the municipalities Aa en Hunze, Assen, noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa.</p>
+
+<p class="fig"> & <p class="fig">Research area</p> </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/Screen%20Shot%202015-05-01%20at%202.48.54%20PM.png" height="300" alt="Alt text " /> <img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/Screen%20Shot%202015-05-01%20at%202.49.37%20PM.png" height="300" alt="Alt text" /></p>
+
+<p><strong>Netherlands -> Drenthe - > municipalities: Aa en Hunze, Assen , Noordenveld and Tynaarlo.</strong></p>
+
+<p>Additional datasets open available are</p>
+
+<ul>
+<li>The AHN2</li>
+<li>Cadastre administrative boundaries</li>
+<li>Topographic map. Top10NL actueel</li>
+</ul>
+
+
+<p>Data has thematic variables through time.</p>
+
+<p><strong>AHN2</strong><br/>
+The AHN tiles covering the research area were downloaded. Raster data. The AHN2 containing:<br/>
+Resolution: 5m<br/>
+Precision: systematic and stochastic error of max 5 cm</p>
+
+<p>The AHN is preprocessed and filter so it only contains field height. #maaiveld<br/>
+See appendix for table with all the tiles used. <br/>
+All tiles were merged in R to create a complete raster. Raster rgdal packages used.
+These were clipped to a buffer of 1 km around the research area, to perceive edge details.</p>
+
+<p>Min : -1.942 <br/>
+Max: 29.477</p>
+
+<p class="fig">  AHN2 from the research area </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/Screen%20Shot%202015-05-01%20at%202.59.54%20PM.png" height="400" alt="Alt text" /></p>
+
+<p><strong>Field-names</strong><br/>
+All field-names as given by the RCE.
+Point as well as polygon data.
+These came in as separate .DAT files and needed to be converted to shape files in order to work with it in Qgis. This was done in R. See script appendix.</p>
+
+<p class="fig"> All fields with a field name. </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/3_Pictures/Screen%20Shot%202015-05-01%20at%203.48.39%20PM.png" height="400" alt="Alt text" /></p>
+
+<p>The field names are already categorized in a study by the RCE. These categories are given in table #. In the appendix a total overview of the categories and the names and alternative names can be found.
+The cadastre field-names were not included in the categorization so these needed to be classified. Also a field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.
+A script was designed to run through all the field-names and see which category was applicable. While reading few of the names, new ideas for a category came up and added. The category wind direction W  and shape of the field.</p>
+
+<p class="table"> Field-name categories </p>
+
+
+<table>
+    <tr>
+        <th colspan="1">Code</th>
+        <th colspan="1">Categorie</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td> Relief </td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td> Bodem</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>Waternamen</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Beekdal en Moerassen</td>
+    </tr>
+    <tr>
+        <td>E</td>
+        <td>Bossen</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>Veldgrond en Stuifzanden</td>
+    </tr>
+    <tr>
+        <td>G</td>
+        <td> Wilde dieren</td>
+    </tr>
+    <tr>
+        <td>O</td>
+        <td>Overig</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>W</td>
+        <td>Windrichting</td>
+    </tr>
+    <tr>
+        <td>V</td>
+        <td>Vorm</td>
+    </tr>
+</table>
+
+
+<p></p>
+
+<h2>Data exploration</h2>
+
+<p>The figure # clearly shows the field-names are in correlation with the wind direction seen from the village.</p>
+
+<p class="fig"> Field-names and Wind direction near … </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/9_veldnamen/windrichtig.jpg" height="400" alt="Alt text" /></p>
+
+<p>Figure # shows that fields with a name related to swamps and river valleys are situated near the water or in old water valleys. The water geometries are the current water streams. From the field names and the current height model it can be seen that there could have been a small river also running to the south east of the area.</p>
+
+<p class="fig"> Field-names of swamps and river valleys </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/9_veldnamen/beekdal.jpg" height="400" alt="Alt text" /></p>
+
+<p class="fig"> Field-names of relief </p>
+
+
+<p><img src="/Users/waag/Documents/MGI_Stage/9_veldnamen/relief.jpg" height="400" alt="Alt text" /></p>
+
+<p>Figure # shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the west. Where de zwarte kuil  indicates that it is a lower field.</p>
+
+<h2>Back END processes</h2>
+
+<p>First both client side and server side are build on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the possibility to move it to a server will be regarded.</p>
+
+<ol>
+<li>Installed database PostgreSQL with PostGIS extension
+Dutch projected coordinate system RD new (EPSG:28992)</li>
+</ol>
+
+
+<p class="code">  loading data in postgis database </p>
+
+
+<pre><code>Shp2pgsql
+➜  ~ shp2pgsql -s 28992 /&lt;path name&gt; /veldnamen.shp veldnamen | psql -U user -d veldnamen
+
+Raster2pgsql
+➜  ~ raster2pgsql -s 28992 -I -C /&lt;path name&gt;/ahn2*.tif public.ahn2 | psql -d veldnamen
+</code></pre>
+
+<p>--  All results are stored in the open source database PostgreSQL (2015). The PostGIS (2015) extension adds support for geographic objects and is compliant with the “simple features for SQL” specification of OGC. Many GIS software packages support the use of this database, which makes it currently the most popular free and open source spatial database (Steiniger and Hunter 2013).</p>
+
+<p>Build API to ask SQL queries to the PostGIS database server.
+The API was build with Express for JavaScript. So in JavaScript the functions are made to get from coordinates to a SQL query asking the height data from the AHN raster.</p>
+
+<p class="code">SQL query to ask AHN heights over a transect line, with a interval of 10 meters. </p>
+
+
+<pre><code>WITH line AS
+    -- From an arbitrary line
+    (SELECT ST_Transform(ST_GeomFromText( $1 , 4326), 28992) AS geom),
+linemesure AS
+-- Add a mesure dimension to extract steps
+    (SELECT ST_AddMeasure(line.geom, 0, ST_Length(line.geom)) as linem,
+    generate_series(0, ST_Length(line.geom)::int, 10) as i FROM line),
+points2d AS
+    (SELECT ST_GeometryN(ST_LocateAlong(linem, i), 1) AS geom FROM linemesure),
+cells AS
+-- Get DEM elevation for each
+    (SELECT p.geom AS geom, ST_Value(ahn2.rast, 1, p.geom) AS val
+    FROM ahn2, points2d p
+    WHERE ST_Intersects(ahn2.rast, p.geom)),
+-- Instantiate 3D points
+points3d AS
+    (SELECT ST_MakePoint(ST_X(ST_Transform(ST_SetSRID(geom, 28992),4326)),      ST_Y(ST_Transform(ST_SetSRID(geom, 28992),4326)), val) AS geom FROM cells)
+-- Build 3D line from 3D points
+    SELECT ST_AsGeoJSON(ST_MakeLine(geom)) AS geojson FROM points3d ;
+</code></pre>
+
+<p>The transect line is taken from an html page with a Leaflet map. The coordinates of the line are derived and converted to a LINESTRING format. Which is put in the SQL query to get the height back from the AHM raster.</p>
+
+<p class="code"> request coordinates from SQL </p>
+
+
+<pre><code>var coordinates = layer.getLatLngs().map(function(latLng) {
+      return latLng.lng + '%20' + latLng.lat;
+    }).join(',');
+
+    d3.json('query4?linestring=' + coordinates, function(json) {
+      console.log(json);
+      var heights = json.features[0].coordinates.map(function(coordinate){&lt;draw features&gt;}
+</code></pre>
+
+<p>websites:<br/>
+leafletjs.com<br/>
+explressjs.com</p>
+
+<h2>The Animation</h2>
+
+<p>Non-temporal 2D.<br/>
+Change in location. <br/>
+To explore and present the data. Let the user explore through the data. Understanding the landscape.
+Changing representations.</p>
+
+<h2>The Tests</h2>
+
+<p><em>Association:</em> There is association between graphic elements if they are perceived as similar. Association is therefore useful to indicate groups of different quality or character.<br/>
+<em>Order:</em> Lets the viewer perceive the graphic elements as ordered (more/less; sooner/later).<br/>
+<em>Quantity:</em> The graphic elements give the viewer an impression of proportional differences (twice/half as much). <br/>
+<em>Selection:</em> Because the graphic elements are perceived as different and belonging to families, this lets the viewer get a prompt and lasting impression of the phenomena depicted (recognition/overview).</p>
+
+<p>From (Köbben &amp; Yaman, 1996)</p>
+
+<h1>Results</h1>
+
+<h1>Discussion</h1>
+
+<h1>Conclusion</h1>
+
+<h1>References</h1>
+
+<hr />
+
+<p>Bertin, J. (2000). Matrix theory of graphics. Information Design Journal, 10(1), 5–19.</p>
+
+<p>Blok, C. (2000). Monitoring Change: Characteristics of Dynamic Geo-spatial Phenomena for Visual Exploration. Spatial Cognition II, 1(2000), 16–30. http://doi.org/10.1007/3-540-45460-8_2</p>
+
+<p>Cartwright, W., Miller, S., &amp; Pettit, C. (2004). Geographical visualization: Past, present and future development. Journal of Spatial Science, 49(1), 25–36. http://doi.org/10.1080/14498596.2004.9635003</p>
+
+<p>Cerasuolo, F., Cutugno, F., &amp; Leano, V. A. (2012). Visualization with a New Visual Metaphor for Hierarchical and Stratified Temporal Domain. In S. D. Martino, A. Peron, &amp; T. Tezuka (Eds.), Web and
+Wireless Geographical Information Systems (pp. 57–71). Springer Berlin Heidelberg. Retrieved from http://link.springer.com.ezproxy.library.wur.nl/chapter/10.1007/978-3-642-29247-7_6</p>
+
+<p>Deal, L. (2014). Visualizing Digital Collections. Technical Services Quarterly, (April), 30–30. http://doi.org/10.1080/07317131.2015.972871</p>
+
+<p>DEN | DE BASIS vindbaarheid. (n.d.). Retrieved May 6, 2015, from http://www.den.nl/pagina/219/de-basis-voor-vindbaarheid/</p>
+
+<p>Dibiase, D., Maceachren, A., Krygier, J., &amp; Reeves, C. (1992). Animation and the Role of Map Design in Scientific Visualization. Cartography and Geographic Information Systems, 19(4), 201–&amp;. http://doi.org/10.1559/152304092783721295
+digital cultureel erfgoed is bedreigd erfgoed. (n.d.).</p>
+
+<p>Droj, G. (2010). Cultural Heritage Conservation by GIS, 1–6.</p>
+
+<p>Elwood, S. (2011). Geographic Information Science: Visualization, visual methods, and the geoweb. Progress in Human Geography, 35(3), 401–408. http://doi.org/10.1177/0309132510374250
+erfgoedenlocatie.nl. (n.d.). Retrieved from http://erfgoedenlocatie.nl/</p>
+
+<p>Karavia, D., &amp; Georgopoulos, A. (2013). Placing Intangible Cultural Heritage. Researchgate.Net, 675–678. http://doi.org/10.1109/DigitalHeritage.2013.6743815</p>
+
+<p>Köbben, B., &amp; Yaman, M. (1996). Evaluating Dynamic Visual Variables. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html</p>
+
+<p>Kraak, M.-J., &amp; Klomp, A. (1996). A Classification of Cartographic Animations: Towards a Tool for the Design of Dynamic Maps in a GIS Environment. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html</p>
+
+<p>Lai, J., Luo, J., &amp; Zhang, M. (n.d.). Design and Realization of the Intangible Cultural Heritage Information Management System Based on Web Map Service Characteristics and Digital Management Need of Intangible, 605–612.</p>
+
+<p>Lin, H., Gong, J., &amp; Wang, F. (1999). Web-based three-dimensional geo-referenced visualization. Computers and Geosciences, 25(10), 1177–1185. http://doi.org/10.1016/S0098-3004(99)00076-X</p>
+
+<p>MacEachren, A. M., &amp; Kraak, M.-J. (2001). Research Challenges in Geovisualization. Cartography and Geographic Information Science, 28(1), 3–12. http://doi.org/10.1559/152304001782173970</p>
+
+<p>Martin, S., Reynard, E., Pellitero Ondicol, R., &amp; Ghiraldi, L. (2014). Multi-scale Web Mapping for Geoheritage Visualisation and Promotion. Geoheritage, 6(2), 141–148. http://doi.org/10.1007/s12371-014-0102-3</p>
+
+<p>Mennis, J. L., Peuquet, D. J., &amp; Qian, L. (2000). A conceptual framework for incorporating cognitive principles into geographical database representation. International Journal of Geographical Information Science, 14(6), 501–520. http://doi.org/10.1080/136588100415710</p>
+
+<p>Meschino, G. J., Nabte, M., Gesualdo, S., Monjeau, A., &amp; Passoni, L. I. (2014). Fuzzy Tree Studio: A Tool for the Design of the Scorecard for the Management of Protected Areas. In R. Espin, R. B. Pérez, A. Cobo, J. Marx, &amp; A. R. Valdés (Eds.), Soft Computing for Business Intelligence (pp. 99–112). Springer Berlin Heidelberg. Retrieved from http://link.springer.com/chapter/10.1007/978-3-642-53737-0_6</p>
+
+<p>Meyer, É., Grussenmeyer, P., Perrin, J. P., Durand, A., &amp; Drap, P. (2007). A web information system for the management and the dissemination of Cultural Heritage data. Journal of Cultural Heritage, 8(4), 396–411. http://doi.org/10.1016/j.culher.2007.07.003</p>
+
+<p>Ogao, P. J., &amp; Kraak, M.-J. (2002). Defining visualization operations for temporal cartographic animation design. International Journal of Applied Earth Observation and Geoinformation, 4(1), 23–31. http://doi.org/10.1016/S0303-2434(02)00005-3</p>
+
+<p>Ormeling, F. (1996). Teaching Animated Cartography. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html</p>
+
+<p>Petrescu, F. (2007). the Use of Gis Technology in Cultural Heritage. October, (October), 1–6.</p>
+
+<p>Peuquet, D. (1994). Its About Time - a Conceptual-Framework for the Representation of Temporal Dynamics in Geographic Information-Systems. Annals of the Association of American Geographers, 84(3), 441–461. http://doi.org/10.1111/j.1467-8306.1994.tb01869.x</p>
+
+<p>Shedroff, N. (1999). Information interaction design: A unified field theory of design. Information Design, 267–292.</p>
+
+<p>Shneiderman, B. (1996). The eyes have it: a task by data type taxonomy for information visualizations. In , IEEE Symposium on Visual Languages, 1996. Proceedings (pp. 336–343). http://doi.org/10.1109/VL.1996.545307</p>
+
+<p>Tensen, T. (2014). Master Thesis Geo-data animations in television journalism :, 1–87.</p>
+
+<p>Spek, T., Elerie, H., &amp; Kosian, M. (2009). Van Jeruzalem tot Ezelakker, Levende valdnamenatlas van de Drentse Aa. Matrijs.</p>
+
+<p>UNESCO Culture Sector - Intangible Heritage - 2003 Convention : (n.d.-a). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&amp;pg=00002</p>
+
+<p>UNESCO Culture Sector - Intangible Heritage - 2003 Convention : (n.d.-b). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&amp;pg=00006</p>
+
+<p>volkscultuur. (n.d.). Retrieved May 6, 2015, from http://www.volkscultuur.nl/</p>
+
+<p>Zeijden, A. V. D. (2011). Immaterieel erfgoed en musea, (35), 4–6.</p>
+
+<h1>Appendix</h1>
+
+<hr />
+
+<p></div></p>
+
+<h3>AHN tiles downloaded:</h3>
+
+<p>ahn2_5_07cz1.tif    ahn2_5_12en1.tif
+ahn2_5_07cz2.tif    ahn2_5_12en2.tif
+ahn2_5_07dz1.tif    ahn2_5_12ez1.tif
+ahn2_5_07dz2.tif    ahn2_5_12ez2.tif
+ahn2_5_11fz2.tif    ahn2_5_12fn1.tif
+ahn2_5_12an1.tif    ahn2_5_12fn2.tif
+ahn2_5_12an2.tif    ahn2_5_12fz1.tif
+ahn2_5_12az1.tif    ahn2_5_12fz2.tif
+ahn2_5_12az2.tif    ahn2_5_12gn1.tif
+ahn2_5_12bn1.tif    ahn2_5_12gn2.tif
+ahn2_5_12bn2.tif    ahn2_5_12gz1.tif
+ahn2_5_12bz1.tif    ahn2_5_12gz2.tif
+ahn2_5_12bz2.tif    ahn2_5_12hn1.tif
+ahn2_5_12cn1.tif    ahn2_5_12hn2.tif
+ahn2_5_12cn2.tif    ahn2_5_12hz1.tif
+ahn2_5_12cz1.tif    ahn2_5_17bn2.tif
+ahn2_5_12cz2.tif    ahn2_5_17en1.tif
+ahn2_5_12dn1.tif    ahn2_5_17en2.tif
+ahn2_5_12dn2.tif    ahn2_5_12en1.tif
+ahn2_5_12dz1.tif    ahn2_5_12en2.tif
+ahn2_5_12dz2.tif    ahn2_5_12ez1.tif
+ahn2_5_12fn1.tif    ahn2_5_12ez2.tif</p>
+
+<h3>R Sript converting files to shapefile.</h3>
+
+<pre><code>filenames &lt;- list.files()
+filenames &lt;- list.files(filenames , pattern = "*.TAB" ,full.names = T)
+
+## x = list of folder files # cat = category folder
+exportToShape &lt;- function(x, cat){
+  for(i in 1:length(x)){
+      name &lt;- x[i]
+      nr &lt;- strsplit(name, "/")
+      layer &lt;- substr(nr[[1]][2], 1, nchar(nr[[1]][2])-4 )
+      lemming &lt;- substr(nr[[1]][2], 4, nchar(nr[[1]][2])-4)
+      file &lt;- readOGR(name, layer)
+      file$category &lt;- cat
+      file$lemming &lt;- lemming
+      writeOGR(obj = file, dsn = "shape_vlak", layer = layer, driver = "ESRI Shapefile", overwrite_layer = T)
+  }
+}
+exportToShape(filenames, "overig")
+</code></pre>
+
+<h3>R script detecting categories</h3>
+
+<pre><code>categorie &lt;- read.csv(file = 'categorie_alles.csv', header = T , sep=","   )
+categorie &lt;- categorie[categorie$Lemming_Code != "",]
+
+### shapefile alle velden + namen
+velden &lt;- readOGR(dsn = 'all_veldnamen.shp', layer = "all_veldnamen", stringsAsFactors = F)
+
+### function to detect which category it is
+for(i in 1:length(categorie$Lemming)){
+
+  if(is.na(categorie$Naamalternatieven[i])){
+    tekst &lt;- paste(categorie$Lemming[i])}
+  else{ 
+    tekst &lt;- paste(categorie$Lemming[i],"|",categorie$Naamalternatieven[i] , sep = "")}
+  code &lt;- categorie$Lemming_Code[i]
+
+  for(j in 1:length(velden)){  
+      if(grepl(tekst, velden$naam[j], ignore.case = T)){
+        if(is.na(velden$Code_1)){
+          velden$Code_1[j] &lt;- paste(code) } 
+        else if(is.na(velden$Code_2)){
+          velden$Code_2[j] &lt;- paste(code) } 
+        else if(is.na(velden$Code_3)){
+          velden$Code_3[j] &lt;- paste(code) }
+        else if(is.na(velden$Code_4)){
+          velden$Code_4[j] &lt;- paste(code)}
+        }
+      }
+  }
+}
+writeOGR(velden ,dsn = "veldnamen.shp",layer = "veldnamen" ,driver = "ESRI Shapefile", overwrite_layer = T)
+</code></pre>
+
+<h3>Java Script</h3>
+
+<h3>SQL</h3>
+</body>
+</html>
