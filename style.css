@@ -1,3 +1,4 @@
+
 h1,
 h2,
 h3,
@@ -6,13 +7,14 @@ h5,
 h6,
 p,
 blockquote {
-    margin: 0;
+    margin: 10px 10px 10px 10px;
     padding: 0;
+    line-height:150%;
 }
 body {
     font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 10px;
+    line-height: 200%;
     color: #737373;
     background-color: white;
     margin: 10px 13px 10px 13px;
@@ -57,24 +59,24 @@ h6 {
 
 h1 {
     margin-bottom: 18px;
-    font-size: 30px;
+    font-size: 20px;
     counter-reset: h2counter;
 }
 h2 {
-    font-size: 24px;
+    font-size: 16px;
     counter-reset: h3counter;
 }
 h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
     font-size: 14px;
 }
+h4 {
+    font-size: 12px;
+}
+h5 {
+    font-size: 10px;
+}
 h6 {
-    font-size: 13px;
+    font-size: 10px;
 }
 hr {
     margin: 0 0 19px;
@@ -95,7 +97,7 @@ blockquote:before {
     color:#eee;
 }
 blockquote p {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 300;
     line-height: 18px;
     margin-bottom: 0;
@@ -108,7 +110,7 @@ code {
     background-color: #fee9cc;
     color: rgba(0, 0, 0, 0.75);
     padding: 1px 3px;
-    font-size: 12px;
+    font-size: 11px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -147,10 +149,18 @@ sup {
 	body,code,pre code,h1,h2,h3,h4,h5,h6 {
 		color: black;
 	}
-	table, pre {
-		page-break-inside: avoid;
-	}
+  h1{
+    page-break-before:always;
+  }
+  @bottom-left {
+    content: counter(page) "/" counter(pages);
+  }
 }
+
+@page {
+  
+}
+  
 h1:before {
     content: "Chapter " counter(h1counter) ".  ";
     counter-increment: h1counter;
@@ -212,4 +222,12 @@ h2.nocount:before {
     	text-align: center;
     	color: #fff;
     	background: #f5bca8;
+    }
+    
+img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-align: center;
+      height: 200px;
     }
