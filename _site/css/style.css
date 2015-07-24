@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-Light.ttf");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-Semibold.ttf");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-SemiboldItalic.ttf");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/fonts/OpenSans-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic; }
+/* Base style & classes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media print {
+  html {
+    font-size: 30%; } }
+* {
+  -webkit-print-color-adjust: exact; }
+
+body {
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 30px 0; }
+
+h1 {
+  page-break-before: always; }
+
+table, p, image, img, code, pre {
+  page-break-inside: avoid; }
+
+p {
+  text-align: justify;
+  margin-bottom: 5px;
+  line-height: 3rem; }
+
+table {
+  width: 100%; }
+
+img {
+  max-width: 100%; }
+
+blockquote {
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  padding-left: 10px;
+  font-style: italic; }
+
+@page {
+  @top-center {
+    content: "Preliminary edition"; }
+  @bottom-right {
+    content: counter(page) " of " counter(pages); } }
+.text-wrap-right {
+  float: right;
+  padding: 10px;
+  margin: 0px 0px 0px 20px; }
+
+.text-wrap-left {
+  float: left;
+  padding: 10px;
+  margin: 0px 20px 0px 0px; }
+
+/* Counters
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  counter-reset: chapters; }
+
+h1 {
+  counter-reset: sections; }
+
+h2 {
+  counter-reset: subsections; }
+
+h3 {
+  counter-reset: subsubsections; }
+
+h1:before {
+  content: "Chapter " counter(chapters) ". ";
+  counter-increment: chapters;
+  counter-reset: sections; }
+
+h2:before {
+  content: counter(chapters) "." counter(sections) ". ";
+  counter-increment: sections;
+  counter-reset: subsections; }
+
+h3:before {
+  content: counter(chapters) "." counter(sections) "." counter(subsections) ". ";
+  counter-increment: subsections; }
+
+h4:before {
+  content: counter(chapters) "." counter(sections) "." counter(subsections) "." counter(subsubsections) ". ";
+  counter-increment: subsubsections; }
+
+h1.nocount:before {
+  content: none;
+  counter-increment: none; }
+
+h2.nocount:before {
+  content: none;
+  counter-increment: none; }
+
+figure {
+  counter-increment: figures;
+  font-weight: bold; }
+
+figure:before {
+  content: "Figure " counter(figures) ".  "; }
+
+.table {
+  counter-increment: tables;
+  font-weight: bold; }
+
+.table:before {
+  content: "Table " counter(tables) ".  "; }
+
+.code {
+  counter-increment: snippets;
+  font-weight: bold; }
+
+.code:before {
+  content: "Code snippet " counter(snippets) ".  "; }
