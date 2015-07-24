@@ -125,13 +125,6 @@ blockquote {
   font-style: italic;
 }
 
-@page  {
-  @top-center { content: "Preliminary edition" }
-  @bottom-right {
-    content: counter(page) " of " counter(pages);
-  }
-}
-
 .text-wrap-right {
   float:right;
   padding: 10px;
@@ -142,6 +135,21 @@ blockquote {
   float: left;
   padding: 10px;
   margin: 0px 20px 0px 0px;
+}
+
+
+
+
+@page:right{
+  @bottom-right {
+    content: counter(page);
+  }
+}
+
+@page:left{
+  @bottom-left {
+    content: counter(page);
+  }
 }
 
 /* Counters
