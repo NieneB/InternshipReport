@@ -147,6 +147,7 @@ Figure $$ shows the overview of the whole H&L project. Now focusing on the histo
 
 
 <p class="fig"> Sheme of Hertiage and Location project. Products and Services.</p>
+
 ![ ](/img/EL-producten-en-diensten-schema_v8.jpg)
 ##Cultural heritage data & GIS
 There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010)
@@ -387,7 +388,9 @@ For design ideas and color use a mood board was made. Pictures from the Internet
 One of the main inspirations was the following image:
 
 <p class="fig"> Inspiration Picture </p>
+
 ![](/img/transect_inspiration-01.jpg)
+
 *Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg*
 
 Complete mood board; see appendix $$$
@@ -915,13 +918,14 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 
 To engage the target group into the application, the hook model is followed.
 Trigger people to use it. External or internal. Let them do a action for which they receive a reward. If they invest in the system they will go through the process again.
-![Alt text](/img/hookmodel.jpg)
 
+![Alt text](/img/hookmodel.jpg)
 
 ## The web application
 The web application can be found on: $$$$$
 Some screenshots of how it looks:
 <p class="fig">Welcome screen </p>
+<<<<<<< HEAD
 ![Screen Shot 2015 07 24 At 2.18.47 PM](img/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png)
 <p class="fig">Map status in beginning </p>
 ![Screen Shot 2015 07 24 At 2.19.22 PM](img/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png)
@@ -932,6 +936,17 @@ Some screenshots of how it looks:
 ![Screen Shot 2015 07 24 At 2.20.20 PM](img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png)
 <p class="fig">Example interesting spot </p>
 ![Screen Shot 2015 07 21 At 11.06.45 AM](img/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png )
+![Screen Shot 2015 07 24 At 2.18.47 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png =854x)
+<p class="fig">Map status in beginning </p>
+![Screen Shot 2015 07 24 At 2.19.22 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png =854x)
+<p class="fig">Map functionalities with mouseover. </p>
+![Screen Shot 2015 07 24 At 2.20.01 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.20.01%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.19.42 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.19.42%20PM.png =854x)
+<p class="fig">Map drawing a line funciton </p>
+![Screen Shot 2015 07 24 At 2.20.20 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png =854x)
+<p class="fig">Example interesting spot </p>
+![Screen Shot 2015 07 21 At 11.06.45 AM](3_Pictures/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png )
+>>>>>>> e5894b926c1f0167fcef85bf23565c4396b5e32a
 
 ## Testing the web-application
 
