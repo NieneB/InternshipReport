@@ -897,16 +897,16 @@ Trigger people to use it. External or internal. Let them do a action for which t
 The web application can be found on: $$$$$
 Some screenshots of how it looks:
 <p class="fig">Welcome screen </p>
-![Screen Shot 2015 07 24 At 2.18.47 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.18.47 PM](/pict/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png =854x)
 <p class="fig">Map status in beginning </p>
-![Screen Shot 2015 07 24 At 2.19.22 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.19.22 PM](pict/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png =854x)
 <p class="fig">Map functionalities with mouseover. </p>
-![Screen Shot 2015 07 24 At 2.20.01 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.20.01%20PM.png =854x)
-![Screen Shot 2015 07 24 At 2.19.42 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.19.42%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.20.01 PM](pict/Screen%20Shot%202015-07-24%20at%202.20.01%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.19.42 PM](pict/Screen%20Shot%202015-07-24%20at%202.19.42%20PM.png =854x)
 <p class="fig">Map drawing a line funciton </p>
-![Screen Shot 2015 07 24 At 2.20.20 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.20.20 PM](pict/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png =854x)
 <p class="fig">Example interesting spot </p>
-![Screen Shot 2015 07 21 At 11.06.45 AM](3_Pictures/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png )
+![Screen Shot 2015 07 21 At 11.06.45 AM](pict/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png )
 
 ## Testing the web-application
 
