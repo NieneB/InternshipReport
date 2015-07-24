@@ -79,7 +79,7 @@
 
 @media print {
 	html {
-    font-size: 30%;
+    font-size: 40%;
   }
 }
 
@@ -93,6 +93,7 @@ body {
 }
 
 h1 {
+  padding-top: 3em;
   page-break-before: always;
 }
 

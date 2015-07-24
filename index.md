@@ -145,11 +145,12 @@ One of the tools is a historical-geocoder, to make heritage data, geo located an
 Figure $$ shows the overview of the whole H&L project. Now focusing on the historical geocoder and thesaurus.
 (“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
-
 <p class="fig"> Sheme of Hertiage and Location project. Products and Services.</p>
 
 ![ ](/img/EL-producten-en-diensten-schema_v8.jpg)
+
 ##Cultural heritage data & GIS
+
 There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010)
 Explained here are several reasons why a GIS system is beneficial for digitalizing CH data;
 One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. (Karavia & Georgopoulos, 2013; Meyer et al., 2007)
@@ -395,8 +396,10 @@ One of the main inspirations was the following image:
 
 Complete mood board; see appendix $$$
 
-###The data
-####Field-names
+### The data
+
+#### Field-names
+
 From the *Rijksdients voor Cultureel Erfgoed* of the Netherlands a dataset with living field-names in Drenthe was supplied. This data contains field geometries that have a field-name, a name or toponym given to the plot or area by the people living in the neighborhood from around 1830. These field-names were derived from studies by Naarding and Wieringa, together with het *Drenthse Archief* and *het Meertens-Instituut*. Old toponyms on old maps, tell us a lot, but here they used another source; the memory of the local inhabitants, where generation after generation the field names keep on living. The polygons where drawn by hand or the names were assigned to plots from the cadastre maps from 1830.
 
 These field-names contain a lot of information about how the landscape used to look. Because most field-names are based on their direct environment. The most important factors influencing the forming of field-names are ; natural relief, natural water and the vegetation structure. (Spek et al., 2009)
@@ -522,9 +525,9 @@ EPSG28992
  <tr> <td>Top10NL_1rW</td></tr>
 </table>
 
-###Pre-processing the data
+### Pre-processing the data
 
-####Fieldnames
+#### Fieldnames
 
 All the data was delivered separate .DAT files and scattered over several folders and sources.
 All the possible datasets containing field-names were collected and displayed in one view. So this results in different sources saying something about the names. This also resulted in plots with multiple names, some differed slightly, some were totally different.
@@ -564,7 +567,8 @@ The script  runs through all the field-names and all the possible categories, to
 
 ![](/img/Graph_amount_categories.jpg)
 
-####AHN
+#### AHN
+
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
 
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels.
@@ -578,12 +582,15 @@ For use in the application, the transect line looks best when not containing any
 The water topology is .. into raster format. Giving pixel values of .. 1.5. With the raster calculator these values are subtracted from the AHN to lower the water bodies areas.
 
 #### Kadaster parcels
+
 No preprocessing needed other then explained in $$ preprocessing field-names.
+
 ####Water bodies
+
 Only processing was clipped to the research area. No other preprocessing needed other then was used for the AHN.
 
+### Back-end processes
 
-###Back-end processes
 First both client side and server side are build on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the possibility to move it to a server will be regarded.
 
 Figure $$ shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is exlpained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed.
@@ -592,10 +599,11 @@ The next paragraphs explain the database, the API, the SQL query and the website
 <p class="fig"> Back-end processes </p>
 ![Alt text](/img/webpage_model.jpg )
 
-####Setting up the database
+#### Setting up the database
+
 The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters.
 
-Everything was loaded in the dutch projected coordinate system RD new (EPSG:28992)
+Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
 <p class="fig"> Loading data into the database</p>
 ![Alt text](/img/loading_Data.jpg )
@@ -604,7 +612,7 @@ Everything was loaded in the dutch projected coordinate system RD new (EPSG:2899
 
 
 	Shp2pgsql
-	➜  ~ shp2pgsql -s 28992 /<path name> /veldnamen.shp veldnamen | psql -U user -d veldnamen
+	➜  ~ shp2pgsql -s 28992 /<path name>/veldnamen.shp veldnamen | psql -U user -d veldnamen
 
 	Raster2pgsql
 	➜  ~ raster2pgsql -s 28992 -I -C /<path name>/ahn2*.tif public.ahn2 | psql -d veldnamen
@@ -619,7 +627,6 @@ It supports parameterizes queries for PostgreSQL
 So the functions are made to get from coordinates to a SQL query asking the height data from the AHN raster.
 https://github.com/brianc/node-postgres
 https://nodejs.org/about/
-
 
 <p class="code"> Request &amp; Response for transect line </p>
 
@@ -688,14 +695,15 @@ Then the points are intersected with the water topology table to see if a points
 In the end all point that fall into a field or water body are joined to the total amount of points to contain the whole range of points.
 
 <p class="code">  Join all outcomes</p>
+
     points AS
     (SELECT *  FROM AHN LEFT OUTER JOIN fields ON (AHN.geom = fields.geoms)),
-
     points1 AS
     (SELECT * FROM points LEFT OUTER JOIN waters ON (points.geom = waters.geomz))
 
 This is all send back as one complete GeoJSON response.
 <p class="code">  final GeoJSON response</p>
+
     -- Make points:
     SELECT ST_AsGeoJSON(ST_MakePoint(ST_X(ST_Transform(ST_SetSRID(geom, 28992),4326)), ST_Y(ST_Transform(ST_SetSRID(geom, 28992),4326)), heights))
     AS geometry, naam, heights, percentage , category1, category2, waternaam, typewater, waterID
@@ -704,47 +712,49 @@ This is all send back as one complete GeoJSON response.
  Eventually the response of the request will be a GeoJSON. An example of the GeoJSON array is shown in code figure $$$ .
 
 <p class="code">  Example GeoJSON response</p>
+
     [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    6.6089395293246,
-                    53.0818691708253,
-                    8.05700016021729
-                ]
-            },
-            "naam": "Zuurpol (de)",
-            "heights": 8.05700016021729,
-            "percentage": 0.826035566357403,
-            "category1": "A1",
-            "category2": null,
-            "waternaam": null,
-            "typewater": null,
-            "waterid": null
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            6.6089395293246,
+            53.0818691708253,
+            8.05700016021729
+          ]
         },
-        {…},
-        {…},
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    6.62981923722014,
-                    53.0856490864126,
-                    4.8439998626709
-                ]
-            },
-            "naam": "Gryze Steen",
-            "heights": 4.8439998626709,
-            "percentage": 55.5813292359005,
-            "category1": null,
-            "category2": null,
-            "waternaam": null,
-            "typewater": "meer, plas, ven, vijver",
-            "waterid": "NL.TOP10NL.128375900"
+        "naam": "Zuurpol (de)",
+        "heights": 8.05700016021729,
+        "percentage": 0.826035566357403,
+        "category1": "A1",
+        "category2": null,
+        "waternaam": null,
+        "typewater": null,
+        "waterid": null
+      },
+      {…},
+      {…},
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            6.62981923722014,
+            53.0856490864126,
+            4.8439998626709
+          ]
         },
-        {…},
+        "naam": "Gryze Steen",
+        "heights": 4.8439998626709,
+        "percentage": 55.5813292359005,
+        "category1": null,
+        "category2": null,
+        "waternaam": null,
+        "typewater": "meer, plas, ven, vijver",
+        "waterid": "NL.TOP10NL.128375900"
+      },
+      {…}
     ]
+
 ### Web design
 
 Will be an inductive process. Mostly based on the researchers’ preferences. The language in the product will be Dutch, for the data covers a part of the Netherlands and the target group is dutch.
@@ -792,14 +802,12 @@ Leaflet
       [53.202277, 6.958035]
     ]);
 
-D3, data driven documents.
 
+D3, data driven documents.
 
 <p class="code">  D3 request coordinates and drawing transect path  </p>
 
     d3.json('transect?linestring=' + coordinates, function(json) {
-      console.log("requesting line from database");
-      console.log(json)
       var line = d3.select("#line")
       line.selectAll(".transect")
         .data(linestring)
@@ -810,6 +818,7 @@ D3, data driven documents.
         .attr("stroke", "#2B2118")
         .attr("stroke-width", 3)
         .attr("fill", "none");
+    });
 
 ## Testing the web-application
 
@@ -996,18 +1005,17 @@ Scale is needed
 Not the best way to visualize the correlation which the fieldnames have to their surrounding.
 
 
+# Recommendations
 
+## Website recommendations
 
-#recommendations
-
-##Website recommendations
 Add more symbols and information behind it.
 Make the application suitable for multiple browsers.
 Let the user invest, possible idea: Draw a field and add a field name.
 Implement more of the thought up ideas to make it more interesting.
 
-
 # Conclusion
+
 # References
 Actueel Hoogtebestand Nederland. (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html
 
@@ -1081,9 +1089,8 @@ Waag Society. (n.d.). Retrieved July 23, 2015, from https://www.waag.org/nl/orga
 Zeijden, A. V. D. (2011). Immaterieel erfgoed en musea, (35), 4–6.
 
 
-
-
 # Appendix
+
 ### AHN tiles downloaded:
 
 ahn2_5_07cz1.tif	ahn2_5_12en1.tif
@@ -1130,14 +1137,12 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 ### R script detecting categories
 
-
       library(sp)
       library(raster)
       library(rgdal)
       library(rgeos)
       require(RPostgreSQL)
       require(rgdal)
-
 
       setwd("/Users/waag/Documents/MGI_Stage/9_veldnamen/10_VeldnamenOrgineel/")
 
@@ -1165,7 +1170,6 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
       velden$CODE_1[velden$CODE_1 == "O08"] <- "O8"
       velden$CODE_1[velden$CODE_1 == "O02"] <- "O2"
 
-
       ## categorien toevoegen
       i <- 0
       j <- 0
@@ -1185,9 +1189,6 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
           print(paste(naam, tekst, CODE, geld))
         }
       }
-
-
-
 
 ### Mood board
 
