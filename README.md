@@ -11,6 +11,6 @@ Install [Jekyll](http://jekyllrb.com/) and [Prince](http://www.princexml.com/), 
 
 In the other:
 
-  prince http://localhost:4000 report.pdf
+    prince http://localhost:4000 report.pdf
 
 For more information about designing for print with HTML & CSS, see http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/.
