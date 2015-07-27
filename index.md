@@ -868,7 +868,7 @@ Because the objectives were used in defining the statements, it tests if the app
 
 Because there is not a official testing group available, the participants will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  
 
-Table $$ shows the statements asked and their relation to the objectives. The complete questionnaire can be found in annex $$$. 
+Table $$ shows the statements asked and their relation to the objectives. The complete questionnaire can be found in appendix $$$. 
 <p class="table"> Questions and Objectives </p>
 <table>
   <tr>
@@ -1035,6 +1035,7 @@ Question 8 got the lowest score, the functionality did not work as the user woul
 
 <img src="img/uitslag_quest.png" width="854px">
 
+total answer overview see appendix $$$. 
 ### Remarks on the questionnaire
 
 - "works logical, though information is missing"
@@ -1061,11 +1062,13 @@ Question 8 got the lowest score, the functionality did not work as the user woul
 Lack of professional knowledge about the data
 
 Design
-Geo-visualisation is so broad and there are so many ways in which a dataset can be described that it is not possibl to set up a framework in steps to follow.
+Geo-visualisation is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow.
 
 
 Geo data visualisation
 Height is the recent height, is this still the same as in 1830?? A lot has changed since.
+
+water areas smoothed out.
 
 No temporal dimension added.
 
@@ -1073,6 +1076,14 @@ Scale is needed
 
 Not the best way to visualize the correlation which the field-names have to their surrounding.
 
+more specific stories needed behind the fieldnames.
+
+
+
+Testing - questionnaire no experience. Maybe too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is no saying. The participants are influenced by that they like heritage and understand the project in the bigger picture. participants are biased. 
+Not enough participants. 
+
+usefull comments. though no time to implement them.
 
 # Recommendations
 
@@ -1145,6 +1156,7 @@ Spek, T., Elerie, H., & Kosian, M. (2009). Van Jeruzalem tot Ezelakker, Levende 
 Steiniger, S., & Hunter, A. J. S. (2013). The 2012 free and open source GIS software map – A guide to facilitate research, development, and adoption. Computers, Environment and Urban Systems, 39, 136–150. http://doi.org/10.1016/j.compenvurbsys.2012.10.003
 
 Tensen, T. (2014). Master Thesis Geo-data animations in television journalism :, 1–87.
+
 TOP10NL | Publieke Dienstverlening Op de Kaart Loket. (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl
 
 UNESCO Culture Sector - Intangible Heritage - 2003 Convention : (n.d.). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002
@@ -1160,7 +1172,182 @@ Zeijden, A. V. D. (2011). Immaterieel erfgoed en musea, (35), 4–6.
 
 # Appendix
 
-### AHN tiles downloaded:
+## Mood board
+
+![Alt text](img/Moodboard-01.jpg)
+![Alt text](img/Moodboard-02.jpg)
+
+## Categories field-names form RCE
+
+![Alt text](img/categoriesFieldnames.jpg)
+<table>
+<tr> <th>	Lemming Code	</th> <th>	Category 	</th> <th>	Category Code	</th> <th>	Lemming	</th> <th>	Name Alternatives	</th> <th>	Count first Code	</th> <th>	Count second Code	</th> </tr>
+<tr> <td>	A1	</td> <td>	Relief	</td> <td>	A	</td> <td>	berg	</td> <td>	bergen|bergje|barg	</td> <td>	210	</td> <td>	38	</td> </tr>
+<tr> <td>	A10	</td> <td>	Relief	</td> <td>	A	</td> <td>	leest	</td> <td>		</td> <td>	13	</td> <td>	247	</td> </tr>
+<tr> <td>	A11	</td> <td>	Relief	</td> <td>	A	</td> <td>	richel	</td> <td>		</td> <td>	1	</td> <td>	14	</td> </tr>
+<tr> <td>	A12	</td> <td>	Relief	</td> <td>	A	</td> <td>	duin	</td> <td>	dun|dunne	</td> <td>	39	</td> <td>	22	</td> </tr>
+<tr> <td>	A13	</td> <td>	Relief	</td> <td>	A	</td> <td>	dal	</td> <td>	daal|del|dil	</td> <td>	39	</td> <td>	175	</td> </tr>
+<tr> <td>	A14	</td> <td>	Relief	</td> <td>	A	</td> <td>	kuil	</td> <td>	koel	</td> <td>	18	</td> <td>	4	</td> </tr>
+<tr> <td>	A15	</td> <td>	Relief	</td> <td>	A	</td> <td>	waard	</td> <td>	weerd	</td> <td>	2	</td> <td>	8	</td> </tr>
+<tr> <td>	A16	</td> <td>	Relief	</td> <td>	A	</td> <td>	kwab	</td> <td>	kweb|kwebbe|kwabbe	</td> <td>	4	</td> <td>	10	</td> </tr>
+<tr> <td>	A17	</td> <td>	Relief	</td> <td>	A	</td> <td>	gat	</td> <td>		</td> <td>	11	</td> <td>	8	</td> </tr>
+<tr> <td>	A18	</td> <td>	Relief	</td> <td>	A	</td> <td>	put	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	A19	</td> <td>	Relief	</td> <td>	A	</td> <td>	laag	</td> <td>	laagen|laagte|leeg|lege	</td> <td>	1	</td> <td>	44	</td> </tr>
+<tr> <td>	A2	</td> <td>	Relief	</td> <td>	A	</td> <td>	bult	</td> <td>	bulten|bulte|bultje|bultien	</td> <td>	48	</td> <td>	15	</td> </tr>
+<tr> <td>	A20	</td> <td>	Relief	</td> <td>	A	</td> <td>	val	</td> <td>		</td> <td>	499	</td> <td>	53	</td> </tr>
+<tr> <td>	A21	</td> <td>	Relief	</td> <td>	A	</td> <td>	plat	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	A22	</td> <td>	Relief	</td> <td>	A	</td> <td>	vlak	</td> <td>	vlakte|vlakkien	</td> <td>		</td> <td>	2	</td> </tr>
+<tr> <td>	A23	</td> <td>	Relief	</td> <td>	A	</td> <td>	hol	</td> <td>		</td> <td>	15	</td> <td>	120	</td> </tr>
+<tr> <td>	A24	</td> <td>	Relief	</td> <td>	A	</td> <td>	glij	</td> <td>	glijt|gleet|gleed	</td> <td>	2	</td> <td>	16	</td> </tr>
+<tr> <td>	A3	</td> <td>	Relief	</td> <td>	A	</td> <td>	hoog	</td> <td>	hoge|hoogte|heugt	</td> <td>	71	</td> <td>	41	</td> </tr>
+<tr> <td>	A4	</td> <td>	Relief	</td> <td>	A	</td> <td>	hoorn	</td> <td>	Horne|hörne|heurn	</td> <td>	64	</td> <td>	17	</td> </tr>
+<tr> <td>	A5	</td> <td>	Relief	</td> <td>	A	</td> <td>	hel	</td> <td>	helle	</td> <td>	33	</td> <td>	62	</td> </tr>
+<tr> <td>	A6	</td> <td>	Relief	</td> <td>	A	</td> <td>	hul	</td> <td>	hulle	</td> <td>	7	</td> <td>	1	</td> </tr>
+<tr> <td>	A7	</td> <td>	Relief	</td> <td>	A	</td> <td>	pol	</td> <td>		</td> <td>	2	</td> <td>	39	</td> </tr>
+<tr> <td>	A8	</td> <td>	Relief	</td> <td>	A	</td> <td>	hoop	</td> <td>		</td> <td>	2	</td> <td>		</td> </tr>
+<tr> <td>	A9	</td> <td>	Relief	</td> <td>	A	</td> <td>	nor	</td> <td>	norre	</td> <td>	31	</td> <td>		</td> </tr>
+<tr> <td>	B1	</td> <td>	Bodem	</td> <td>	B	</td> <td>	zand	</td> <td>	sand	</td> <td>	80	</td> <td>	36	</td> </tr>
+<tr> <td>	B10	</td> <td>	Bodem	</td> <td>	B	</td> <td>	grijs	</td> <td>	grijze|grauw	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	B11	</td> <td>	Bodem	</td> <td>	B	</td> <td>	ele	</td> <td>		</td> <td>	1	</td> <td>	5	</td> </tr>
+<tr> <td>	B12	</td> <td>	Bodem	</td> <td>	B	</td> <td>	bruin	</td> <td>	bruun	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	B2	</td> <td>	Bodem	</td> <td>	B	</td> <td>	leem	</td> <td>		</td> <td>	3	</td> <td>	2	</td> </tr>
+<tr> <td>	B3	</td> <td>	Bodem	</td> <td>	B	</td> <td>	veen	</td> <td>		</td> <td>	279	</td> <td>	175	</td> </tr>
+<tr> <td>	B4	</td> <td>	Bodem	</td> <td>	B	</td> <td>	klei	</td> <td>		</td> <td>	15	</td> <td>	122	</td> </tr>
+<tr> <td>	B5	</td> <td>	Bodem	</td> <td>	B	</td> <td>	steen	</td> <td>	stien|stein	</td> <td>	88	</td> <td>	39	</td> </tr>
+<tr> <td>	B6	</td> <td>	Bodem	</td> <td>	B	</td> <td>	kei	</td> <td>	kai|kaai	</td> <td>	2	</td> <td>		</td> </tr>
+<tr> <td>	B7	</td> <td>	Bodem	</td> <td>	B	</td> <td>	zwart	</td> <td>		</td> <td>	10	</td> <td>	11	</td> </tr>
+<tr> <td>	B8	</td> <td>	Bodem	</td> <td>	B	</td> <td>	wit	</td> <td>		</td> <td>	46	</td> <td>	44	</td> </tr>
+<tr> <td>	B9	</td> <td>	Bodem	</td> <td>	B	</td> <td>	rood	</td> <td>	rode	</td> <td>	27	</td> <td>	32	</td> </tr>
+<tr> <td>	C1	</td> <td>	Watermen	</td> <td>	C	</td> <td>	meer	</td> <td>	meren	</td> <td>	88	</td> <td>	28	</td> </tr>
+<tr> <td>	C10	</td> <td>	Watermen	</td> <td>	C	</td> <td>	wiel	</td> <td>	waal	</td> <td>	1	</td> <td>	1	</td> </tr>
+<tr> <td>	C11	</td> <td>	Watermen	</td> <td>	C	</td> <td>	zee	</td> <td>		</td> <td>		</td> <td>	3	</td> </tr>
+<tr> <td>	C12	</td> <td>	Watermen	</td> <td>	C	</td> <td>	vals	</td> <td>	valsch	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	C13	</td> <td>	Watermen	</td> <td>	C	</td> <td>	weier	</td> <td>	weiert|weijert	</td> <td>	1	</td> <td>	4	</td> </tr>
+<tr> <td>	C14	</td> <td>	Watermen	</td> <td>	C	</td> <td>	veentje	</td> <td>	veentie	</td> <td>		</td> <td>	3	</td> </tr>
+<tr> <td>	C2	</td> <td>	Watermen	</td> <td>	C	</td> <td>	poel	</td> <td>		</td> <td>	19	</td> <td>	16	</td> </tr>
+<tr> <td>	C3	</td> <td>	Watermen	</td> <td>	C	</td> <td>	dobbe	</td> <td>		</td> <td>	14	</td> <td>	3	</td> </tr>
+<tr> <td>	C4	</td> <td>	Watermen	</td> <td>	C	</td> <td>	streng	</td> <td>		</td> <td>	33	</td> <td>	6	</td> </tr>
+<tr> <td>	C5	</td> <td>	Watermen	</td> <td>	C	</td> <td>	diep	</td> <td>		</td> <td>	15	</td> <td>	24	</td> </tr>
+<tr> <td>	C6	</td> <td>	Watermen	</td> <td>	C	</td> <td>	beek	</td> <td>	beeck	</td> <td>	18	</td> <td>	14	</td> </tr>
+<tr> <td>	C7	</td> <td>	Watermen	</td> <td>	C	</td> <td>	water	</td> <td>		</td> <td>	4	</td> <td>		</td> </tr>
+<tr> <td>	C8	</td> <td>	Watermen	</td> <td>	C	</td> <td>	kolk	</td> <td>		</td> <td>	6	</td> <td>	10	</td> </tr>
+<tr> <td>	C9	</td> <td>	Watermen	</td> <td>	C	</td> <td>	leek	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	D1	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	broek	</td> <td>	broeken|broekje	</td> <td>	416	</td> <td>	221	</td> </tr>
+<tr> <td>	D10	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	gagel	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	D11	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	moor	</td> <td>	moer|moerde	</td> <td>	1	</td> <td>		</td> </tr>
+<tr> <td>	D12	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	goor	</td> <td>	gor	</td> <td>		</td> <td>	33	</td> </tr>
+<tr> <td>	D13	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	sleek	</td> <td>	slijk	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	D14	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	rus	</td> <td>	rusch	</td> <td>	3	</td> <td>	6	</td> </tr>
+<tr> <td>	D15	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	geel	</td> <td>	gele	</td> <td>	5	</td> <td>	28	</td> </tr>
+<tr> <td>	D16	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	slob	</td> <td>	slom	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	D17	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	eis	</td> <td>		</td> <td>	1	</td> <td>	8	</td> </tr>
+<tr> <td>	D18	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	schol	</td> <td>	scholte|school|schel	</td> <td>	6	</td> <td>	15	</td> </tr>
+<tr> <td>	D19	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	sek	</td> <td>	sekke	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	D2	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	maat	</td> <td>	made|maad|maadje	</td> <td>	350	</td> <td>	246	</td> </tr>
+<tr> <td>	D3	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	mars	</td> <td>		</td> <td>	18	</td> <td>	24	</td> </tr>
+<tr> <td>	D4	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	vledder	</td> <td>	vleer|vlier|fleer|flier	</td> <td>	25	</td> <td>	15	</td> </tr>
+<tr> <td>	D5	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	stroet	</td> <td>	stroot|stroe	</td> <td>	13	</td> <td>	5	</td> </tr>
+<tr> <td>	D6	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	hem	</td> <td>	ham	</td> <td>	56	</td> <td>	19	</td> </tr>
+<tr> <td>	D7	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	horst	</td> <td>	hurst	</td> <td>	23	</td> <td>	7	</td> </tr>
+<tr> <td>	D8	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	oel	</td> <td>		</td> <td>	1	</td> <td>	5	</td> </tr>
+<tr> <td>	D9	</td> <td>	Beekdal_Moeras	</td> <td>	D	</td> <td>	riet	</td> <td>	reit|raait|reet	</td> <td>	8	</td> <td>	8	</td> </tr>
+<tr> <td>	E1	</td> <td>	Bossen	</td> <td>	E	</td> <td>	loo	</td> <td>		</td> <td>	1572	</td> <td>	63	</td> </tr>
+<tr> <td>	E10	</td> <td>	Bossen	</td> <td>	E	</td> <td>	haag	</td> <td>	hagen|heeg|heg	</td> <td>		</td> <td>	44	</td> </tr>
+<tr> <td>	E11	</td> <td>	Bossen	</td> <td>	E	</td> <td>	els	</td> <td>	elze|eller|elder	</td> <td>	20	</td> <td>	14	</td> </tr>
+<tr> <td>	E12	</td> <td>	Bossen	</td> <td>	E	</td> <td>	hulst	</td> <td>	huls	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	E13	</td> <td>	Bossen	</td> <td>	E	</td> <td>	den	</td> <td>	denne	</td> <td>	118	</td> <td>	582	</td> </tr>
+<tr> <td>	E14	</td> <td>	Bossen	</td> <td>	E	</td> <td>	esch|asch	</td> <td>		</td> <td>	59	</td> <td>	61	</td> </tr>
+<tr> <td>	E15	</td> <td>	Bossen	</td> <td>	E	</td> <td>	wilg	</td> <td>	ween|wene|wede|wee|warff|warve|werff|werv	</td> <td>	7	</td> <td>	7	</td> </tr>
+<tr> <td>	E16	</td> <td>	Bossen	</td> <td>	E	</td> <td>	eik	</td> <td>	eek|ekkel|eck	</td> <td>	1	</td> <td>	37	</td> </tr>
+<tr> <td>	E17	</td> <td>	Bossen	</td> <td>	E	</td> <td>	hazel	</td> <td>	hessel	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	E18	</td> <td>	Bossen	</td> <td>	E	</td> <td>	struik	</td> <td>	stroek	</td> <td>	1	</td> <td>		</td> </tr>
+<tr> <td>	E19	</td> <td>	Bossen	</td> <td>	E	</td> <td>	bramen	</td> <td>	brummel	</td> <td>		</td> <td>	10	</td> </tr>
+<tr> <td>	E2	</td> <td>	Bossen	</td> <td>	E	</td> <td>	hees	</td> <td>	heeze|heze	</td> <td>	75	</td> <td>	20	</td> </tr>
+<tr> <td>	E20	</td> <td>	Bossen	</td> <td>	E	</td> <td>	meidoorn	</td> <td>	hageldoorn	</td> <td>		</td> <td>	2	</td> </tr>
+<tr> <td>	E21	</td> <td>	Bossen	</td> <td>	E	</td> <td>	doorn	</td> <td>		</td> <td>	775	</td> <td>	47	</td> </tr>
+<tr> <td>	E22	</td> <td>	Bossen	</td> <td>	E	</td> <td>	bosbes	</td> <td>	kreus|kreuzen|krös|krözen	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	E23	</td> <td>	Bossen	</td> <td>	E	</td> <td>	zwartebosbes|blauwebosbes	</td> <td>	bliek|blik	</td> <td>		</td> <td>	5	</td> </tr>
+<tr> <td>	E24	</td> <td>	Bossen	</td> <td>	E	</td> <td>	bessen	</td> <td>		</td> <td>	1	</td> <td>		</td> </tr>
+<tr> <td>	E25	</td> <td>	Bossen	</td> <td>	E	</td> <td>	roos	</td> <td>	rosen|rozen	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	E26	</td> <td>	Bossen	</td> <td>	E	</td> <td>	stok	</td> <td>	stock	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	E3	</td> <td>	Bossen	</td> <td>	E	</td> <td>	stobbe	</td> <td>	stob	</td> <td>	61	</td> <td>	40	</td> </tr>
+<tr> <td>	E4	</td> <td>	Bossen	</td> <td>	E	</td> <td>	bos	</td> <td>	bosch|busch	</td> <td>	251	</td> <td>	136	</td> </tr>
+<tr> <td>	E5	</td> <td>	Bossen	</td> <td>	E	</td> <td>	hout	</td> <td>		</td> <td>	48	</td> <td>	29	</td> </tr>
+<tr> <td>	E6	</td> <td>	Bossen	</td> <td>	E	</td> <td>	holt	</td> <td>		</td> <td>	120	</td> <td>	12	</td> </tr>
+<tr> <td>	E7	</td> <td>	Bossen	</td> <td>	E	</td> <td>	laar	</td> <td>		</td> <td>	9	</td> <td>	8	</td> </tr>
+<tr> <td>	E8	</td> <td>	Bossen	</td> <td>	E	</td> <td>	wold	</td> <td>	woold	</td> <td>	2	</td> <td>	20	</td> </tr>
+<tr> <td>	E9	</td> <td>	Bossen	</td> <td>	E	</td> <td>	strubbe	</td> <td>		</td> <td>	10	</td> <td>	37	</td> </tr>
+<tr> <td>	F1	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	veld	</td> <td>	velt	</td> <td>	162	</td> <td>	112	</td> </tr>
+<tr> <td>	F10	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	lijsterbes	</td> <td>	kweekeboom	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	F2	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	heide	</td> <td>	heide|heet|hiet	</td> <td>	23	</td> <td>	8	</td> </tr>
+<tr> <td>	F3	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	haar	</td> <td>	hare	</td> <td>	33	</td> <td>	20	</td> </tr>
+<tr> <td>	F4	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	zuring	</td> <td>		</td> <td>	2	</td> <td>	2	</td> </tr>
+<tr> <td>	F5	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	woest	</td> <td>		</td> <td>	4	</td> <td>	3	</td> </tr>
+<tr> <td>	F6	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	wild	</td> <td>	wilden|wildernis	</td> <td>	1	</td> <td>	4	</td> </tr>
+<tr> <td>	F7	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	ruig	</td> <td>	roege	</td> <td>	4	</td> <td>	5	</td> </tr>
+<tr> <td>	F8	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	brem	</td> <td>	braam|broam|breem|bram	</td> <td>	1	</td> <td>	1	</td> </tr>
+<tr> <td>	F9	</td> <td>	Veldgrond_stuifzand	</td> <td>	F	</td> <td>	wind	</td> <td>		</td> <td>	2	</td> <td>	8	</td> </tr>
+<tr> <td>	G1	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	fazant|patrijs	</td> <td>	hunder|hoender|hoonder	</td> <td>	29	</td> <td>	15	</td> </tr>
+<tr> <td>	G10	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	valk	</td> <td>		</td> <td>	12	</td> <td>		</td> </tr>
+<tr> <td>	G11	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	kraanvogel	</td> <td>	kraan|krane|craan|crane	</td> <td>		</td> <td>	1	</td> </tr>
+<tr> <td>	G12	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	reiger	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G13	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	mus	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G14	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	raaf	</td> <td>	raven	</td> <td>	14	</td> <td>		</td> </tr>
+<tr> <td>	G15	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	duif	</td> <td>	duiven|duven|doef|doeven	</td> <td>	2	</td> <td>		</td> </tr>
+<tr> <td>	G16	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	mees	</td> <td>	meeze	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G17	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	ooievaar	</td> <td>	ooievaar|heileuver|ooievaar|eiber|scholbos|luibert	</td> <td>	1	</td> <td>		</td> </tr>
+<tr> <td>	G18	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	kraai	</td> <td>		</td> <td>	2	</td> <td>		</td> </tr>
+<tr> <td>	G19	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	spreeuw	</td> <td>	spree	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G2	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	haan	</td> <td>	hane	</td> <td>	13	</td> <td>	20	</td> </tr>
+<tr> <td>	G20	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	hond	</td> <td>	hund	</td> <td>	2	</td> <td>	1	</td> </tr>
+<tr> <td>	G21	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	kat	</td> <td>		</td> <td>	4	</td> <td>	1	</td> </tr>
+<tr> <td>	G22	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	bever	</td> <td>		</td> <td>		</td> <td>	1	</td> </tr>
+<tr> <td>	G23	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	vos	</td> <td>		</td> <td>	5	</td> <td>	4	</td> </tr>
+<tr> <td>	G24	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	wolf	</td> <td>	wolven	</td> <td>	10	</td> <td>	10	</td> </tr>
+<tr> <td>	G25	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	haas	</td> <td>	hazen	</td> <td>	11	</td> <td>	11	</td> </tr>
+<tr> <td>	G26	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	konijn	</td> <td>		</td> <td>	9	</td> <td>	5	</td> </tr>
+<tr> <td>	G27	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	otter	</td> <td>		</td> <td>	1	</td> <td>	2	</td> </tr>
+<tr> <td>	G28	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	das	</td> <td>		</td> <td>	1	</td> <td>	1	</td> </tr>
+<tr> <td>	G29	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	adder	</td> <td>	edder	</td> <td>	7	</td> <td>	32	</td> </tr>
+<tr> <td>	G3	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	uil	</td> <td>	oel	</td> <td>	4	</td> <td>	9	</td> </tr>
+<tr> <td>	G30	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	mug	</td> <td>		</td> <td>	1	</td> <td>	1	</td> </tr>
+<tr> <td>	G31	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	luis	</td> <td>	luizen	</td> <td>	2	</td> <td>		</td> </tr>
+<tr> <td>	G32	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	bij	</td> <td>	iemen|ymen|yemen	</td> <td>	24	</td> <td>	4	</td> </tr>
+<tr> <td>	G33	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	bloedzuiger	</td> <td>	egel|iegel	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G34	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	aal	</td> <td>	alen	</td> <td>	3	</td> <td>		</td> </tr>
+<tr> <td>	G35	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	vis	</td> <td>	visch	</td> <td>	6	</td> <td>	6	</td> </tr>
+<tr> <td>	G4	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	ekster	</td> <td>	aakster|okster	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G5	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	kievit	</td> <td>	kiewiet|kieft|Kieviet	</td> <td>	6	</td> <td>	6	</td> </tr>
+<tr> <td>	G6	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	eend	</td> <td>	ent	</td> <td>	9	</td> <td>	3	</td> </tr>
+<tr> <td>	G7	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	gans	</td> <td>	ganzen|gaans|gaanzen|goos|gozen|goes	</td> <td>	2	</td> <td>	3	</td> </tr>
+<tr> <td>	G8	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	snip	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	G9	</td> <td>	Wilde_dieren	</td> <td>	G	</td> <td>	leeuwerik	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O1	</td> <td>	Overig	</td> <td>	O	</td> <td>	sassen	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O10	</td> <td>	Overig	</td> <td>	O	</td> <td>	wed	</td> <td>	wet	</td> <td>	32	</td> <td>	38	</td> </tr>
+<tr> <td>	O11	</td> <td>	Overig	</td> <td>	O	</td> <td>	dansel	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O12	</td> <td>	Overig	</td> <td>	O	</td> <td>	walg	</td> <td>		</td> <td>	1	</td> <td>	2	</td> </tr>
+<tr> <td>	O13	</td> <td>	Overig	</td> <td>	O	</td> <td>	alk	</td> <td>	halk	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O14	</td> <td>	Overig	</td> <td>	O	</td> <td>	hartzeer	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O15	</td> <td>	Overig	</td> <td>	O	</td> <td>	buis	</td> <td>		</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O16	</td> <td>	Overig	</td> <td>	O	</td> <td>	helmer	</td> <td>		</td> <td>		</td> <td>	1	</td> </tr>
+<tr> <td>	O17	</td> <td>	Overig	</td> <td>	O	</td> <td>	staart	</td> <td>		</td> <td>	3	</td> <td>	5	</td> </tr>
+<tr> <td>	O18	</td> <td>	Overig	</td> <td>	O	</td> <td>	vlas	</td> <td>		</td> <td>	4	</td> <td>		</td> </tr>
+<tr> <td>	O2	</td> <td>	Overig	</td> <td>	O	</td> <td>	bol	</td> <td>		</td> <td>	21	</td> <td>	20	</td> </tr>
+<tr> <td>	O3	</td> <td>	Overig	</td> <td>	O	</td> <td>	viool	</td> <td>	violen	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O4	</td> <td>	Overig	</td> <td>	O	</td> <td>	distel	</td> <td>	dissel|diesel	</td> <td>		</td> <td>		</td> </tr>
+<tr> <td>	O5	</td> <td>	Overig	</td> <td>	O	</td> <td>	bloem	</td> <td>		</td> <td>		</td> <td>	8	</td> </tr>
+<tr> <td>	O6	</td> <td>	Overig	</td> <td>	O	</td> <td>	ronsel	</td> <td>		</td> <td>	18	</td> <td>		</td> </tr>
+<tr> <td>	O7	</td> <td>	Overig	</td> <td>	O	</td> <td>	mos	</td> <td>		</td> <td>	3	</td> <td>	3	</td> </tr>
+<tr> <td>	O8	</td> <td>	Overig	</td> <td>	O	</td> <td>	klaver	</td> <td>		</td> <td>	2	</td> <td>	22	</td> </tr>
+<tr> <td>	O9	</td> <td>	Overig	</td> <td>	O	</td> <td>	groen	</td> <td>		</td> <td>	1	</td> <td>	3	</td> </tr>
+<tr> <td>	W1	</td> <td>	Wind	</td> <td>	W	</td> <td>	oost	</td> <td>	ooster	</td> <td>	121	</td> <td>	33	</td> </tr>
+<tr> <td>	W2	</td> <td>	Wind	</td> <td>	W	</td> <td>	noord	</td> <td>	noorder	</td> <td>	25	</td> <td>	18	</td> </tr>
+<tr> <td>	W3	</td> <td>	Wind	</td> <td>	W	</td> <td>	west	</td> <td>	wester	</td> <td>	8	</td> <td>	20	</td> </tr>
+<tr> <td>	W4	</td> <td>	Wind	</td> <td>	W	</td> <td>	zuid	</td> <td>	zuider	</td> <td>	11	</td> <td>	44	</td> </tr>
+</table>
+
+
+## AHN tiles downloaded:
 
 ahn2_5_07cz1.tif	ahn2_5_12en1.tif
 ahn2_5_07cz2.tif	ahn2_5_12en2.tif
@@ -1185,7 +1372,7 @@ ahn2_5_12dz1.tif	ahn2_5_12en2.tif
 ahn2_5_12dz2.tif	ahn2_5_12ez1.tif
 ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
-### R Sript converting files to shapefile.
+## R Sript converting files to shapefile.
 	filenames <- list.files()
 	filenames <- list.files(filenames , pattern = "*.TAB" ,full.names = T)
 
@@ -1204,7 +1391,7 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 	}
 	exportToShape(filenames, "overig")
 
-### R script detecting categories
+## R script detecting categories
 
       library(sp)
       library(raster)
@@ -1259,141 +1446,6 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
         }
       }
 
-### Mood board
 
-![Alt text](img/Moodboard-01.jpg)
-![Alt text](img/Moodboard-02.jpg)
-
-### Categories field-names form RCE
-
-![Alt text](img/categoriesFieldnames.jpg)
-<table>
-<tr> <th>	Code	</th> <th>	Count	</th></tr>
-<tr><td>	A02	</td> <td>	2	</td></tr>
-<tr><td>	A04	</td> <td>	3	</td></tr>
-<tr><td>	A1	</td> <td>	210	</td></tr>
-<tr><td>	A10	</td> <td>	13	</td></tr>
-<tr><td>	A11	</td> <td>	1	</td></tr>
-<tr><td>	A12	</td> <td>	39	</td></tr>
-<tr><td>	A13	</td> <td>	39	</td></tr>
-<tr><td>	A14	</td> <td>	18	</td></tr>
-<tr><td>	A15	</td> <td>	2	</td></tr>
-<tr><td>	A16	</td> <td>	4	</td></tr>
-<tr><td>	A17	</td> <td>	11	</td></tr>
-<tr><td>	A19	</td> <td>	1	</td></tr>
-<tr><td>	A2	</td> <td>	46	</td></tr>
-<tr><td>	A20	</td> <td>	499	</td></tr>
-<tr><td>	A23	</td> <td>	15	</td></tr>
-<tr><td>	A24	</td> <td>	2	</td></tr>
-<tr><td>	A3	</td> <td>	71	</td></tr>
-<tr><td>	A4	</td> <td>	58	</td></tr>
-<tr><td>	A5	</td> <td>	33	</td></tr>
-<tr><td>	A6	</td> <td>	7	</td></tr>
-<tr><td>	A7	</td> <td>	2	</td></tr>
-<tr><td>	A8	</td> <td>	2	</td></tr>
-<tr><td>	A9	</td> <td>	31	</td></tr>
-<tr><td>	B1	</td> <td>	80	</td></tr>
-<tr><td>	B11	</td> <td>	1	</td></tr>
-<tr><td>	B2	</td> <td>	3	</td></tr>
-<tr><td>	B3	</td> <td>	279	</td></tr>
-<tr><td>	B4	</td> <td>	15	</td></tr>
-<tr><td>	B5	</td> <td>	88	</td></tr>
-<tr><td>	B6	</td> <td>	2	</td></tr>
-<tr><td>	B7	</td> <td>	10	</td></tr>
-<tr><td>	B8	</td> <td>	46	</td></tr>
-<tr><td>	B9	</td> <td>	27	</td></tr>
-<tr><td>	C1	</td> <td>	88	</td></tr>
-<tr><td>	C10	</td> <td>	1	</td></tr>
-<tr><td>	C13	</td> <td>	1	</td></tr>
-<tr><td>	C2	</td> <td>	19	</td></tr>
-<tr><td>	C3	</td> <td>	14	</td></tr>
-<tr><td>	C4	</td> <td>	33	</td></tr>
-<tr><td>	C5	</td> <td>	15	</td></tr>
-<tr><td>	C6	</td> <td>	18	</td></tr>
-<tr><td>	C7	</td> <td>	4	</td></tr>
-<tr><td>	C8	</td> <td>	6	</td></tr>
-<tr><td>	D01	</td> <td>	2	</td></tr>
-<tr><td>	D1	</td> <td>	414	</td></tr>
-<tr><td>	D11	</td> <td>	1	</td></tr>
-<tr><td>	D14	</td> <td>	3	</td></tr>
-<tr><td>	D15	</td> <td>	5	</td></tr>
-<tr><td>	D17	</td> <td>	1	</td></tr>
-<tr><td>	D18	</td> <td>	6	</td></tr>
-<tr><td>	D2	</td> <td>	350	</td></tr>
-<tr><td>	D3	</td> <td>	18	</td></tr>
-<tr><td>	D4	</td> <td>	25	</td></tr>
-<tr><td>	D5	</td> <td>	13	</td></tr>
-<tr><td>	D6	</td> <td>	56	</td></tr>
-<tr><td>	D7	</td> <td>	23	</td></tr>
-<tr><td>	D8	</td> <td>	1	</td></tr>
-<tr><td>	D9	</td> <td>	8	</td></tr>
-<tr><td>	E1	</td> <td>	1588	</td></tr>
-<tr><td>	E11	</td> <td>	20	</td></tr>
-<tr><td>	E13	</td> <td>	118	</td></tr>
-<tr><td>	E14	</td> <td>	59	</td></tr>
-<tr><td>	E15	</td> <td>	7	</td></tr>
-<tr><td>	E16	</td> <td>	1	</td></tr>
-<tr><td>	E18	</td> <td>	1	</td></tr>
-<tr><td>	E2	</td> <td>	75	</td></tr>
-<tr><td>	E21	</td> <td>	775	</td></tr>
-<tr><td>	E24	</td> <td>	1	</td></tr>
-<tr><td>	E3	</td> <td>	61	</td></tr>
-<tr><td>	E4	</td> <td>	251	</td></tr>
-<tr><td>	E5	</td> <td>	48	</td></tr>
-<tr><td>	E6	</td> <td>	120	</td></tr>
-<tr><td>	E7	</td> <td>	9	</td></tr>
-<tr><td>	E8	</td> <td>	2	</td></tr>
-<tr><td>	E9	</td> <td>	10	</td></tr>
-<tr><td>	F1	</td> <td>	153	</td></tr>
-<tr><td>	F2	</td> <td>	23	</td></tr>
-<tr><td>	F3	</td> <td>	33	</td></tr>
-<tr><td>	F4	</td> <td>	2	</td></tr>
-<tr><td>	F5	</td> <td>	4	</td></tr>
-<tr><td>	F6	</td> <td>	1	</td></tr>
-<tr><td>	F7	</td> <td>	4	</td></tr>
-<tr><td>	F8	</td> <td>	1	</td></tr>
-<tr><td>	F9	</td> <td>	2	</td></tr>
-<tr><td>	G01	</td> <td>	1	</td></tr>
-<tr><td>	G05	</td> <td>	6	</td></tr>
-<tr><td>	G1	</td> <td>	28	</td></tr>
-<tr><td>	G10	</td> <td>	12	</td></tr>
-<tr><td>	G14	</td> <td>	14	</td></tr>
-<tr><td>	G15	</td> <td>	2	</td></tr>
-<tr><td>	G17	</td> <td>	1	</td></tr>
-<tr><td>	G18	</td> <td>	2	</td></tr>
-<tr><td>	G2	</td> <td>	13	</td></tr>
-<tr><td>	G20	</td> <td>	2	</td></tr>
-<tr><td>	G21	</td> <td>	4	</td></tr>
-<tr><td>	G23	</td> <td>	5	</td></tr>
-<tr><td>	G24	</td> <td>	11	</td></tr>
-<tr><td>	G25	</td> <td>	11	</td></tr>
-<tr><td>	G26	</td> <td>	9	</td></tr>
-<tr><td>	G27	</td> <td>	1	</td></tr>
-<tr><td>	G28	</td> <td>	1	</td></tr>
-<tr><td>	G29	</td> <td>	7	</td></tr>
-<tr><td>	G3	</td> <td>	4	</td></tr>
-<tr><td>	G30	</td> <td>	1	</td></tr>
-<tr><td>	G31	</td> <td>	2	</td></tr>
-<tr><td>	G32	</td> <td>	24	</td></tr>
-<tr><td>	G34	</td> <td>	3	</td></tr>
-<tr><td>	G35	</td> <td>	6	</td></tr>
-<tr><td>	G6	</td> <td>	9	</td></tr>
-<tr><td>	G7	</td> <td>	2	</td></tr>
-<tr><td>	O05	</td> <td>	17	</td></tr>
-<tr><td>	O07	</td> <td>	3	</td></tr>
-<tr><td>	O09	</td> <td>	1	</td></tr>
-<tr><td>	O10	</td> <td>	32	</td></tr>
-<tr><td>	O12	</td> <td>	1	</td></tr>
-<tr><td>	O17	</td> <td>	3	</td></tr>
-<tr><td>	O18	</td> <td>	4	</td></tr>
-<tr><td>	O2	</td> <td>	21	</td></tr>
-<tr><td>	O5	</td> <td>	1	</td></tr>
-<tr><td>	O8	</td> <td>	2	</td></tr>
-<tr><td>	W1	</td> <td>	121	</td></tr>
-<tr><td>	W2	</td> <td>	25	</td></tr>
-<tr><td>	W3	</td> <td>	8	</td></tr>
-<tr><td>	W4	</td> <td>	11	</td></tr>
-</table>
-
-### Questionairre for testing the application
+## Questionnaire for testing the application
 ![Alt text](img/Vragenlijst Veldnamen Applicatie.pdf)
