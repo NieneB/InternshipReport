@@ -35,7 +35,7 @@ The magnitude and complexity of data sets with geospatial reference are a challe
 
 <figure class="text-wrap-right">
 	<figcaption>DIKW pyramid. From data to wisdom</figcaption>
-  <img src="/img/DIKWPyramid.jpg">
+  <img src="img/DIKWPyramid.jpg">
   <p><i>(Shedroff, 1999)</i></p>
 </figure>
 
@@ -147,7 +147,7 @@ Figure $$ shows the overview of the whole H&L project. Now focusing on the histo
 
 <p class="fig"> Sheme of Hertiage and Location project. Products and Services.</p>
 
-![ ](/img/EL-producten-en-diensten-schema_v8.jpg)
+![ ](img/EL-producten-en-diensten-schema_v8.jpg)
 
 ##Cultural heritage data & GIS
 
@@ -191,7 +191,7 @@ The theme or attribute of a phenomena. The ‘what’ is happening in the world.
 Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment. (Dibiase et al., 1992) The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. See figure $$. Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps. (Dibiase et al., 1992)
 
 <p class="fig"> Bertin's theory </p>
-![Alt text](/img/Screen Shot 2015-05-07 at 11.16.03 AM.png =426px)
+![Alt text](img/Screen Shot 2015-05-07 at 11.16.03 AM.png =426px)
 *(Dibiase et al., 1992; Bertin, 2000)*
 
 After Bertin, other researchers have added to this method. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
@@ -284,7 +284,7 @@ See figure # for an overview of the working procedure and where the specific obj
 
 <div class='textWrapL' >
 <p class="fig">Methodology overview</p>
-<img src="/img/flowchart_Method.jpg">
+<img src="img/flowchart_Method.jpg">
 </div>
 
 Once the general goal was established; making a web-based geo-visualization, the case study in the field of cultural heritage had to be defined. This, because the internship is conducted for the project Heritage&Location at the Waag Society. In the project several heritage institutions take part, and so came into contact with possible data providers. After explaining the general goal of this study to them, the data needed for this report was provided by  *Rijksdienst voor Cultureel Erfgoed*.
@@ -293,6 +293,7 @@ With the data, the subject of the research took more form.
 The report will be build up in 3 parts; first geo-visualization and web-application techniques will be explored through literature study. With the found techniques, the web-application will be build, for which certain design objectives will be defined. In the end the application will be tested according to the set objectives and found literature.
 
 ## Theoretical framework
+
 Three things will be looked at in the literature research.
 First, a literature research is done into geo visualization techniques and already available methods. Going from the conventional cartographic techniques to the modern techniques. Including animation and change. This to cover objective 1a, to make the application attractive, and 2c, understanding the geo-data.
 Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, 2a, 2b, 2c and 3a. Adding knowledge and experience from preceding research.
@@ -342,7 +343,7 @@ Figure # shows some fields with names related to height. Though less clear then 
 
 <div class="textWrapL"  >
 <p class="fig"> Field-names example of names with height indication on the height map </p>
-<img src="/img/hoogte_voorbeeld.jpg"></img>
+<img src="img/hoogte_voorbeeld.jpg"><img>
 </div>
 
 Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
@@ -366,6 +367,7 @@ Additional stories and explanation texts about the meaning and origin of the fie
 Additional pictures of the landscape characteristics.
 
 ##### Backend
+
 Linking the data with the webpage. See paragraphs $$$$.
 
 
@@ -390,7 +392,7 @@ One of the main inspirations was the following image:
 
 <p class="fig"> Inspiration Picture </p>
 
-![](/img/transect_inspiration-01.jpg)
+![](img/transect_inspiration-01.jpg)
 
 *Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg*
 
@@ -435,13 +437,13 @@ This results in the following coverage of field names:
 
 <figure class="text-wrap-left">
 <p class="fig"> All fields with a field name. </p>
-<img src= "/img/allnames.jpg" >
+<img src= "img/allnames.jpg" >
 </figure>
 
 Based on this the total research location is determined, consisting of the municipality’s Aa en Hunze, Assen, Noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa.
 
 <p class="fig">Research area, location in the Netherlands and the municipalities</p>
-![ ](/img/onderzoekgebied.jpg )
+![ ](img/onderzoekgebied.jpg )
 
 The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of wich environmental characteristic was of influence on the name creation. These categories are given in table $$#. In the appendix $$$ a total overview of the categories and the names and alternative names can be found.
 
@@ -502,7 +504,7 @@ The maximum and minimum values of the total area are 29.5 and -1.9 meters respec
 
 <figure class="text-wrap-left">
 <p class="fig">  AHN2 from the research area </p>
-<img src="/img/ahn.jpg">
+<img src="img/ahn.jpg">
 </figure>
 
 See appendix for table with all the tiles used.
@@ -536,7 +538,7 @@ In order to work with the files in Qgis all the files needed to be converted to 
 In QGIS, manually the attribute names needed were changed in one standardized name in order to merge all the data together.
 
 <p class="fig">  Flowchart field-name dataset processing  </p>
-![Alt text](/img/fieldnames_preprocessing.jpg )
+![Alt text](img/fieldnames_preprocessing.jpg )
 
 <p class="code"> SQL adjustments </p>
 
@@ -565,7 +567,7 @@ The script  runs through all the field-names and all the possible categories, to
 
 <p class="fig">  Amount of field names with a specific category, before and after categorization in R </p>
 
-![](/img/Graph_amount_categories.jpg)
+![](img/Graph_amount_categories.jpg)
 
 #### AHN
 
@@ -574,7 +576,7 @@ The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airp
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels.
 
 <p class="fig">  Flowchart AHN2 raster processing  </p>
-![Alt text](/img/ahnpreprocessing.jpg )
+![Alt text](img/ahnpreprocessing.jpg )
 
 - add field to water with value = 2
 - rasterize water with celsize 5
@@ -593,11 +595,11 @@ Only processing was clipped to the research area. No other preprocessing needed 
 
 First both client side and server side are build on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the possibility to move it to a server will be regarded.
 
-Figure $$ shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is exlpained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed.
+Figure $$ shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed.
 The next paragraphs explain the database, the API, the SQL query and the website.
 
 <p class="fig"> Back-end processes </p>
-![Alt text](/img/webpage_model.jpg )
+![Alt text](img/webpage_model.jpg )
 
 #### Setting up the database
 
@@ -606,7 +608,7 @@ The open source database PostgreSQL was installed with a PostGIS extension to cr
 Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
 <p class="fig"> Loading data into the database</p>
-![Alt text](/img/loading_Data.jpg )
+![Alt text](img/loading_Data.jpg )
 
 <p class="code"> Loading data in the database </p>
 
@@ -709,9 +711,9 @@ This is all send back as one complete GeoJSON response.
     AS geometry, naam, heights, percentage , category1, category2, waternaam, typewater, waterID
     FROM points1
 
- Eventually the response of the request will be a GeoJSON. An example of the GeoJSON array is shown in code figure $$$ .
+Eventually the response of the request will be a GeoJSON. An example of the GeoJSON array is shown in <a class="xref" href="#code-geojson">asdsa</a>.
 
-<p class="code">  Example GeoJSON response</p>
+<p id="code-geojson" class="code">Example GeoJSON response</p>
 
     [
       {
@@ -754,6 +756,7 @@ This is all send back as one complete GeoJSON response.
       },
       {…}
     ]
+
 
 ### Web design
 
@@ -859,14 +862,14 @@ Geo-visualization is a combination of communication, scientific information visu
 In figure $$$ the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design.
 
 <p class="fig"> Geo processing chain and visualization series </p>
-![](/img/chain.jpg)
+![](img/chain.jpg)
 
 The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 T
 
 <figure class="text-wrap-right">
 <p class="fig"> Map use cube from MacEachren and Kraak </p>
-<img src="/img/Map_use_cube.jpg">
+<img src="img/Map_use_cube.jpg">
 </figure>
 
 
@@ -895,7 +898,7 @@ The full potential of interaction in geovisualization lies in linking multiple v
 The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
 
 <p class="table"> Visualization operators from Ogao & Kraak </p>
-![Alt text](/img/Screen Shot 2015-05-06 at 2.26.40 PM.png )
+![Alt text](img/Screen Shot 2015-05-06 at 2.26.40 PM.png )
 *(Ogao & Kraak, 2002)*
 
 A user interface for a web page should have the following basic components:
@@ -928,7 +931,7 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 To engage the target group into the application, the hook model is followed.
 Trigger people to use it. External or internal. Let them do a action for which they receive a reward. If they invest in the system they will go through the process again.
 
-![Alt text](/img/hookmodel.jpg)
+![Alt text](img/hookmodel.jpg)
 
 ## The web application
 The web application can be found on: $$$$$
@@ -964,7 +967,7 @@ $$ people were asked to use the application and fill in the small questionnaire.
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
 Question 8 got the lowest score, the functionality did not work as the user would expect.
 
-<img src="/img/uitslag_quest.png" width="854px">
+<img src="img/uitslag_quest.png" width="854px">
 
 ### Remarks on the questionnaire
 
@@ -1192,12 +1195,12 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 ### Mood board
 
-![Alt text](/img/Moodboard-01.jpg)
-![Alt text](/img/Moodboard-02.jpg)
+![Alt text](img/Moodboard-01.jpg)
+![Alt text](img/Moodboard-02.jpg)
 
 ### Categories fieldnames form RCE
 
-![Alt text](/img/categoriesFieldnames.jpg)
+![Alt text](img/categoriesFieldnames.jpg)
 <table>
 <tr> <th>	Code	</th> <th>	Count	</th></tr>
 <tr><td>	A02	</td> <td>	2	</td></tr>
@@ -1327,4 +1330,4 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 </table>
 
 ### Questionairre for testing the application
-![Alt text](/img/Vragenlijst Veldnamen Applicatie.pdf)
+![Alt text](img/Vragenlijst Veldnamen Applicatie.pdf)

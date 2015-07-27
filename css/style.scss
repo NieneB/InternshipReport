@@ -137,8 +137,16 @@ blockquote {
   margin: 0px 20px 0px 0px;
 }
 
+// This only works in Prince, not Chrome/Firefox:
+///* Cross-references
+//–––––––––––––––––––––––––––––––––––––––––––––––––– */
+//
+//a.xref:after {
+//  content: " (page " target-counter(attr(href, url), snippets) ")";
+//}
 
-
+/* Page numbers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @page:right{
   @bottom-right {
