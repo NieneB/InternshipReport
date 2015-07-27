@@ -31,7 +31,7 @@ The magnitude and complexity of data sets with geospatial reference are a challe
 
 <div class='textWrapR' style="width:200px;">
 <p class="fig"> DIKW pyramid. From data to wisdom </p>
-<img src="/pict/DIKWPyramid.jpg">
+<img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/DIKWPyramid.jpg">
 <p><i>(Shedroff, 1999)</i></p>
 </div>
 
@@ -139,7 +139,7 @@ Figure $$ shows the overview of the whole H&L project. Now focusing on the histo
 
 
 <p class="fig"> Sheme of Hertiage and Location project. Products and Services.</p>
-![ ](/pict/EL-producten-en-diensten-schema_v8.jpg =854x )
+![ ](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/EL-producten-en-diensten-schema_v8.jpg =854x )
 ##Cultural heritage data & GIS
 There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010)
 Explained here are several reasons why a GIS system is beneficial for digitalizing CH data; 
@@ -181,7 +181,7 @@ The theme or attribute of a phenomena. The ‘what’ is happening in the world.
 Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment. (Dibiase et al., 1992) The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. See figure $$. Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps. (Dibiase et al., 1992) 
 
 <p class="fig"> Bertin's theory </p>
-![Alt text](/pict/Screen Shot 2015-05-07 at 11.16.03 AM.png =426px)
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Screen Shot 2015-05-07 at 11.16.03 AM.png =426px)
 *(Dibiase et al., 1992; Bertin, 2000)*
 
 After Bertin, other researchers have added to this method. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture. 
@@ -274,7 +274,7 @@ See figure # for an overview of the working procedure and where the specific obj
 
 <div class='textWrapL' >
 <p class="fig">Methodology overview</p>
-<img src="/pict/flowchart_Method.jpg">
+<img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/flowchart_Method.jpg">
 </div>
 
 Once the general goal was established; making a web-based geo-visualization, the case study in the field of cultural heritage had to be defined. This, because the internship is conducted for the project Heritage&Location at the Waag Society. In the project several heritage institutions take part, and so came into contact with possible data providers. After explaining the general goal of this study to them, the data needed for this report was provided by  *Rijksdienst voor Cultureel Erfgoed*.
@@ -332,7 +332,7 @@ Figure # shows some fields with names related to height. Though less clear then 
 
 <div class="textWrapL"  >
 <p class="fig"> Field-names example of names with height indication on the height map </p>
-<img src="/pict/hoogte_voorbeeld.jpg"></img>
+<img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/hoogte_voorbeeld.jpg"></img>
 </div>
 
 Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
@@ -379,7 +379,7 @@ For design ideas and color use a mood board was made. Pictures from the Internet
 One of the main inspirations was the following image:
 
 <p class="fig"> Inspiration Picture </p> 
-![](/pict/transect_inspiration-01.jpg =854x) 
+![](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/transect_inspiration-01.jpg =854x) 
 *Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg*
 
 Complete mood board; see appendix $$$
@@ -420,13 +420,13 @@ The dataset contains in total 1747 polygons with a field-name. Projection Rd new
 This results in the following coverage of field names:
 <div class="textWrapL"  style="width:initial;">
 <p class="fig"> All fields with a field name. </p>
-<img src= "/pict/allnames.jpg" >
+<img src= "/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/allnames.jpg" >
 </div>
 
 Based on this the total  research location is determined, consisting of the municipality’s Aa en Hunze, Assen, Noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa. 
 
 <p class="fig">Research area, location in the Netherlands and the municipalities</p>
-![ ](/pict/onderzoekgebied.jpg )
+![ ](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/onderzoekgebied.jpg )
  
 The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of wich environmental characteristic was of influence on the name creation. These categories are given in table $$#. In the appendix $$$ a total overview of the categories and the names and alternative names can be found. 
 <p class="table"> Field-name categories </p>
@@ -486,7 +486,7 @@ The raster data has a resolution of 5 meters and a precision of systematic and s
 The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively. 
 <div class="textWrapL"  style="width:initial;">
 <p class="fig">  AHN2 from the research area </p>	
-<img src="/pict/ahn.jpg">
+<img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/ahn.jpg">
 </div>
 See appendix for table with all the tiles used.   
 
@@ -516,7 +516,7 @@ In order to work with the files in Qgis all the files needed to be converted to 
 In Qgis, manually the attribute names needed were changed in one standardized name in order to merge all the data together. 
 
 <p class="fig">  Flowchart field-name dataset processing  </p>	
-![Alt text](/pict/fieldnames_preprocessing.jpg )
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/fieldnames_preprocessing.jpg )
 
 <p class="code"> SQL adjustments </p>
     -- UPDATE veldnamen3 SET naam = naam_2 WHERE naam IS NULL;
@@ -545,7 +545,7 @@ The script  runs through all the field-names and all the possible categories, to
  
 <p class="fig">  Amount of field names with a specific category, before and after categorization in R </p>
 
-![](/pict/Graph_amount_categories.jpg)
+![](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Graph_amount_categories.jpg)
 
 ####AHN
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values. 
@@ -553,7 +553,7 @@ The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airp
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels. 
 
 <p class="fig">  Flowchart AHN2 raster processing  </p>
-![Alt text](/pict/ahnpreprocessing.jpg )  
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/ahnpreprocessing.jpg )  
 
 - add field to water with value = 2
 - rasterize water with celsize 5
@@ -573,7 +573,7 @@ Figure $$ shows the overall setup of the system. On the web page a line can be d
 The next paragraphs explain the database, the API, the SQL query and the website. 
 
 <p class="fig"> Back-end processes </p>
-![Alt text](/pict/webpage_model.jpg ) 
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/webpage_model.jpg ) 
 
 ####Setting up the database
 The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters. 
@@ -581,7 +581,7 @@ The open source database PostgreSQL was installed with a PostGIS extension to cr
 Everything was loaded in the dutch projected coordinate system RD new (EPSG:28992)
 
 <p class="fig"> Loading data into the database</p>
-![Alt text](/pict/loading_Data.jpg ) 
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/loading_Data.jpg ) 
 
 <p class="code"> Loading data in the database </p>
 
@@ -822,14 +822,14 @@ Geo-visualization is a combination of communication, scientific information visu
 In figure $$$ the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. 
 
 <p class="fig"> Geo processing chain and visualization series </p>
-![](/pict/chain.jpg)
+![](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/chain.jpg)
 
 The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory. 
 T
  
 <div class="textWrapR"  style="width:initial;">
 <p class="fig"> Map use cube from MacEachren and Kraak </p>
-<img src="/pict/Map_use_cube.jpg">
+<img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Map_use_cube.jpg">
 </div>
 
 
@@ -858,7 +858,7 @@ The full potential of interaction in geovisualization lies in linking multiple v
 The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects. 
 
 <p class="table"> Visualization operators from Ogao & Kraak </p>
-![Alt text](/pict/Screen Shot 2015-05-06 at 2.26.40 PM.png )
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Screen Shot 2015-05-06 at 2.26.40 PM.png )
 *(Ogao & Kraak, 2002)*  
 
 A user interface for a web page should have the following basic components:  
@@ -890,14 +890,14 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 
 To engage the target group into the application, the hook model is followed. 
 Trigger people to use it. External or internal. Let them do a action for which they receive a reward. If they invest in the system they will go through the process again. 
-![Alt text](/pict/hookmodel.jpg =425x)
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/hookmodel.jpg =425x)
 
 
 ## The web application
 The web application can be found on: $$$$$
 Some screenshots of how it looks:
 <p class="fig">Welcome screen </p>
-![Screen Shot 2015 07 24 At 2.18.47 PM](/pict/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png =854x)
+![Screen Shot 2015 07 24 At 2.18.47 PM](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png =854x)
 <p class="fig">Map status in beginning </p>
 ![Screen Shot 2015 07 24 At 2.19.22 PM](pict/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png =854x)
 <p class="fig">Map functionalities with mouseover. </p>
@@ -914,7 +914,7 @@ Some screenshots of how it looks:
 $$ people were asked to use the application and fill in the small questionnaire. The graph below shows the outcome of each question. With 5 being positive and 1 being negative. 
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
 Question 8 got the lowest score, the functionality did not work as the user would expect. 
-<img src="/pict/uitslag_quest.png" width="854px">
+<img src="/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/uitslag_quest.png" width="854px">
 
 ### Remarks on the questionnaire 
 
@@ -1149,12 +1149,12 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 ### Mood board
 
-![Alt text](/pict/Moodboard-01.jpg =854x)
-![Alt text](/pict/Moodboard-02.jpg =854x) 
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Moodboard-01.jpg =854x)
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Moodboard-02.jpg =854x) 
 
 ### Categories fieldnames form RCE
 
-![Alt text](/pict/categoriesFieldnames.jpg) 
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/categoriesFieldnames.jpg) 
 <table>
 <tr> <th>	Code	</th> <th>	Count	</th></tr>
 <tr><td>	A02	</td> <td>	2	</td></tr>
@@ -1284,4 +1284,4 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 </table>
 
 ### Questionairre for testing the application 
-![Alt text](/pict/Vragenlijst Veldnamen Applicatie.pdf)
+![Alt text](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Vragenlijst Veldnamen Applicatie.pdf)

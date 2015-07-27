@@ -58,7 +58,7 @@ blockquote {
     line-height:200%;
 }
 body {
-  counter-reset:h1counter figcounter tablecouter codecounter;
+  counter-reset:h1counter, figcounter, tablecouter, codecounter;
     font-family: "Myramid Pro", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
     font-size: 14px;
     line-height: 200%;
