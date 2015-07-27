@@ -187,20 +187,47 @@ Another differentiation is liner versus cyclic time ordering. Linear time is ord
 ###Thematic dimension
 The theme or attribute of a phenomena. The ‘what’ is happening in the world. This data is often stored in the attributes of the data, more then one attributes can exist. This data can be qualitative or quantitative, nominal ordinal discrete or continuous.
 
-##Static geospatial visualization
-Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment. (Dibiase et al., 1992) The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. See figure $$. Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps. (Dibiase et al., 1992)
+##Geo-visualization
+Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. From the real world we go to data and all the modifications to the data. Eventually the data will be  visualized, either a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992)(MacEachren & Kraak, 2001) 
+
+###Static geospatial visualization
+Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. See figure $$. 
 
 <p class="fig"> Bertin's theory </p>
 ![Alt text](img/Screen Shot 2015-05-07 at 11.16.03 AM.png =426px)
 *(Dibiase et al., 1992; Bertin, 2000)*
 
-After Bertin, other researchers have added to this method. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
+After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
+
 Deciding the right graphic variable to be assigned to a certain type of data, helps the viewer in defining the perceptual properties. For example, ordinal data needs the perception of being ordered, quantitative data of being proportional.  While nominal data needs to be perceived as distinct categories.
 
-##Dynamic geo-visualizations
-Kobben and Yaman define a few categories of cartographic animation that show dynamic phenomena. First to display dynamic phenomena, a static map or a series of static maps can be used. But why use static maps for dynamic data? The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
-The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  (Köbben & Yaman, 1996)
-Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations. See table #.
+(Dibiase et al., 1992)(Dibiase et al., 1992)(Nöllenburg, 2007)Bertin, 2000)MacEachren (1995)Caivano (1990)
+###Dynamic geo-visualizations
+Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps which require a set of dynamic graphic variables. 
+A few forms of dynamic geovisualization can be named, animation, display of time or spatial temporal visualization and interaction. The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
+
+They state that the dynamic visual variables will only give the right results when combined with the traditional static visual variables. (Köbben & Yaman, 1996)
+
+####Animation
+Animated maps leave interaction aside, and use time to add a visual dimension to the display. The scenes in an animation show the state f the data at one moment accordingly. There is hardly any interactive control. 
+Dynamic animated variables are 
+  
+  1. temporal position, when something is displayed
+  2. duration. how long is something displayed
+  3. order, temporal sequence
+  4. rate of change
+  5. frequency, speed
+  6. synchronization 
+Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Ormeling, 1996) 
+
+(Kobben and Yaman) (MacEachren)
+
+####Spatial - temporal
+Spatial temporal visualization is the display of dynamic pehomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations. See table #.
+
+(Dibiase et al., 1992)(Nöllenburg, 2007)(Köbben & Yaman, 1996)
+
+Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
 
 <p class="table"> Categories of possible animations for dynamic phenomena. </p>
 
@@ -235,47 +262,54 @@ Kraak and Klomp give a slightly different categorization, but can be compared to
 
 *Information from (Köbben & Yaman, 1996; Kraak & Klomp, 1996)*
 
-Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
-
-Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Ormeling, 1996)
-
-Dynamic visualization variables are identified by Dibiase et al. 1992,  MacEachren 1994 Kobben and Yaman …. and Blok 2000.
-
-Kobben and Yaman defined the following dynamic visual variables:
-
--	moment
--	duration
--	frequency
--	order
--	rate of change
--	synchronisation
-
-They state that the dynamic visual variables will only give the right results when combined with the traditional static visual variables. (Köbben & Yaman, 1996)
-
+Dynamic visualization variables are identified by Dibiase et al. (1992),  MacEachren (1994), Kobben and Yaman, and Blok (2000) and are gathered here and put into one overview. Based on Blok
 Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) She provides a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships.  Blok’s framework more aims at the exploratory use of visualization while this research, aims at the display and communication part of the geo-spatial phenomena for explanatory use. Though, this author finds that Blok’s dynamic visualization variables can be applied for both purposes. As Blok also states; the ultimate goal is to contribute to the development of representation methods and interaction tools, which are also found in the explanatory visualization forms.
-Blok describes the next dynamic variables:
-In the spatial domain:
 
--	Appearance/disappearance
--	Mutation
-	-	nominal level
-	- increase/decrease ordinal, interval ratio
--	Movement
-	- along trajectory
-	- boundary shift
 
-In the temporal domain
+1. No change
 
--	moment in time
--	pace
--	duration
--	sequence
--	frequency
+2. Change
+Variables in the spatial domain
 
-cycle
-trend
-‘world time’ vs ‘display time’ (Blok, 2000)
+Appearance/disappearance - born die
+Mutation
+  	- in size, shape
+  	- increase/decrease ordinal, interval ratio
+    - grow, shrink, 
+  
+Movement in spatial position
+  	- along trajectory
+  	- boundary shift
 
+Variables in the temporal domain
+
+  -	moment in time
+  -	pace
+  -	duration
+  -	sequence
+  -	frequency
+
+
+Variable in thematic properties
+  - mutation
+  - thematic change
+
+(Tensen, 2014)
+
+####Interaction
+Interactivity is one of the key aspects of geo visualization. The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Term used is Guided discovery. 
+Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. 
+
+Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
+
+1. Focusing individual views
+The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
+
+2. Linking multiple views
+Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
+This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
+The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
+(Nöllenburg, 2007)
 
 # Method
 
@@ -322,7 +356,7 @@ Both the design and technical building will be done by the researcher.
 
 ### The idea
 
-Because the origin and meaning of fieldnames are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, as stated in objective 2a, the geograpical surrounding in relation to the name has to be shown. Becuase the fieldnames are allready categorized by a previous study, easily this distinction can be made.
+Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, as stated in objective 2a, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
 
 Several ideas came up to do this, as many characteristics are of influence. The main goal for the visualization can be stated as:
 > Visualize the meaning and origin of the field name by showing its relation with its direct environment.
@@ -332,8 +366,8 @@ The first ideas:
 
 - Showing soil related field names on a soil map. This can be a current or old soil map.
 - Showing height related field names on a height map.
-- Showing ground water levelds in relation to field names about water, swomps and soil types.
-- Vegetation types, present on a field in the current situation vs what the fieldname tells us about the historic vegetation.
+- Showing ground water levels in relation to field names about water, swamps and soil types.
+- Vegetation types, present on a field in the current situation vs what the field-name tells us about the historic vegetation.
 - Showing names with relation to wind direction, in their position relative to the closest town or city
 
 #### Main idea
@@ -511,7 +545,7 @@ See appendix for table with all the tiles used.
 
 #### Kadaster parcels 1830
 
-Data from the cadastre were also supplied by the RCE, showing the plots and parcels as they were in 1830. And can be used to refer the fieldnames to. The dataset is in projection RDnew(EPSG28992).
+Data from the cadastre were also supplied by the RCE, showing the plots and parcels as they were in 1830. And can be used to refer the field-names to. The dataset is in projection RDnew(EPSG28992).
 
 #### Water bodies
 
@@ -829,21 +863,60 @@ Third, a small test will be held to see if the product complies with the set goa
 During the whole process, iteratively the web visualization was adjusted and tested again until the project ends.
 
 The final test will be conducted with a small questionnaire.
-About 20 people will be asked to open the web-application and look at it, use it and play around with it. Afterwards, 6 questions will be asked to see if the application lives up to the objectives set.
-The people will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  At least 20 people will be asked.
+About 20 people will be asked to open the web-application and look at it, use it and play around with it. Afterwards, 8 statements will be given and asked to rate them to the level of agreeing or not. Ranks between a number of 1 and 5, from totally disagreeing till, total agreeing. 
+Because the objectives were used in defining the statements, it tests if the application lives up to the objectives set for the user. 
 
-The statements.
-1 The application is visually appealing.
-2 I feel tempted to explore more about the fieldnames in the application.
-3 I feel tempted to use this application multiple times.
+Because there is not a official testing group available, the participants will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  
 
-4 The meaning and origin of the field-names are clear to me.
-5 The stories and information is surprising and enriched my knowlegde.
-6 I uderstand the fieldnames and their importance.
-
-7 The applicaiton is intuitive and simple to use.
-8 Everything was working as it should.
-9 The application layout was clear.
+Table $$ shows the statements asked and their relation to the objectives. The complete questionnaire can be found in annex $$$. 
+<p class="table"> Questions and Objectives </p>
+<table>
+  <tr>
+    <th> Objective </th>
+    <th> Statement </th>
+  </tr>
+<tr> 
+  <td>1</td>
+  <td> 1 A</td>
+  <td> I think the application is visually appealing.</td>
+ </tr>
+ <tr>  
+   <td>2</td>
+ <td> 1 B and 1 C</td>
+ <td> I feel tempted to use the tools and functions in the application multiple times.</td>
+ </tr>
+ <tr>
+    <td>3</td>
+    <td> 1 C</td>
+    <td>I feel tempted to use this application multiple times (in the future)
+</td>
+ </tr>
+ <tr> <td>4</td>
+ <td> 2 A and 2 C</td>
+ <td>The meaning and origin of the field-names became clear to me.</td>
+ </tr>
+ <tr> 
+   <td>5</td>
+   <td> 2 B</td>
+   <td>The shown information is surprising and interesting. </td>
+  </tr>
+  <tr> 
+    <td>6</td>
+    <td>2 C </td>
+    <td>By using this application I understand more about the importance of safe-guarding the field-names as cultural heritage.
+</td>
+   </tr>
+   <tr> 
+     <td>7</td>
+     <td>3 A</td>
+     <td>The application is simple to use.</td>
+    </tr>
+    <tr> 
+      <td>8</td>
+      <td>3 B</td>
+      <td>Everything was working as I expected. </td>
+     </tr>
+</table>
 
 
 # Results
@@ -857,7 +930,7 @@ Last, will be looked at some frameworks explaining how to build an efficient, at
 
 ###Visualization of field-names
 Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
-Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. (MacEachren & Kraak, 2001) It comes after the collection of data, transformations and analysis. From the real world we go to data and all the modifications to the data. Eventually the data will be  visualized, either a computer or on paper. The perception of people will interpreted the data and turns the data into knowlegde. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992)
+
 
 In figure $$$ the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design.
 
@@ -874,7 +947,7 @@ T
 
 
 #### Interactivity
-the data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) Interaction is considered as one of the key characteristics of geovisualization, a map is nowadays seen ans an interactive interface.
+the data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) Interaction is considered as one of the key characteristics of geovisualization, a map is nowadays seen as an interactive interface.
 Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992)(Ogao & Kraak, 2002)(Nöllenburg, 2007)
 
 Technical functionalities for a map:
@@ -883,13 +956,6 @@ Technical functionalities for a map:
 - Be able to navigate, zoom, scroll and pan.
 - Change thematic data
 
-interactive animation gives the control of the animation to the user, the level of detail displayed and the speed can be determined, so information is less likely to be missed.
-
-1. focussing: choosing a perspective, magnification and detail. Zoom pan rotate. Navigation controls. Select layers. Select attributes.
-2. Linking and Brushing.  Linking means simultaneous highlighting of data items in multiple views.
-Brushing: selecting display objects by pointing on them or encircling them on the screen.
-
-The full potential of interaction in geovisualization lies in linking multiple views of the same data on the screen.
 
 #### Spatial temporal scenes
 
@@ -1005,7 +1071,7 @@ No temporal dimension added.
 
 Scale is needed
 
-Not the best way to visualize the correlation which the fieldnames have to their surrounding.
+Not the best way to visualize the correlation which the field-names have to their surrounding.
 
 
 # Recommendations
@@ -1198,7 +1264,7 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 ![Alt text](img/Moodboard-01.jpg)
 ![Alt text](img/Moodboard-02.jpg)
 
-### Categories fieldnames form RCE
+### Categories field-names form RCE
 
 ![Alt text](img/categoriesFieldnames.jpg)
 <table>
