@@ -13,16 +13,16 @@ tov.selectAll("li")
   .enter()
   .append("li")
   .attr("class", function(d){
-    return "toc-"+ d.localName
-  })
+  return "toc-"+ d.localName
+})
+  .append("a")
+  .attr("class", "xref")
+  .attr("href", function(d){
+    return d.id
+  });
+  
   .text(function(d){
      return d.innerHTML })
   
-tov.selectAll("li")
-    .data(hoofdstuk)
-    .enter()
-  .append("a")  
-  .attr("class", "xref")
-  .attr("href", function(d){
-      return d.id
-    });
+
+  
