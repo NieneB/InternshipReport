@@ -5,7 +5,7 @@ console.log(hoofdstukken)
 var tov = d3.select("#toc").append("ul").attr("class", "toc")
 
 tov.selectAll("li")
-  .data(hoofdstukken[0].classname != "nocount")
+  .data(hoofdstukken[0].className == "")
   .enter()
   .append("li")
   .attr("class", function(d){

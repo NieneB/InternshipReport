@@ -272,6 +272,12 @@ body{
 .toc-h2{
   margin-left: 1.5rem;
 }
+.toc-h3{
+  margin-left:2rem;
+}
+.toc{
+  list-style-type: none;
+}
 #titlePage{
   font-size: 4.0rem;
   text-align: center;
