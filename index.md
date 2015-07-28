@@ -2,17 +2,19 @@
 ---
 <div id="titlePage">
 <h1 class ="nocount"> Master Geo-Information Science & Remote Sensing </h1>
-<p> Internship report  GRS00000 </p>
+<h2 class="nocount"> Internship report  GRS00000 </h2>
 
 <img src="img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png">
 <h1 class ="nocount"> Building a web-based Geo-visualization of Fieldnames in Drenthe  </h1>
-<p> Wageningen Universiteit </p>
-<p> Waag Society, Project; Heritage & Location   </p>
+<h2 class="nocount">  Wageningen Universiteit </h2>
+<img src="img/logo_wageningen_ur_.gif">
+<h2 class="nocount">  Waag Society, Project; Heritage & Location   </h2>
+<img  src="img/WS_logo.jpg"> 
+
 <p> <i>Niene Boeijen</i> </p>
 <p> <i> 900918-070-088 </i></p>
 <p> July 2015  </p>
-<img  src="img/WS_logo.jpg"> 
-<img src="img/logo_wageningen_ur_.gif">
+
 
 </div>
 

@@ -154,6 +154,17 @@ blockquote {
   }
 }
 
+@page:first {
+  @bottom-right {
+    content: normal;
+    margin: 0;
+  }
+
+  @bottom-left {
+    content: normal;
+    margin: 0;
+  }
+}
 
 
 /* Counters
@@ -239,14 +250,14 @@ figure:before{
   text-align: center;
   letter-spacing: 0;
   font-weight: 600;
-  background-color: grey;
+  background-color: #F1F1F1;
   padding:10%;
 }
 
 
 //table of contents syling
 ul.toc a::after {
-  content: target-counter(attr(href), page);
+  content:  leader('.') target-counter(attr(href), page);
 }
 
 //hr {
