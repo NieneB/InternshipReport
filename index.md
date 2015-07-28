@@ -203,7 +203,7 @@ Geo data has three basic symbols to represent the data, points, lines and polygo
 <figure> 
   <figcaption>  Bertin's theory </figcaption>
   <img src="img/Screen Shot 2015-05-07 at 11.16.03 AM.png">
-  <p>*(Dibiase et al., 1992; Bertin, 2000)*</p>
+  <p>(Dibiase et al., 1992; Bertin, 2000)</p>
 </figure>
 
 After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
@@ -441,7 +441,7 @@ One of the main inspirations was the following image:
 <figure>
   <figcaption> Inspiration Picture </figcaption>
   <img src="img/transect_inspiration-01.jpg">
-  <p>*Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg*</p>
+  <p>Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg</p>
 </figure>
 
 Complete mood board; see appendix $$$
@@ -491,8 +491,8 @@ This results in the following coverage of field names:
 Based on this the total research location is determined, consisting of the municipality’s Aa en Hunze, Assen, Noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa.
 
 <figure>
-<figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
-<img src="img/onderzoekgebied.jpg">
+  <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
+  <img src="img/onderzoekgebied.jpg">
 </figure>
 
 The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of wich environmental characteristic was of influence on the name creation. These categories are given in table $$#. In the appendix $$$ a total overview of the categories and the names and alternative names can be found.
@@ -611,9 +611,9 @@ The script  runs through all the field-names and all the possible categories, to
  While reading few of the names, new ideas for a category came up and added. The category wind direction W.
 
 <figure>
-<figcaption>  Amount of field names with a specific category, before and after categorization in R </figcaption> </figure>
-![](img/Graph_amount_categories.jpg)
-
+<figcaption>  Amount of field names with a specific category, before and after categorization in R </figcaption> 
+<img src="img/Graph_amount_categories.jpg">
+</figure>
 #### AHN
 
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
@@ -656,9 +656,9 @@ The open source database PostgreSQL was installed with a PostGIS extension to cr
 
 Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
-<figure class="text-wrap-rigth">
-<figcaption> Loading data into the database</figcaption>
-<img src="img/loading_Data.jpg">
+<figure class="text-wrap-right">
+  <figcaption> Loading data into the database</figcaption>
+  <img src="img/loading_Data.jpg">
 </figure>
 
 <p class="code"> Loading data in the database </p>
@@ -1051,7 +1051,6 @@ Some screenshots of how it looks:
 <figure>
   <figcaption>Example interesting spot </figcaption>
   <img src="img/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png">
-  <img src="img/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png">
 </figure>
 
 ## Testing the web-application
