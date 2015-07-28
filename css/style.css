@@ -187,11 +187,6 @@ h2 {
 //}
 */
 
-body{
-  counter-reset: toc-h1;
-
-}
-
 .toc-h1{
   counter-reset: toc-h2;
 }
