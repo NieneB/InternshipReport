@@ -1,5 +1,5 @@
 var hoofdstukken =  d3.selectAll("h1")
-console.log(hoofdstukken)
+console.log(hoofdstukken[0])
 
 var kopjes2 = d3.selectAll("h2")
 console.log(kopjes2)
