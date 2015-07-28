@@ -9,4 +9,4 @@ tov.selectAll("li")
   .enter()
   .append("li")
   .text(function(d){
-     return d.innerHTML});
+     return "<"+d.localName+ "class='toc" +d.localName+"'>" + d.innerHTML });
