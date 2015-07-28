@@ -322,16 +322,19 @@ form,
 dl,
 figure,
 table,
-p,
 ul,
 ol,
 form {
   margin-bottom: 2.5rem; 
-  font-weight: 500;}
+  font-weight: 600;}
+figure{
+  font-weight: bold;
+}
+
 p {
   margin-top: 0; }
 
-  ul, ol {
+ul, ol {
     margin-left: 2.5rem;
   }
 

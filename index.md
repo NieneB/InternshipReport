@@ -11,7 +11,7 @@
 <p > 900918-070-088 </p>
 <p> July 2015  </p>
 
-<img src="/WS_logo.jpg"> <img src="img/logo_wageningen_ur_.gif">
+<img src="img/WS_logo.jpg"> <img src="img/logo_wageningen_ur_.gif">
 
 </div>
 
