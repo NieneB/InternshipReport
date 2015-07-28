@@ -182,9 +182,42 @@ h2 {
   counter-reset: subsections;
 }
 
-//h3 {
+/*//h3 {
 //  counter-reset: subsubsections;
 //}
+*/
+
+body{
+  counter-reset: toc-h1;
+
+}
+
+.toc-h1{
+  counter-reset: toc-h2;
+}
+
+.toc-h2{
+  counter-reset: toc-h3;
+}
+
+.toc-h1:before {
+  content: "Chapter " counter(toc-h1) ". ";
+  counter-increment: toc-h1;
+  counter-reset: toc-h2;
+}
+
+.toc-h2:before{
+  content: counter(toc-h1) "." counter(toc-h2) ".";
+  counter-increment: toc-h2;
+  counter-reset: toc-h3;
+}
+
+.toc-h3:before{
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) ".";
+  counter-increment: toc-h3;
+}
+
+
 
 h1:before {
   content: "Chapter " counter(chapters) ". ";
@@ -244,36 +277,18 @@ figure:before{
   content: 'Code snippet ' counter(snippets) ".  ";
 }
 
-body{
-  counter-reset: toc-h1;
-}
+
+
+
+
 .toc-h1{
-  counter-reset: toc-h2;
+  font-weight: bold;
 }
-.toc-h2{
-  counter-reset: toc-h3;
-}
-
-.toc-h1:before {
-  content: "Chapter " counter(toc-h1) ". ";
-  counter-increment: toc-h1;
-  counter-reset: toc-h2;
-}
-
-.toc-h2:before{
-  content: counter(toc-h1) "." counter(toc-h2) ".";
-    counter-reset: toc-h3;
-}
-
-.toc-h3:before{
-  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) ".";
-}
-
 .toc-h2{
   margin-left: 1.5rem;
 }
 .toc-h3{
-  margin-left:2rem;
+  margin-left:3rem;
 }
 .toc{
   list-style-type: none;
