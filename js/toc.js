@@ -4,8 +4,12 @@ console.log(hoofdstukken)
 
 var tov = d3.select("#toc").append("ul").attr("class", "toc")
 
+var hoofdstuk = hoofdstukken[0].filter(function(d){
+  return d.className == ""
+})
+console.log(hoofdstuk)
 tov.selectAll("li")
-  .data(hoofdstukken[0].className == "")
+  .data(hoofdstuk)
   .enter()
   .append("li")
   .attr("class", function(d){
