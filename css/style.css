@@ -189,6 +189,7 @@ h2 {
 
 .toc-h1{
   counter-reset: toc-h2;
+  counter-increment: toc-h1;
 }
 
 .toc-h2{
