@@ -300,6 +300,10 @@ Variable in thematic properties
 Interactivity is one of the key aspects of geo visualization. The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Term used is Guided discovery. 
 Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. 
 
+
+ <!-- Interaction is considered as one of the key characteristics of geovisualization, a map is nowadays seen as an interactive interface.
+Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992)(Ogao & Kraak, 2002)(Nöllenburg, 2007) -->
+
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
 1. Focusing individual views
@@ -930,57 +934,56 @@ Last, will be looked at some frameworks explaining how to build an efficient, at
 
 ###Visualization of field-names
 Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
-
-
-In figure $$$ the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design.
-
-<p class="fig"> Geo processing chain and visualization series </p>
-![](img/chain.jpg)
-
-The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
-T
+Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 
 <figure class="text-wrap-right">
 <p class="fig"> Map use cube from MacEachren and Kraak </p>
 <img src="img/Map_use_cube.jpg">
 </figure>
 
+In figure $$$ the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. For the fieldnames the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done. The main focus is on the communication for creating knowledge. 
 
-#### Interactivity
-the data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) Interaction is considered as one of the key characteristics of geovisualization, a map is nowadays seen as an interactive interface.
-Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992)(Ogao & Kraak, 2002)(Nöllenburg, 2007)
+<p class="fig"> Geo processing chain and visualization series </p>
+![](img/chain.jpg)
 
-Technical functionalities for a map:
+
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007)
+
+The standard technical functionalities for the map to become interactive are:
 
 - Interactive: Zoom, filter, preform queries, different level of details.
 - Be able to navigate, zoom, scroll and pan.
 - Change thematic data
 
 
-#### Spatial temporal scenes
+Field-name polygon.,
+heigh data as line
+
+Brushing used to highlight the hight on the line and the position on the map of that specific point. 
+Multiple views with different forms of the same information. 
+
+Multiple layers, form which the user can choose.
+Navigation controls available. 
+
+Hidden information, which can be *discovered* 
 
 
-###Web based geo visualizations & user centered maps
 The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
 
 <p class="table"> Visualization operators from Ogao & Kraak </p>
 ![Alt text](img/Screen Shot 2015-05-06 at 2.26.40 PM.png )
 *(Ogao & Kraak, 2002)*
 
+###Web based geo visualizations & user centered maps
 A user interface for a web page should have the following basic components:
 
 * Geo browser – the map. Spatial dimension. Let users navigate.
 * Time bar – temporal dimension.
 * Filters – selecting information, filter. Thematic dimension.
 
-#### Technologies
-Possible Web Map Frameworks:
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application.
 
-- OpenLayers
-- MapFish
-- Leaflet
-- TileMill
-(Steiniger & Hunter, 2013)
+For making the map, Web Map software was needed to create a map in the browser. Some possible Web Map Frameworks that could be used and are widely known are OpenLayers, MapFish and Leaflet.(Steiniger & Hunter, 2013) They will be elaborated on to specify why the application makes use of Leaflet. 
 
 OpenLayers is a library for WMS (tiled layers) and WFS (vector layers). It implements a JavaScript API for visualization of spatial data in the web browser. Without a server-side component.
 (Steiniger & Hunter, 2013) (http://openlayers.org/)
@@ -991,13 +994,17 @@ Leaflet is a web-map service WMS,that returns geo-referenced rasterized maps or 
 
 Leaflet currently compete with OpenLayers only with respect to the display of map tiles, because OpenLayers offers much more functionality when it comes to interactive and vector-based map- ping tools. Also MapFish provides much more capabilities. For this was not needed for this application, the choice was made for using Leaflet, being light and simple.
 
+Leaflet also has the applicability to install plugins. For letting the user change the background map, the MiniMap plugin was used. 
 
 ### User centered designs or Customer engagement
 
-To engage the target group into the application, the hook model is followed.
-Trigger people to use it. External or internal. Let them do a action for which they receive a reward. If they invest in the system they will go through the process again.
+To engage the target group into the application, the hook model is followed. This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
 ![Alt text](img/hookmodel.jpg)
+
+In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
+When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
+For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 ## The web application
 The web application can be found on: $$$$$
@@ -1027,7 +1034,6 @@ Some screenshots of how it looks:
 >>>>>>> e5894b926c1f0167fcef85bf23565c4396b5e32a
 
 ## Testing the web-application
-
 ### Outcome questionnaire
 $$ people were asked to use the application and fill in the small questionnaire. The graph below shows the outcome of each question. With 5 being positive and 1 being negative.
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
@@ -1372,7 +1378,7 @@ ahn2_5_12dz1.tif	ahn2_5_12en2.tif
 ahn2_5_12dz2.tif	ahn2_5_12ez1.tif
 ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
-## R Sript converting files to shapefile.
+## R sript converting files to shapefile.
 	filenames <- list.files()
 	filenames <- list.files(filenames , pattern = "*.TAB" ,full.names = T)
 
