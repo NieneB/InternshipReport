@@ -188,8 +188,8 @@ h2 {
 */
 
 .toc-h1{
-  counter-reset: toc-h2;
   counter-increment: toc-h1;
+  counter-reset: toc-h2;
 }
 
 .toc-h2{
@@ -198,7 +198,7 @@ h2 {
 
 .toc-h1:before {
   content: "Chapter " counter(toc-h1) ". ";
-  counter-increment: toc-h1;
+
   counter-reset: toc-h2;
 }
 
