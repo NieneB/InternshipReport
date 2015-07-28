@@ -18,7 +18,7 @@ tov.selectAll("li")
   .append("a")
   .attr("class", "xref")
   .attr("href", function(d){
-    return d.id
+    return "#" + d.id
   })
   .text(function(d){
     return d.innerHTML });
