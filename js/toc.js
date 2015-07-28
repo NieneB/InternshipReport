@@ -8,5 +8,8 @@ tov.selectAll("li")
   .data(hoofdstukken[0])
   .enter()
   .append("li")
+  .attr("class", function(d){
+    return "toc-"+ d.localName
+  })
   .text(function(d){
-     return "<"+d.localName+ "class='toc" +d.localName+"'>" + d.innerHTML });
+     return d.innerHTML });
