@@ -5,11 +5,12 @@
 <h2 class="nocount"> Internship report  GRS00000 </h2>
 
 <img src="img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png">
-<h1 class ="nocount"> Building a web-based Geo-visualization of Fieldnames in Drenthe  </h1>
-<h2 class="nocount">  Wageningen Universiteit </h2>
+<h1 class ="nocount"> Building a web-based Geo-visualization about Field-names of Drenthe  </h1>
+<h2 class="nocount">  Wageningen University </h2>
 <img src="img/logo_wageningen_ur_.gif">
-<h2 class="nocount">  Waag Society, Project; Heritage & Location   </h2>
-<img  src="img/WS_logo.jpg"> 
+<h2 class="nocount">  Waag Society</h2>
+<h2> Project Heritage & Location </h2>
+<img  src="img/WS_logo.jpg" > 
 
 <p> <i>Niene Boeijen</i> </p>
 <p> <i> 900918-070-088 </i></p>
@@ -35,24 +36,25 @@
 
 # Introduction
 
-The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps. (MacEachren & Kraak, 2001; Tensen, 2014) Almost 60% of all data is geographically referenced (Hahmann & Burghardt, 2013). Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data. (Cartwright, Miller, & Pettit, 2004; Tensen, 2014) Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.
+The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps.  Almost 60% of all data is geographically referenced. Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data.  Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.(Cartwright, Miller, & Pettit, 2004; Hahmann & Burghardt, 2013; MacEachren & Kraak, 2001; Tensen, 2014)
 
-The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. {see figure # DIKW pyramid} According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. (Shedroff, 1999)  The use of the enormous amount of geo data to inform the general public is also still in development. (Tensen, 2014) Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. (MacEachren & Kraak, 2001) Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001)
+The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. (see figure <a class="xref" href="#dikw"></a>) According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. The use of the enormous amount of geo data to inform the general public is also still in development.  Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
 
-<figure class="text-wrap-right">
+<figure id="dikw" class="text-wrap-right">
 	<figcaption>DIKW pyramid. From data to wisdom</figcaption>
   <img src="img/DIKWPyramid.jpg">
   <p><i>(Shedroff, 1999)</i></p>
 </figure>
 
-The web is being used to produce new visual applications, going beyond the status of maps and other representations of geographic information. The World Wide Web has become an extremely efficient channel for transferring data, and also, has great visual capabilities. (Cartwright et al., 2004) There is a need for creating user-centered geo designs to ensure that usable geospatial products are created and delivered. (Cartwright et al., 2004) This raises the interest for geo-visualization in publishing geo-referenced information on the web and getting the enormous amount of available data to the general public (Lin, Gong, & Wang, 1999; Tensen, 2014). Only a few methodologies specifically directed and web geo visualizations emerge which emphasized the scientific information visualization techniques as a way to handle these very large and complex data sets. New visual forms and practices emerge, but how and why do they differ from the more conventional cartographic forms?
+The web is being used to produce new visual applications, going beyond the status of maps and other representations of geographic information. The World Wide Web has become an extremely efficient channel for transferring data, and also, has great visual capabilities. There is a need for creating user-centered geo designs to ensure that usable geospatial products are created and delivered. (Cartwright et al., 2004) This raises the interest for geo-visualization in publishing geo-referenced information on the web and getting the enormous amount of available data to the general public (Lin, Gong, & Wang, 1999; Tensen, 2014). Only a few methodologies specifically directed and web geo visualizations emerge which emphasized the scientific information visualization techniques as a way to handle these very large and complex data sets. New visual forms and practices emerge, but how and why do they differ from the more conventional cartographic forms?
 
 In this research, web geo-visualization is explored through a case study in the field of cultural heritage [CH].
 
-There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010) Safeguarding and exploiting CH is high on the agenda and includes the use of digital management systems. (Meyer, Grussenmeyer, Perrin, Durand, & Drap, 2007) Before this was a hand-made task, but with the growing computer science there are new ways for the digital preservation, innovation and updating cultural heritage data. (Deal, 2014)
-The next step is to document cultural heritage data across geographic space to preserve and safeguard the amount of cultural heritage data on another level. More and more central and local authorities responsible for cultural heritage use GIS as one of the main infrastructure components when digitalizing CH data.  (Droj, 2010; Meyer et al., 2007; Petrescu, 2007)
+There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. Safeguarding and exploiting CH is high on the agenda and includes the use of digital management systems. Before this was a hand-made task, but with the growing computer science there are new ways for the digital preservation, innovation and updating cultural heritage data. 
+The next step is to document cultural heritage data across geographic space to preserve and safeguard the amount of cultural heritage data on another level. More and more central and local authorities responsible for cultural heritage use GIS as one of the main infrastructure components when digitalizing CH data.  (Deal, 2014; Droj, 2010;Meyer, Grussenmeyer, Perrin, Durand, & Drap, 2007; Petrescu, 2007)
 
-For cultural heritage data, the issue of the representation of the results of inventories in mapping systems and updating and maintaining the data, remains open. (Martin, Reynard, Pellitero Ondicol, & Ghiraldi, 2014)  Web-mapping applications can be used to make open access-easy to use formats, for the assessment and promotion of heritage data. (Martin et al., 2014) Web-mapping is a suitable tool for visualizing and updating geo heritage data. In general, much of the spatial data being created and shared is strongly visual in nature, including photographs, video, maps and art (Elwood, 2011)
+For cultural heritage data, the issue of the representation of the results of inventories in mapping systems and updating and maintaining the data, remains open. Web-mapping applications can be used to make open access-easy to use formats, for the assessment and promotion of heritage data. Web-mapping is a suitable tool for visualizing and updating geo heritage data. In general, much of the spatial data being created and shared is strongly visual in nature, including photographs, video, maps and art (Elwood, 2011;  Martin, Reynard, Pellitero Ondicol, & Ghiraldi, 2014) 
+
 As stated by Deal:
 
 >Visualizations have the potential to greatly improve search and discovery for online collections, transforming how users interact with digital collections. Furthermore, changing technology is making it easier than ever to incorporate visualizations into search interfaces and websites. The time is ripe for cultural heritage institutions to begin experimenting with data visualization in earnest.
@@ -61,7 +63,7 @@ In the cultural heritage field, the temporal dimension plays an important role t
 
 This research is part of an internship at Waag Society for the project of Heritage & Location. (see <a class="xref" href="#heritage-and-location-project-waag-society"></a>) This report describes the work and the results from the development of a web-application for the project Heritage & Location.
 
- Because a web-application will be build to visualize geographically referenced intangible cultural heritage [ICH] data this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Elzelakker, levende veldnamen van de Drentse Aa”* (Spek et al., 2009).  More about the data will be described in chapter <a class="xref" href="#field-names-in-drenthe"></a>. 
+ Because a web-application will be build to visualize geographically referenced intangible cultural heritage [ICH] data this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Elzelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in chapter <a class="xref" href="#field-names-in-drenthe"></a>. 
 
 The research will be build up in 3 parts; first the possible visualization techniques will be explored through literature study. With the chosen techniques, the application will be build, for which certain design goals and requirements will be defined. In the end the application will shortly be evaluated.
 
@@ -110,7 +112,7 @@ Also some background information on geo-data and the combination with heritage i
 A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage (see next section) and it exist only in people's memory. There for field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th / 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arrises for field-names as they can tell us how the landscape used to look in the 18th century. A collection of field-names was gathered by assessing peoples memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system.
 
 Field-names tells us how the landscape used to look, which soil types, vegetation types or animals occurred. They link to specific landmarks or environmental characteristics of the direct village surroundings. The origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. They can be used for landscape design and planning, knowledge for historical research and inspiration source for artist.
-(Spek et al., 2009; “Veldnamen - Encyclopedie Drenthe Online,” n.d.)
+(Spek et al., 2009; “Veldnamen - Encyclopedie Drenthe Online,”)
 
 ### Living heritage
 
@@ -120,11 +122,11 @@ The field-names in Drenthe are called living heritage, which is one of the 4 kin
 2.	Paper heritage; Stored in archives and libraries in the form of paper documents, maps and books.
 3.	Object collections, owned and displayed by museums. Only focusing on objects.
 4.	Living heritage; habits, traditions, religions and cultural events that people experience.
-From: (“volkscultuur,” n.d.)
+From: (“volkscultuur,”)
 
-Categories 1,2 and 3 are tangible substances while category 4 is intangible heritage. UNESCO introduces the concept of intangible heritage data in 2003, to safeguard the importance of intangible cultural heritage and distinct it form tangible heritage and natural heritage. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-a)
+Categories 1,2 and 3 are tangible substances while category 4 is intangible heritage. UNESCO introduces the concept of intangible heritage data in 2003, to safeguard the importance of intangible cultural heritage and distinct it form tangible heritage and natural heritage. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,”)
 
-The Convention of UNESCO introduces five domains of ICH:
+The Convention of UNESCO introduces five domains of ICH The boundaries between those domains are extremely fluid.:
 
 1. Oral traditions and expressions including language as a vehicle of the ICH.
 2. Performing arts (dance, music, theater).
@@ -132,10 +134,9 @@ The Convention of UNESCO introduces five domains of ICH:
 4. Knowledge and practices concerning nature and the universe.
 5. Traditional craftsmanship, meaning the skills and knowledge involved rather than the craft product itself.
 
-The boundaries between those domains are extremely fluid (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-b).
+In the scope of the H&L project this research will focus on the connection of place and time in intangible cultural heritage. ICH can be shortly explained as all traditions and rituals of normal life, which gives people a sense of identity and continuity. ICH is transmitted from generation to generation and can be constantly recreated by communities due to interaction with their environment. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,”; Zeijden, 2011)
+Intangible heritage is strongly depended on the features of space and influenced by the space. Of course these traditions, habits , etc., have a place where they take place. Or they are about a place, have a spreading, an origin, a continuation, can cover multiple places, through time. (Karavia & Georgopoulos, 2013)
 
-In the scope of the H&L project this research will focus on the connection of place and time in intangible cultural heritage. ICH can be shortly explained as all traditions and rituals of normal life, (Zeijden, 2011) which gives people a sense of identity and continuity. ICH is transmitted from generation to generation and can be constantly recreated by communities due to interaction with their environment. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-b)
-Intangible heritage is strongly depended on the features of space and influenced by the space. Of course these traditions, habits , etc., have a place where they take place. Or they are about a place, have a spreading, an origin, a continuation, can cover multiple places, through time. (Karavia & Georgopoulos, 2013) ICH
 This applies also for the field-names in Drenthe, which is oral living heritage. Originated with a strong influence of the direct environment it exists in.
 
 ##Waag Society
@@ -161,8 +162,8 @@ Figure <a class="xref" href="#schemeHL"></a> shows the overview of the whole H&L
 
 ##Cultural heritage data & GIS
 There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010) Explained here are several reasons why a GIS system is beneficial for digitalizing CH data;
-One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. (Karavia & Georgopoulos, 2013; Meyer et al., 2007)
-Second, such a system can be used for research aims. (Karavia & Georgopoulos, 2013) Implementing analysis on the spatial correlation of the CH data. The geographical relation and connection among various cultural heritages can be studied as well as the evolution through time and space and relationships between different datasets.((Karavia & Georgopoulos, 2013; Lai, Luo, & Zhang, 2012) So GIS can help to correlate and exploit heritage spatial relations and enrich the knowledge already existing. (Karavia & Georgopoulos, 2013)
+One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. 
+Second, such a system can be used for research aims. Implementing analysis on the spatial correlation of the CH data. The geographical relation and connection among various cultural heritages can be studied as well as the evolution through time and space and relationships between different datasets. So GIS can help to correlate and exploit heritage spatial relations and enrich the knowledge already existing. (Droj, 2010; Karavia & Georgopoulos, 2013;  Lai, Luo, & Zhang, 2012; Meyer et al., 2007)
 This is also the third and the main goal of the Heritage & Location [H&L] project, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.) Assumption is that the place referred to in historical documents, probably refer to the identical real-world place if they are related in name.
 
 Digitalizing heritage as linked data contains the following key aspects:
@@ -175,12 +176,11 @@ Digitalizing heritage as linked data contains the following key aspects:
 
 
 ##Geo data
-Geospatial data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive. (Mennis et al., 2000)
-The spatial dimension can be used to interpret the spatial dimensions and relation of data entities, an absolute and enclosed *space* wherein the geographic phenomena exists. The temporal dimension can be used to interpret the change in the data through time. The thematic dimension is to interpret what the data is about, a property that can be measured and assigned. (Mennis et al., 2000)
-The data component only concerns the raw observational data, with location, time and attributes. (Mennis et al., 2000) These three characteristics will be explained in detail in the next sections.
+Geospatial data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive.
+The spatial dimension can be used to interpret the spatial dimensions and relation of data entities, an absolute and enclosed *space* wherein the geographic phenomena exists. The temporal dimension can be used to interpret the change in the data through time. The thematic dimension is to interpret what the data is about, a property that can be measured and assigned. The data component only concerns the raw observational data, with location, time and attributes. (Mennis et al., 2000; Nöllenburg, 2007) These three characteristics will be explained in detail in the next sections.
 
 ###Spatial dimension
-Geo data is different from other data because it is inherently structured with a spatial dimension. An X and Y location and sometimes a Z dimension. This contains the  *where* of a particular phenomenon.
+Geo data is different from other data because it is inherently structured with a spatial dimension. An X and Y location and sometimes a Z dimension. This contains the *where* of a particular phenomenon.
 Spatial objects can be physical, real objects in the world, or non-physical phenomena, like administrative boundaries. Continuous data fields cover large areas with no clear boundaries, like rainfall or temperature. A single object on the earth is discrete; they have sharp boundaries, like a house. But also the spatial structure tells a lot about the phenomena, is it random or regular clustered. The general assumption of spatial correlation tells that close things are more correlated then far apart things.
 
 ###Temporal dimension
@@ -195,7 +195,7 @@ Another differentiation is liner versus cyclic time ordering. Linear time is ord
 The theme or attribute of a phenomena. The ‘what’ is happening in the world. This data is often stored in the attributes of the data, more then one attributes can exist. This data can be qualitative or quantitative, nominal ordinal discrete or continuous.
 
 ##Geo-visualization
-Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. From the real world we go to data and all the modifications to the data. Eventually the data will be  visualized, either a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992)(MacEachren & Kraak, 2001) 
+Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. From the real world we go to data and all the modifications to the data. Eventually the data will be  visualized, either a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
 
 ###Static geospatial visualization
 Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. See figure <a class="xref" href="#bertin"></a>. 
@@ -209,8 +209,7 @@ Geo data has three basic symbols to represent the data, points, lines and polygo
 After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
 
 Deciding the right graphic variable to be assigned to a certain type of data, helps the viewer in defining the perceptual properties. For example, ordinal data needs the perception of being ordered, quantitative data of being proportional.  While nominal data needs to be perceived as distinct categories.
-
-(Dibiase et al., 1992)(Dibiase et al., 1992)(Nöllenburg, 2007)Bertin, 2000)MacEachren (1995)Caivano (1990)
+(Bertin, 2000; Caivano, 1990; Dibiase et al., 1992; MacEachren, 1995; Nöllenburg, 2007)
 ###Dynamic geo-visualizations
 Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps which require a set of dynamic graphic variables. 
 A few forms of dynamic geovisualization can be named, animation, display of time or spatial temporal visualization and interaction. The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
@@ -228,14 +227,15 @@ Dynamic animated variables are
   * Frequency or speed.
   * Synchronization. 
   
-Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Ormeling, 1996) (Kobben and Yaman) (MacEachren)
+Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Kobben and Yaman; MacEachren; Ormeling, 1996)
 
 ####Spatial - temporal
-Spatial temporal visualization is the display of dynamic pehomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations.(Dibiase et al., 1992)(Nöllenburg, 2007)(Köbben & Yaman, 1996)  See table #.
+Spatial temporal visualization is the display of dynamic pehomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations.
+(Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007) See table <a class="xref" href="#catphenom"></a>.
 
 Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
 
-<p class="table"> Categories of possible animations for dynamic phenomena. </p>
+<p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
 <table>
     <tr>
@@ -308,7 +308,7 @@ Interactive visualization gives the control of the animation to the user, they e
 
 
  <!-- Interaction is considered as one of the key characteristics of geo-visualization, a map is nowadays seen as an interactive interface.
-Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992)(Ogao & Kraak, 2002)(Nöllenburg, 2007) -->
+Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992; Nöllenburg, 2007; Ogao & Kraak, 2002)-->
 
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
@@ -323,13 +323,13 @@ The number, type and arrangements of the different views depend on the task, the
 
 # Method
 
-<figure class='text-wrap-left' >
+<figure id="mehtod" class='text-wrap-left' >
 <figcaption>Methodology overview</figcaption>
 <img src="img/flowchart_Method.jpg">
 </figure>
 
 This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
-See figure # for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
+See figure <a class="xref" href="#method"> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
 
 Once the general goal was established; making a web-based geo-visualization, the case study in the field of cultural heritage had to be defined. This, because the internship is conducted for the project Heritage&Location at the Waag Society. In the project several heritage institutions take part, and so came into contact with possible data providers. After explaining the general goal of this study to them, the data needed for this report was provided by  *Rijksdienst voor Cultureel Erfgoed*.
 With the data, the subject of the research took more form.
@@ -385,9 +385,9 @@ The first ideas:
 #### Main idea
 Eventually one of the ideas was chosen. Namely, showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
 
-Figure # shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
+Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
 
-<figure class="text-wrap-left"  >
+<figure id="example" class="text-wrap-left"  >
 <figcaption> Field-names example of names with height indication on the height map </figcaption>
 <img src="img/hoogte_voorbeeld.jpg"><img>
 </figure>
