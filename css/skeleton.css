@@ -331,7 +331,9 @@ form {
 p {
   margin-top: 0; }
 
-
+  ul, ol {
+    margin-left: 2.5rem;
+  }
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -1,21 +1,27 @@
 ---
 ---
-<p class="titlePage"  > Master Geo-Information Science & Remote Sensing </p>
+<div id="titlePage">
+<p  > Master Geo-Information Science & Remote Sensing </p>
 
-<p class="titlePage"  > Internship report  GRS00000                   </p>
-<p class="titlePage, title1"> Building a web-based Geo-visualization of Fieldnames in Drenthe  </p>
-<p class="titlePage"  > Wageningen Universiteit </p>
-<p class="titlePage"  >Waag Society, Project; Heritage & Location   </p>
-<p class="titlePage"  > Niene Boeijen </p>
-<p class="titlePage, title2"> 900918-070-088 </p>
-<p class="titlePage, title2"> July 2015  </p>
+<p  > Internship report  GRS00000                   </p>
+<p > Building a web-based Geo-visualization of Fieldnames in Drenthe  </p>
+<p   > Wageningen Universiteit </p>
+<p   >Waag Society, Project; Heritage & Location   </p>
+<p> Niene Boeijen </p>
+<p > 900918-070-088 </p>
+<p> July 2015  </p>
+
+<img src="/WS_logo.jpg"> <img src="img/logo_wageningen_ur_.gif">
+
+</div>
+
 
 <h1 class ="nocount"> Acknowledgments</h1>
 
 <div id="toc"><h1 class = "nocount">Table of Contents </h1></div>
 
 <h1 class ="nocount"> Abstract</h1>
-<h2 class ="nocount"> Keywords</h2>
+<h1 class ="nocount"> Keywords</h1>
 
 <h1 class ="nocount"> Abbreviations</h1>
 
@@ -28,6 +34,7 @@
 </dl>
 
 # Introduction
+========
 
 The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps. (MacEachren & Kraak, 2001; Tensen, 2014) Almost 60% of all data is geographically referenced (Hahmann & Burghardt, 2013). Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data. (Cartwright, Miller, & Pettit, 2004; Tensen, 2014) Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.
 
@@ -93,6 +100,7 @@ The application must be:
 3B. Technically working in an efficient and error-safe way. User friendly.
 
 # Background
+========
 
 In this chapter, the field names are further explained and their role in the cultural heritage field. Therefore, Also the field of cultural heritage is explained and its categories.
 Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
@@ -316,6 +324,7 @@ The number, type and arrangements of the different views depend on the task, the
 (Nöllenburg, 2007)
 
 # Method
+========
 
 This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
 See figure # for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
@@ -924,6 +933,7 @@ Table $$ shows the statements asked and their relation to the objectives. The co
 
 
 # Results
+========
 
 ## Theoretical framework
 First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective 1a, to make the application attractive, and 2c, understanding the geo-data.
@@ -1060,6 +1070,7 @@ total answer overview see appendix $$$.
 
 
 # Discussion
+========
 
 - Too much ideas for such a short time span. Not enough knowledge for the conducting researcher in this short amount of time.
 
@@ -1092,6 +1103,7 @@ Not enough participants.
 usefull comments. though no time to implement them.
 
 # Recommendations
+========
 
 ## Website recommendations
 
@@ -1101,8 +1113,10 @@ Let the user invest, possible idea: Draw a field and add a field name.
 Implement more of the thought up ideas to make it more interesting.
 
 # Conclusion
+========
 
 # References
+========
 Actueel Hoogtebestand Nederland. (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html
 
 Bertin, J. (2000). Matrix theory ofgraphics. Information Design Journal, 10(1), 5–19.
@@ -1177,6 +1191,7 @@ Zeijden, A. V. D. (2011). Immaterieel erfgoed en musea, (35), 4–6.
 
 
 # Appendix
+========
 
 ## Mood board
 
