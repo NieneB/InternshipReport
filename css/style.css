@@ -244,6 +244,22 @@ figure:before{
   content: 'Code snippet ' counter(snippets) ".  ";
 }
 
+.toc-h1{
+  counter-reset: toc-h2;
+}
+.toc-h2{
+  counter-reset:toc-h3;
+}
+
+.toc-h1:before {
+  content: "Chapter " counter(chapters) ". ";
+  counter-increment: toc-h1;
+  counter-reset: toc-h2;
+}
+
+.toc-h2:before{
+  content: counter(chapters) "." counter(toc-h2) ".";
+}
 
 #titlePage{
   font-size: 4.0rem;
