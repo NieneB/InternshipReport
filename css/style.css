@@ -245,13 +245,13 @@ figure:before{
 }
 
 body{
-  counter-reset:toc-h1;
+  counter-reset: 'toc-h1';
 }
 .toc-h1{
-  counter-reset: toc-h2;
+  counter-reset: 'toc-h2';
 }
 .toc-h2{
-  counter-reset:toc-h3;
+  counter-reset:'toc-h3';
 }
 
 .toc-h1:before {
@@ -262,6 +262,10 @@ body{
 
 .toc-h2:before{
   content: counter(toc-h1) "." counter(toc-h2) ".";
+}
+
+.toc-h3:before{
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) ".";
 }
 
 #titlePage{
