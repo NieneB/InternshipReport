@@ -326,9 +326,9 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem; 
-  font-weight: 600;}
-figure{
-  font-weight: bold;
+}
+figure, table{
+  font-weight: 600;
 }
 
 p {

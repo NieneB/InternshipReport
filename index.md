@@ -201,7 +201,7 @@ Geo-visualization is a combination of communication, scientific information visu
 Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. See figure $$. 
 
 <p class="fig"> Bertin's theory </p>
-![Alt text](img/Screen Shot 2015-05-07 at 11.16.03 AM.png =426px)
+![Alt text](img/Screen Shot 2015-05-07 at 11.16.03 AM.png)
 *(Dibiase et al., 1992; Bertin, 2000)*
 
 After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
@@ -328,10 +328,10 @@ The number, type and arrangements of the different views depend on the task, the
 This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
 See figure # for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
 
-<div class='textWrapL' >
-<p class="fig">Methodology overview</p>
+<figure class='text-wrap-left' >
+<figcaption>Methodology overview</figcaption>
 <img src="img/flowchart_Method.jpg">
-</div>
+</figure>
 
 Once the general goal was established; making a web-based geo-visualization, the case study in the field of cultural heritage had to be defined. This, because the internship is conducted for the project Heritage&Location at the Waag Society. In the project several heritage institutions take part, and so came into contact with possible data providers. After explaining the general goal of this study to them, the data needed for this report was provided by  *Rijksdienst voor Cultureel Erfgoed*.
 With the data, the subject of the research took more form.
@@ -387,10 +387,10 @@ Eventually one of the ideas was chosen. Namely, showing the field names on a hei
 
 Figure # shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
 
-<div class="textWrapL"  >
-<p class="fig"> Field-names example of names with height indication on the height map </p>
+<figure class="text-wrap-left"  >
+<figcaption> Field-names example of names with height indication on the height map </figcaption>
 <img src="img/hoogte_voorbeeld.jpg"><img>
-</div>
+</figure>
 
 Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
 In order to include this in the visualization, showing the polygons on a map won't be sufficient. Chosen is to draw a transect of the height data and indicate the names of the fields on this.
@@ -436,7 +436,7 @@ Giving colors or patterns to the fields according to the soil property. Like a s
 For design ideas and color use a mood board was made. Pictures from the Internet combined with fonts. Search terms were, living heritage, cultural heritage, transect , old transect map and more.
 One of the main inspirations was the following image:
 
-<p class="fig"> Inspiration Picture </p>
+<figcaption> Inspiration Picture </figcaption>
 
 ![](img/transect_inspiration-01.jpg)
 
@@ -456,7 +456,7 @@ This information is highly important for nature conservation and heritage preser
 Further reference about the field names in Drenthe can be found in the book “Van Jeruzalem tot Ezelakker, Levende valdnamenatlas van de Drentse Aa”.  (Spek et al., 2009)
 
 The dataset contains in total 1747 polygons with a field-name. Projection Rd new. EPSG28992
-
+<figure class=text-wrap-left>
 <p class="table"> Field-name Amounts per source </p>
 <table>
   <tr>
@@ -481,14 +481,14 @@ The dataset contains in total 1747 polygons with a field-name. Projection Rd new
 
 This results in the following coverage of field names:
 
-<figure class="text-wrap-left">
-<p class="fig"> All fields with a field name. </p>
+<figure class="text-wrap-right">
+<figcaption> All fields with a field name. </figcaption>
 <img src= "img/allnames.jpg" >
 </figure>
 
 Based on this the total research location is determined, consisting of the municipality’s Aa en Hunze, Assen, Noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa.
 
-<p class="fig">Research area, location in the Netherlands and the municipalities</p>
+<figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
 ![ ](img/onderzoekgebied.jpg )
 
 The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of wich environmental characteristic was of influence on the name creation. These categories are given in table $$#. In the appendix $$$ a total overview of the categories and the names and alternative names can be found.
@@ -527,14 +527,10 @@ The field names are already categorized in a previous study by the RCE by $$$. T
     	<td>O</td><td>Miscellaneous</td><td>0</td><td>85</td>
     </tr>
     <tr>
-    	<td></td>
-    	<td></td>
-    </tr>
-    <tr>
     	<td>W</td><td>Wind direction</td><td>0</td><td>165</td>
     </tr>
     <tr>
-    	<td colspan=2>Total</td>
+    	<td colspan="2">Total</td>
     	<td>770</td>
           	<td>6585</td>
     </tr>
@@ -583,7 +579,7 @@ All the possible datasets containing field-names were collected and displayed in
 In order to work with the files in Qgis all the files needed to be converted to shape-files. This was done in R. See script appendix. $$
 In QGIS, manually the attribute names needed were changed in one standardized name in order to merge all the data together.
 
-<p class="fig">  Flowchart field-name dataset processing  </p>
+<figcaption>  Flowchart field-name dataset processing  </figcaption>
 ![Alt text](img/fieldnames_preprocessing.jpg )
 
 <p class="code"> SQL adjustments </p>
@@ -611,8 +607,7 @@ The script  runs through all the field-names and all the possible categories, to
 
  While reading few of the names, new ideas for a category came up and added. The category wind direction W.
 
-<p class="fig">  Amount of field names with a specific category, before and after categorization in R </p>
-
+<figcaption>  Amount of field names with a specific category, before and after categorization in R </figcaption>
 ![](img/Graph_amount_categories.jpg)
 
 #### AHN
@@ -620,9 +615,10 @@ The script  runs through all the field-names and all the possible categories, to
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
 
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels.
-
-<p class="fig">  Flowchart AHN2 raster processing  </p>
+<figure class="text-wrap-right">
+<figcaption>  Flowchart AHN2 raster processing  </figcaption>
 ![Alt text](img/ahnpreprocessing.jpg )
+</figure>
 
 - add field to water with value = 2
 - rasterize water with celsize 5
@@ -644,7 +640,7 @@ First both client side and server side are build on one computer as a single sea
 Figure $$ shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed.
 The next paragraphs explain the database, the API, the SQL query and the website.
 
-<p class="fig"> Back-end processes </p>
+<figcaption> Back-end processes </figcaption>
 ![Alt text](img/webpage_model.jpg )
 
 #### Setting up the database
@@ -652,9 +648,10 @@ The next paragraphs explain the database, the API, the SQL query and the website
 The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters.
 
 Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
-
-<p class="fig"> Loading data into the database</p>
+<figure class="text-wrap-rigth">
+<figcaption> Loading data into the database</figcaption>
 ![Alt text](img/loading_Data.jpg )
+</figure>
 
 <p class="code"> Loading data in the database </p>
 
@@ -946,13 +943,13 @@ Geographical visualization can be used for 2 purposes; data exploration and info
 Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 
 <figure class="text-wrap-right">
-<p class="fig"> Map use cube from MacEachren and Kraak </p>
+<figcaption> Map use cube from MacEachren and Kraak </figcaption>
 <img src="img/Map_use_cube.jpg">
 </figure>
 
 In figure $$$ the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. For the fieldnames the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done. The main focus is on the communication for creating knowledge. 
 
-<p class="fig"> Geo processing chain and visualization series </p>
+<figcaption> Geo processing chain and visualization series </figcaption>
 ![](img/chain.jpg)
 
 
@@ -1009,7 +1006,10 @@ Leaflet also has the applicability to install plugins. For letting the user chan
 
 To engage the target group into the application, the hook model is followed. This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
+<figure class="text-wrap-left">
+  <figcaption> Hook model </figcaption>
 ![Alt text](img/hookmodel.jpg)
+</figure>
 
 In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
 When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
@@ -1018,29 +1018,30 @@ For the long term a investment in the field-name application could be the adding
 ## The web application
 The web application can be found on: $$$$$
 Some screenshots of how it looks:
-<p class="fig">Welcome screen </p>
-<<<<<<< HEAD
+
+<figcaption>Welcome screen </figcaption>
+
 ![Screen Shot 2015 07 24 At 2.18.47 PM](img/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png)
-<p class="fig">Map status in beginning </p>
+
+<figcaption>Map status in beginning </figcaption>
+
 ![Screen Shot 2015 07 24 At 2.19.22 PM](img/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png)
-<p class="fig">Map functionalities with mouseover. </p>
+
+<figcaption>Map functionalities with mouseover. </figcaption>
+
 ![Screen Shot 2015 07 24 At 2.20.01 PM](img/Screen%20Shot%202015-07-24%20at%202.20.01%20PM.png)
 ![Screen Shot 2015 07 24 At 2.19.42 PM](img/Screen%20Shot%202015-07-24%20at%202.19.42%20PM.png)
-<p class="fig">Map drawing a line funciton </p>
+
+<figcaption>Map drawing a line funciton </figcaption>
+
 ![Screen Shot 2015 07 24 At 2.20.20 PM](img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png)
-<p class="fig">Example interesting spot </p>
+
+<figcaption>Example interesting spot </figcaption>
+
 ![Screen Shot 2015 07 21 At 11.06.45 AM](img/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png )
-![Screen Shot 2015 07 24 At 2.18.47 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png =854x)
-<p class="fig">Map status in beginning </p>
-![Screen Shot 2015 07 24 At 2.19.22 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png =854x)
-<p class="fig">Map functionalities with mouseover. </p>
-![Screen Shot 2015 07 24 At 2.20.01 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.20.01%20PM.png =854x)
-![Screen Shot 2015 07 24 At 2.19.42 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.19.42%20PM.png =854x)
-<p class="fig">Map drawing a line funciton </p>
-![Screen Shot 2015 07 24 At 2.20.20 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png =854x)
-<p class="fig">Example interesting spot </p>
-![Screen Shot 2015 07 21 At 11.06.45 AM](3_Pictures/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png )
->>>>>>> e5894b926c1f0167fcef85bf23565c4396b5e32a
+![Screen Shot 2015 07 24 At 2.18.47 PM](3_Pictures/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png)
+
+
 
 ## Testing the web-application
 ### Outcome questionnaire
@@ -1048,7 +1049,7 @@ $$ people were asked to use the application and fill in the small questionnaire.
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
 Question 8 got the lowest score, the functionality did not work as the user would expect.
 
-<img src="img/uitslag_quest.png" width="854px">
+<img src="img/uitslag_quest.png">
 
 total answer overview see appendix $$$. 
 ### Remarks on the questionnaire
@@ -1198,8 +1199,6 @@ Zeijden, A. V. D. (2011). Immaterieel erfgoed en musea, (35), 4–6.
 ![Alt text](img/Moodboard-02.jpg)
 
 ## Categories field-names form RCE
-
-![Alt text](img/categoriesFieldnames.jpg)
 <table>
 <tr> <th>	Lemming Code	</th> <th>	Category 	</th> <th>	Category Code	</th> <th>	Lemming	</th> <th>	Name Alternatives	</th> <th>	Count first Code	</th> <th>	Count second Code	</th> </tr>
 <tr> <td>	A1	</td> <td>	Relief	</td> <td>	A	</td> <td>	berg	</td> <td>	bergen|bergje|barg	</td> <td>	210	</td> <td>	38	</td> </tr>
