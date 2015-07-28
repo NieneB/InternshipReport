@@ -420,7 +420,7 @@ Linking the data with the webpage. See paragraphs <a class="xref" href="#back-en
 For also on this main idea some variations can be made, these will be shown here.
 
 - Soil properties as colors of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
-Giving colors or patterns to the fields according to the soil property. Like a stonefield or redfield.
+Giving colors or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
 
 - Pop-ups with explanations and texts. Linking field-names to textual explanation, adding pictures of the surroundings and landscape characteristics. Vegetation types, animal occurrence.
 
@@ -932,7 +932,6 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
 
 # Results
 
-
 ## Theoretical framework
 First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective 1a, to make the application attractive, and 2c, understanding the geo-data.
 
@@ -956,39 +955,23 @@ In figure <a class="xref" href="#chain"></a> the geo processing chain is combine
 <img src="img/chain.jpg">
 </figure>
 
-The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007)
-
-The standard technical functionalities for the map to become interactive are:
-
-- Interactive: Zoom, filter, preform queries, different level of details.
-- Be able to navigate, zoom, scroll and pan.
-- Change thematic data
-
-<!-- Field-name polygon.,
-heigh data as line -->
-
-Brushing used to highlight the hight on the line and the position on the map of that specific point. 
-Multiple views with different forms of the same information. 
-
-Multiple layers, form which the user can choose.
-Navigation controls available. 
-
-Hidden information, which can be *discovered* 
-
-The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
 
 <p class="table"> Visualization operators from Ogao & Kraak </p>
 ![Alt text](img/Screen Shot 2015-05-06 at 2.26.40 PM.png )
 *(Ogao & Kraak, 2002)*
 
-###Web based geo visualizations & user centered maps
-A user interface for a web page should have the following basic components:
+To cover the four visualization operations the user interface for a web page should have the following basic components:
 
 * Geo browser – the map. Spatial dimension. Let users navigate.
 * Time bar – temporal dimension.
 * Filters – selecting information, filter. Thematic dimension.
 
-The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application.
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
+There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
+The information will be shown in a transect map. So the same information is shown in multiple views and from diferent perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+
+###Web based geo visualizations & user centered maps
 
 For making the map, Web Map software was needed to create a map in the browser. Some possible Web Map Frameworks that could be used and are widely known are OpenLayers, MapFish and Leaflet.(Steiniger & Hunter, 2013) They will be elaborated on to specify why the application makes use of Leaflet. 
 
@@ -1002,6 +985,8 @@ Leaflet is a web-map service WMS,that returns geo-referenced rasterized maps or 
 Leaflet currently compete with OpenLayers only with respect to the display of map tiles, because OpenLayers offers much more functionality when it comes to interactive and vector-based map- ping tools. Also MapFish provides much more capabilities. For this was not needed for this application, the choice was made for using Leaflet, being light and simple.
 
 Leaflet also has the applicability to install plugins. For letting the user change the background map, the MiniMap plugin was used. 
+
+For building the transect line, d3 is used. A graphic drawing package. The transect line is therefor not a geographic representation but more information display. The geo-data is retained in the underlying data. 
 
 ### User centered designs or Customer engagement
 
