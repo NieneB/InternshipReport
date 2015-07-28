@@ -5,9 +5,8 @@ console.log(hoofdstukken)
 var tov = d3.select("#toc").append("ol")
 
 tov.selectAll("li")
-  .data(hoofdstukken)
+  .data(hoofdstukken[0])
   .enter()
   .append("li")
   .text(function(d){
-    if(d == "h1"){ return d.innerHTML}
-  });
+     return d.innerHTML});

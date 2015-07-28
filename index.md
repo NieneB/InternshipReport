@@ -1,30 +1,26 @@
 ---
 ---
 <div id="titlePage">
-<p  > Master Geo-Information Science & Remote Sensing </p>
+<h1 class ="nocount"> Master Geo-Information Science & Remote Sensing </h1>
+<p> Internship report  GRS00000 </p>
 
-<p  > Internship report  GRS00000                   </p>
-<p > Building a web-based Geo-visualization of Fieldnames in Drenthe  </p>
-<p   > Wageningen Universiteit </p>
-<p   >Waag Society, Project; Heritage & Location   </p>
-<p> Niene Boeijen </p>
-<p > 900918-070-088 </p>
+<img src="img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png">
+<h1 class ="nocount"> Building a web-based Geo-visualization of Fieldnames in Drenthe  </h1>
+<p> Wageningen Universiteit </p>
+<p> Waag Society, Project; Heritage & Location   </p>
+<p> <i>Niene Boeijen</i> </p>
+<p> <i> 900918-070-088 </i></p>
 <p> July 2015  </p>
-
-<img src="img/WS_logo.jpg"> <img src="img/logo_wageningen_ur_.gif">
-
+<img class="text-wrap-left" src="img/WS_logo.jpg"> <img class="text-wrap-right" src="img/logo_wageningen_ur_.gif">
 </div>
 
-
 <h1 class ="nocount"> Acknowledgments</h1>
-
 <div id="toc"><h1 class = "nocount">Table of Contents </h1></div>
-
 <h1 class ="nocount"> Abstract</h1>
+
+
 <h1 class ="nocount"> Keywords</h1>
-
 <h1 class ="nocount"> Abbreviations</h1>
-
 <dl>
   <dt>H&amp;L</dt><dd>Heritage and Location Project</dd>
   <dt>CH</dt><dd>Cultural Heritage</dd>
