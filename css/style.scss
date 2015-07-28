@@ -236,10 +236,17 @@ figure:before{
 
 #titlePage{
   font-size: 4.0rem;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0;
   font-weight: 600;
   background-color: grey;
+  padding:10%;
+}
+
+
+//table of contents syling
+ul.toc a::after {
+  content: target-counter(attr(href), page);
 }
 
 //hr {
