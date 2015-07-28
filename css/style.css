@@ -244,6 +244,9 @@ figure:before{
   content: 'Code snippet ' counter(snippets) ".  ";
 }
 
+body{
+  counter-reset:toc-h1;
+}
 .toc-h1{
   counter-reset: toc-h2;
 }
@@ -252,13 +255,13 @@ figure:before{
 }
 
 .toc-h1:before {
-  content: "Chapter " counter(chapters) ". ";
+  content: "Chapter " counter(toc-h1) ". ";
   counter-increment: toc-h1;
   counter-reset: toc-h2;
 }
 
 .toc-h2:before{
-  content: counter(chapters) "." counter(toc-h2) ".";
+  content: counter(toc-h1) "." counter(toc-h2) ".";
 }
 
 #titlePage{
