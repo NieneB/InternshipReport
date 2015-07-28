@@ -3,7 +3,7 @@
 From March until July 2015 I am working on an internship project at the Waag Society, Amsterdam.
 This is the report that will be the outcome of the project.
 
-![](/pict/Screen Shot 2015-07-24 at 2.19.22 PM.png)
+![](/img/Screen Shot 2015-07-24 at 2.19.22 PM.png)
 
 =======
 ## Create PDF
