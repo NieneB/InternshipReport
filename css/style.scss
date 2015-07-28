@@ -148,17 +148,13 @@ blockquote {
 /* Page numbers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@page:right{
+@page {
   @bottom-right {
     content: counter(page);
   }
 }
 
-@page:left{
-  @bottom-left {
-    content: counter(page);
-  }
-}
+
 
 /* Counters
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -175,9 +171,9 @@ h2 {
   counter-reset: subsections;
 }
 
-h3 {
-  counter-reset: subsubsections;
-}
+//h3 {
+//  counter-reset: subsubsections;
+//}
 
 h1:before {
   content: "Chapter " counter(chapters) ". ";
@@ -196,10 +192,10 @@ h3:before {
   counter-increment: subsections;
 }
 
-h4:before {
-  content: counter(chapters) "." counter(sections) "." counter(subsections) "." counter(subsubsections) ". ";
-  counter-increment: subsubsections;
-}
+//h4:before {
+//  content: counter(chapters) "." counter(sections) "." counter(subsections) "." counter(subsubsections) ". ";
+//  counter-increment: subsubsections;
+//}
 
 h1.nocount:before {
   content: none;
