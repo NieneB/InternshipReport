@@ -34,7 +34,6 @@
 </dl>
 
 # Introduction
-========
 
 The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps. (MacEachren & Kraak, 2001; Tensen, 2014) Almost 60% of all data is geographically referenced (Hahmann & Burghardt, 2013). Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data. (Cartwright, Miller, & Pettit, 2004; Tensen, 2014) Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.
 
@@ -84,23 +83,23 @@ The target group will be defined as the common citizen, living in Drenthe and sh
 
 The target group must feel:
 
-1A. Attracted to use the application
-1B. Attracted to stay and play around with the application
-1C. Challenged to explore more
+1. Attracted to use the application
+2. Attracted to stay and play around with the application
+3. Challenged to explore more
 
 The target group must be able to:
 
-2A. Discover the meaning of the field-names in relation to their environment
-2B. Discover interesting stories and surprising facts about the field-names
-2C. Understand the field-names and their value
+4. Discover the meaning of the field-names in relation to their environment
+5. Discover interesting stories and surprising facts about the field-names
+6. Understand the field-names and their value
 
 The application must be:
 
-3A. Intuitive and simple to use, so it shows quick and surprising results on the actions of the target group
-3B. Technically working in an efficient and error-safe way. User friendly.
+7. Intuitive and simple to use, so it shows quick and surprising results on the actions of the target group
+8. Technically working in an efficient and error-safe way. User friendly.
 
 # Background
-========
+
 
 In this chapter, the field names are further explained and their role in the cultural heritage field. Therefore, Also the field of cultural heritage is explained and its categories.
 Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
@@ -324,7 +323,7 @@ The number, type and arrangements of the different views depend on the task, the
 (Nöllenburg, 2007)
 
 # Method
-========
+
 
 This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
 See figure # for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
@@ -933,7 +932,7 @@ Table $$ shows the statements asked and their relation to the objectives. The co
 
 
 # Results
-========
+
 
 ## Theoretical framework
 First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective 1a, to make the application attractive, and 2c, understanding the geo-data.
@@ -1070,7 +1069,7 @@ total answer overview see appendix $$$.
 
 
 # Discussion
-========
+
 
 - Too much ideas for such a short time span. Not enough knowledge for the conducting researcher in this short amount of time.
 
@@ -1103,7 +1102,7 @@ Not enough participants.
 usefull comments. though no time to implement them.
 
 # Recommendations
-========
+
 
 ## Website recommendations
 
@@ -1113,10 +1112,10 @@ Let the user invest, possible idea: Draw a field and add a field name.
 Implement more of the thought up ideas to make it more interesting.
 
 # Conclusion
-========
+
 
 # References
-========
+
 Actueel Hoogtebestand Nederland. (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html
 
 Bertin, J. (2000). Matrix theory ofgraphics. Information Design Journal, 10(1), 5–19.
@@ -1191,7 +1190,7 @@ Zeijden, A. V. D. (2011). Immaterieel erfgoed en musea, (35), 4–6.
 
 
 # Appendix
-========
+
 
 ## Mood board
 
