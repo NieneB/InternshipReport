@@ -11,7 +11,9 @@
 <p> <i>Niene Boeijen</i> </p>
 <p> <i> 900918-070-088 </i></p>
 <p> July 2015  </p>
-<img class="text-wrap-left" src="img/WS_logo.jpg"> <img class="text-wrap-right" src="img/logo_wageningen_ur_.gif">
+<img  src="img/WS_logo.jpg"> 
+<img src="img/logo_wageningen_ur_.gif">
+
 </div>
 
 <h1 class ="nocount"> Acknowledgments</h1>
@@ -77,19 +79,19 @@ The target group will be defined as the common citizen, living in Drenthe and sh
 
 ## The objectives
 
-The target group must feel:
+A. The target group must feel:
 
 1. Attracted to use the application
 2. Attracted to stay and play around with the application
 3. Challenged to explore more
 
-The target group must be able to:
+B. The target group must be able to:
 
 4. Discover the meaning of the field-names in relation to their environment
 5. Discover interesting stories and surprising facts about the field-names
 6. Understand the field-names and their value
 
-The application must be:
+C. The application must be:
 
 7. Intuitive and simple to use, so it shows quick and surprising results on the actions of the target group
 8. Technically working in an efficient and error-safe way. User friendly.
@@ -122,19 +124,22 @@ Categories 1,2 and 3 are tangible substances while category 4 is intangible heri
 
 The Convention of UNESCO introduces five domains of ICH:
 
--	oral traditions and expressions including language as a vehicle of the ICH
--	performing arts (dance, music, theater)
--	social practices, rituals and festive events
--	knowledge and practices concerning nature and the universe
--	traditional craftsmanship, meaning the skills and knowledge involved rather than the craft product itself
+1. Oral traditions and expressions including language as a vehicle of the ICH.
+2. Performing arts (dance, music, theater).
+3. Social practices, rituals and festive events.
+4. Knowledge and practices concerning nature and the universe.
+5. Traditional craftsmanship, meaning the skills and knowledge involved rather than the craft product itself.
 
 The boundaries between those domains are extremely fluid (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-b).
+
 In the scope of the H&L project this research will focus on the connection of place and time in intangible cultural heritage. ICH can be shortly explained as all traditions and rituals of normal life, (Zeijden, 2011) which gives people a sense of identity and continuity. ICH is transmitted from generation to generation and can be constantly recreated by communities due to interaction with their environment. (“UNESCO Culture Sector - Intangible Heritage - 2003 Convention :,” n.d.-b)
 Intangible heritage is strongly depended on the features of space and influenced by the space. Of course these traditions, habits , etc., have a place where they take place. Or they are about a place, have a spreading, an origin, a continuation, can cover multiple places, through time. (Karavia & Georgopoulos, 2013) ICH
 This applies also for the field-names in Drenthe, which is oral living heritage. Originated with a strong influence of the direct environment it exists in.
 
 ##Waag Society
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
+
+<img src="img/WS_logo.jpg">
 
 Waag Society is a Institute for art, science and technology. They develop technical interventions for relevant social innovation.
 In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wetlab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
@@ -152,14 +157,12 @@ Figure $$ shows the overview of the whole H&L project. Now focusing on the histo
 <figcaption> Sheme of Hertiage and Location project. Products and Services.</figcaption>
 <img src ="img/EL-producten-en-diensten-schema_v8.jpg">
 </figure>
-##Cultural heritage data & GIS
 
-There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010)
-Explained here are several reasons why a GIS system is beneficial for digitalizing CH data;
+##Cultural heritage data & GIS
+There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010) Explained here are several reasons why a GIS system is beneficial for digitalizing CH data;
 One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. (Karavia & Georgopoulos, 2013; Meyer et al., 2007)
 Second, such a system can be used for research aims. (Karavia & Georgopoulos, 2013) Implementing analysis on the spatial correlation of the CH data. The geographical relation and connection among various cultural heritages can be studied as well as the evolution through time and space and relationships between different datasets.((Karavia & Georgopoulos, 2013; Lai, Luo, & Zhang, 2012) So GIS can help to correlate and exploit heritage spatial relations and enrich the knowledge already existing. (Karavia & Georgopoulos, 2013)
-This is also the third and the main goal of the Heritage & Location [H&L] project, for which this research is intended, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.)
-Assumption is that the place referred to in historical documents, probably refer to the identical real-world place if they are related in name.
+This is also the third and the main goal of the Heritage & Location [H&L] project, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.) Assumption is that the place referred to in historical documents, probably refer to the identical real-world place if they are related in name.
 
 Digitalizing heritage as linked data contains the following key aspects:
 
@@ -167,8 +170,8 @@ Digitalizing heritage as linked data contains the following key aspects:
 2.	Make it accessible through the Internet
 3.	Searchable, making it possible to index by search engines.
 4.	Re-usability. Linked-data makes it easy to use the data.
+(DEN | DE BASIS vindbaarheid)
 
-(“DEN | DE BASIS vindbaarheid,” n.d.)
 
 ##Geo data
 Geospatial data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive. (Mennis et al., 2000)
@@ -217,20 +220,17 @@ They state that the dynamic visual variables will only give the right results wh
 Animated maps leave interaction aside, and use time to add a visual dimension to the display. The scenes in an animation show the state f the data at one moment accordingly. There is hardly any interactive control. 
 Dynamic animated variables are 
   
-  1. temporal position, when something is displayed
-  2. duration. how long is something displayed
-  3. order, temporal sequence
-  4. rate of change
-  5. frequency, speed
-  6. synchronization 
-Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Ormeling, 1996) 
-
-(Kobben and Yaman) (MacEachren)
+  * Temporal position, when something is displayed.
+  * Duration. how long is something displayed.
+  * Order, the temporal sequence.
+  * Tate of change.
+  * Frequency or speed.
+  * Synchronization. 
+  
+Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Ormeling, 1996) (Kobben and Yaman) (MacEachren)
 
 ####Spatial - temporal
-Spatial temporal visualization is the display of dynamic pehomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations. See table #.
-
-(Dibiase et al., 1992)(Nöllenburg, 2007)(Köbben & Yaman, 1996)
+Spatial temporal visualization is the display of dynamic pehomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations.(Dibiase et al., 1992)(Nöllenburg, 2007)(Köbben & Yaman, 1996)  See table #.
 
 Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
 
@@ -271,35 +271,35 @@ Dynamic visualization variables are identified by Dibiase et al. (1992),  MacEac
 Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) She provides a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships.  Blok’s framework more aims at the exploratory use of visualization while this research, aims at the display and communication part of the geo-spatial phenomena for explanatory use. Though, this author finds that Blok’s dynamic visualization variables can be applied for both purposes. As Blok also states; the ultimate goal is to contribute to the development of representation methods and interaction tools, which are also found in the explanatory visualization forms.
 
 
-1. No change
+<!-- 1. No change
 
 2. Change
 Variables in the spatial domain
 
 Appearance/disappearance - born die
 Mutation
-  	- in size, shape
-  	- increase/decrease ordinal, interval ratio
-    - grow, shrink, 
-  
+    - in size, shape
+    - increase/decrease ordinal, interval ratio
+    - grow, shrink,
+
 Movement in spatial position
-  	- along trajectory
-  	- boundary shift
+    - along trajectory
+    - boundary shift
 
 Variables in the temporal domain
 
-  -	moment in time
-  -	pace
-  -	duration
-  -	sequence
-  -	frequency
+  -  moment in time
+  -  pace
+  -  duration
+  -  sequence
+  -  frequency
 
 
 Variable in thematic properties
   - mutation
   - thematic change
 
-(Tensen, 2014)
+(Tensen, 2014) -->
 
 ####Interaction
 Interactivity is one of the key aspects of geo visualization. The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Term used is Guided discovery. 
@@ -311,10 +311,10 @@ Interactivity lets the user explore the geo-data and be in control and not depen
 
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
-1. Focusing individual views
+1. **Focusing individual views.**
 The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
 
-2. Linking multiple views
+2. **Linking multiple views.**
 Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
 This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
@@ -322,14 +322,13 @@ The number, type and arrangements of the different views depend on the task, the
 
 # Method
 
-
-This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
-See figure # for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
-
 <figure class='text-wrap-left' >
 <figcaption>Methodology overview</figcaption>
 <img src="img/flowchart_Method.jpg">
 </figure>
+
+This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
+See figure # for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
 
 Once the general goal was established; making a web-based geo-visualization, the case study in the field of cultural heritage had to be defined. This, because the internship is conducted for the project Heritage&Location at the Waag Society. In the project several heritage institutions take part, and so came into contact with possible data providers. After explaining the general goal of this study to them, the data needed for this report was provided by  *Rijksdienst voor Cultureel Erfgoed*.
 With the data, the subject of the research took more form.
@@ -352,11 +351,13 @@ While doing this, decisions and choices will be made on the developed framework.
 Section $$1
 
 -   The idea and design
+
 Section $$2
 
 -	Techniques needed to make the web-application. (O 3a, 3b and 3c)
 -	Techniques for geo support. (O 2 and 3)
 -	Visualizing of the geo data. (O 2)
+
 Section $$3
 
 -	Designing the webpage. (O 1a)
