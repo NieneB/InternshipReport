@@ -9,7 +9,7 @@
 <h2 class="nocount">  Wageningen University </h2>
 <img src="img/logo_wageningen_ur_.gif">
 <h2 class="nocount">  Waag Society</h2>
-<h2> Project Heritage & Location </h2>
+<h2 class="nocount"> Project Heritage & Location </h2>
 <img  src="img/WS_logo.jpg" > 
 
 <p> <i>Niene Boeijen</i> </p>
@@ -1061,6 +1061,10 @@ For the total answer overview see appendix $$$.
 
 
 # Discussion
+
+The short time span of the project, resulted in a product that is not finished. The iterative process had to be followed several times in order to come to a user centered design. Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. 
+Also, for the conduction researcher did all steps of the process herself, a lack of specific skills and knowledge was there. 
+
 
 
 - Too much ideas for such a short time span. Not enough knowledge for the conducting researcher in this short amount of time.

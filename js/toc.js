@@ -15,8 +15,14 @@ tov.selectAll("li")
   .attr("class", function(d){
     return "toc-"+ d.localName
   })
-  .attr("href", function(d){
-    return d.id
-  })
   .text(function(d){
-     return d.innerHTML });
+     return d.innerHTML })
+  
+tov.selectAll("li")
+    .data(hoofdstuk)
+    .enter()
+  .append("a")  
+  .attr("class", "xref")
+  .attr("href", function(d){
+      return d.id
+    });
