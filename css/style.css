@@ -134,7 +134,9 @@ p {
   margin-bottom: 5px;
   line-height: 3rem;
 }
-
+tbody{
+  width: 100%;
+}
 table {
  width: 100%;
 }

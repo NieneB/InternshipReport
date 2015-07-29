@@ -630,14 +630,16 @@ The script  runs through all the field-names and all the possible categories, to
 
 #### AHN
 
+<figure class="text-wrap-right">
+  <figcaption>  Flowchart AHN2 raster processing  </figcaption>
+  <img src="img/ahnpreprocessing.jpg">
+</figure> 
+
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
 
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels.
 
-<figure class="text-wrap-right">
-  <figcaption>  Flowchart AHN2 raster processing  </figcaption>
-  <img src="img/ahnpreprocessing.jpg">
-</figure>
+
 
 #### Cadastre parcels
 No preprocessing needed other then explained in <a class="xref" href="pre-processing-the-data"></a> preprocessing field-names.
@@ -650,13 +652,14 @@ Only processing was clipped to the research area. No other preprocessing needed 
 
 First both client side and server side are build on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the possibility to move it to a server will be regarded.
 
-Figure <a class="xref" href="#proces"></a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph <a class="xref" href="#api-sql-queries"> </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed.
-The next paragraphs explain the database, the API, the SQL query and the website.
-
 <figure id="proces">
 <figcaption> Back-end processes </figcaption> 
 <img src="img/webpage_model.jpg">
 </figure>
+
+Figure <a class="xref" href="#proces"></a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph <a class="xref" href="#api-sql-queries"> </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed.
+The next paragraphs explain the database, the API, the SQL query and the website.
+
 
 #### Setting up the database
 
@@ -666,7 +669,9 @@ The next paragraphs explain the database, the API, the SQL query and the website
 </figure>
 
 The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters.
-Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
+
+Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)  
+
 
 <p class="code"> Loading data in the database </p>
 	Shp2pgsql
@@ -956,12 +961,13 @@ Last, will be looked at some frameworks explaining how to build an efficient, at
 
 ###Visualization of field-names
 Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
-Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 
 <figure class="text-wrap-right">
 <figcaption> Map use cube from MacEachren and Kraak </figcaption>
 <img src="img/Map_use_cube.jpg">
 </figure>
+
+Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 
 In figure <a class="xref" href="#chain"></a> the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done. The main focus is on the communication for creating knowledge. 
 
