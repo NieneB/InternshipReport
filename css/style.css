@@ -320,7 +320,7 @@ figure:before{
   text-decoration: none;
 }
 
-.toc{
+#toc{
   list-style-type: none;  
   text-align:left;
   text-decoration: none;
