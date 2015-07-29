@@ -1,12 +1,10 @@
-var MAX_LEVEL = 3;
-
 function createHeadingTree() {
   var tree = {
     element: document.body,
     children: []
   };
 
-  var allHeadingsSelector = Array.apply(null, new Array(MAX_LEVEL)).map(function(d, i) {
+  var allHeadingsSelector = Array.apply(null, new Array(6)).map(function(d, i) {
     return 'h' + (i + 1) + ':not(.nocount)';
   }).join(', ');
 
