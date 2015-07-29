@@ -1095,8 +1095,11 @@ The professional knowledge about the data was with the RCE, therefore the focus 
   
 Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data, the data could be seen as too detailed. Using pixels of 0.5 m resolution is not really needed for the visualization. The same for the water bodies, these do not need to be that exact. 
 
+Height is the recent height, is this still the same as in 1830?? A lot has changed since.
+
 The water topologies used are from 2015. Therefore they do not show correlation with the field names. Some lakes disappeared and new ones appeared. The default background map is a map from 1830, showing a good reference for the field-names. But on the transect line, water bodies show up that cannot be seen on this base layer. When switching to the base layer from the current map, the water bodies do correlate but the field-names are not referenced. 
 
+web technology
 The technology to build the web application was a restricting factor in the implementation of some ideas. For example, displaying the total length of the line, was a hard technical trick and therefore not finished or worked out. Also the panel with the extra base-layers was supposed to show all the time. But the plugin for the miniMap did not support this and there was no time to work around it. 
 On the positive site, the d3 package provided good and simple ways to work with the graphical display of the transect line. It is an easy tool and draws simple svg formats in the browser with the possibility to animate it easily. 
 Also leaflet proved to be quick and simple, providing the basic needs for a map and displaying the geoJSON of the field-names on it. The drawing plugin was also easily edited so only the possibility for drawing a line was enabled. Chancing the text from English to Dutch was more hard and therefore also not implemented in the short time span. 
@@ -1104,39 +1107,19 @@ Also leaflet proved to be quick and simple, providing the basic needs for a map 
 The database and API do slow down the process. Because the AHN data is really detailed and every 10 meters a point is asked to intersect, the process goes really slow. This could be looked into to improve. Next to that, the user doesn't see a *waiting sign* yet. For the experience of the user they need to know that something **is** happening after their action. Now it looks like nothing goes on. 
 
 
-web technology
-
 Design
 Gets the old feeling intended as the mood-board. Old font was tried but made the names hard to read. So changed back to an easier to read font. 
 
 geo visualization
 The theoretical framework did bring in some nice techniques that are found back in the application. However when it comes to color, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
 
-
-test
-
-
-Lack of professional knowledge about the data
-
-Design
-Geo-visualisation is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow.
-
-
-Geo data visualisation
-Height is the recent height, is this still the same as in 1830?? A lot has changed since.
-
-
-
+Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow.
 No temporal dimension added.
-
+more specific stories needed behind the field-names.
 Scale is needed
-
 Not the best way to visualize the correlation which the field-names have to their surrounding.
 
-more specific stories needed behind the fieldnames.
-
-
-
+test
 The test with the questionnaire was conducted very quickly and not thoroughly. The statements posed may be too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is no saying. The participants are influenced by that they like heritage and understand the project in the bigger picture. participants are biased. 
 Not enough participants. 
 
@@ -1154,10 +1137,10 @@ Because there are sufficient recommendations to be done to improve the web appli
 * Restructure the web page into a carrousel. Giving the information and maps more space on the screen and is for the user more easy to navigate between the different aspects of the application.
 * Lower the water body areas in the AHN dataset for a more beautiful and clear display on the transect line.
 * Find water body data from 1830 instead of 2015. 
+* Make the process more quick by decreasing the level of detail in the data. 
 
 # Conclusion
 Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
-
 
 # References
 
@@ -1235,7 +1218,6 @@ Every geo-visualization needs to be looked at individually and specific for that
 
 
 # Appendix
-
 
 ## Mood board
 
