@@ -1,5 +1,3 @@
----
----
 
 /* Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -121,7 +119,7 @@ body {
 }
 
 h1 {
-//  padding-top: 3em;
+  padding-top: 3em;
   page-break-before: always;
 }
 
@@ -131,12 +129,12 @@ table, p, image, img , code, pre {
 
 p {
   text-align: justify;
-  //margin-bottom: 5px;
-//  line-height: 3rem;
+  margin-bottom: 5px;
+  line-height: 3rem;
 }
 
 table {
-//  width: 100%;
+ width: 100%;
 }
 
 img {
@@ -165,13 +163,13 @@ blockquote {
   margin: 0px 20px 0px 0px;
 }
 
-// This only works in Prince, not Chrome/Firefox:
-///* Cross-references
+
+/* Cross-references
 //–––––––––––––––––––––––––––––––––––––––––––––––––– */
-//
-//a.xref:after {
-//  content: " (page " target-counter(attr(href, url), snippets) ")";
-//}
+
+a.xref:after {
+  content: " (page " target-counter(attr(href, url), snippets) ")";
+}
 
 /* Page numbers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -210,10 +208,6 @@ h2 {
   counter-reset: subsections;
 }
 
-/*//h3 {
-//  counter-reset: subsubsections;
-//}
-*/
 
 .toc-h1{
   counter-increment: toc-h1;
@@ -267,10 +261,6 @@ h3:before {
   counter-increment: subsections;
 }
 
-//h4:before {
-//  content: counter(chapters) "." counter(sections) "." counter(subsections) "." counter(subsubsections) ". ";
-//  counter-increment: subsubsections;
-//}
 
 h1.nocount:before {
   content: none;
@@ -325,9 +315,9 @@ figure:before{
   text-decoration: none;
 }
 .toc{
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
+
 #titlePage{
   font-size: 4.0rem;
   text-align: center;
@@ -338,134 +328,6 @@ figure:before{
 }
 
 
-//table of contents syling
 ul.toc a::after {
   content:  leader('.') target-counter(attr(href), page);
 }
-
-//hr {
-//    margin: 0 0 19px;
-//    border: 0;
-//    border-bottom: 1px solid #ccc;
-//}
-//blockquote {
-//    padding: 10px 10px 10px 10px;
-//    margin-bottom: 18px;
-//    font-family:georgia,serif;
-//    font-style: italic;
-//}
-//
-//blockquote p {
-//    font-size: 14px;
-//    font-weight: 300;
-//    line-height: 18px;
-//    margin-bottom: 0;
-//    font-style: italic;
-//}
-
-//code, pre {
-//    font-family: Monaco, Andale Mono, Courier New, monospace;
-//}
-//code {
-//    font-size: 14px;
-//    -webkit-border-radius: 3px;
-//    -moz-border-radius: 3px;
-//    border-radius: 3px;
-//}
-//pre {
-//    background-color: #E4E5E6;
-//    color: black;
-//    display: block;
-//    padding: 14px;
-//    margin: 0 0 18px;
-//    line-height: 16px;
-//    font-size: 11px;
-//    border: 1px solid #d9d9d9;
-//    white-space: pre-wrap;
-//    word-wrap: break-word;
-//}
-//pre code {
-//    color:#434343;
-//    font-size: 14px;
-//}
-//sup {
-//    font-size: 0.83em;
-//    vertical-align: super;
-//    line-height: 0;
-//}
-//
-//
-//
-//
-//
-//img {
-//      margin-left: auto;
-//      margin-right: auto;
-//      display: inline;
-//      text-align: center;
-//    }
-//
-
-//
-//
-//    .title{
-//          font-weight: 400;
-//          text-transform: uppercase;
-//          letter-spacing: 2px;
-//          font-size: 0.8em;
-//          padding: .5em;
-//          text-align: center;
-//          color: #fff;
-//          background: #f5bca8;
-//        }
-//
-
-//
-//.title1 {
-//  font-weight: bold;
-//  font-size: 34px;
-//}
-//.title2 {
-//  text-align: right;
-//  font-size:26px;
-//  font-weight: normal;
-//  font-style: italic;
-//}
-
-
-
-
-//h1,
-//h2,
-//h3,
-//h4,
-//h5,
-//h6,
-//p,
-//blockquote {
-//    line-height:200%;
-//}
-
-
-//a {
-//    color: #0069d6;
-//}
-//
-//a:hover {
-//    color: #0050a3;
-//    text-decoration: none;
-//}
-//a img {
-//    border: none;
-//}
-
-//h1,
-//h2,
-//h3,
-//h4,
-//h5,
-//h6 {
-//    color: #404040;
-//    line-height: 100%;
-//}
-
