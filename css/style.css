@@ -209,7 +209,7 @@ h2 {
 }
 
 .toc-h3:before{
-  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) ".  `";
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) ".  ";
   counter-increment: toc-h3;
 }
 
@@ -291,6 +291,7 @@ figure:before{
 }
 .toc{
   list-style-type: none;
+  text-decoration: none;
 }
 #titlePage{
   font-size: 4.0rem;
