@@ -168,7 +168,7 @@ blockquote {
 //–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a.xref:after {
-  content: " (page " target-counter(attr(href, url), snippets) ")";
+  content: " (page " target-counter(attr(href), page) ")";
 }
 
 /* Page numbers
