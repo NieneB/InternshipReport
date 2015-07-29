@@ -112,6 +112,9 @@
 * {
   -webkit-print-color-adjust: exact;
 }
+@page {
+  size: A4;
+}
 
 body {
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -168,7 +171,7 @@ blockquote {
 //–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a.xref:after {
-  content: " (page " target-text(attr(href), counter) ")";
+  content: " (page " target-text(attr(href)) ")";
 }
 
 /* Page numbers
@@ -177,6 +180,8 @@ a.xref:after {
 @page {
   @bottom-right {
     content: counter(page);
+    font-size: 9pt;
+    color: #333;
   }
 }
 
