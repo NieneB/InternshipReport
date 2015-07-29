@@ -92,11 +92,8 @@
     margin:0;
     padding:0;
   }
-	html {
-    font-size: 40%;
-  }
   @page {
-    margin:2cm;
+    margin:2.5cm;
   }
   img{
     max-width: 100%;

@@ -1062,8 +1062,24 @@ For the total answer overview see appendix $$$.
 
 # Discussion
 
-The short time span of the project, resulted in a product that is not finished. The iterative process had to be followed several times in order to come to a user centered design. Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. 
-Also, for the conduction researcher did all steps of the process herself, a lack of specific skills and knowledge was there. 
+Firs, the short time span of the project, resulted in a product that is not finished. The iterative process had to be followed several times in order to come to a user centered design. Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. The advise and comments received in the end, where very useful but were not implemented any more. This is a pity, for the application could be further improved with the new ideas. One of the new ideas, was splitting up the screen in 3 parts. Firs a screen with information, then scroll through to the next screen, where the user can draw a line. If the line is loaded, a new screen is show with the transect line and the information behind it. If the user wants to go back to either the explanation, or drawing a new line, they can simply scroll up and start over again. This form of websites is called a carousel and starts to become more popular. 
+
+In general, the conducting researcher did all steps of the process herself, and a lack for specific skills and knowledge was there. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
+
+The data was provided by the RCE, because this all came in a unknown file structure with no metadata behind the various datasets, the background and quality of the data was not looked in. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. Simply a sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the scripts, starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscelanious. The order of the table and so the order of running the script can be seen in appendix <a class="xref" href="#categories-field-names-form-rce"> . Also no human cognition came to pass for the process. Which makes the classification crude.
+  
+Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data, the data could be seen as too detailed. Using pixels of 0.5 m resolution is not really needed for the visualization. The same for the water bodies, these do not need to be that exact. 
+
+
+Data + preprocessing
+
+web technology
+
+Design
+
+geo visualization
+
+test
 
 
 
@@ -1108,6 +1124,7 @@ Let the user invest, possible idea: Draw a field and add a field name.
 Implement more of the thought up ideas to make it more interesting.
 
 # Conclusion
+Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
 
 
 # References
@@ -1124,7 +1141,7 @@ Cerasuolo, F., Cutugno, F., & Leano, V. A. (2012). Visualization with a New Visu
 
 Deal, L. (2014). Visualizing Digital Collections. Technical Services Quarterly, (April), 30–30. http://doi.org/10.1080/07317131.2015.972871
 
-DEN | Home. (n.d.). Retrieved May 6, 2015, from http://www.den.nl/
+DEN. Home. (n.d.). Retrieved May 6, 2015, from http://www.den.nl/
 
 Dibiase, D., Maceachren, A., Krygier, J., & Reeves, C. (1992). Animation and the Role of Map Design in Scientific Visualization. Cartography and Geographic Information Systems, 19(4), 201–&. http://doi.org/10.1559/152304092783721295
 
@@ -1172,7 +1189,7 @@ Steiniger, S., & Hunter, A. J. S. (2013). The 2012 free and open source GIS soft
 
 Tensen, T. (2014). Master Thesis Geo-data animations in television journalism :, 1–87.
 
-TOP10NL | Publieke Dienstverlening Op de Kaart Loket. (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl
+TOP10NL Publieke Dienstverlening Op de Kaart Loket. (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl
 
 UNESCO Culture Sector - Intangible Heritage - 2003 Convention : (n.d.). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002
 
