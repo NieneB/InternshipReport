@@ -78,8 +78,36 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media print {
+  body{
+    color:#000;
+    background: #fff;
+  }
+  h1{
+    color: #000;
+    background: none;
+  }
+  nav, aside{
+    display: none;
+  }
+  body, article{
+    width:100%;
+    margin:0;
+    padding:0;
+  }
 	html {
     font-size: 40%;
+  }
+  @page {
+    margin:2cm;
+  }
+  img{
+    max-width: 100%;
+  } 
+  article{
+    page-break-before: always;
+  }
+  ul, img{
+    page-break-inside: avoid;
   }
 }
 
