@@ -319,8 +319,15 @@ figure:before{
   margin-left:3rem;
   text-decoration: none;
 }
+
 .toc{
   list-style-type: none;  
+  text-align:left;
+  text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 #titlePage{
