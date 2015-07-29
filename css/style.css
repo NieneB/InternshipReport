@@ -306,7 +306,9 @@ figure:before{
 }
 
 
-
+t1, t2, t3 {
+  display: block;
+}
 
 
 .toc-h1{
