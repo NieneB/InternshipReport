@@ -1,21 +1,32 @@
 ---
 ---
 <div id="titlePage">
-<t1> Master Geo-Information Science & Remote Sensing </t1>
-<t2> Internship Report  GRS00000 </t2>
-<img src="img/drawline.png">
-<t1 > Building a Web-Based Geo-Visualization about Field-Names of Drenthe  </t1>
-<t2 > Wageningen University </t2>
-<img src="img/logo_wageningen_ur_.gif" width="300px">
-<t2>Waag Society</t2>
-<t2>Project Heritage & Location </t2>
-<img  src="img/WS_logo.jpg" width="300px" > 
-
-<t3> <i>Niene Boeijen</i> </t3>
-<t3> <i> 900918-070-088 </i></t3>
-<t3> July 2015  </t3>
-
-
+  <t1> Master Geo-Information Science</t1>
+  
+  <t1> & Remote Sensing </t1>
+  
+  <t2> Internship Report  GRS00000 </t2>
+  
+  <img src="img/drawline.png">
+  
+  <t1 > Building a Web-Based Geo-Visualization about Field-Names of Drenthe  </t1>
+  
+  <t2 > Wageningen University </t2>
+  
+  <img src="img/logo_wageningen_ur_.gif" width="300px">
+  
+  <t2>Waag Society</t2>
+  
+  <t2>Project Heritage & Location </t2>
+  
+  <img  src="img/WS_logo.jpg" width="300px" > 
+  
+  <t3> <i>Niene Boeijen</i> </t3>
+  
+  <t3> <i> 900918-070-088 </i></t3>
+  
+  <t3> July 2015  </t3>
+  
 </div>
 
 <h1 class ="nocount"> Acknowledgments</h1>
@@ -1079,26 +1090,31 @@ Firs, the short time span of the project, resulted in a product that is not fini
 
 In general, the conducting researcher did all steps of the process herself, and a lack for specific skills and knowledge was there. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
 
-The data was provided by the RCE, because this all came in a unknown file structure with no metadata behind the various datasets, the background and quality of the data was not looked in. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. Simply a sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the scripts, starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscelanious. The order of the table and so the order of running the script can be seen in appendix <a class="xref" href="#categories-field-names-form-rce"> </a> . Also no human cognition came to pass for the process. Which makes the classification crude.
+The data was provided by the RCE, because this all came in a unknown file structure with no metadata behind the various datasets, the background and quality of the data was not looked in. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. Simply a sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the scripts, starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in appendix <a class="xref" href="#categories-field-names-form-rce"> </a> . Also no human cognition came to pass for the process. Which makes the classification crude.
+The professional knowledge about the data was with the RCE, therefore the focus was more on the visualization and not improving the information in the data. A lack of professional knowledge about the field-names was kept at a low level. 
   
 Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data, the data could be seen as too detailed. Using pixels of 0.5 m resolution is not really needed for the visualization. The same for the water bodies, these do not need to be that exact. 
 
+The water topologies used are from 2015. Therefore they do not show correlation with the field names. Some lakes disappeared and new ones appeared. The default background map is a map from 1830, showing a good reference for the field-names. But on the transect line, water bodies show up that cannot be seen on this base layer. When switching to the base layer from the current map, the water bodies do correlate but the field-names are not referenced. 
 
-Data + preprocessing
+The technology to build the web application was a restricting factor in the implementation of some ideas. For example, displaying the total length of the line, was a hard technical trick and therefore not finished or worked out. Also the panel with the extra base-layers was supposed to show all the time. But the plugin for the miniMap did not support this and there was no time to work around it. 
+On the positive site, the d3 package provided good and simple ways to work with the graphical display of the transect line. It is an easy tool and draws simple svg formats in the browser with the possibility to animate it easily. 
+Also leaflet proved to be quick and simple, providing the basic needs for a map and displaying the geoJSON of the field-names on it. The drawing plugin was also easily edited so only the possibility for drawing a line was enabled. Chancing the text from English to Dutch was more hard and therefore also not implemented in the short time span. 
+
+The database and API do slow down the process. Because the AHN data is really detailed and every 10 meters a point is asked to intersect, the process goes really slow. This could be looked into to improve. Next to that, the user doesn't see a *waiting sign* yet. For the experience of the user they need to know that something **is** happening after their action. Now it looks like nothing goes on. 
+
 
 web technology
 
 Design
+Gets the old feeling intended as the mood-board. Old font was tried but made the names hard to read. So changed back to an easier to read font. 
 
 geo visualization
+The theoretical framework did bring in some nice techniques that are found back in the application. However when it comes to color, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
+
 
 test
 
-
-
-- Too much ideas for such a short time span. Not enough knowledge for the conducting researcher in this short amount of time.
-
-- Not enough knowledge of design or technical construction.
 
 Lack of professional knowledge about the data
 
@@ -1109,7 +1125,7 @@ Geo-visualisation is so broad and there are so many ways in which a dataset can 
 Geo data visualisation
 Height is the recent height, is this still the same as in 1830?? A lot has changed since.
 
-water areas smoothed out.
+
 
 No temporal dimension added.
 
@@ -1121,20 +1137,23 @@ more specific stories needed behind the fieldnames.
 
 
 
-Testing - questionnaire no experience. Maybe too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is no saying. The participants are influenced by that they like heritage and understand the project in the bigger picture. participants are biased. 
+The test with the questionnaire was conducted very quickly and not thoroughly. The statements posed may be too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is no saying. The participants are influenced by that they like heritage and understand the project in the bigger picture. participants are biased. 
 Not enough participants. 
 
-usefull comments. though no time to implement them.
-
-# Recommendations
-
+The test did provide useful comments and showed clearly where the user got stuck at or not. It brought in new ideas but there was no time to implement them and test them again.
 
 ## Website recommendations
+Because there are sufficient recommendations to be done to improve the web application, they are listed here below. Some are extra ideas, that didn't receive the time to be implemented. Others are recommendations done by the test group. 
 
-Add more symbols and information behind it.
-Make the application suitable for multiple browsers.
-Let the user invest, possible idea: Draw a field and add a field name.
-Implement more of the thought up ideas to make it more interesting.
+* Add more symbols and information behind it.
+* Make the application suitable for multiple browsers.
+* Let the user invest, possible idea: Draw a field and add a field name.
+* Implement more of the thought up ideas to make it more interesting.
+* Add waiting sign while database query is running
+* Make the extra map layers visible always
+* Restructure the web page into a carrousel. Giving the information and maps more space on the screen and is for the user more easy to navigate between the different aspects of the application.
+* Lower the water body areas in the AHN dataset for a more beautiful and clear display on the transect line.
+* Find water body data from 1830 instead of 2015. 
 
 # Conclusion
 Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
