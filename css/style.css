@@ -198,7 +198,6 @@ h2 {
 
 .toc-h1:before {
   content: "Chapter " counter(toc-h1) ".  ";
-
   counter-reset: toc-h2;
 }
 
@@ -215,7 +214,12 @@ h2 {
 
 .toc-h1 a::after{
   content: leader('.') target-counter(attr(href),page);
-  
+}
+.toc-h2 a::after{
+  content: leader('.') target-counter(attr(href),page);
+}
+.toc-h3 a::after{
+  content: leader('.') target-counter(attr(href),page);
 }
 
 h1:before {
@@ -282,16 +286,19 @@ figure:before{
 
 .toc-h1{
   font-weight: bold;
+  text-decoration: none;
 }
 .toc-h2{
   margin-left: 1.5rem;
+  text-decoration: none;
 }
 .toc-h3{
   margin-left:3rem;
+  text-decoration: none;
 }
 .toc{
   list-style-type: none;
-  text-decoration: none;
+  
 }
 #titlePage{
   font-size: 4.0rem;
