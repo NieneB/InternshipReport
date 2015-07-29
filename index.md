@@ -7,10 +7,10 @@
 <img src="img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png">
 <h1 class ="nocount"> Building a Web-Based Geo-Visualization about Field-Names of Drenthe  </h1>
 <h2 class="nocount"> Wageningen University </h2>
-<img src="img/logo_wageningen_ur_.gif">
+<img src="img/logo_wageningen_ur_.gif" width="300px">
 <h2 class="nocount">Waag Society</h2>
 <h2 class="nocount">Project Heritage & Location </h2>
-<img  src="img/WS_logo.jpg" > 
+<img  src="img/WS_logo.jpg" width="300px" > 
 
 <p> <i>Niene Boeijen</i> </p>
 <p> <i> 900918-070-088 </i></p>
@@ -141,10 +141,12 @@ This applies also for the field-names in Drenthe, which is oral living heritage.
 
 ##Waag Society
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
+
 <figure class="text-wrap-left">
   <figcaption>Waag Society </figcaption>
-<img src="img/WS_logo.jpg" width="400px">
+  <img src="img/WS_logo.jpg" width="400px"></img>
 </figure>
+
 Waag Society is a Institute for art, science and technology. They develop technical interventions for relevant social innovation.
 In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wetlab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
@@ -960,6 +962,7 @@ The field-name data sets are static data, but will be displayed dynamically and 
 
 <p class="table"> Visualization operators from Ogao & Kraak </p>
 ![Alt text](img/ogaokraak.png)
+
 *(Ogao & Kraak, 2002)*
 
 To cover the four visualization operations the user interface for a web page should have the following basic components:
@@ -1003,23 +1006,31 @@ When on the site the trigger is the button, to press and go to the map. The acti
 For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 ## The web application
-The web application can be found on: $
-Some screenshots of how it looks:
+The web application can be found on: www.hierokomtt.niene
+Some screenshots of how it looks. The first figure is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
+
 <figure>
   <figcaption>Welcome screen </figcaption>
   <img src="img/welcomescreen.png">
 </figure>
+
+The next figure shows how the screen looks when entering the application. A example line is already given to show the user what is possible. 
 
 <figure>
   <figcaption>Map status in beginning </figcaption>
   <img src="img/mapopeningscreen.png">
 </figure>
 
+The next figure shows the drop-down panel with multiple background layers. If the user mover the mouse over the drop-down menu this will appear. Then they can click on the preferred layer. 
+The image after that shows the information panel that will appear when the mouse moves over one of the fields. The name and category of the field is given, with some supplementing information if available. 
+
 <figure>
   <figcaption>Map functionalities with mouseover. </figcaption>
   <img src="img/mapspanel.png">
  <img src="img/mapinfo.png">
 </figure>
+
+The user can click on the line button to start drawing a line. 
 
 <figure>
   <figcaption>Map drawing a line function </figcaption>
