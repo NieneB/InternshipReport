@@ -324,10 +324,12 @@ figure:before{
   list-style-type: none;  
   text-align:left;
   text-decoration: none;
+  width: 100%;
 }
 
 a {
     text-decoration: none;
+    color: #000 ;
 }
 
 #titlePage{

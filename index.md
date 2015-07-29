@@ -141,9 +141,10 @@ This applies also for the field-names in Drenthe, which is oral living heritage.
 
 ##Waag Society
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
-
-<img src="img/WS_logo.jpg">
-
+<figure class="text-wrap-left">
+  <figcaption>Waag Society </figcaption>
+<img src="img/WS_logo.jpg" width="400px">
+</figure>
 Waag Society is a Institute for art, science and technology. They develop technical interventions for relevant social innovation.
 In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wetlab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
@@ -202,7 +203,7 @@ Geo data has three basic symbols to represent the data, points, lines and polygo
 
 <figure id="bertin"> 
   <figcaption>  Bertin's theory </figcaption>
-  <img src="img/Screen Shot 2015-05-07 at 11.16.03 AM.png">
+  <img src="img/bertin.png">
   <p><i>(Dibiase et al., 1992; Bertin, 2000)</i></p>
 </figure>
 
@@ -958,7 +959,7 @@ In figure <a class="xref" href="#chain"></a> the geo processing chain is combine
 The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
 
 <p class="table"> Visualization operators from Ogao & Kraak </p>
-![Alt text](img/Screen Shot 2015-05-06 at 2.26.40 PM.png )
+![Alt text](img/ogaokraak.png)
 *(Ogao & Kraak, 2002)*
 
 To cover the four visualization operations the user interface for a web page should have the following basic components:
@@ -1006,28 +1007,28 @@ The web application can be found on: $
 Some screenshots of how it looks:
 <figure>
   <figcaption>Welcome screen </figcaption>
-  <img src="img/Screen%20Shot%202015-07-24%20at%202.18.47%20PM.png">
+  <img src="img/welcomescreen.png">
 </figure>
 
 <figure>
   <figcaption>Map status in beginning </figcaption>
-  <img src="img/Screen%20Shot%202015-07-24%20at%202.19.22%20PM.png">
+  <img src="img/mapopeningscreen.png">
 </figure>
 
 <figure>
   <figcaption>Map functionalities with mouseover. </figcaption>
-  <img src="img/Screen%20Shot%202015-07-24%20at%202.20.01%20PM.png">
- <img src="img/Screen%20Shot%202015-07-24%20at%202.19.42%20PM.png">
+  <img src="img/mapspanel.png">
+ <img src="img/mapinfo.png">
 </figure>
 
 <figure>
-  <figcaption>Map drawing a line funciton </figcaption>
-  <img src="img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png">
+  <figcaption>Map drawing a line function </figcaption>
+  <img src="img/drawline.png">
 </figure>
 
 <figure>
   <figcaption>Example interesting spot </figcaption>
-  <img src="img/Screen%20Shot%202015-07-21%20at%2011.06.45%20AM.png">
+  <img src="img/munnikhemham.png">
 </figure>
 
 ## Testing the web-application
