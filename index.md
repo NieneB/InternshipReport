@@ -2,14 +2,14 @@
 ---
 <div id="titlePage">
 <h1 class ="nocount"> Master Geo-Information Science & Remote Sensing </h1>
-<h2 class="nocount"> Internship report  GRS00000 </h2>
+<h2 class="nocount"> Internship Report  GRS00000 </h2>
 
 <img src="img/Screen%20Shot%202015-07-24%20at%202.20.20%20PM.png">
-<h1 class ="nocount"> Building a web-based Geo-visualization about Field-names of Drenthe  </h1>
-<h2 class="nocount">  Wageningen University </h2>
+<h1 class ="nocount"> Building a Web-Based Geo-Visualization about Field-Names of Drenthe  </h1>
+<h2 class="nocount"> Wageningen University </h2>
 <img src="img/logo_wageningen_ur_.gif">
-<h2 class="nocount">  Waag Society</h2>
-<h2 class="nocount"> Project Heritage & Location </h2>
+<h2 class="nocount">Waag Society</h2>
+<h2 class="nocount">Project Heritage & Location </h2>
 <img  src="img/WS_logo.jpg" > 
 
 <p> <i>Niene Boeijen</i> </p>
