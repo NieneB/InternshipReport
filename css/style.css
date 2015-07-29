@@ -186,6 +186,8 @@ a.xref:after {
 }
 
 @page:first {
+  margin: 1cm;
+  
   @bottom-right {
     content: normal;
     margin: 0;
@@ -339,6 +341,7 @@ a {
   font-weight: 600;
   background-color: #F1F1F1;
   padding:10%;
+  border-radius: 10px ;
 }
 
 
