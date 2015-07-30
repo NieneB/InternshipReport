@@ -31,7 +31,7 @@
 
 
 
-<div id="toc"><h1 class = "nocount">Table of Contents </h1></div>
+
 
 <h1 class ="nocount"> Abstract</h1>
 
@@ -51,6 +51,8 @@ The geo-visualization techniques were useful for the representation of the field
   <dt>ICH</dt><dd>Intangible Cultural Heritage </dd>
   <dt>RCE</dt><dd>Rijksdienst voor Cultureel Erfgoed</dd>
 </dl>
+
+<div id="toc"><h1 class = "nocount">Table of Contents </h1></div>
 
 # Introduction
 
@@ -165,7 +167,7 @@ For this research takes place in the scope of the Heritage and Location[H&L] pro
   <img src="img/WS_logo.jpg" width="400px"></img>
 </figure>
 
-Waag Society is a Institute for art, science and technology. They develop technical interventions for relevant social innovation.
+Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation.
 In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
 
@@ -1151,7 +1153,7 @@ Because there are sufficient recommendations to be done to improve the web appli
 Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
 
 # References
-
+<div id="bib">
 <b>Actueel Hoogtebestand Nederland.</b>  (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html
 
 <b>Bertin, J. </b> (2000). Matrix theory of graphics. Information Design Journal, 10(1), 5–19.
@@ -1223,7 +1225,7 @@ Every geo-visualization needs to be looked at individually and specific for that
 <b>Waag Society. </b> (n.d.). Retrieved July 23, 2015, from https://www.waag.org/nl/organisatie
 
 <b>Zeijden, A. V. D. </b> (2011). Immaterieel erfgoed en musea, (35), 4–6.
-
+</div>
 
 # Appendix
 
