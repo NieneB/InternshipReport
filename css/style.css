@@ -355,7 +355,8 @@ a {
   border-radius: 20px ;
 }
 
-#bib :: p{
+#bib p{
+  line-height: 1rem;
   margin-bottom: 3rem;
 }
 ul.toc a::after {
