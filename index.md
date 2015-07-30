@@ -1,6 +1,8 @@
 ---
 ---
-<div id="banner"></div>
+<div id="banner">
+  <h1 class="nocount"> Internship Report --- Niene Boeijen </h1>
+</div>
 <div id="titlePage">
   <t1> Master Geo-Information Science</t1>
   
