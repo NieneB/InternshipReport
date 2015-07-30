@@ -29,11 +29,14 @@
   
 </div>
 
-<h1 class ="nocount"> Abstract</h1>
 <h2 class ="nocount"> Keywords</h2>
+
 <p><b> Geo-visualization   Heritage   Drenthe   Field names   GIS  </b></p>
 
 <div id="toc"><h1 class = "nocount">Table of Contents </h1></div>
+
+<h1 class ="nocount"> Abstract</h1>
+
 The amount of geospatial data is increasing rapidly. The magnitude and complexity of large geospatial datas sets are a challenge to transform from information into knowledge. Geo-visualization is one of the tools to turn these heterogeneous data volumes into knowledge for a broader public. 
 Also in the field of cultural heritage geo information systems is used more for conservation and safeguarding purposes. For cultural heritage the representation in the form of web-mapping is a suitable tool to make the data more open and promote heritage information. 
 In this design oriented research an interactive web application is build to apply geo-visualization techniques to cultural heritage date sets. The case study is an area in Drenthe where field-names from the 18th century are collected. These field names tell us how the environment used to look, because they originate in the minds local inhabitants to navigate and communicate about their spatial orientation. The names often relate to landmarks and characteristics of the direct environment. Mostly, local altitude differences, vegetation and soil types. 
@@ -85,11 +88,11 @@ The research will be build up in 3 parts; first the possible visualization techn
 
 ## Design goals
 
-1.	The goal is to preserve the living heritage names of Drenthe, which are mostly stored in people’s memory and so will disappear.
+1. The goal is to preserve the living heritage names of Drenthe, which are mostly stored in people’s memory and so will disappear.
 
-2.	Give people the possibility to explore them, discover them. For names cannot be found in the real surroundings, only in people’s memory and now given a place to *exist*.
+2. Give people the possibility to explore them, discover them. For names cannot be found in the real surroundings, only in people’s memory and now given a place to *exist*.
 
-3.	Getting the stories out of the raw data and show people the surprising knowledge that stays hidden. Help people explore intangible cultural heritage and so the history of the Dutch landscape. Engage people in something interesting about the landscape.
+3. Getting the stories out of the raw data and show people the surprising knowledge that stays hidden. Help people explore intangible cultural heritage and so the history of the Dutch landscape. Engage people in something interesting about the landscape.
 
 We will do this by building an attractive web-application for the project Heritage & Location to show its potential of visualizing heritage data and preserving them. A big part of the web application will be a geo-visualization of the intangible cultural heritage data set of living field names from Drenthe. The interactivity of the web application, will give users the possibility to discover the names themselves in relation to the environment. The focus is on revealing hidden meaning of the raw data, to the general public.
 
