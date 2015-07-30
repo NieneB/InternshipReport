@@ -13,23 +13,19 @@
 #banner h1{
   padding: 1.5rem;
   text-align: center;
-  font-weight: 700;
   color: #F1F1F1;
 }
 
 #titlePage {
   font-size: 4.0rem;
   text-align: center;
-  letter-spacing: 0;
-  font-weight: 600;
   background-color: #F1F1F1;
-  padding:10%;
+  padding:5%;
   border-top-left-radius:0em;
   border-top-right-radius:0em;
   border-bottom-right-radius:1.5em;
   border-bottom-left-radius:1.5em;
-  float: middle;
-  margin: auto;
+
 }
 
 #titlePage t1{
