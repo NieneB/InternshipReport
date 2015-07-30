@@ -29,9 +29,7 @@
   
 </div>
 
-<h2 class ="nocount"> Keywords</h2>
 
-<p><b> Geo-visualization   Heritage   Drenthe   Field names   GIS  </b></p>
 
 <div id="toc"><h1 class = "nocount">Table of Contents </h1></div>
 
@@ -43,8 +41,9 @@ In this design oriented research an interactive web application is build to appl
 In the application the user is able to see the field names on a map and on a transect line, showing the relation of the field to its direct environment. Through information texts, the user can relate the names to the characteristics of the surroundings. The goal is to preserve the living heritage of field-names, give the inhabitants of Drenthe the possibility to explore names that cannot be found in the real surroundings and turn the raw data that is only available to a small group of people, into knowledge for a broader audience about their landscape. 
 The geo-visualization techniques were useful for the representation of the field names. Though every visualization of data needs a individual approach. 
 
-
-<h1 class ="nocount"> Abbreviations</h1>
+<h2 class ="nocount"> Keywords</h2>
+<p><b> Geo-visualization   Heritage   Drenthe   Field names   GIS  </b></p>
+<h2 class ="nocount"> Abbreviations</h2>
 <dl>
   <dt>H&amp;L</dt><dd>Heritage and Location Project</dd>
   <dt>CH</dt><dd>Cultural Heritage</dd>
@@ -611,14 +610,6 @@ In QGIS, manually the attribute names needed were changed in one standardized na
     UPDATE veldnamen3 SET atoto_co_3 = code_3 WHERE atoto_co_3 IS NULL;
     UPDATE veldnamen3 SET atoto_co_2 = code_2 WHERE atoto_co_2 IS NULL;
     DELETE FROM veldnamen3 WHERE naam IS NULL;
-    ALTER TABLE veldnamen3 DROP COLUMN naam_2 CASCADE;
-    ALTER TABLE veldnamen3 DROP COLUMN code_1_ CASCADE;
-    ALTER TABLE veldnamen3 DROP COLUMN code_2 CASCADE;
-    ALTER TABLE veldnamen3 DROP COLUMN code_3 CASCADE;
-    ALTER TABLE veldnamen3 DROP COLUMN code_4 CASCADE;
-    ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_1 TO code_1;
-    ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_2 TO code_2;
-    ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_3 TO code_3;
 
 Because this resulted into a lot of overlapping areas, instead, the field-names were all linked to the Kadaster dataset from 1830. So a single layer of polygons with multiple names is the result. This was done by spatially joining the datasets, or joining by the Kadaster ID’s which most of the datasets contained. The ID contained; municipality, sheet map number, parcel number.
 
