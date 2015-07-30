@@ -1488,4 +1488,4 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 
 ## Questionnaire for testing the application
-![Alt text](img/Vragenlijst Veldnamen Applicatie.pdf) 
+![Alt text](img/Vragenlijst Veldnamen Applicatie.jpg) 
