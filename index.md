@@ -350,7 +350,7 @@ The number, type and arrangements of the different views depend on the task, the
 <img src="img/flowchart_Method.jpg">
 </figure>
 
-This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given numbers and letters, to easily refer to them, when they are covered.
+This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given letter and numbers, to easily refer to them, when they are covered.
 See figure <a class="xref" href="#method"> </a> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
 
 Once the general goal was established; making a web-based geo-visualization, the case study in the field of cultural heritage had to be defined. This, because the internship is conducted for the project Heritage&Location at the Waag Society. In the project several heritage institutions take part, and so came into contact with possible data providers. After explaining the general goal of this study to them, the data needed for this report was provided by  *Rijksdienst voor Cultureel Erfgoed*.
@@ -915,43 +915,43 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
   </tr>
 <tr> 
   <td>1</td>
-  <td> 1 A </td>
+  <td> A1 </td>
   <td> I think the application is visually appealing.</td>
  </tr>
  <tr>  
    <td>2</td>
- <td> 1 B and 1 C</td>
+ <td> A2 and A3</td>
  <td> I feel tempted to use the tools and functions in the application multiple times.</td>
  </tr>
  <tr>
     <td>3</td>
-    <td> 1 C</td>
+    <td> A2 and A3</td>
     <td>I feel tempted to use this application multiple times (in the future)
 </td>
  </tr>
  <tr> <td>4</td>
- <td> 2 A and 2 C</td>
+ <td> B1</td>
  <td>The meaning and origin of the field-names became clear to me.</td>
  </tr>
  <tr> 
    <td>5</td>
-   <td> 2 B</td>
+   <td> B2 </td>
    <td>The shown information is surprising and interesting. </td>
   </tr>
   <tr> 
     <td>6</td>
-    <td>2 C </td>
+    <td>B3</td>
     <td>By using this application I understand more about the importance of safe-guarding the field-names as cultural heritage.
 </td>
    </tr>
    <tr> 
      <td>7</td>
-     <td>3 A</td>
+     <td>C1</td>
      <td>The application is simple to use.</td>
     </tr>
     <tr> 
       <td>8</td>
-      <td>3 B</td>
+      <td>C2</td>
       <td>Everything was working as I expected. </td>
      </tr>
 </table>
@@ -960,11 +960,11 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
 # Results
 
 ## Theoretical framework
-First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective 1a, to make the application attractive, and 2c, understanding the geo-data.
+First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective A1, to make the application attractive, and B1, understanding the geo-data.
 
-Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, 2a, 2b, 2c and 3 to add knowledge and experience from preceding research to the techniques which will be used here.
+Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, B and C to add knowledge and experience from preceding research to the techniques which will be used here.
 
-Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives, 1a, 1b and 1c.
+Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives from C.
 
 ###Visualization of field-names
 Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
