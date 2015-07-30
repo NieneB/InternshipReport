@@ -1154,77 +1154,59 @@ Every geo-visualization needs to be looked at individually and specific for that
 
 # References
 <div id="bib">
-<b>Actueel Hoogtebestand Nederland.</b>  (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html
+ <p> <b>Actueel Hoogtebestand Nederland.</b>  (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html</p>
+ 
+  <p><b>Bertin, J. </b> (2000). Matrix theory of graphics. Information Design Journal, 10(1), 5–19.</p>
+  
+ <p><b>Blok, C. </b> (2000). Monitoring Change: Characteristics of Dynamic Geo-spatial Phenomena for Visual Exploration.  Spatial Cognition II, 1 (2000), 16–30. http://doi.org/10.1007/3-540-45460-8_2</p>
+ 
+ <p> <b>Cartwright, W., Miller, S., & Pettit, C. </b> (2004). Geographical visualization: Past, present and future development. Journal of Spatial Science, 49(1), 25–36. http://doi.org/10.1080/14498596.2004.9635003</p>
+ 
+  <p><b>Cerasuolo, F., Cutugno, F., & Leano, V. A. </b> (2012). Visualization with a New Visual Metaphor for Hierarchical and Stratified Temporal Domain. In S. D. Martino, A. Peron, & T. Tezuka (Eds.), Web and Wireless Geographical Information Systems (pp. 57–71). Springer Berlin Heidelberg. Retrieved from http://link.springer.com.ezproxy.library.wur.nl/chapter/10.1007/978-3-642-29247-7_6</p>
+  
+ <p> <b>Deal, L. </b> (2014). Visualizing Digital Collections. Technical Services Quarterly, (April), 30–30. http://doi.org/10.1080/07317131.2015.972871</p>
+ 
+ <p> <b>DEN. Home.</b>  (n.d.). Retrieved May 6, 2015, from http://www.den.nl/</p>
+ 
+ <p> <b>Dibiase, D., Maceachren, A., Krygier, J., & Reeves, C. </b> (1992). Animation and the Role of Map Design in Scientific Visualization. Cartography and Geographic Information Systems, 19(4), 201–&. http://doi.org/10.1559/152304092783721295</p>
+ 
+ <p> <b>Droj, G. </b> (2010). Cultural Heritage Conservation by GIS, 1–6.</p> 
+ 
+ <p> <b>Elwood, S. </b> (2011). Geographic Information Science: Visualization, visual methods, and the geoweb. Progress in Human Geography, 35(3), 401–408. http://doi.org/10.1177/0309132510374250</p>
+ 
+<p>  <b>erfgeo. </b> (n.d.). Retrieved July 22, 2015, from http://erfgeo.nl/</p>
 
-<b>Bertin, J. </b> (2000). Matrix theory of graphics. Information Design Journal, 10(1), 5–19.
+  <p><b>Erfgoed & Locatie. </b> (n.d.). Retrieved July 22, 2015, from http://erfgoedenlocatie.nl/</p>
+  
+<p>  <b>Hahmann, S., & Burghardt, D.</b>  (2013). How much information is geospatially referenced? Networks and cognition. International Journal of Geographical Information Science, 27(6), 1171–1189. http://doi.org/10.1080/13658816.2012.743664</p>
 
-<b>Blok, C. </b> (2000). Monitoring Change: Characteristics of Dynamic Geo-spatial Phenomena for Visual Exploration.  Spatial Cognition II, 1 (2000), 16–30. http://doi.org/10.1007/3-540-45460-8_2
+ <p> <b>Karavia, D., & Georgopoulos, A. </b> (2013). Placing Intangible Cultural Heritage. Researchgate.Net, 675–678. http://doi.org/10.1109/DigitalHeritage.2013.6743815</p>
+ 
+<p>  <b>Köbben, B., & Yaman, M. </b> (1996). Evaluating Dynamic Visual Variables. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html</p>
 
-<b>Cartwright, W., Miller, S., & Pettit, C. </b> (2004). Geographical visualization: Past, present and future development. Journal of Spatial Science, 49(1), 25–36. http://doi.org/10.1080/14498596.2004.9635003
+<p> <b>Kraak, M.-J., & Klomp, A. </b> (1996). A Classification of Cartographic Animations: Towards a Tool for the Design of Dynamic Maps in a GIS Environment. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html</p>
 
-<b>Cerasuolo, F., Cutugno, F., & Leano, V. A. </b> (2012). Visualization with a New Visual Metaphor for Hierarchical and Stratified Temporal Domain. In S. D. Martino, A. Peron, & T. Tezuka (Eds.), Web and Wireless Geographical Information Systems (pp. 57–71). Springer Berlin Heidelberg. Retrieved from http://link.springer.com.ezproxy.library.wur.nl/chapter/10.1007/978-3-642-29247-7_6
-
-<b>Deal, L. </b> (2014). Visualizing Digital Collections. Technical Services Quarterly, (April), 30–30. http://doi.org/10.1080/07317131.2015.972871
-
-<b>DEN. Home.</b>  (n.d.). Retrieved May 6, 2015, from http://www.den.nl/
-
-<b>Dibiase, D., Maceachren, A., Krygier, J., & Reeves, C. </b> (1992). Animation and the Role of Map Design in Scientific Visualization. Cartography and Geographic Information Systems, 19(4), 201–&. http://doi.org/10.1559/152304092783721295
-
-<b>Droj, G. </b> (2010). Cultural Heritage Conservation by GIS, 1–6.
-
-<b>Elwood, S. </b> (2011). Geographic Information Science: Visualization, visual methods, and the geoweb. Progress in Human Geography, 35(3), 401–408. http://doi.org/10.1177/0309132510374250
-
-<b>erfgeo. </b> (n.d.). Retrieved July 22, 2015, from http://erfgeo.nl/
-
-<b>Erfgoed & Locatie. </b> (n.d.). Retrieved July 22, 2015, from http://erfgoedenlocatie.nl/
-
-<b>Hahmann, S., & Burghardt, D.</b>  (2013). How much information is geospatially referenced? Networks and cognition. International Journal of Geographical Information Science, 27(6), 1171–1189. http://doi.org/10.1080/13658816.2012.743664
-
-<b>Karavia, D., & Georgopoulos, A. </b> (2013). Placing Intangible Cultural Heritage. Researchgate.Net, 675–678. http://doi.org/10.1109/DigitalHeritage.2013.6743815
-
-<b>Köbben, B., & Yaman, M. </b> (1996). Evaluating Dynamic Visual Variables. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html
-
-<b>Kraak, M.-J., & Klomp, A. </b> (1996). A Classification of Cartographic Animations: Towards a Tool for the Design of Dynamic Maps in a GIS Environment. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html
-
-<b>Lai, J., Luo, J., & Zhang, M. </b> (2012). Design and Realization of the Intangible Cultural Heritage Information Management System Based on Web Map Service. Springer-Verlag Berlin Heidelberg 2012, 605–612.
-
-<b>Lin, H., Gong, J., & Wang, F. </b> (1999). Web-based three-dimensional geo-referenced visualization. Computers and Geosciences, 25(10), 1177–1185. http://doi.org/10.1016/S0098-3004(99)00076-X
-
-<b>MacEachren, A. M., & Kraak, M.-J. </b> (2001). Research Challenges in Geovisualization. Cartography and Geographic Information Science, 28(1), 3–12. http://doi.org/10.1559/152304001782173970
-
-<b>Martin, S., Reynard, E., Pellitero Ondicol, R., & Ghiraldi, L. </b> (2014). Multi-scale Web Mapping for Geoheritage Visualisation and Promotion. Geoheritage, 6(2), 141–148. http://doi.org/10.1007/s12371-014-0102-3
-
-<b>Mennis, J. L., Peuquet, D. J., & Qian, L.</b>  (2000). A conceptual framework for incorporating cognitive principles into geographical database representation. International Journal of Geographical Information Science, 14(6), 501–520. http://doi.org/10.1080/136588100415710
-
-<b>Meyer, É., Grussenmeyer, P., Perrin, J. P., Durand, A., & Drap, P. </b> (2007). A web information system for the management and the dissemination of Cultural Heritage data. Journal of Cultural Heritage, 8(4), 396–411. http://doi.org/10.1016/j.culher.2007.07.003
-
-<b>Nöllenburg, M. </b> (2007). Geographic Visualization. In A. Kerren, A. Ebert, & J. Meyer (Eds.), Human-Centered Visualization Environments (pp. 257–294). Springer Berlin Heidelberg. Retrieved from http://link.springer.com/chapter/10.1007/978-3-540-71949-6_6
-
-<b>Ogao, P. J., & Kraak, M.-J.</b>  (2002). Defining visualization operations for temporal cartographic animation design. International Journal of Applied Earth Observation and Geoinformation, 4(1), 23–31. http://doi.org/10.1016/S0303-2434(02)00005-3
-
-<b>Ormeling, F. </b> (1996). Teaching Animated Cartography. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html
-
-<b>Petrescu, F. </b> (2007). the Use of Gis Technology in Cultural Heritage. October, (October), 1–6.
-
-<b>Shedroff, N. </b> (1999). Information interaction design: A unified field theory of design. Information Design, 267–292.
-
-<b>Spek, T., Elerie, H., & Kosian, M. </b> (2009). Van Jeruzalem tot Ezelakker, Levende valdnamenatlas van de Drentse Aa. Matrijs.
-
-<b>Steiniger, S., & Hunter, A. J. S. </b> (2013). The 2012 free and open source GIS software map – A guide to facilitate research, development, and adoption. Computers, Environment and Urban Systems, 39, 136–150. http://doi.org/10.1016/j.compenvurbsys.2012.10.003
-
-<b>Tensen, T. </b> (2014). Master Thesis Geo-data animations in television journalism :, 1–87.
-
-<b>TOP10NL Publieke Dienstverlening Op de Kaart Loket. </b> (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl
-
-<b>UNESCO Culture Sector - Intangible Heritage - 2003 Convention </b> (n.d.). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002
-
-<b>Veldnamen - Encyclopedie Drenthe Online.</b>  (n.d.). Retrieved July 22, 2015, from http://www.encyclopediedrenthe.nl/Veldnamen
-
-<b>volkscultuur. </b> (n.d.). Retrieved May 6, 2015, from http://www.volkscultuur.nl/
-
-<b>Waag Society. </b> (n.d.). Retrieved July 23, 2015, from https://www.waag.org/nl/organisatie
-
-<b>Zeijden, A. V. D. </b> (2011). Immaterieel erfgoed en musea, (35), 4–6.
+ <p> <b>Lai, J., Luo, J., & Zhang, M. </b> (2012). Design and Realization of the Intangible Cultural Heritage Information Management System Based on Web Map Service. Springer-Verlag Berlin Heidelberg 2012, 605–612.</p>
+  <p><b>Lin, H., Gong, J., & Wang, F. </b> (1999). Web-based three-dimensional geo-referenced visualization. Computers and Geosciences, 25(10), 1177–1185. http://doi.org/10.1016/S0098-3004(99)00076-X</p>
+ <p> <b>MacEachren, A. M., & Kraak, M.-J. </b> (2001). Research Challenges in Geovisualization. Cartography and Geographic Information Science, 28(1), 3–12. http://doi.org/10.1559/152304001782173970</p>
+ <p> <b>Martin, S., Reynard, E., Pellitero Ondicol, R., & Ghiraldi, L. </b> (2014). Multi-scale Web Mapping for Geoheritage Visualisation and Promotion. Geoheritage, 6(2), 141–148. http://doi.org/10.1007/s12371-014-0102-3</p>
+ <p> <b>Mennis, J. L., Peuquet, D. J., & Qian, L.</b>  (2000). A conceptual framework for incorporating cognitive principles into geographical database representation. International Journal of Geographical Information Science, 14(6), 501–520. http://doi.org/10.1080/136588100415710</p>
+ <p> <b>Meyer, É., Grussenmeyer, P., Perrin, J. P., Durand, A., & Drap, P. </b> (2007). A web information system for the management and the dissemination of Cultural Heritage data. Journal of Cultural Heritage, 8(4), 396–411. http://doi.org/10.1016/j.culher.2007.07.003</p>
+ <p> <b>Nöllenburg, M. </b> (2007). Geographic Visualization. In A. Kerren, A. Ebert, & J. Meyer (Eds.), Human-Centered Visualization Environments (pp. 257–294). Springer Berlin Heidelberg. Retrieved from http://link.springer.com/chapter/10.1007/978-3-540-71949-6_6</p> 
+ <p> <b>Ogao, P. J., & Kraak, M.-J.</b>  (2002). Defining visualization operations for temporal cartographic animation design. International Journal of Applied Earth Observation and Geoinformation, 4(1), 23–31. http://doi.org/10.1016/S0303-2434(02)00005-3</p>
+ <p> <b>Ormeling, F. </b> (1996). Teaching Animated Cartography. In Proceedings of the Seminar on Teaching Animated Cartography. Madrid, Spain: International Cartographic Association. Retrieved from http://cartography.geo.uu.nl/ica/Madrid/ormeling.html</p>
+ <p> <b>Petrescu, F. </b> (2007). the Use of Gis Technology in Cultural Heritage. October, (October), 1–6.</p>
+ <p> <b>Shedroff, N. </b> (1999). Information interaction design: A unified field theory of design. Information Design, 267–292.</p>
+<p>  <b>Spek, T., Elerie, H., & Kosian, M. </b> (2009). Van Jeruzalem tot Ezelakker, Levende valdnamenatlas van de Drentse Aa. Matrijs.</p>
+<p>  <b>Steiniger, S., & Hunter, A. J. S. </b> (2013). The 2012 free and open source GIS software map – A guide to facilitate research, development, and adoption. Computers, Environment and Urban Systems, 39, 136–150. http://doi.org/10.1016/j.compenvurbsys.2012.10.003</p>
+<p>  <b>Tensen, T. </b> (2014). Master Thesis Geo-data animations in television journalism :, 1–87.</p>
+ <p> <b>TOP10NL Publieke Dienstverlening Op de Kaart Loket. </b> (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl</p>
+ <p> <b>UNESCO Culture Sector - Intangible Heritage - 2003 Convention </b> (n.d.). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002</p>
+<p>  <b>Veldnamen - Encyclopedie Drenthe Online.</b>  (n.d.). Retrieved July 22, 2015, from http://www.encyclopediedrenthe.nl/Veldnamen</p>
+ <p> <b>volkscultuur. </b> (n.d.). Retrieved May 6, 2015, from http://www.volkscultuur.nl/</p>
+  <p><b>Waag Society. </b> (n.d.). Retrieved July 23, 2015, from https://www.waag.org/nl/organisatie</p>
+ <p> <b>Zeijden, A. V. D. </b> (2011). Immaterieel erfgoed en musea, (35), 4–6.
+</p>
 </div>
 
 # Appendix
