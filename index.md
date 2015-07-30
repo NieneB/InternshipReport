@@ -1,8 +1,8 @@
 ---
 ---
 <div id="banner">
-  <h1 class="nocount"> Internship Report </h1>
-    <h1 class="nocount"> Niene Boeijen </h1>
+  <t1> Internship Report </t1>
+  <t1> Niene Boeijen </t1>
 </div>
 <div id="titlePage">
   <t1> Master Geo-Information Science</t1>
@@ -1026,7 +1026,7 @@ When on the site the trigger is the button, to press and go to the map. The acti
 For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 ## The web application
-The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen </a>.
+The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
 
 Some screenshots of how it looks. The first figure is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
