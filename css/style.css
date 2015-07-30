@@ -353,7 +353,9 @@ a {
   background-color: #F1F1F1;
   padding:10%;
   border-radius: 20px ;
-  width: 100%;
+  width:150%;
+  float: middle;
+  margin: auto;
 }
 
 #titlePage h1{
