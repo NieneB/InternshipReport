@@ -1,14 +1,14 @@
 ---
 ---
 <div id="banner">
-  <h1 class="nocount"> Internship Report --- Niene Boeijen </h1>
+  <h1 class="nocount"> Internship Report </h1>
+    <h1 class="nocount"> Niene Boeijen </h1>
 </div>
 <div id="titlePage">
   <t1> Master Geo-Information Science</t1>
   
   <t1> & Remote Sensing </t1>
   
-  <t2> Internship Report  GRS00000 </t2>
   
   <img src="img/drawline.png">
   

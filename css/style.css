@@ -371,14 +371,14 @@ a {
   margin: auto;
 }
 
-#titlePage h1{
+#titlePage t1{
   font-size: 4.0rem;
   text-align: center;
   font-weight: 600;
   margin-bottom: 4rem;
 }
 
-#titlePage h2{
+#titlePage t2{
   font-size: 3.0rem;
   text-align: center;
   font-weight: 500;
