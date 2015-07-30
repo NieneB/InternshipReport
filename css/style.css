@@ -353,7 +353,6 @@ a {
   background-color: #F1F1F1;
   padding:10%;
   border-radius: 20px ;
-  width:150%;
   float: middle;
   margin: auto;
 }
@@ -362,6 +361,7 @@ a {
   font-size: 4.0rem;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 4rem;
 }
 #bib p{
   line-height: 2rem;
