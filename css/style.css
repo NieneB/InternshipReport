@@ -2,8 +2,11 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: black;
-  
+  background-color: #252525;
+  border-top-left-radius:2em;
+  border-top-right-radius:2em;
+  border-bottom-right-radius:0em;
+  border-bottom-left-radius:0em;
   top: 0px;
 }
 
@@ -11,7 +14,7 @@
   padding: 1.5rem;
   text-align: center;
   font-weight: 700;
-  color: white;
+  color: #F1F1F1;
 }
 /* Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -366,7 +369,10 @@ a {
   font-weight: 600;
   background-color: #F1F1F1;
   padding:10%;
-  border-radius: 20px ;
+  border-top-left-radius:0em;
+  border-top-right-radius:0em;
+  border-bottom-right-radius:2em;
+  border-bottom-left-radius:2em;
   float: middle;
   margin: auto;
 }
@@ -376,6 +382,7 @@ a {
   text-align: center;
   font-weight: 600;
   margin-bottom: 4rem;
+  color: #252525;
 }
 
 #titlePage t2{
@@ -383,6 +390,7 @@ a {
   text-align: center;
   font-weight: 500;
   margin-bottom: 4rem;
+  color:#252525;
 }
 
 #bib p{
