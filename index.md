@@ -13,28 +13,24 @@
   <img src="img/drawline.png">
   
   <t1 > Building a Web-Based Geo-Visualization about Field-Names of Drenthe  </t1>
-  
-  <t2 > Wageningen University </t2>
-  
-  <img src="img/logo_wageningen_ur_.gif" width="300px">
-  
-  <t2>Waag Society</t2>
-  
-  <t2>Project Heritage & Location </t2>
-  
-  <img  src="img/WS_logo.jpg" width="300px" > 
-  
-  <t3> <i>Niene Boeijen</i> </t3>
-  
-  <t3> <i> 900918-070-088 </i></t3>
-  
-  <t3> July 2015  </t3>
-  
+
 </div>
 
+<t2 > Wageningen University </t2>
 
+<img src="img/logo_wageningen_ur_.gif" width="300px">
 
+<t2>Waag Society</t2>
 
+<t2>Project Heritage & Location </t2>
+
+<img  src="img/WS_logo.jpg" width="300px" > 
+
+<t3> <i>Niene Boeijen</i> </t3>
+
+<t3> <i> 900918-070-088 </i></t3>
+
+<t3> July 2015  </t3>
 
 <h1 class ="nocount"> Abstract</h1>
 
