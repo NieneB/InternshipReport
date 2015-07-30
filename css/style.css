@@ -17,7 +17,6 @@
 }
 
 #titlePage {
-  font-size: 4.0rem;
   text-align: center;
   background-color: #F1F1F1;
   padding:5%;
@@ -29,17 +28,13 @@
 }
 
 #titlePage t1{
-  font-size: 4.0rem;
   text-align: center;
-  font-weight: 600;
   margin-bottom: 4rem;
   color: #525252;
 }
 
 #titlePage t2{
-  font-size: 3.0rem;
   text-align: center;
-  font-weight: 500;
   margin-bottom: 4rem;
   color:#525252;
 }
