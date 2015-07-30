@@ -14,23 +14,26 @@
   
   <t1 > Building a Web-Based Geo-Visualization about Field-Names of Drenthe  </t1>
 
-</div>
-
-<t2 > Wageningen University </t2>
-
-<img src="img/logo_wageningen_ur_.gif" width="300px">
-
-<t2>Waag Society</t2>
-
-<t2>Project Heritage & Location </t2>
-
-<img  src="img/WS_logo.jpg" width="300px" > 
-
+<div id="titlepage2">
+  <t2 > Wageningen University </t2>
+  
+  <img src="img/logo_wageningen_ur_.gif" width="300px">
+  
+  <t2>Waag Society</t2>
+  
+  <t2>Project Heritage & Location </t2>
+  
+  <img  src="img/WS_logo.jpg" width="300px" > 
+ 
+ </div>
+ </div>
+  
 <t3> <i>Niene Boeijen</i> </t3>
 
 <t3> <i> 900918-070-088 </i></t3>
 
 <t3> July 2015  </t3>
+
 
 <h1 class ="nocount"> Abstract</h1>
 
@@ -1023,7 +1026,7 @@ When on the site the trigger is the button, to press and go to the map. The acti
 For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 ## The web application
-The web application can be found on: www.hierokomtt.niene
+The web application can be found on: <a href="maptime.waag.org/veldnamen"> maptime.waag.org/veldnamen </a>
 Some screenshots of how it looks. The first figure is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
 <figure>
