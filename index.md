@@ -1,5 +1,6 @@
 ---
 ---
+<div id="banner"></div>
 <div id="titlePage">
   <t1> Master Geo-Information Science</t1>
   
