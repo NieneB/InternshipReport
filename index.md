@@ -1069,6 +1069,8 @@ $$ people were asked to use the application and fill in the small questionnaire.
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
 Question 8 got the lowest score, the functionality did not work as the user would expect.
 
+On average objective A got a 3.7, objective B 3.6 and C the lowest score of 3.3. Objective A aimed at the attractiveness of the application, B about understanding the information about the field-names and C the technical side and functionality. 
+
 <figure>
   <figcaption> Results questionnaire </figcaption>
 <img src="img/uitslag_quest.png">
@@ -1078,20 +1080,37 @@ For the total answer overview see appendix $$$.
 
 ### Remarks on the questionnaire
 
-- "works logical, though information is missing"
-- "Make the pop-up disappear when the mouse moves away"
-- " I miss a total overview of the page"
-- "Finish line, not working.. "
-- " The elevation graph should follow the x,y of mouse instead of following just x"
-- " text window sometimes conflicts with the layer selector"
-- "cursor on the map synchronies with the moving circle on the line"
-- "also point selection, not only line"
-- Ugly button on the introduction page
-- I would like to know more about the different map layers
-- drawing button for the line is hard to find
+- Works logical, though information is missing.
+- Make the pop-up disappear when the mouse moves away.
+- I miss a total overview of the page.
+- Finish line, not working.. 
+- The elevation graph should follow the x,y of mouse instead of following just x.
+- Text window sometimes conflicts with the layer selector.
+- Cursor on the map synchronies with the moving circle on the line.
+- Also point selection, not only line.
+- Ugly button on the introduction page.
+- I would like to know more about the different map layers.
+- Drawing button for the line is hard to find.
 - While waiting, put a waiting sign.
 - You would expect the information about the field to pop up when the moving circle is on the field, instead of the mouse.
-
+- Ask people for collaboration, for example make a text-editor do the texts. 
+- Typography was hard to read. 
+- A lot of introduction text.
+- Looks like the focus is more on the height then on the names. 
+- Drawing the line and clicking was difficult, had to get used to it. Nice view into height differences. Though I don't understand the origin of the field names yet. The line shows weird peaks, I would like to know what this is. 
+- I would like to have this for the area I live in.  
+- With long lines, the names are on top of each other.
+- Clicking last point of the line to finish it was difficult to find.
+- Nice that you really learn something about the names through the information.
+- Put the year on the map. 
+- Some targeted assignments would help understanding the field-names better. 
+- Nice, I would like to have this were I am personally living.
+- More locations would be nice. 
+- Layout of the map is nice, but some this could be made more readable. 
+- Continue!
+- Unpredictable behaviour with drawing the line.
+- Can't get the results good on the screen.
+- Text at the bottom is not readable. 
 
 # Discussion
 
@@ -1137,6 +1156,8 @@ The test with the questionnaire was conducted very quickly and not thoroughly. T
 Not enough participants. 
 
 The test did provide useful comments and showed clearly where the user got stuck at or not. It brought in new ideas but there was no time to implement them and test them again.
+
+The score gave a good view that the technical functionalities were not optimal. But the application was perceived attractive and beautiful. 
 
 ## Website recommendations
 Because there are sufficient recommendations to be done to improve the web application, they are listed here below. Some are extra ideas, that didn't receive the time to be implemented. Others are recommendations done by the test group. 
