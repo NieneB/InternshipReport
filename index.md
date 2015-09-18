@@ -64,8 +64,8 @@ The amount of geospatial data has increased rapidly. Geospatial data is created 
 The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. (see figure <a class="xref" href="#dikw"></a>) According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. The use of the enormous amount of geo data to inform the general public is also still in development.  Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
 
 <figure id="dikw" class="text-wrap-right">
-	<figcaption>DIKW pyramid. From data to wisdom</figcaption>
   <img src="img/DIKWPyramid.jpg">
+  <figcaption>DIKW pyramid. From data to wisdom</figcaption>
   <p><i>(Shedroff, 1999)</i></p>
 </figure>
 
@@ -105,7 +105,6 @@ First some concepts will be explained in the background chapter. As well as the 
 
 
 # Background theory
-=========
 
 In this chapter, the field names are further explained and their role in the cultural heritage field. Therefore, Also the field of cultural heritage is explained and its categories.
 Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
@@ -147,8 +146,8 @@ This applies also for the field-names in Drenthe, which is oral living heritage.
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
 
 <figure class="text-wrap-left">
-  <figcaption>Waag Society </figcaption>
   <img src="img/WS_logo.jpg" width="400px"></img>
+  <figcaption>Waag Society </figcaption>
 </figure>
 
 Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation.
@@ -163,8 +162,8 @@ One of the tools is a historical-geocoder, to make heritage data, geo located an
 Figure <a class="xref" href="#schemeHL"></a> shows the overview of the whole H&L project. Now focusing on the historical geocoder and thesaurus. (“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
 <figure id="schemeHL">
-<figcaption> Scheme of Heritage and Location project. Products and Services.</figcaption>
-<img src ="img/EL-producten-en-diensten-schema_v8.jpg">
+  <img src ="img/EL-producten-en-diensten-schema_v8.jpg">
+  <figcaption> Scheme of Heritage and Location project. Products and Services.</figcaption>
 </figure>
 
 ##Cultural heritage data and GIS
@@ -208,8 +207,8 @@ Geo-visualization is a combination of communication, scientific information visu
 Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. See figure <a class="xref" href="#bertin"></a>. 
 
 <figure id="bertin"> 
-  <figcaption>  Bertin's theory </figcaption>
   <img src="img/bertin.png">
+  <figcaption>  Bertin's theory </figcaption>
   <p><i>(Dibiase et al., 1992; Bertin, 2000)</i></p>
 </figure>
 
@@ -217,6 +216,7 @@ After Bertin, other researchers have added to this method with more graphic vari
 
 Deciding the right graphic variable to be assigned to a certain type of data, helps the viewer in defining the perceptual properties. For example, ordinal data needs the perception of being ordered, quantitative data of being proportional.  While nominal data needs to be perceived as distinct categories.
 (Bertin, 2000; Caivano, 1990; Dibiase et al., 1992; MacEachren, 1995; Nöllenburg, 2007)
+
 ###Dynamic geo-visualizations
 Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps which require a set of dynamic graphic variables. 
 A few forms of dynamic geo-visualization can be named, animation, display of time or spatial temporal visualization and interaction. The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
@@ -384,8 +384,8 @@ For building the transect line, d3 is used. A graphic drawing package. The trans
 To engage the target group into the application, the hook model is followed. This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
 <figure class="text-wrap-left">
+  <img src="img/hookmodel.jpg">
   <figcaption> Hook model </figcaption>
-<img src="img/hookmodel.jpg">
 </figure>
 
 In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
@@ -407,8 +407,8 @@ The dataset contains in total 1747 polygons with a field-name. Projection Rd new
 This results in the following coverage of field names:
 
 <figure class="text-wrap-right">
-<figcaption> All fields with a field name. </figcaption>
-<img src="img/allnames.jpg" >
+  <img src="img/allnames.jpg" >
+  <figcaption> All fields with a field name. </figcaption>
 </figure>
 
 <p class="table"> Field-name Amounts per source </p>
@@ -437,8 +437,8 @@ This results in the following coverage of field names:
 Based on this the total research location is determined, consisting of the municipality’s Aa en Hunze, Assen, Noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa.
 
 <figure>
-  <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
   <img src="img/onderzoekgebied.jpg">
+  <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
 </figure>
 
 The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in table <a class='xref' href="#field-name-cat"> </a>. In the appendix <a class="xref" href="categories-field-names-form-rce"> </a> a total overview of the categories and the names and alternative names can be found.
@@ -489,8 +489,8 @@ The field names are already categorized in a previous study by the RCE by $$$. T
 # Method
 
 <figure id="mehtod" class='text-wrap-left' >
-<figcaption>Methodology overview</figcaption>
-<img src="img/flowchart_Method.jpg">
+  <img src="img/flowchart_Method.jpg">
+  <figcaption>Methodology overview</figcaption>
 </figure>
 
 This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given letter and numbers, to easily refer to them, when they are covered.
@@ -686,8 +686,8 @@ For design ideas and color use a mood board was made. Pictures from the Internet
 One of the main inspirations was the following image:
 
 <figure>
-  <figcaption> Inspiration Picture </figcaption>
   <img src="img/transect_inspiration-01.jpg">
+  <figcaption> Inspiration Picture </figcaption>
   <p>Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg</p>
 </figure>
 
@@ -714,8 +714,8 @@ Giving colors or patterns to the fields according to the soil property. Like a *
 Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
 
 <figure id="example" class="text-wrap-left"  >
-<figcaption> Field-names example of names with height indication on the height map </figcaption>
-<img src="img/hoogte_voorbeeld.jpg"><img>
+  <img src="img/hoogte_voorbeeld.jpg">
+  <figcaption> Field-names example of names with height indication on the height map </figcaption>
 </figure>
 
 Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
@@ -726,36 +726,36 @@ The web application can be found on: <a href="http://maptime.waag.org/veldnamen/
 Some screenshots of how it looks. The first figure is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
 <figure>
-  <figcaption>Welcome screen </figcaption>
   <img src="img/welcomescreen.png">
+  <figcaption>Welcome screen </figcaption>
 </figure>
 
 The next figure shows how the screen looks when entering the application. A example line is already given to show the user what is possible. 
 
 <figure>
-  <figcaption>Map status in beginning </figcaption>
   <img src="img/mapopeningscreen.png">
+  <figcaption>Map status in beginning </figcaption>
 </figure>
 
 The next figure shows the drop-down panel with multiple background layers. If the user mover the mouse over the drop-down menu this will appear. Then they can click on the preferred layer. 
 The image after that shows the information panel that will appear when the mouse moves over one of the fields. The name and category of the field is given, with some supplementing information if available. 
 
 <figure>
-  <figcaption>Map functionalities with mouseover. </figcaption>
   <img src="img/mapspanel.png">
- <img src="img/mapinfo.png">
+  <img src="img/mapinfo.png">
+  <figcaption>Map functionalities with mouseover. </figcaption>
 </figure>
 
 The user can click on the line button to start drawing a line. 
 
 <figure>
-  <figcaption>Map drawing a line function </figcaption>
   <img src="img/drawline.png">
+  <figcaption>Map drawing a line function </figcaption>
 </figure>
 
 <figure>
-  <figcaption>Example interesting spot </figcaption>
   <img src="img/munnikhemham.png">
+  <figcaption>Example interesting spot </figcaption>
 </figure>
 
 ## Results Sub-objectie 3. Evaluating the web-application
@@ -767,8 +767,8 @@ Question 8 got the lowest score, the functionality did not work as the user woul
 On average objective A got a 3.7, objective B 3.6 and C the lowest score of 3.3. Objective A aimed at the attractiveness of the application, B about understanding the information about the field-names and C the technical side and functionality. 
 
 <figure>
+  <img src="img/uitslag_quest.png">
   <figcaption> Results questionnaire </figcaption>
-<img src="img/uitslag_quest.png">
 </figure>
 
 For the total answer overview see appendix $$$. 
