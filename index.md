@@ -163,7 +163,7 @@ Figure <a class="xref" href="#schemeHL"></a> shows the overview of the whole H&L
 
 <figure id="schemeHL">
   <img src ="img/EL-producten-en-diensten-schema_v8.jpg">
-  <figcaption> Scheme of Heritage and Location project. Products and Services.</figcaption>
+  <figcaption> Scheme of Heritage and Location project. Products and Services. </figcaption>
 </figure>
 
 ##Cultural heritage data and GIS
@@ -332,8 +332,8 @@ The number, type and arrangements of the different views depend on the task, the
 Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
 
 <figure class="text-wrap-right">
-<figcaption> Map use cube from MacEachren and Kraak </figcaption>
-<img src="img/Map_use_cube.jpg">
+  <img src="img/Map_use_cube.jpg">
+  <figcaption> Map use cube from MacEachren and Kraak </figcaption>
 </figure>
 
 Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
@@ -341,8 +341,8 @@ Showing the field-names in an interactive application is explanatory visual comm
 In figure <a class="xref" href="#chain"></a> the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done. The main focus is on the communication for creating knowledge. 
 
 <figure id="chain">
-<figcaption> Geo processing chain and visualization series </figcaption>
-<img src="img/chain.jpg">
+  <img src="img/chain.jpg">
+  <figcaption> Geo processing chain and visualization series </figcaption>
 </figure>
 
 The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
