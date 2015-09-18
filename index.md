@@ -58,6 +58,7 @@ The geo-visualization techniques were useful for the representation of the field
 
 # Introduction
 
+##Introduction
 The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps.  Almost 60% of all data is geographically referenced. Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data.  Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.(Cartwright, Miller, & Pettit, 2004; Hahmann & Burghardt, 2013; MacEachren & Kraak, 2001; Tensen, 2014)
 
 The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. (see figure <a class="xref" href="#dikw"></a>) According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. The use of the enormous amount of geo data to inform the general public is also still in development.  Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
@@ -99,6 +100,8 @@ The overall objective of this study is to build an attractive web-application fo
 3. Sub-objective 3. Last, the application will be shortly evaluated according to the requirements from sub-objective 1. 
 
 ## Report structure
+
+First some concepts will be explained in the background chapter. As well as the background of the Heritage & location project from Waag Society.
 
 
 # Background theory
@@ -164,7 +167,7 @@ Figure <a class="xref" href="#schemeHL"></a> shows the overview of the whole H&L
 <img src ="img/EL-producten-en-diensten-schema_v8.jpg">
 </figure>
 
-##Cultural heritage data & GIS
+##Cultural heritage data and GIS
 There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010) Explained here are several reasons why a GIS system is beneficial for digitalizing CH data;
 One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. 
 Second, such a system can be used for research aims. Implementing analysis on the spatial correlation of the CH data. The geographical relation and connection among various cultural heritages can be studied as well as the evolution through time and space and relationships between different datasets. So GIS can help to correlate and exploit heritage spatial relations and enrich the knowledge already existing. (Droj, 2010; Karavia & Georgopoulos, 2013;  Lai, Luo, & Zhang, 2012; Meyer et al., 2007)
@@ -305,7 +308,7 @@ Variable in thematic properties
 
 (Tensen, 2014) -->
 
-####Interaction
+### Interaction
 Interactivity is one of the key aspects of geo visualization. The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Term used is Guided discovery. 
 Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. 
 
@@ -325,7 +328,7 @@ The number, type and arrangements of the different views depend on the task, the
 (Nöllenburg, 2007)
 
 
-###Visualization of field-names
+### Visualization of field-names
 Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
 
 <figure class="text-wrap-right">
@@ -359,7 +362,7 @@ The field names are historic but do not contain a change in time. Therefore the 
 There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
 The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
 
-###Web based geo visualizations & user centered maps
+###Web based geo visualizations and user centered maps
 
 For making the map, Web Map software was needed to create a map in the browser. Some possible Web Map Frameworks that could be used and are widely known are OpenLayers, MapFish and Leaflet.(Steiniger & Hunter, 2013) They will be elaborated on to specify why the application makes use of Leaflet. 
 
@@ -391,9 +394,7 @@ For the long term a investment in the field-name application could be the adding
 
 
 
-# The Data. Field-names in Drenthe, the Netherlands
-
-
+# The Data
 From the *Rijksdients voor Cultureel Erfgoed* of the Netherlands a dataset with living field-names in Drenthe was supplied. This data contains field geometries that have a field-name, a name or toponym given to the plot or area by the people living in the neighborhood from around 1830. These field-names were derived from studies by Naarding and Wieringa, together with het *Drenthse Archief* and *het Meertens-Instituut*. Old toponyms on old maps, tell us a lot, but here they used another source; the memory of the local inhabitants, where generation after generation the field names keep on living. The polygons where drawn by hand or the names were assigned to plots from the cadastre maps from 1830.
 
 These field-names contain a lot of information about how the landscape used to look. Because most field-names are based on their direct environment. The most important factors influencing the forming of field-names are ; natural relief, natural water and the vegetation structure. (Spek et al., 2009)
@@ -503,13 +504,13 @@ Second, literature about building geo-web applications and the available techniq
 Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Covering objectives from A.
 
 This will all be summarized into the theoretical framework which can be found in the results chapter. The found literature will be used to make decisions while building the main application. Therefor the focus of the chapter will be on the field-name data set, and its characteristics and visual variables.
-
-## Theoretical framework
+<!-- 
 First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective A1, to make the application attractive, and B1, understanding the geo-data.
 
 Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, B and C to add knowledge and experience from preceding research to the techniques which will be used here.
 
 Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives from C.
+ -->
 
 ## Sub-objective 2. Building the prototype web-application
 After exploring the field-names dataset, a choice of story and way to visualize the data is made, which will be explained in section <a class="xref" href="#the-idea"></a> . This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
@@ -531,6 +532,7 @@ Section <a class="xref" href="the-idea"></a>
 - Writing the information in text, that is needed in the web page. (O B 1-3)
 
 Both the design and technical building will be done by the researcher.
+
 
 
 ## Sub-objective 3. Evaluating prototype web-application
@@ -600,11 +602,12 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
 #Results
 
 ## Results Sub-objective 1. The design requirements
+
 ### Target group
 
 The target group will be defined as the common citizen, living in Drenthe and show an interest in their direct environment and want to discover something about its history. It will not specifically be targeted at children or elderly but to a general public. The target group's language is Dutch.
 
-### Design goals
+### Overal design goals
 
 1. The goal is to preserve the living heritage names of Drenthe, which are mostly stored in people’s memory and so will disappear.
 
@@ -615,61 +618,26 @@ The target group will be defined as the common citizen, living in Drenthe and sh
 We will do this by building an attractive web-application for the project Heritage & Location to show its potential of visualizing heritage data and preserving them. A big part of the web application will be a geo-visualization of the intangible cultural heritage data set of living field names from Drenthe. The interactivity of the web application, will give users the possibility to discover the names themselves in relation to the environment. The focus is on revealing hidden meaning of the raw data, to the general public.
 
 
-### Desing objectives
+### Design objectives
 
-A. The target group must feel:
-
+The target group must feel:
 1. Attracted to use the application
 2. Attracted to stay and play around with the application
 3. Challenged to explore more
-
-B. The target group must be able to:
-
 4. Discover the meaning of the field-names in relation to their environment
 5. Discover interesting stories and surprising facts about the field-names
 6. Understand the field-names and their value
 
-C. The application must be:
+### Functional design objectives
 
-7. Intuitive and simple to use, so it shows quick and surprising results on the actions of the target group
-8. Technically working in an efficient and error-safe way. User friendly.
+1. The application must be intuitive and simple to use, so it shows quick and surprising results on the actions of the target group.
 
+### Technical design objectives
 
-
-## Results Sub-objective 2. Building the prototype web-application
-
-### The idea
-
-Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, as stated in objective B1, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
-
-Several ideas came up to do this, as many characteristics are of influence. The main goal for the visualization can be stated as:
-> Visualize the meaning and origin of the field name by showing its relation with its direct environment.
+1. The application must be technically working in an efficient and error-safe way. User friendly.
 
 
-The first ideas:
 
-- Showing soil related field names on a soil map. This can be a current or old soil map.
-- Showing height related field names on a height map.
-- Showing ground water levels in relation to field names about water, swamps and soil types.
-- Vegetation types, present on a field in the current situation vs what the field-name tells us about the historic vegetation.
-- Showing names with relation to wind direction, in their position relative to the closest town or city.
-
-#### Main idea
-Eventually one of the ideas was chosen. Namely, showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
-
-Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
-
-<figure id="example" class="text-wrap-left"  >
-<figcaption> Field-names example of names with height indication on the height map </figcaption>
-<img src="img/hoogte_voorbeeld.jpg"><img>
-</figure>
-
-Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
-In order to include this in the visualization, showing the polygons on a map won't be sufficient. Chosen is to draw a transect of the height data and indicate the names of the fields on this.
-
-// tekeningetjes
-
-Interactivity will be added to the transect line, letting the user define the transect line themselves and explore the different objects located on and around the transect line.
 
 For this is needed:
 
@@ -688,6 +656,44 @@ Additional pictures of the landscape characteristics.
 Linking the data with the webpage. See paragraphs <a class="xref" href="#back-end-processes">.
 
 
+
+
+## Results Sub-objective 2. Building the prototype web-application
+
+### From requirements to design: The idea
+Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, as stated in objective B1, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
+
+Several ideas came up to do this, as many characteristics are of influence. The main goal for the visualization can be stated as:
+> Visualize the meaning and origin of the field name by showing its relation with its direct environment.
+
+The first ideas:
+
+- Showing soil related field names on a soil map. This can be a current or old soil map.
+- Showing height related field names on a height map.
+- Showing ground water levels in relation to field names about water, swamps and soil types.
+- Vegetation types, present on a field in the current situation vs what the field-name tells us about the historic vegetation.
+- Showing names with relation to wind direction, in their position relative to the closest town or city.
+
+#### Main idea
+Eventually one of the ideas was chosen. Namely, showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
+
+In order to include this in the visualization, showing the polygons on a map won't be sufficient. Chosen is to draw a transect of the height data and indicate the names of the fields on this.
+
+Interactivity will be added to the transect line, letting the user define the transect line themselves and explore the different objects located on and around the transect line.
+
+#### Mood board
+For design ideas and color use a mood board was made. Pictures from the Internet combined with fonts. Search terms were, living heritage, cultural heritage, transect , old transect map and more.
+One of the main inspirations was the following image:
+
+<figure>
+  <figcaption> Inspiration Picture </figcaption>
+  <img src="img/transect_inspiration-01.jpg">
+  <p>Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg</p>
+</figure>
+
+Complete mood board; see appendix <a class="xref" href="#mood-board"></a>
+
+<!-- 
 #### Variations on Main idea
 For also on this main idea some variations can be made, these will be shown here.
 
@@ -702,18 +708,17 @@ Giving colors or patterns to the fields according to the soil property. Like a *
 
 - Link stories provided to the line, so popups with provided stories from the book.
 
+ -->
 
-#### Mood board
-For design ideas and color use a mood board was made. Pictures from the Internet combined with fonts. Search terms were, living heritage, cultural heritage, transect , old transect map and more.
-One of the main inspirations was the following image:
+### Data exploration
+Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
 
-<figure>
-  <figcaption> Inspiration Picture </figcaption>
-  <img src="img/transect_inspiration-01.jpg">
-  <p>Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg</p>
+<figure id="example" class="text-wrap-left"  >
+<figcaption> Field-names example of names with height indication on the height map </figcaption>
+<img src="img/hoogte_voorbeeld.jpg"><img>
 </figure>
 
-Complete mood board; see appendix <a class="xref" href="#mood-board"></a>
+Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
 
 ### The web application
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
