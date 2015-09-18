@@ -328,11 +328,11 @@ h2.nocount:before {
   counter-increment: none;
 }
 
-figure {
+figcaption {
   counter-increment: figures;
 }
 
-figure:before{
+figcaption:before{
   content: 'Figure ' counter(figures) ".  ";
 }
 
