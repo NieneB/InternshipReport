@@ -871,7 +871,7 @@ Because there are sufficient recommendations to be done to improve the web appli
 # Conclusion
 Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
 
-# References
+<h1 class ="nocount">References</h1> 
 <div id="bib">
  <p> <b>Actueel Hoogtebestand Nederland.</b>  (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html</p>
  
@@ -928,7 +928,7 @@ Every geo-visualization needs to be looked at individually and specific for that
 </p>
 </div>
 
-# Appendix
+<h1 class="nocount" >Appendix</h1>
 
 ## Mood board
 
