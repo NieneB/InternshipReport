@@ -92,14 +92,13 @@ The research will contain 3 parts; first the design criteria will be set.  Secon
 For this also some background theory on hertiage data and geo-visualization techniques will be given.
 
 ## Objectives
-The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands. 
-The sub-objectives will be as follows:
+The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands.  To achieve this the following sub-objectives have been defined:
 
-1. Sub-objective 1. The first objective is to set the design requirements and specifications for the prototype application that will be developed.
+1. Establish  design requirements and specifications for the prototype application that will be developed.
 
-2. Sub-objective 2. Second the prototype version will be build to visualize the field names of Drenthe in a attractive and clear way. 
+2. Develop a prototype version of the web-application. 
 
-3. Sub-objective 3. Last, the application will be shortly evaluated according to the requirements from sub-objective 1. 
+3. Evaluate the prototype web-application according to the requirements from sub-objective 1. 
 
 ## Report structure
 This report will exist of 7 chapters, including this introduction chapter.  Explaining how the prototype web-application came established.
@@ -111,7 +110,7 @@ In the last two chapters reflects on the findings and concludes the study as wel
 Figure  <a class="xref" href="#reportstruct"></a>.  illustrates the structure of this report. 
 
 <figure id="reportstruct" >
-  <img src="img/">
+  <img src="img/reportstructure.png">
   <figcaption>Structure of the report</figcaption>
 </figure>
 
