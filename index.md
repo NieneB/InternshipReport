@@ -61,7 +61,7 @@ The geo-visualization techniques were useful for the representation of the field
 ##Introduction
 The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and Apps.  Almost 60% of all data is geographically referenced. Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data.  Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.(Cartwright, Miller, & Pettit, 2004; Hahmann & Burghardt, 2013; MacEachren & Kraak, 2001; Tensen, 2014)
 
-The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. (see figure <a class="xref" href="#dikw"></a>) According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. The use of the enormous amount of geo data to inform the general public is also still in development.  Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
+The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. (see figure <a class="xref" href= "#dikw"> </a> ) According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. The use of the enormous amount of geo data to inform the general public is also still in development.  Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
 
 <figure id="dikw" class="text-wrap-right">
   <img src="img/DIKWPyramid.jpg">
@@ -84,31 +84,38 @@ As stated by Deal:
 
 In the cultural heritage field, the temporal dimension plays an important role to explore data. (Cerasuolo, Cutugno, & Leano, 2012) Spatial-temporal data visualization assumes and important role in the data presentation to users. The three dimensional data form of geo data (spatial, temporal and descriptive) helps users understand and gain knowledge in the discovery process.
 
-This research is part of an internship at Waag Society for the project of Heritage & Location. (see <a class="xref" href="#heritage-and-location-project-waag-society"></a>) This report describes the work and the results from the development of a web-application for the project Heritage & Location.
+This research is part of an internship at Waag Society for the project of Heritage & Location. (see <a class="xref" href="#heritage-and-location-project-waag-society"></a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
 
- Because a web-application will be build to visualize geographically referenced intangible cultural heritage [ICH] data this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in chapter <a class="xref" href="#field-names-in-drenthe"></a>. 
-<!-- 
-The research will be build up in 3 parts; first the possible visualization techniques will be explored through literature study. With the chosen techniques, the application will be build, for which certain design goals and requirements will be defined. In the end the application will shortly be evaluated. -->
+ The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in chapter <a class="xref" href="#field-names-in-drenthe"></a>. 
+ 
+The research will contain 3 parts; first the design criteria will be set.  Second, a prototyp application will be build and third, the application will shortly be tested and evaluated.
+For this also some background theory on hertiage data and geo-visualization techniques will be given.
 
-
-## Overall objective
+## Objectives
 The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands. 
-
-## Sub-objectives
-1. Sub-objective 1. The first objective is to set the design requirements and specifications for the application.
-2. Sub-objective 2. Second a prototype version will be build to visualize the field names of Drenthe.
+The sub-objectives will be as follows:
+1. Sub-objective 1. The first objective is to set the design requirements and specifications for the prototype application that will be developed.
+2. Sub-objective 2. Second the prototype version will be build to visualize the field names of Drenthe in a attractive and clear way. 
 3. Sub-objective 3. Last, the application will be shortly evaluated according to the requirements from sub-objective 1. 
 
 ## Report structure
+This report will exist of 7 chapters, including this introduction chapter.  Explaining how the prototype web-application came established.
+ The second chapter explains some concepts as background information. First , the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
+The tird chapter shows the field-name data provided by the RCE  which forms the case study for this research.
+The fourth and fitft chapter provide per sub-objective, the methods and results. 
+In the last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recomendation for futher development.
 
-First some concepts will be explained in the background chapter. As well as the background of the Heritage & location project from Waag Society.
+Figure  <a class="xref" href="#reportstruct"></a>.  illustrates the structure of this report. 
 
+<figure id="reportstruct" class="text-wrap-right">
+  <img src="img/">
+  <figcaption>Structure of the report</figcaption>
+</figure>
 
 # Background theory
 
-In this chapter, the field names are further explained and their role in the cultural heritage field. Therefore, Also the field of cultural heritage is explained and its categories.
-Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
-Also some background information on geo-data and the combination with heritage is given.
+In this chapter, the concept of field-names in Drenthe is explained and their position in the cultural heritage field.  Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
+After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  Starting with some static visualization forms, followed by dynamic and concluded with web-based interactive frameworks. 
 
 ## Field-names in Drenthe
 
