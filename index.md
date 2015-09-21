@@ -94,8 +94,11 @@ For this also some background theory on hertiage data and geo-visualization tech
 ## Objectives
 The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands. 
 The sub-objectives will be as follows:
+
 1. Sub-objective 1. The first objective is to set the design requirements and specifications for the prototype application that will be developed.
+
 2. Sub-objective 2. Second the prototype version will be build to visualize the field names of Drenthe in a attractive and clear way. 
+
 3. Sub-objective 3. Last, the application will be shortly evaluated according to the requirements from sub-objective 1. 
 
 ## Report structure
@@ -107,7 +110,7 @@ In the last two chapters reflects on the findings and concludes the study as wel
 
 Figure  <a class="xref" href="#reportstruct"></a>.  illustrates the structure of this report. 
 
-<figure id="reportstruct" class="text-wrap-right">
+<figure id="reportstruct" >
   <img src="img/">
   <figcaption>Structure of the report</figcaption>
 </figure>
