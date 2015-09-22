@@ -239,7 +239,7 @@ A few forms of dynamic geo-visualization can be named, animation, display of tim
 
 ####Spatial - temporal
 Spatial temporal visualization is the display of dynamic phenomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorizationthen  Köbben & Yaman. Kraak & Klomp about time-series, successive build-up and changing representations, an overview is shown in 
- <a class="xref" href="#catphenom"> table $$ </a> .(Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
+ <a class="xref" href="#catphenom"> table </a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
 
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
@@ -280,7 +280,9 @@ Blok provides a framework for animated representation of dynamic geo-spatial phe
 
 Starting with: 
 No change vs change
-Change can happen in the spatial domain, the temporal domain or the thematic domain of the data. 
+Change can happen in the spatial domain, the temporal domain or the thematic domain of the data.
+ 
+<p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
 <table>
 	<tr>
@@ -288,49 +290,62 @@ Change can happen in the spatial domain, the temporal domain or the thematic dom
 		<th> Variables </th>
 		<th> Dimensions </th>
     </tr>
+	
     <tr>
         <th rowspan = "6"> Spatial </th>
         <td> Appearance/disappearance </td>
 		<td> Born and Die </td>
     </tr>
+	
 	<tr> 
 		<td rowspan= "3"> Mutation </td>
 		<td> in size or shape </td>
     </tr>
+	
 	<tr>
-		<td> increase/decrease (inerval ratio)
+		<td> increase/decrease (inerval ratio) <td>
 	</tr>
+	
 	<tr>
 		<td> grow, shrink </td>
 	</tr>
+	
 	<tr> 
 		<td rowspan= "2"> Movement </td>
 		<td>along trajectory </td>
 		<td>boundary shift </td>
     </tr>
+	
 	<tr>
         <th rowspan = "5"> Temporal </th>
         <td> moment in time </td>
 	</tr>
+	
 	<tr> 
 		<td>Pace </td>
 	</tr>
+	
 	<tr> 
 		<td>Duration </td>
 	</tr>
+	
 	<tr> 
 		<td>Sequence </td>
 	</tr>
+	
 	<tr> 
 		<td>Frequency </td>
 	</tr>
+	
 	<tr>
         <th rowspan = "2"> Thematic </th>
         <td> Mutation </td>
 	</tr>
+	
 	<tr> 
 		<td>Thematic change </td>
 	</tr>
+	
 </table>
 
 
