@@ -63,9 +63,9 @@ The amount of geospatial data has increased rapidly. Geospatial data is created 
 
 The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. Often audiences are presented with data instead of information. (see figure <a class="xref" href= "#dikw"> </a> ) According to Nathan Shedroff, successful communications do not present data. Transforming data into information by organizing it into a meaningful form, presenting it in an appropriate way and communication context is the process to get the story to the audience. The use of the enormous amount of geo data to inform the general public is also still in development.  Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
 
-<figure id="dikw" class="text-wrap-right">
+<figure class="text-wrap-right" id="dikw">
   <img src="img/DIKWPyramid.jpg">
-  <figcaption>DIKW pyramid. From data to wisdom</figcaption>
+  <figcaption> DIKW pyramid, From data to wisdom</figcaption>
   <p><i>(Shedroff, 1999)</i></p>
 </figure>
 
@@ -154,23 +154,27 @@ This is also the third and the main goal of the Heritage & Location [H&L] projec
 
 ##Heritage and Location project 
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
+
 ###Waag Society
+
 <figure class="text-wrap-left">
   <img src="img/WS_logo.jpg" width="200px"></img>
   <figcaption>Waag Society </figcaption>
 </figure>
+
 Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
 
 ###Heritage and Location
+
 The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] , and at Waag Society a historical-geo thesaurus and tools are developed. The H&L project aims to develop a uniform system to link CH collections to existing geometries, with the use of place indicators in the metadata of the CH data. One of the tools is a historical-geocoder, to make heritage data, geo located and so link it in time and space to other heritage data sets and enrich knowledge. It combines multiple geo data sets with a time component and can be used easily to locate heritage data with a place notification. Big heritage collections with a place indication, though no geo data, can be linked to geometries. The goal of the H&L project is to know every place, administrative boundary, building and address that ever existed in the Netherlands.(“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
-<figure id="schemeHL" class="text-wrap-left">
+<figure id="schemeHL" >
   <img src ="img/EL-producten-en-diensten-schema_v8.jpg" height="400px">
   <figcaption> Scheme of Heritage and Location project : Products and Services. </figcaption>
 </figure>
 
-In figure <a class="xref" href="#schemeHL"> figure test </a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
+In <a class="xref" href="#schemeHL"> figure 3 </a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
 (“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
 Examples of data that the geocoder contains are; old toponyms, dissapeard villages, geometries of departments form 1830, ubanisation through out the years, municipalities and their origin ect. 
@@ -218,12 +222,10 @@ In the following sections, some forms and frameworks of geospatial visalization 
 
 The focus will be on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. The main focus is on the communication for creating knowledge. 
 
-
 <figure id="mapusecube" class="text-wrap-right">
   <img src="img/Map_use_cube.jpg">
   <figcaption> Map use cube from MacEachren and Kraak </figcaption>
 </figure>
-
 
 ###Static geospatial visualization
 Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
@@ -236,10 +238,8 @@ Bertin’s theory was designed in the context of static maps but is for a part t
 A few forms of dynamic geo-visualization can be named, animation, display of time or spatial temporal visualization and interaction. The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
 
 ####Spatial - temporal
-Spatial temporal visualization is the display of dynamic phenomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations.
-(Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007) See table <a class="xref" href="#catphenom"></a>.
-
-Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
+Spatial temporal visualization is the display of dynamic phenomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorizationthen  Köbben & Yaman. Kraak & Klomp about time-series, successive build-up and changing representations, an overview is shown in 
+ <a class="xref" href="#catphenom"> table $$ </a> .(Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
 
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
@@ -274,13 +274,70 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
 
 *Information from (Köbben & Yaman, 1996; Kraak & Klomp, 1996)*
 
-Dynamic visualization variables are identified by Dibiase et al. (1992),  MacEachren (1994), Kobben and Yaman, and Blok (2000) and are gathered here and put into one overview. Based on Blok
-Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) She provides a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships.  Blok’s framework more aims at the exploratory use of visualization while this research, aims at the display and communication part of the geo-spatial phenomena for explanatory use. Though, this author finds that Blok’s dynamic visualization variables can be applied for both purposes. As Blok also states; the ultimate goal is to contribute to the development of representation methods and interaction tools, which are also found in the explanatory visualization forms. 
+Dynamic visualization variables are identified by Dibiase et al. (1992),  MacEachren (1994), Kobben and Yaman, and Blok (2000) 
+
+Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) They provide a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships and communication purposes of visualization.  
+
+Starting with: 
+No change vs change
+Change can happen in the spatial domain, the temporal domain or the thematic domain of the data. 
+
+<table>
+	<tr>
+        <th> Change in domain </th>
+		<th> Variables </th>
+		<th> Dimensions </th>
+    </tr>
+    <tr>
+        <th rowspan = "6"> Spatial </th>
+        <td> Appearance/disappearance </td>
+		<td> Born and Die </td>
+    </tr>
+	<tr> 
+		<td rowspan= "3"> Mutation </td>
+		<td> in size or shape </td>
+    </tr>
+	<tr>
+		<td> increase/decrease (inerval ratio)
+	</tr>
+	<tr>
+		<td> grow, shrink </td>
+	</tr>
+	<tr> 
+		<td rowspan= "2"> Movement </td>
+		<td>along trajectory </td>
+		<td>boundary shift </td>
+    </tr>
+	<tr>
+        <th rowspan = "5"> Temporal </th>
+        <td> moment in time </td>
+	</tr>
+	<tr> 
+		<td>Pace </td>
+	</tr>
+	<tr> 
+		<td>Duration </td>
+	</tr>
+	<tr> 
+		<td>Sequence </td>
+	</tr>
+	<tr> 
+		<td>Frequency </td>
+	</tr>
+	<tr>
+        <th rowspan = "2"> Thematic </th>
+        <td> Mutation </td>
+	</tr>
+	<tr> 
+		<td>Thematic change </td>
+	</tr>
+</table>
+
 
 ####Animation
-Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly. Actually animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation. 
+Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly. Animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation.  Animated maps contain dynamic variables such as scene duration, rate of change, scene order and contain hardly any interactive control. (Kobben and Yaman; MacEachren; Ormeling, 1996) 
 
-Dynamic animated variables are 
+Dynamic animated variables are:
   
   * Temporal position, when something is displayed.
   * Duration. how long is something displayed.
@@ -289,9 +346,6 @@ Dynamic animated variables are
   * Frequency or speed.
   * Synchronization. 
   
-Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Kobben and Yaman; MacEachren; Ormeling, 1996)
-There is hardly any interactive control. 
-
 ###Web based geospatial visualization 
 
 The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
