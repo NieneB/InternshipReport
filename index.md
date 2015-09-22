@@ -284,70 +284,58 @@ Change can happen in the spatial domain, the temporal domain or the thematic dom
  
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
+<figure>
 <table>
 	<tr>
         <th> Change in domain </th>
 		<th> Variables </th>
 		<th> Dimensions </th>
     </tr>
-	
-    <tr>
+	    <tr>
         <th rowspan = "6"> Spatial </th>
         <td> Appearance/disappearance </td>
 		<td> Born and Die </td>
     </tr>
-	
-	<tr> 
+		<tr> 
 		<td rowspan= "3"> Mutation </td>
 		<td> in size or shape </td>
     </tr>
-	
 	<tr>
 		<td> increase/decrease (inerval ratio) <td>
 	</tr>
-	
 	<tr>
 		<td> grow, shrink </td>
 	</tr>
-	
 	<tr> 
-		<td rowspan= "2"> Movement </td>
+		<td rowspan="2"> Movement </td>
 		<td>along trajectory </td>
 		<td>boundary shift </td>
     </tr>
-	
 	<tr>
-        <th rowspan = "5"> Temporal </th>
+        <th rowspan="5"> Temporal </th>
         <td> moment in time </td>
 	</tr>
-	
 	<tr> 
 		<td>Pace </td>
 	</tr>
-	
 	<tr> 
 		<td>Duration </td>
 	</tr>
-	
 	<tr> 
 		<td>Sequence </td>
 	</tr>
-	
 	<tr> 
 		<td>Frequency </td>
 	</tr>
-	
 	<tr>
-        <th rowspan = "2"> Thematic </th>
+        <th rowspan="2"> Thematic </th>
         <td> Mutation </td>
 	</tr>
-	
 	<tr> 
 		<td>Thematic change </td>
 	</tr>
-	
 </table>
-
+</figure>
 
 ####Animation
 Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly. Animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation.  Animated maps contain dynamic variables such as scene duration, rate of change, scene order and contain hardly any interactive control. (Kobben and Yaman; MacEachren; Ormeling, 1996) 
@@ -437,6 +425,7 @@ The dataset contains in total 1747 polygons with a field-name. Projection Rd new
 This results in the following coverage of field names:
 
 <p class="table"> Field-name Amounts per source </p>
+
 <table>
   <tr>
       <th> Amount </th> <th> Source </th>
