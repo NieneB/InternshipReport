@@ -153,15 +153,12 @@ This is also the third and the main goal of the Heritage & Location [H&L] projec
 -->
 
 ##Heritage and Location project 
-
-###Waag Society
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
-
+###Waag Society
 <figure class="text-wrap-left">
   <img src="img/WS_logo.jpg" width="200px"></img>
   <figcaption>Waag Society </figcaption>
 </figure>
-
 Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
 
@@ -170,10 +167,10 @@ The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] , a
 
 <figure id="schemeHL" class="text-wrap-left">
   <img src ="img/EL-producten-en-diensten-schema_v8.jpg" height="400px">
-  <figcaption> Scheme of Heritage and Location project. Products and Services. </figcaption>
+  <figcaption> Scheme of Heritage and Location project : Products and Services. </figcaption>
 </figure>
 
-In figure <a class="xref" href="#schemeHL"></a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
+In figure <a class="xref" href="#schemeHL"> figure test </a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
 (“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
 Examples of data that the geocoder contains are; old toponyms, dissapeard villages, geometries of departments form 1830, ubanisation through out the years, municipalities and their origin ect. 

@@ -328,12 +328,13 @@ h2.nocount:before {
   counter-increment: none;
 }
 
-figcaption {
-  counter-increment: figcaption;
+figcaption:before {
+  content: "Figure " counter(figcaption) ".  ";
+ 
 }
 
-figcaption:before{
-  content: 'Figure ' counter(figcaption) ".  ";
+figcaption {
+  counter-increment: figcaption;
 }
 
 .table {
