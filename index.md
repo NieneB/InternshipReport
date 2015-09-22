@@ -129,7 +129,7 @@ A field-name is a toponym used for a small area of land or a certain surrounding
 Field-names tells us how the landscape used to look, which soil types, vegetation types or animals occurred. They link to specific landmarks or environmental characteristics of the direct village surroundings. The origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. They can be used for landscape design and planning, knowledge for historical research and inspiration source for artist.
 (Spek et al., 2009; “Veldnamen - Encyclopedie Drenthe Online,”)
 
-### Living heritage
+### Intangible Cultural Heritage
 
 The field-names in Drenthe are called living heritage, which is one of the 4 kinds of cultural heritage categories according to *Volkscultuur* institution;
 
@@ -152,7 +152,9 @@ Second, such a system can be used for research aims. Implementing analysis on th
 This is also the third and the main goal of the Heritage & Location [H&L] project, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.) Assumption is that the place referred to in historical documents, probably refer to the identical real-world place if they are related in name. (DEN | DE BASIS vindbaarheid)
 -->
 
-##Waag Society
+##Heritage & Location project 
+
+###Waag Society
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
 
 <figure class="text-wrap-left">
@@ -163,8 +165,7 @@ For this research takes place in the scope of the Heritage and Location[H&L] pro
 Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
 
-###Heritage and Location project Waag Society
-
+###Heritage and Location
 The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] , and at Waag Society a historical-geo thesaurus and tools are developed. The H&L project aims to develop a uniform system to link CH collections to existing geometries, with the use of place indicators in the metadata of the CH data. One of the tools is a historical-geocoder, to make heritage data, geo located and so link it in time and space to other heritage data sets and enrich knowledge. It combines multiple geo data sets with a time component and can be used easily to locate heritage data with a place notification. Big heritage collections with a place indication, though no geo data, can be linked to geometries. The goal of the H&L project is to know every place, administrative boundary, building and address that ever existed in the Netherlands.(“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
 <figure id="schemeHL" class="text-wrap-left">
@@ -207,55 +208,35 @@ The theme or attribute of a phenomena. The ‘what’ is happening in the world.
 Geospatial data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive.
 The spatial dimension can be used to interpret the spatial dimensions and relation of data entities, an absolute and enclosed *space* wherein the geographic phenomena exists. The temporal dimension can be used to interpret the change in the data through time. The thematic dimension is to interpret what the data is about, a property that can be measured and assigned. The data component only concerns the raw observational data, with location, time and attributes. (Mennis et al., 2000; Nöllenburg, 2007) 
 
-Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. From the real world we go to data and all the modifications to the data. Eventually the data will be  visualized, either a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
-
-In figure <a class="xref" href="#chain"></a> the geo processing chain is combined with the series of visualization transformations. Showing that the position of the visualization as exploration and communication. Here we will focus on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done. The main focus is on the communication for creating knowledge. 
+Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. See figure <a class="xref" href="#chain"></a>. From the real world we go to data and all the modifications to the data to eventually visualized if, either on a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
 
 <figure id="chain">
   <img src="img/chain.jpg">
   <figcaption> Geo processing chain and visualization series </figcaption>
 </figure>
 
-Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992)
+Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In figure <a class="xref" href="#chain"></a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
 
-<figure class="text-wrap-right">
+In the following sections, some forms and frameworks of geospatial visalization will be explained. Starting to the first forms of static cartographic visualizations, to dynamic and animated maps. Eventually to web0based map, providing posibilities for interaction and user-centered designs. 
+
+The focus will be on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. The main focus is on the communication for creating knowledge. 
+
+
+<figure id="mapusecube" class="text-wrap-right">
   <img src="img/Map_use_cube.jpg">
   <figcaption> Map use cube from MacEachren and Kraak </figcaption>
 </figure>
 
-Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
-
 
 ###Static geospatial visualization
-Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. See figure <a class="xref" href="#bertin"></a>. 
-<!-- <figure id="bertin"> 
-  <img src="img/bertin.png">
-  <figcaption>  Bertin's theory </figcaption>
-  <p><i>(Dibiase et al., 1992; Bertin, 2000)</i></p>
-</figure>
---> After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
+Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture. Defining directionality, size and density of texture.
 
 Deciding the right graphic variable to be assigned to a certain type of data, helps the viewer in defining the perceptual properties. For example, ordinal data needs the perception of being ordered, quantitative data of being proportional.  While nominal data needs to be perceived as distinct categories.
 (Bertin, 2000; Caivano, 1990; Dibiase et al., 1992; MacEachren, 1995; Nöllenburg, 2007)
 
 ###Dynamic geospatial visualization
-Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps which require a set of dynamic graphic variables. 
+Bertin’s theory was designed in the context of static maps but is for a part the basis and seems applicable to the design of dynamic maps which require a set of dynamic graphic variables. Dynamic visual variables will only give the right results when combined with the traditional static visual variables. (Köbben & Yaman, 1996)
 A few forms of dynamic geo-visualization can be named, animation, display of time or spatial temporal visualization and interaction. The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
-
-They state that the dynamic visual variables will only give the right results when combined with the traditional static visual variables. (Köbben & Yaman, 1996)
-
-####Animation
-Animated maps leave interaction aside, and use time to add a visual dimension to the display. The scenes in an animation show the state f the data at one moment accordingly. There is hardly any interactive control. 
-Dynamic animated variables are 
-  
-  * Temporal position, when something is displayed.
-  * Duration. how long is something displayed.
-  * Order, the temporal sequence.
-  * Tate of change.
-  * Frequency or speed.
-  * Synchronization. 
-  
-Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Kobben and Yaman; MacEachren; Ormeling, 1996)
 
 ####Spatial - temporal
 Spatial temporal visualization is the display of dynamic phenomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization, but can be compared to the Köbben & Yaman. Kraak & Klomp talk about time-series, successive build-up and changing representations.
@@ -297,8 +278,22 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
 *Information from (Köbben & Yaman, 1996; Kraak & Klomp, 1996)*
 
 Dynamic visualization variables are identified by Dibiase et al. (1992),  MacEachren (1994), Kobben and Yaman, and Blok (2000) and are gathered here and put into one overview. Based on Blok
-Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) She provides a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships.  Blok’s framework more aims at the exploratory use of visualization while this research, aims at the display and communication part of the geo-spatial phenomena for explanatory use. Though, this author finds that Blok’s dynamic visualization variables can be applied for both purposes. As Blok also states; the ultimate goal is to contribute to the development of representation methods and interaction tools, which are also found in the explanatory visualization forms.
+Blok provides a framework for animated representation of dynamic geo-spatial phenomena. (Blok, 2000) She provides a range of dynamic visualization variables to be used for monitoring purposes of spatial temporal relationships.  Blok’s framework more aims at the exploratory use of visualization while this research, aims at the display and communication part of the geo-spatial phenomena for explanatory use. Though, this author finds that Blok’s dynamic visualization variables can be applied for both purposes. As Blok also states; the ultimate goal is to contribute to the development of representation methods and interaction tools, which are also found in the explanatory visualization forms. 
 
+####Animation
+Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly. Actually animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation. 
+
+Dynamic animated variables are 
+  
+  * Temporal position, when something is displayed.
+  * Duration. how long is something displayed.
+  * Order, the temporal sequence.
+  * State of change.
+  * Frequency or speed.
+  * Synchronization. 
+  
+Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Kobben and Yaman; MacEachren; Ormeling, 1996)
+There is hardly any interactive control. 
 <!-- 1. No change
 
 2. Change
@@ -329,22 +324,7 @@ Variable in thematic properties
 
 (Tensen, 2014) -->
 
-### Interactive geospatial visualization
-Interactivity is one of the key aspects of geo visualization. The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Term used is Guided discovery.  Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. 
-
- <!-- Interaction is considered as one of the key characteristics of geo-visualization, a map is nowadays seen as an interactive interface.
-Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992; Nöllenburg, 2007; Ogao & Kraak, 2002)-->
-
-Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
-
-1. **Focusing individual views.**
-The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
-
-2. **Linking multiple views.**
-Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
-This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
-The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
-(Nöllenburg, 2007)
+###Web based geospatial visualization 
 
 The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
 
@@ -359,17 +339,7 @@ To cover the four visualization operations the user interface for a web page sho
 * Time bar – temporal dimension.
 * Filters – selecting information, filter. Thematic dimension.
 
-<!-- ### Visualization of field-names
 
-
-The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
-The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
-There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
-
-The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
--->
-
-###Web based geospatial visualization 
 For making the map, Web Map software was needed to create a map in the browser. Some possible Web Map Frameworks that could be used and are widely known are OpenLayers, MapFish and Leaflet.(Steiniger & Hunter, 2013) They will be elaborated on to specify why the application makes use of Leaflet. 
 
 OpenLayers is a library for WMS (tiled layers) and WFS (vector layers). It implements a JavaScript API for visualization of spatial data in the web browser. Without a server-side component.
@@ -385,20 +355,37 @@ Leaflet also has the applicability to install plugins. For letting the user chan
 
 For building the transect line, d3 is used. A graphic drawing package. The transect line is therefor not a geographic representation but more information display. The geo-data is retained in the underlying data. 
 
-### User centered geospatial visualization or Customer engagement
+### Interactive geospatial visualization
+Interactivity is one of the key aspects of web-based geo visualization.  Interaction is considered as one of the key characteristics of geo-visualization, a map is nowadays seen as an interactive interface. Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992; Nöllenburg, 2007; Ogao & Kraak, 2002)The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. Also called, Guided discovery.  
 
-To engage the target group into the application, the hook model is followed. This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
+Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
+
+1. **Focusing individual views.**
+The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
+
+2. **Linking multiple views.**
+Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
+This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
+The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
+(Nöllenburg, 2007)
+
+
+<!-- ### Visualization of field-names
+
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
+There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
+
+The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+-->
+
+### User centered geospatial visualization or Customer engagement
+To engage the target group into a application the hook model will be explained. This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
 <figure class="text-wrap-left">
   <img src="img/hookmodel.jpg">
   <figcaption> Hook model </figcaption>
 </figure>
-
-In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
-When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
-For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
-
-
 
 # The Data
 
@@ -493,6 +480,8 @@ The field names are already categorized in a previous study by the RCE by $$$. T
     </tr>
 </table>
 
+
+For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done.
 # Method
 
 <figure id="mehtod" class='text-wrap-left' >
@@ -609,6 +598,14 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
 #Results
 
 ## Results Sub-objective 1. The design requirements
+
+
+
+Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak, figure <a class="xref" href="#mapusecube"> </a> of chapter <a> </a> the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
+
+In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
+When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
+For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 ### Target group
 
