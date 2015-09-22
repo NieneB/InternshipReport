@@ -122,7 +122,7 @@ Figure  <a class="xref" href="#reportstruct"></a>.  illustrates the structure of
 In this chapter, the concept of field-names in Drenthe is explained and their position in the cultural heritage field.  Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
 After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  Starting with some static visualization forms, followed by dynamic and concluded with web-based interactive frameworks. 
 
-## Field-names in Drenthe
+## Field-names
 
 A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage (see next section) and it exist only in people's memory. There for field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th / 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arises for field-names as they can tell us how the landscape used to look in the 18th century. A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system.
 
@@ -152,7 +152,7 @@ Second, such a system can be used for research aims. Implementing analysis on th
 This is also the third and the main goal of the Heritage & Location [H&L] project, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.) Assumption is that the place referred to in historical documents, probably refer to the identical real-world place if they are related in name. (DEN | DE BASIS vindbaarheid)
 -->
 
-##Heritage & Location project 
+##Heritage and Location project 
 
 ###Waag Society
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
@@ -169,7 +169,7 @@ Waag Society is an Institute for art, science and technology. They develop techn
 The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] , and at Waag Society a historical-geo thesaurus and tools are developed. The H&L project aims to develop a uniform system to link CH collections to existing geometries, with the use of place indicators in the metadata of the CH data. One of the tools is a historical-geocoder, to make heritage data, geo located and so link it in time and space to other heritage data sets and enrich knowledge. It combines multiple geo data sets with a time component and can be used easily to locate heritage data with a place notification. Big heritage collections with a place indication, though no geo data, can be linked to geometries. The goal of the H&L project is to know every place, administrative boundary, building and address that ever existed in the Netherlands.(“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
 <figure id="schemeHL" class="text-wrap-left">
-  <img src ="img/EL-producten-en-diensten-schema_v8.jpg">
+  <img src ="img/EL-producten-en-diensten-schema_v8.jpg" height="400px">
   <figcaption> Scheme of Heritage and Location project. Products and Services. </figcaption>
 </figure>
 
@@ -294,51 +294,16 @@ Dynamic animated variables are
   
 Animated maps contain dynamic variables. Scene duration, rate of change, scene order. (Kobben and Yaman; MacEachren; Ormeling, 1996)
 There is hardly any interactive control. 
-<!-- 1. No change
-
-2. Change
-Variables in the spatial domain
-
-Appearance/disappearance - born die
-Mutation
-    - in size, shape
-    - increase/decrease ordinal, interval ratio
-    - grow, shrink,
-
-Movement in spatial position
-    - along trajectory
-    - boundary shift
-
-Variables in the temporal domain
-
-  -  moment in time
-  -  pace
-  -  duration
-  -  sequence
-  -  frequency
-
-
-Variable in thematic properties
-  - mutation
-  - thematic change
-
-(Tensen, 2014) -->
 
 ###Web based geospatial visualization 
 
 The user is no longer depended on what the cartographer puts on the map. (Ogao & Kraak, 2002) With electronic maps, the user can navigate and explore the spatial data themselves with the given functionality. In a dynamic interactive visualization, the user needs pends between data presentation and exploration. (Ogao & Kraak, 2002) Knapp(1995) defined four visualization operation tasks to be considered; identify, locate, compare and associate. Identify is describing an object, locate indicates the search for a object whose identity was already know. Associate and compare is the ability to relate between two different objects.
-
-<p class="table"> Visualization operators from Ogao & Kraak </p>
-![Alt text](img/ogaokraak.png)
-
-*(Ogao & Kraak, 2002)*
 
 To cover the four visualization operations the user interface for a web page should have the following basic components:
 
 * Geo browser – the map. Spatial dimension. Let users navigate.
 * Time bar – temporal dimension.
 * Filters – selecting information, filter. Thematic dimension.
-
 
 For making the map, Web Map software was needed to create a map in the browser. Some possible Web Map Frameworks that could be used and are widely known are OpenLayers, MapFish and Leaflet.(Steiniger & Hunter, 2013) They will be elaborated on to specify why the application makes use of Leaflet. 
 
@@ -500,13 +465,12 @@ Second, literature about building geo-web applications and the available techniq
 Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Covering objectives from A.
 
 This will all be summarized into the theoretical framework which can be found in the results chapter. The found literature will be used to make decisions while building the main application. Therefor the focus of the chapter will be on the field-name data set, and its characteristics and visual variables.
-<!-- 
-First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective A1, to make the application attractive, and B1, understanding the geo-data.
+
+<!-- First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective A1, to make the application attractive, and B1, understanding the geo-data.
 
 Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, B and C to add knowledge and experience from preceding research to the techniques which will be used here.
 
-Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives from C.
- -->
+Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives from C. -->
 
 ## Sub-objective 2. Building the prototype web-application
 After exploring the field-names dataset, a choice of story and way to visualize the data is made, which will be explained in section <a class="xref" href="#the-idea"></a> . This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
