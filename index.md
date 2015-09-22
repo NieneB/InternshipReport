@@ -4,6 +4,7 @@
   <t1> Internship Report </t1>
   <t1> Niene Boeijen </t1>
 </div>
+
 <div id="titlePage">
   <t1> Master Geo-Information Science</t1>
   
@@ -89,9 +90,9 @@ As stated by Deal:
 
 In the cultural heritage field, the temporal dimension plays an important role to explore data. (Cerasuolo, Cutugno, & Leano, 2012) Spatial-temporal data visualization assumes and important role in the data presentation to users. The three dimensional data form of geo data (spatial, temporal and descriptive) helps users understand and gain knowledge in the discovery process.
 
-This research is part of an internship at Waag Society for the project of Heritage & Location. (see <a class="xref" href="#heritage-and-location-project-waag-society"></a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
+This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location-project-waag-society">see figure $$ </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
 
- The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in chapter <a class="xref" href="#field-names-in-drenthe"></a>. 
+ The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names-in-drenthe"> chapter $$ </a>. 
  
 The research will contain 3 parts; first the design criteria will be set.  Second, a prototype application will be build and third, the application will shortly be tested and evaluated.
 For this also some background theory on heritage data and geo-visualization techniques will be given.
@@ -110,7 +111,7 @@ The third chapter shows the field-name data provided by the RCE  which forms the
 The fourth and fifth chapter provide per sub-objective, the methods and results. 
 In the last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recommendation for further  development.
 
-Figure  <a class="xref" href="#reportstruct"></a>.  illustrates the structure of this report. 
+<a class="xref" href="#reportstruct"> Figure $$ </a>  illustrates the structure of this report. 
 
 <figure id="reportstruct" >
   <img src="img/reportstructure.png">
@@ -145,13 +146,6 @@ Intangible heritage is strongly depended on the features of space and influenced
 
 This applies also for the field-names in Drenthe, which is oral living heritage. Originated with a strong influence of the direct environment it exists in.
 
-<!--###Cultural heritage data and GIS
-There is a big relevance of using geospatial data and geo information systems for the field of cultural heritage conservation purposes. (Droj, 2010) Explained here are several reasons why a GIS system is beneficial for digitalizing CH data;
-One, digitalizing CH data in a web GIS system can serve the goal to preserve the CH, by presenting the digital records in the form of focusing on its relation to place. Geographical information systems have proved their potential to present and exploit cultural heritage data. 
-Second, such a system can be used for research aims. Implementing analysis on the spatial correlation of the CH data. The geographical relation and connection among various cultural heritages can be studied as well as the evolution through time and space and relationships between different datasets. So GIS can help to correlate and exploit heritage spatial relations and enrich the knowledge already existing. (Droj, 2010; Karavia & Georgopoulos, 2013;  Lai, Luo, & Zhang, 2012; Meyer et al., 2007)
-This is also the third and the main goal of the Heritage & Location [H&L] project, enriching current datasets, by linking it in space and time to other datasets, which do not contain exact location data but do contain a sense of place in the thematic data description. By doing so, it is possible to improve the information access and improve the richness of the existing data of cultural heritage institutions. (“erfgoedenlocatie.nl,” n.d.) Assumption is that the place referred to in historical documents, probably refer to the identical real-world place if they are related in name. (DEN | DE BASIS vindbaarheid)
--->
-
 ##Heritage and Location project 
 For this research takes place in the scope of the Heritage and Location[H&L] project at Waag Society, they both will be shortly explained.
 
@@ -181,42 +175,19 @@ Examples of data that the geocoder contains are; old toponyms, dissapeard villag
 
 The data of the field-names can be regarded as a source of the H&L project. This has to be made uniform the system of the geocoder to eventually be able to build easy web-applications on top of the find API.  This has not been done in this research for the poject was not fully developed at the stage. For the future, the data might be taken up into the H&L project.
 
-
-<!-- Digitalizing heritage as linked data contains the following key aspects:
-
-1.  Identification, making the objects unique and identifiable.
-2.  Make it accessible through the Internet
-3.  Searchable, making it possible to index by search engines.
-4.  Re-usability. Linked-data makes it easy to use the data.
-(DEN | DE BASIS vindbaarheid)
-##Geo data
-###Spatial dimension
-Geo data is different from other data because it is inherently structured with a spatial dimension. An X and Y location and sometimes a Z dimension. This contains the *where* of a particular phenomenon.
-Spatial objects can be physical, real objects in the world, or non-physical phenomena, like administrative boundaries. Continuous data fields cover large areas with no clear boundaries, like rainfall or temperature. A single object on the earth is discrete; they have sharp boundaries, like a house. But also the spatial structure tells a lot about the phenomena, is it random or regular clustered. The general assumption of spatial correlation tells that close things are more correlated then far apart things.
-
-###Temporal dimension
-The time of happening of phenomena can be divided into 3 forms, it can happen/exist as a point in time, a period in time or on a certain interval in time. Also time can be classified into the four measurement classes, nominal ordinal discrete or continuous time model.
-Nominal would be; the 90ties, Christmas or the WWII.
-Ordinal contains relative order time statements like; before, after.
-Discrete is in years, seconds, minutes , etc.
-
-Another differentiation is liner versus cyclic time ordering. Linear time is ordered along a path. Cyclic time follows a path of periodic turn phases. Like seasons, day and night. Serial periodic data is periodic time represented on a linear path.
-
-###Thematic dimension
-The theme or attribute of a phenomena. The ‘what’ is happening in the world. This data is often stored in the attributes of the data, more then one attributes can exist. This data can be qualitative or quantitative, nominal ordinal discrete or continuous. -->
-
 ##Geo-visualization
+
 Geospatial data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive.
 The spatial dimension can be used to interpret the spatial dimensions and relation of data entities, an absolute and enclosed *space* wherein the geographic phenomena exists. The temporal dimension can be used to interpret the change in the data through time. The thematic dimension is to interpret what the data is about, a property that can be measured and assigned. The data component only concerns the raw observational data, with location, time and attributes. (Mennis et al., 2000; Nöllenburg, 2007) 
 
-Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. See figure <a class="xref" href="#chain"></a>. From the real world we go to data and all the modifications to the data to eventually visualized if, either on a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
+Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. See<a class="xref" href="#chain"> figure $$</a>. From the real world we go to data and all the modifications to the data to eventually visualized if, either on a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
 
 <figure id="chain">
   <img src="img/chain.jpg">
   <figcaption> Geo processing chain and visualization series </figcaption>
 </figure>
 
-Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In figure <a class="xref" href="#chain"></a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
+Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In <a class="xref" href="#chain">figure $$</a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
 
 In the following sections, some forms and frameworks of geospatial visalization will be explained. Starting to the first forms of static cartographic visualizations, to dynamic and animated maps. Eventually to web0based map, providing posibilities for interaction and user-centered designs. 
 
@@ -238,8 +209,7 @@ Bertin’s theory was designed in the context of static maps but is for a part t
 A few forms of dynamic geo-visualization can be named, animation, display of time or spatial temporal visualization and interaction. The dynamic categories are divided into 2D and 3D animations. In this research we only work with 2D animations because of limited technology. Also in the theoretical frame work we will leave this out of consideration.
 
 ####Spatial - temporal
-Spatial temporal visualization is the display of dynamic phenomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorizationthen  Köbben & Yaman. Kraak & Klomp about time-series, successive build-up and changing representations, an overview is shown in 
- <a class="xref" href="#catphenom"> table </a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
+Spatial temporal visualization is the display of dynamic phenomena as a series of static maps. To analyze and understand patterns of temporal change of phenomena. The two categories are temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorizationthen  Köbben & Yaman. Kraak & Klomp about time-series, successive build-up and changing representations, an overview is shown in <a class="xref" href="#catphenom"> table $$</a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  Dibase states that dynamic variables can be used to emphasize the location of a phenomenon, emphasize the attributes or visualize change in the spatial, temporal or thematic dimensions. (Dibiase et al., 1992)
 
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
@@ -291,17 +261,17 @@ Change can happen in the spatial domain, the temporal domain or the thematic dom
 		<th> Variables </th>
 		<th> Dimensions </th>
     </tr>
-	    <tr>
+	<tr>
         <th rowspan = "6"> Spatial </th>
         <td> Appearance/disappearance </td>
 		<td> Born and Die </td>
     </tr>
-		<tr> 
+	<tr> 
 		<td rowspan= "3"> Mutation </td>
 		<td> in size or shape </td>
     </tr>
 	<tr>
-		<td> increase/decrease (inerval ratio) <td>
+		<td> increase/decrease (inerval ratio) </td>
 	</tr>
 	<tr>
 		<td> grow, shrink </td>
@@ -455,7 +425,7 @@ Based on this the total research location is determined, consisting of the munic
   <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
 </figure>
 
-The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in table <a class='xref' href="#field-name-cat"> </a>. In the appendix <a class="xref" href="categories-field-names-form-rce"> </a> a total overview of the categories and the names and alternative names can be found.
+The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in <a class='xref' href="#field-name-cat"> table $$</a>. In the <a class="xref" href="categories-field-names-form-rce"> appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
 
 <p class="table" id="field-name-cat"> Field-name categories </p>
 
@@ -510,7 +480,7 @@ For the field-names the data collection has been done in previous studies. For t
 </figure>
 
 This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given letter and numbers, to easily refer to them, when they are covered.
-See figure <a class="xref" href="#method"> </a> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
+See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
 
 ## Sub-objective 1. Finding the design requirements.
 
@@ -528,7 +498,7 @@ Second, literature about building geo-web applications and the available techniq
 Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives from C. -->
 
 ## Sub-objective 2. Building the prototype web-application
-After exploring the field-names dataset, a choice of story and way to visualize the data is made, which will be explained in section <a class="xref" href="#the-idea"></a> . This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
+After exploring the field-names dataset, a choice of story and way to visualize the data is made, which will be explained in <a class="xref" href="#the-idea">section  $$</a> . This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
 While doing this, decisions and choices will be made on the developed framework. There will be several things that will be taken into account during this stage.
 
 Section <a class="xref" href="the-idea"></a>
