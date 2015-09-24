@@ -130,6 +130,7 @@
   }
   h1{
     background: none;
+	margin-top: 20px;
   }
   nav, aside{
     display: none;
@@ -326,6 +327,9 @@ h1.nocount:before {
 h2.nocount:before {
   content: none;
   counter-increment: none;
+}
+figure {
+	counter-reset: figures;
 }
 
 figcaption:before {
