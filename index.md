@@ -332,36 +332,32 @@ Leaflet is a web-map service WMS,that returns geo-referenced rasterized maps or 
 
 
 ### Interactive geospatial visualization
-Interactivity is one of the key aspects of web-based geo visualization.  Interaction is considered as one of the key characteristics of geo-visualization, a map is nowadays seen as an interactive interface. Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992; Nöllenburg, 2007; Ogao & Kraak, 2002)The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. Also called, Guided discovery.  
+Interactivity is one of the key aspects of web-based geo visualization. A map is nowadays seen as an interactive interface. Interactivity lets the user explore the geo-data and be in control and not depended on the cartographer.  Interaction empowers the viewer/user to modify the data display. (Dibiase et al., 1992; Nöllenburg, 2007; Ogao & Kraak, 2002)The full potential of interaction in geo visualization lies in linking multiple views of the same data on the screen. Interactive visualization gives the control of the animation to the user, they engage in sorting, highlighting, filtering and transforming. The level of detail displayed and the speed can be determined, so information is less likely to be missed. Also called, Guided discovery.  
 
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
 1. **Focusing individual views.**
+
 The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
 
 2. **Linking multiple views.**
+
 Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
 This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
 (Nöllenburg, 2007)
 
 
-<!-- ### Visualization of field-names
-
-The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
-The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
-There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
-
-The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
--->
 
 ### User centered geospatial visualization or Customer engagement
-To engage the target group into a application the hook model will be explained. This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
-<figure class="text-wrap-left">
-  <img src="img/hookmodel.jpg">
+<figure class="text-wrap-right" id="hook">
+  <img src="img/hookmodel.jpg" width=100px>
   <figcaption> Hook model </figcaption>
 </figure>
+
+To engage the target group into a application the hook model will be explained. <a class="xref" href="#hook"> Figure $$ </a>This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
+
 
 # The Data
 
@@ -403,7 +399,6 @@ This results in the following coverage of field names:
         <td>515 </td> <td> Drents Archief </td>
     </tr>
 </table>
-
 
 Based on this the total research location is determined, consisting of the municipality’s Aa en Hunze, Assen, Noordenveld and Tynaarlo. All located in the watershed of the Drentse Aa.
 
@@ -459,6 +454,8 @@ The field names are already categorized in a previous study by the RCE by $$$. T
 
 
 For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done.
+
+
 # Method
 
 <figure id="mehtod" class='text-wrap-left' >
@@ -466,45 +463,34 @@ For the field-names the data collection has been done in previous studies. For t
   <figcaption>Methodology overview</figcaption>
 </figure>
 
-This research will be a design-oriented research, trying to fulfill the design goals and objectives. By taking the objectives into account, the goals will be fulfilled. There fore the objectives are given letter and numbers, to easily refer to them, when they are covered.
-See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
+This research will be a design-oriented research. See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
 
 ## Sub-objective 1. Finding the design requirements.
 
-Three things will be looked at in the literature research.
-First, a literature research is done into geo visualization techniques and already available methods. Going from the conventional cartographic techniques to the modern techniques. Including animation and change. This to cover objective A1, to make the application attractive, and B3, understanding the geo-data.
-Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, B 1-3 and C1. Adding knowledge and experience from preceding research.
-Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Covering objectives from A.
+Analysis of users, task and context. 
+Indentification of requirements
+Design and prototype
+Test and evaluate
 
-This will all be summarized into the theoretical framework which can be found in the results chapter. The found literature will be used to make decisions while building the main application. Therefor the focus of the chapter will be on the field-name data set, and its characteristics and visual variables.
+A literature research is done into geo visualization techniques and already available methods. Going from the conventional cartographic techniques to the modern techniques. Including animation and change. Also literature about building geo-web applications and the available techniques will be consulted. Toadd  knowledge and experience from preceding researches to the delepment of the design requirements.
+This can be found in <a class="xref" href="#Background"> chapter $$. Background theory </a>
 
-<!-- First, a literature research is done into geo visualization techniques and already available methods which are applicable to the field-names. Describing the field-name data in the kind of data it is and the visual variables which can be linked to them. This to cover objective A1, to make the application attractive, and B1, understanding the geo-data.
+ Several objectives will be set  in the following categories:
+ - Design goals
+ 
+ 
+ - Functional requirements
+ - User requirements
+ - contextual requirements
 
-Second, literature about building geo-web applications and the available techniques will be consulted. To cover objectives, B and C to add knowledge and experience from preceding research to the techniques which will be used here.
+ - Assumptions ( user, context, funtional)
 
-Last, will be looked at some frameworks explaining how to build an efficient, attractive and interactive web-application in general. Focussing on a user centered design. Covering objectives from C. -->
+ (Verschuren and Hartog, 2005)
+## Sub-objective 2. Building the prototype web-application 
 
-## Sub-objective 2. Building the prototype web-application
-After exploring the field-names dataset, a choice of story and way to visualize the data is made, which will be explained in <a class="xref" href="#the-idea">section  $$</a> . This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
-While doing this, decisions and choices will be made on the developed framework. There will be several things that will be taken into account during this stage.
-
-Section <a class="xref" href="the-idea"></a>
-
--   The idea and design
-
-Section <a class="xref" href="back-end-processes"></a>
-
-- Techniques needed to make the web-application. (O C 1-2)
-- Techniques for geo support. (O C)
-- Visualizing of the geo data. (O B)
-
-Section <a class="xref" href="the-idea"></a>
-
-- Designing the webpage. (O A1)
-- Writing the information in text, that is needed in the web page. (O B 1-3)
-
+After exploring the field-names dataset, a choice of story and way to visualize the data is made, the design. This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
+While doing this, decisions and choices will be made on the developed goals and requirements and the background theory. 
 Both the design and technical building will be done by the researcher.
-
 
 
 ## Sub-objective 3. Evaluating prototype web-application
@@ -574,9 +560,6 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
 #Results
 
 ## Results Sub-objective 1. The design requirements
-
-
-
 Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak,  <a class="xref" href="#mapusecube"> figure $$ </a> of <a> chapter  $$ </a> the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 
 In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
@@ -587,7 +570,8 @@ For the long term a investment in the field-name application could be the adding
 
 The target group will be defined as the common citizen, living in Drenthe and show an interest in their direct environment and want to discover something about its history. It will not specifically be targeted at children or elderly but to a general public. The target group's language is Dutch.
 
-### Overal design goals
+
+### Design goals
 
 1. The goal is to preserve the living heritage names of Drenthe, which are mostly stored in people’s memory and so will disappear.
 
@@ -597,10 +581,10 @@ The target group will be defined as the common citizen, living in Drenthe and sh
 
 We will do this by building an attractive web-application for the project Heritage & Location to show its potential of visualizing heritage data and preserving them. A big part of the web application will be a geo-visualization of the intangible cultural heritage data set of living field names from Drenthe. The interactivity of the web application, will give users the possibility to discover the names themselves in relation to the environment. The focus is on revealing hidden meaning of the raw data, to the general public.
 
-
-### Design objectives
+### User requirements
 
 The target group must feel:
+
 1. Attracted to use the application
 2. Attracted to stay and play around with the application
 3. Challenged to explore more
@@ -608,16 +592,12 @@ The target group must feel:
 5. Discover interesting stories and surprising facts about the field-names
 6. Understand the field-names and their value
 
-### Functional design objectives
+### Functional requirements
 
 1. The application must be intuitive and simple to use, so it shows quick and surprising results on the actions of the target group.
-
-### Technical design objectives
-
 1. The application must be technically working in an efficient and error-safe way. User friendly.
 
-
-
+### Context requirements
 
 For this is needed:
 
@@ -634,8 +614,6 @@ Additional pictures of the landscape characteristics.
 
 **Backend**
 Linking the data with the webpage. See paragraphs <a class="xref" href="#back-end-processes">.
-
-
 
 
 ## Results Sub-objective 2. Building the prototype web-application
@@ -902,6 +880,7 @@ Every geo-visualization needs to be looked at individually and specific for that
  <p> <b>TOP10NL Publieke Dienstverlening Op de Kaart Loket. </b> (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl</p>
  <p> <b>UNESCO Culture Sector - Intangible Heritage - 2003 Convention </b> (n.d.). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002</p>
 <p>  <b>Veldnamen - Encyclopedie Drenthe Online.</b>  (n.d.). Retrieved July 22, 2015, from http://www.encyclopediedrenthe.nl/Veldnamen</p>
+<p> <b>  Verschuren, P., Hartog, R. </b> (2005) Evaluation in Design-Oriented Research, Department of Methodology, Nijmegen School of Management, Radboud University, Nijmegen </p>
  <p> <b>volkscultuur. </b> (n.d.). Retrieved May 6, 2015, from http://www.volkscultuur.nl/</p>
   <p><b>Waag Society. </b> (n.d.). Retrieved July 23, 2015, from https://www.waag.org/nl/organisatie</p>
  <p> <b>Zeijden, A. V. D. </b> (2011). Immaterieel erfgoed en musea, (35), 4–6.
