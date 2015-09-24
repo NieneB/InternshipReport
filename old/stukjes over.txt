@@ -1,0 +1,26 @@
+
+The focus will be on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. The main focus is on the communication for creating knowledge. 
+
+<figure id="mapusecube" class="text-wrap-right">
+  <img src="img/Map_use_cube.jpg">
+  <figcaption> Map use cube from MacEachren and Kraak </figcaption>
+</figure>
+
+They will be elaborated on to specify why the application makes use of Leaflet. 
+
+
+Leaflet currently compete with OpenLayers only with respect to the display of map tiles, because OpenLayers offers much more functionality when it comes to interactive and vector-based map- ping tools. Also MapFish provides much more capabilities. For this was not needed for this application, the choice was made for using Leaflet, being light and simple.
+
+Leaflet also has the applicability to install plugins. For letting the user change the background map, the MiniMap plugin was used. 
+
+For building the transect line, d3 is used. A graphic drawing package. The transect line is therefor not a geographic representation but more information display. The geo-data is retained in the underlying data. 
+
+
+<!-- ### Visualization of field-names
+
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
+There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
+
+The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+-->
