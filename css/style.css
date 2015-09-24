@@ -331,6 +331,7 @@ h2.nocount:before {
 
 .figcaption {
   counter-increment: figures;
+  font-weight:bold;
 }
 .figcaption:before {
   content: "Figure " counter(figures)  ".  " ;
