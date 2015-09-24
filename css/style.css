@@ -329,9 +329,11 @@ h2.nocount:before {
   counter-increment: none;
 }
 
+.figcaption {
+  counter-increment: figures;
+}
 .figcaption:before {
   content: "Figure " counter(figures)  ".  " ;
-  counter-increment: figures ;
 }
 
 .table {
