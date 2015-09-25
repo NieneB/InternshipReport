@@ -268,12 +268,15 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
 	</tr>
 	<tr> 
 		<td rowspan="2"> Movement </td>
-		<td>along trajectory </td>
-		<td>boundary shift </td>
+		<td >along trajectory </td>
     </tr>
+	<tr> 
+		<td>boundary shift </td> 
+	</tr>
+	
 	<tr>
         <th rowspan="5"> Temporal </th>
-        <td> moment in time </td>
+        <td > moment in time </td>
 	</tr>
 	<tr> 
 		<td>Pace </td>
@@ -455,7 +458,7 @@ For the field-names the data collection has been done in previous studies. For t
 # Method
 
 <figure id="mehtod" class='text-wrap-left' >
-  <img src="img/flowchart_Method-01.png">
+  <img src="img/flowchart_Method-01.png" width="200px"/>
   <figcaption>Methodology overview</figcaption>
 </figure>
 
