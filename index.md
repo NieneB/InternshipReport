@@ -113,7 +113,7 @@ In the last two chapters reflects on the findings and concludes the study as wel
 # Background theory
 
 In this chapter, the concept of field-names in Drenthe is explained and their position in the cultural heritage field.  Because this research was conducted in the scope of the Heritage and Location project at Waag Society, this will also be elaborated on.
-After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  Starting with some static visualization forms, followed by dynamic and concluded with web-based interactive frameworks. 
+After this, a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  Starting with some static visualization forms, followed by dynamic and concluded with web-based interactive frameworks. 
 
 ## Field-names
 
