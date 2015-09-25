@@ -501,8 +501,8 @@ The back-end is the data and data access layer of the application. The products 
 
 Evetually this will all from the protype-product of this research.
 
-<figure>
-	<img src="img/buildproto-01.png"/>
+<figure class="text-wrap-right">
+	<img src="img/buildproto-01.png" width= "300px"/>
 	<figcaption> Steps in the process of building the prototype application </figcaption>
 </figure>
 
