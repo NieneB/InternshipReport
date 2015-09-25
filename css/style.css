@@ -256,7 +256,7 @@ a.xref:after {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 body {
-  counter-reset: chapters;
+  counter-reset: chapters figures;
 }
 
 h1 {

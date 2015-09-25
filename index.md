@@ -490,6 +490,11 @@ This can be found in <a class="xref" href="#Background"> chapter $$. Background 
  
 ## Sub-objective 2. Building the prototype web-application 
 
+<figure class="text-wrap-right">
+	<img src="img/buildproto-01.png" width= "350px"/>
+	<figcaption> Steps building the prototype application </figcaption>
+</figure>
+
 In order to build a prototype the design requirements have to be translated to a design. <a> Figure $$ </a> shows the steps that will be taken in order to develop. First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
 
 From this several ideas will be produced and the best will be chosen to continue with.  Desisions and choices will be made on the personal preferences of the researcher and her supervisors. 
@@ -501,10 +506,7 @@ The back-end is the data and data access layer of the application. The products 
 
 Evetually this will all from the protype-product of this research.
 
-<figure class="text-wrap-right">
-	<img src="img/buildproto-01.png" width= "300px"/>
-	<figcaption> Steps in the process of building the prototype application </figcaption>
-</figure>
+
 
 ### Data exploration
 
