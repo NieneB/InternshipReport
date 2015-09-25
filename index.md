@@ -244,7 +244,7 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
  
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
-<figure>
+
 <table>
 	<tr>
         <th> Change in domain </th>
@@ -295,7 +295,7 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
 		<td>Thematic change </td>
 	</tr>
 </table>
-</figure>
+
 
 ####Animation
 Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly.Animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation.  Animated maps contain dynamic variables such as scene duration, rate of change, scene order and contain hardly any interactive control. (Kobben and Yaman; MacEachren; Ormeling, 1996) 
@@ -336,23 +336,19 @@ Interactivity is one of the key aspects of web-based geo visualization. A map is
 
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
-1. **Focusing individual views.**
-
+- **Focusing individual views.**
 The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
 
-2. **Linking multiple views.**
-
+- **Linking multiple views.**
 Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
 This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
 (Nöllenburg, 2007)
 
-
-
 ### User centered geospatial visualization or Customer engagement
 
 <figure class="text-wrap-right" id="hook">
-  <img src="img/hookmodel.jpg" width=100px>
+  <img src="img/hookmodel.jpg" width=100px/>
   <figcaption> Hook model </figcaption>
 </figure>
 
@@ -459,7 +455,7 @@ For the field-names the data collection has been done in previous studies. For t
 # Method
 
 <figure id="mehtod" class='text-wrap-left' >
-  <img src="img/flowchart_Method.jpg">
+  <img src="img/flowchart_Method-01.png">
   <figcaption>Methodology overview</figcaption>
 </figure>
 
