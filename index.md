@@ -339,11 +339,9 @@ Interactivity is one of the key aspects of web-based geo visualization. A map is
 
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
-- **Focusing individual views.**
-The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
+- **Focusing individual views.** The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
 
-- **Linking multiple views.**
-Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
+- **Linking multiple views.** Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
 This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
 (Nöllenburg, 2007)
@@ -462,7 +460,12 @@ For the field-names the data collection has been done in previous studies. For t
   <figcaption>Methodology overview</figcaption>
 </figure>
 
-This research will be a design-oriented research. See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. The whole process will be more iterative and chaotic then the overview shows. Most creative choices and decisions will be taken by the researcher and her preferences.
+This research will be a design-oriented research. See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. 
+First the design objectives are defined for the prototype application (objective 1). With the data provided by the RCE a small data exploration will be conducted to form an idea and make a design. This will process will be more iterative and chaotic then the overview shows. For design, exploration and requirements emerge in a mixed process. 
+The main focus will be builing tre prototype application. (objective 2). Both the front-end and back-end design will be done by the conducting researcher as part of a learning experience for the internship project.
+In the end the prototype will shortly be tested to evealuate the research requirements and goal. 
+
+Most creative choices and decisions will be taken by the researcher and her preferences.
 
 ## Sub-objective 1. Finding the design requirements.
 
@@ -492,6 +495,20 @@ After exploring the field-names dataset, a choice of story and way to visualize 
 While doing this, decisions and choices will be made on the developed goals and requirements and the background theory. 
 Both the design and technical building will be done by the researcher.
 
+Most choices for technical support are made on experiences of other developers at the Waag. 
+
+Leaflet currently compete with OpenLayers only with respect to the display of map tiles, because OpenLayers offers much more functionality when it comes to interactive and vector-based map- ping tools. Also MapFish provides much more capabilities. For this was not needed for this application, the choice was made for using Leaflet, being light and simple.
+
+Leaflet also has the applicability to install plugins. For letting the user change the background map, the MiniMap plugin was used. 
+
+For building the transect line, d3 is used. A graphic drawing package. The transect line is therefor not a geographic representation but more information display. The geo-data is retained in the underlying data. 
+
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
+There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
+
+The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+
 
 ## Sub-objective 3. Evaluating prototype web-application
 
@@ -504,7 +521,7 @@ Because the objectives were used in defining the statements, it tests if the app
 
 Because there is not a official testing group available, the participants will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  
 
-Table <a class="xref" href="QandO"></a> shows the statements asked and their relation to the objectives. The complete questionnaire can be found in appendix <a class="xref" href="#questionnaire-for-testing-the-application"></a>. 
+ <a class="xref" href="#QandO">Table $$</a> shows the statements asked and the connection with the desing requirements which are in <a class="xref" href="#" > chapter $$ </a> . The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix $$</a>. 
 
 <p class="table" id="QandO"> Questions and Objectives </p>
 
@@ -516,43 +533,43 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
   </tr>
 <tr> 
   <td>1</td>
-  <td> A1 </td>
+  <td> U1 </td>
   <td> I think the application is visually appealing.</td>
  </tr>
  <tr>  
    <td>2</td>
- <td> A2 and A3</td>
+ <td> U2, U3</td>
  <td> I feel tempted to use the tools and functions in the application multiple times.</td>
  </tr>
  <tr>
     <td>3</td>
-    <td> A2 and A3</td>
+    <td>U3</td>
     <td>I feel tempted to use this application multiple times (in the future)
 </td>
  </tr>
  <tr> <td>4</td>
- <td> B1</td>
+ <td> U4 </td>
  <td>The meaning and origin of the field-names became clear to me.</td>
  </tr>
  <tr> 
    <td>5</td>
-   <td> B2 </td>
+   <td> U5 </td>
    <td>The shown information is surprising and interesting. </td>
   </tr>
   <tr> 
     <td>6</td>
-    <td>B3</td>
+    <td>U6</td>
     <td>By using this application I understand more about the importance of safe-guarding the field-names as cultural heritage.
 </td>
    </tr>
    <tr> 
      <td>7</td>
-     <td>C1</td>
+     <td>F1</td>
      <td>The application is simple to use.</td>
     </tr>
     <tr> 
       <td>8</td>
-      <td>C2</td>
+      <td>F2</td>
       <td>Everything was working as I expected. </td>
      </tr>
 </table>
@@ -560,8 +577,12 @@ Table <a class="xref" href="QandO"></a> shows the statements asked and their rel
 #Results
 
 ## Results Sub-objective 1. The design requirements
-Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory. When looking at the Map use Cube of MacEacharen and Kraak,  <a class="xref" href="#mapusecube"> figure $$ </a> of <a> chapter  $$ </a> the field name application can be placed in the top corner. The application is about sharing information to a general and broad public. While making it interactive and so exploratory.
 
+The main goal of this research is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing heritage data and preserving them. A big part of the web application will be a geo-visualization of the intangible cultural heritage data set of living field names from Drenthe. The interactivity of the web application, will give users the possibility to discover the names themselves in relation to the environment. The focus is on revealing hidden meaning of the raw data, to the general public.
+
+Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory.  The application is about sharing information to a general and broad public. 
+
+Customer engagement
 In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
 When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
 For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
@@ -569,7 +590,6 @@ For the long term a investment in the field-name application could be the adding
 ### Target group
 
 The target group will be defined as the common citizen, living in Drenthe and show an interest in their direct environment and want to discover something about its history. It will not specifically be targeted at children or elderly but to a general public. The target group's language is Dutch.
-
 
 ### Design goals
 
@@ -579,25 +599,32 @@ The target group will be defined as the common citizen, living in Drenthe and sh
 
 3. Getting the stories out of the raw data and show people the surprising knowledge that stays hidden. Help people explore intangible cultural heritage and so the history of the Dutch landscape. Engage people in something interesting about the landscape.
 
-We will do this by building an attractive web-application for the project Heritage & Location to show its potential of visualizing heritage data and preserving them. A big part of the web application will be a geo-visualization of the intangible cultural heritage data set of living field names from Drenthe. The interactivity of the web application, will give users the possibility to discover the names themselves in relation to the environment. The focus is on revealing hidden meaning of the raw data, to the general public.
-
 ### User requirements
 
 The target group must feel:
 
-1. Attracted to use the application
-2. Attracted to stay and play around with the application
-3. Challenged to explore more
-4. Discover the meaning of the field-names in relation to their environment
-5. Discover interesting stories and surprising facts about the field-names
-6. Understand the field-names and their value
+- U1 Attracted to use the application
+- U2 Attracted to stay and play around with the application
+- U3 Challenged to explore more
+- U4 Discover the meaning of the field-names in relation to their environment
+- U5 Discover interesting stories and surprising facts about the field-names
+- U6 Understand the field-names and their value
 
 ### Functional requirements
 
-1. The application must be intuitive and simple to use, so it shows quick and surprising results on the actions of the target group.
-1. The application must be technically working in an efficient and error-safe way. User friendly.
+- F1 The application must be intuitive and simple to use, so it shows quick and surprising results on the actions of the target group.
+- F2 The application must be technically working in an efficient and error-safe way. User friendly.
 
 ### Context requirements
+There are no context requirements for this study.
+
+### Assumptions
+
+
+## Results Sub-objective 2. Building the prototype web-application
+
+### From requirements to design: The idea
+
 
 For this is needed:
 
@@ -615,10 +642,6 @@ Additional pictures of the landscape characteristics.
 **Backend**
 Linking the data with the webpage. See paragraphs <a class="xref" href="#back-end-processes">.
 
-
-## Results Sub-objective 2. Building the prototype web-application
-
-### From requirements to design: The idea
 Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, as stated in objective B1, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
 
 Several ideas came up to do this, as many characteristics are of influence. The main goal for the visualization can be stated as:
