@@ -449,7 +449,6 @@ The field names are already categorized in a previous study by the RCE by $$$. T
     </tr>
 </table>
 
-
 For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done.
 
 
@@ -508,6 +507,71 @@ The field names are historic but do not contain a change in time. Therefore the 
 There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
 
 The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+
+## Data and data preprocessing
+
+#### Fieldnames preprocessing
+All the data was delivered separate .DAT files and scattered over several folders and sources. 
+n order to work with the files in Qgis all the files needed to be converted to shape-files. This was done in R.  In Qgis, manually the attribute names needed were changed in one standardized name in order to merge all the data together. 
+
+<figure>
+	<img src="img/fieldnames_preprocessing.jpg"/>
+	<figcaption> Flowchart field-name dataset processing </figcaption>
+</figure> 
+
+See scripts in <a class ="xref" href="#">  appendix. $$ </a>
+
+Because this resulted into a lot of overlapping areas, instead, the field-names were all linked to the Kadaster dataset from 1830. So a single layer of polygons with multiple names is the result. This was done by spatially joining the datasets, or joining by the Kadaster ID’s which most of the datasets contained. The ID contained; municipality, sheet map number, parcel number. 
+
+Eventually, the field-names that had no category assigned had to be classified as well. The cadastre field-names and .. were not included in the previous research by the RCE, but were added here, to have more coverage and amount of field-names.
+
+The classification was done in R. See <a class="xref" href=#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
+
+The script  runs through all the field-names and all the possible categories, to match which category was applicable.
+
+ While reading few of the names, new ideas for a category came up and added. The category wind direction W.
+ 
+####AHN
+The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)
+
+The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) 
+
+The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively. 
+
+<figure class="textWrapL"  >
+<img src="img/ahn.jpg"/>
+<figcaption>  AHN2 from the research area </figcaption>	
+</figure>
+
+See <a class ="xref" href="#"> appendix </a>  for table with all the tiles used.   
+
+The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values. 
+
+For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels. 
+
+<figure class="textWrapL"  >
+<img src="img/ahnpreprocessing.jpg "/>
+<figcaption>  Flowchart AHN2 raster processing </figcaption>	
+</figure>
+
+
+#### Kadaster parcels 1830
+Data from the cadastre were also supplied by the RCE, showing the plots and parcels as they were in 1830. And can be used to refer the fieldnames to. The dataset is in projection RDnew(EPSG28992).
+No preprocessing needed other then explained in <a class="xref" href="#" > section $$ </a> preprocessing field-names.
+
+####Water bodies
+The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000.
+From this dataset only the water polygons are used and clipped to the research area. So the names of the water bodies can be included into the application. (“TOP10NL | Publieke Dienstverlening Op de Kaart Loket,” n.d.)
+EPSG28992
+
+<p class="table"> Map sheets Top10NL downloaded </p>
+<table>
+<tr> <td>Top10NL_17O</td> </tr>
+ <tr>  <td>Top10NL_1rW</td></tr>
+ <tr> <td>Top10NL_1rO</td></tr>
+ <tr> <td>Top10NL_1rW</td></tr>
+</table>
+Only processing was clipped to the research area. No other preprocessing needed other then was used for the AHN. 
 
 
 ## Sub-objective 3. Evaluating prototype web-application
@@ -582,11 +646,6 @@ The main goal of this research is to build an attractive web-application for the
 
 Showing the field-names in an interactive application is explanatory visual communication. The goal of the field-names is explanatory, while the interactivity makes the data exploratory.  The application is about sharing information to a general and broad public. 
 
-Customer engagement
-In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
-When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
-For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
-
 ### Target group
 
 The target group will be defined as the common citizen, living in Drenthe and show an interest in their direct environment and want to discover something about its history. It will not specifically be targeted at children or elderly but to a general public. The target group's language is Dutch.
@@ -620,11 +679,23 @@ There are no context requirements for this study.
 
 ### Assumptions
 
+### Customer engagement
+In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
+When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
+For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
+
 
 ## Results Sub-objective 2. Building the prototype web-application
 
-### From requirements to design: The idea
+Figure $$ shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+The next paragraphs explain the database, the API, the SQL query and the website. 
 
+<figure id="mehtod"  >
+  <img src="img/webpage_model.jpg" />
+  <figcaption>Prototype application overview</figcaption>
+</figure>
+
+### From requirements to design: The idea
 
 For this is needed:
 
@@ -674,22 +745,7 @@ One of the main inspirations was the following image:
 
 Complete mood board; see appendix <a class="xref" href="#mood-board"></a>
 
-<!-- 
-#### Variations on Main idea
-For also on this main idea some variations can be made, these will be shown here.
 
-- Soil properties as colors of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
-Giving colors or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
-
-- Pop-ups with explanations and texts. Linking field-names to textual explanation, adding pictures of the surroundings and landscape characteristics. Vegetation types, animal occurrence.
-
-- Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line.Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field name is connected.
-
-- Creating a small 3d landscape by adding multiple transect lines, stacked in front of each other.
-
-- Link stories provided to the line, so popups with provided stories from the book.
-
- -->
 
 ### Data exploration
 Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
@@ -700,6 +756,11 @@ Figure <a class="xref" href="#example"></a> shows some fields with names related
 </figure>
 
 Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
+
+
+<p class="fig">  Amount of field names with a specific category, before and after categorization in R </p>
+
+![](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Graph_amount_categories.jpg)
 
 ### The web application
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
@@ -1128,7 +1189,25 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 	  }
 	}
 	exportToShape(filenames, "overig")
+	
+## SQL adjustments fieldnames
+<p class="code"> SQL adjustments </p>
+    -- UPDATE veldnamen3 SET naam = naam_2 WHERE naam IS NULL;
+    -- UPDATE veldnamen3 SET atoto_co_3 = code_3 WHERE atoto_co_3 IS NULL;
+    -- UPDATE veldnamen3 SET atoto_co_2 = code_2 WHERE atoto_co_2 IS NULL;
+    -- DELETE FROM veldnamen3 WHERE naam IS NULL;
+    -- ALTER TABLE veldnamen3 DROP COLUMN naam_2 CASCADE;
+    -- ALTER TABLE veldnamen3 DROP COLUMN code_1_ CASCADE;
+    -- ALTER TABLE veldnamen3 DROP COLUMN code_2 CASCADE;
+    -- ALTER TABLE veldnamen3 DROP COLUMN code_3 CASCADE;
+    -- ALTER TABLE veldnamen3 DROP COLUMN code_4 CASCADE;
+    -- ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_1 TO code_1;
+    -- ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_2 TO code_2;
+    -- ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_3 TO code_3;
 
+
+
+	
 ## R script detecting categories
 
       library(sp)
@@ -1184,6 +1263,22 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
         }
       }
 
+
+
+## Variations on the main idea
+
+For also on this main idea some variations can be made, these will be listed here.
+
+- Soil properties as colors of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
+Giving colors or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
+
+- Pop-ups with explanations and texts. Linking field-names to textual explanation, adding pictures of the surroundings and landscape characteristics. Vegetation types, animal occurrence.
+
+- Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line.Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field name is connected.
+
+- Creating a small 3d landscape by adding multiple transect lines, stacked in front of each other.
+
+- Link stories provided to the line, so popups with provided stories from the book.
 
 ## Questionnaire for testing the application
 ![Alt text](img/Vragenlijst Veldnamen Applicatie.jpg) 
