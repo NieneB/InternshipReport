@@ -123,18 +123,20 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media print {
-  body{
+  body {
     color:#252525;
     background: #fff;
     font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  h1{
+}
+  h1 {
     background: none;
 	margin-top: 100px;
+  }
+ 
   nav, aside{
     display: none;
   }
-  body, article{
+  body, article {
     width:100%;
     margin:0;
     padding:0;
@@ -142,6 +144,7 @@
 	html {
     font-size: 40%;
   }
+  
   @page {
     margin:1.5cm;
   }
