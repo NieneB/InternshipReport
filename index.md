@@ -458,7 +458,7 @@ For the field-names the data collection has been done in previous studies. For t
 # Method
 
 <figure id="mehtod" class='text-wrap-left' >
-  <img src="img/flowchart_Method-01.png" width="200px"/>
+  <img src="img/flowchart_Method-01.png" width="400px"/>
   <figcaption>Methodology overview</figcaption>
 </figure>
 
@@ -485,6 +485,7 @@ This can be found in <a class="xref" href="#Background"> chapter $$. Background 
  - Assumptions ( user, context, funtional)
 
  (Verschuren and Hartog, 2005)
+ 
 ## Sub-objective 2. Building the prototype web-application 
 
 After exploring the field-names dataset, a choice of story and way to visualize the data is made, the design. This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
