@@ -490,11 +490,31 @@ This can be found in <a class="xref" href="#Background"> chapter $$. Background 
  
 ## Sub-objective 2. Building the prototype web-application 
 
-After exploring the field-names dataset, a choice of story and way to visualize the data is made, the design. This will immediately be implemented into building a web-based geo-visualization. The focus will be on building the web-application and finding the best way to visualize the data.
-While doing this, decisions and choices will be made on the developed goals and requirements and the background theory. 
-Both the design and technical building will be done by the researcher.
+In order to build a prototype the design requirements have to be translated to a design. <a> Figure $$ </a> shows the steps that will be taken in order to develop. First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
 
-Most choices for technical support are made on experiences of other developers at the Waag. 
+From this several ideas will be produced and the best will be chosen to continue with.  Desisions and choices will be made on the personal preferences of the researcher and her supervisors. 
+
+When the idea is settled a front-end and back-end situation for the application have to be developed.  Both will be developed by the researcher.  Decisions and choices will be made on the developed goals and requirements, the background theory, personal preference and experience knowlegde of supervisors.
+ 
+The front-end is the presentation layer, so the webpage. A product of HTML, CSS and JavaScript for the web application so that a user can see and interact with them directly. 
+The back-end is the data and data access layer of the application. The products will be a database, a API and the pre-processed data. 
+
+Evetually this will all from the protype-product of this research.
+
+<figure>
+	<img src="img/buildproto.png"/>
+	<figcaption> Steps in the process of building the prototype application </figcaption>
+</figure>
+
+### Data exploration
+
+### The Idea
+
+### Front-end
+
+Packages needed for building the geo-application will be leaflet and d3.js. And possible leaflet plugins like, Leaflet Draw and Leaflet MiniMap. 
+Leaflet is a JavaScript library for the creation of interactive maps by the founders of OpenStreetMap. Interesting for developers
+is probably the focus on desktop and mobile web browsers, and its use of HTML5. (Steiniger and Hunter 2013)
 
 Leaflet currently compete with OpenLayers only with respect to the display of map tiles, because OpenLayers offers much more functionality when it comes to interactive and vector-based map- ping tools. Also MapFish provides much more capabilities. For this was not needed for this application, the choice was made for using Leaflet, being light and simple.
 
@@ -502,71 +522,19 @@ Leaflet also has the applicability to install plugins. For letting the user chan
 
 For building the transect line, d3 is used. A graphic drawing package. The transect line is therefor not a geographic representation but more information display. The geo-data is retained in the underlying data. 
 
-The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
-The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
-There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
 
-The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+### Back-end
 
-## Data and data preprocessing
+First both client side and server side are build on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
 
-#### Fieldnames preprocessing
-All the data was delivered separate .DAT files and scattered over several folders and sources. 
-n order to work with the files in Qgis all the files needed to be converted to shape-files. This was done in R.  In Qgis, manually the attribute names needed were changed in one standardized name in order to merge all the data together. 
+#### Database
+The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters. 
 
-<figure>
-	<img src="img/fieldnames_preprocessing.jpg"/>
-	<figcaption> Flowchart field-name dataset processing </figcaption>
-</figure> 
+Everything was loaded in the dutch projected coordinate system RD new (EPSG:28992)
 
-See scripts in <a class ="xref" href="#">  appendix. $$ </a>
-
-Because this resulted into a lot of overlapping areas, instead, the field-names were all linked to the Kadaster dataset from 1830. So a single layer of polygons with multiple names is the result. This was done by spatially joining the datasets, or joining by the Kadaster ID’s which most of the datasets contained. The ID contained; municipality, sheet map number, parcel number. 
-
-Eventually, the field-names that had no category assigned had to be classified as well. The cadastre field-names and .. were not included in the previous research by the RCE, but were added here, to have more coverage and amount of field-names.
-
-The classification was done in R. See <a class="xref" href=#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
-
-The script  runs through all the field-names and all the possible categories, to match which category was applicable.
-
- While reading few of the names, new ideas for a category came up and added. The category wind direction W.
- 
-####AHN
-The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)
-
-The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) 
-
-The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively. 
-
-<figure class="textWrapL"  >
-<img src="img/ahn.jpg"/>
-<figcaption>  AHN2 from the research area </figcaption>	
-</figure>
-
-See <a class ="xref" href="#"> appendix </a>  for table with all the tiles used.   
-
-The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values. 
-
-For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels. 
-
-#### Kadaster parcels 1830
-Data from the cadastre were also supplied by the RCE, showing the plots and parcels as they were in 1830. And can be used to refer the fieldnames to. The dataset is in projection RDnew(EPSG28992).
-No preprocessing needed other then explained in <a class="xref" href="#" > section $$ </a> preprocessing field-names.
-
-####Water bodies
-The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000.
-From this dataset only the water polygons are used and clipped to the research area. So the names of the water bodies can be included into the application. (“TOP10NL | Publieke Dienstverlening Op de Kaart Loket,” n.d.)
-EPSG28992
-
-<p class="table"> Map sheets Top10NL downloaded </p>
-<table>
-<tr> <td>Top10NL_17O</td> </tr>
- <tr>  <td>Top10NL_1rW</td></tr>
- <tr> <td>Top10NL_1rO</td></tr>
- <tr> <td>Top10NL_1rW</td></tr>
-</table>
-Only processing was clipped to the research area. No other preprocessing needed other then was used for the AHN. 
-
+#### API
+A API or application programming interface, is needed to conect the web-application with the data in the PostGis database. 
+For this purpose Brianc node-postgres is used. Done with Node-Postgres for PostgreSQL client for node.js with pure JavaScript bindings. 
 
 ## Sub-objective 3. Evaluating prototype web-application
 
@@ -669,7 +637,7 @@ The target group must feel:
 - F2 The application must be technically working in an efficient and error-safe way. User friendly.
 
 ### Context requirements
-There are no context requirements for this study.
+- Only use of free and open source software is used. 
 
 ### Assumptions
 
@@ -688,8 +656,6 @@ The result is a webpage with a geovisualization. Including,
 4. Other interactive features to navigate through the webpage.
 
 For this is needed some data, about the study area, the field-names, the height and water names. Also additional stories and explanation texts about the meaning and origin of the field-names. Possible additional pictures of the landscape characteristics.
-
-To connect the data to the webpage a back-end structure is needed with an API and a Database. 
 
 See <a class="xref" href="#method"> figure $$ </a> for the structure of the technical application design.
 
@@ -711,7 +677,14 @@ Figure <a class="xref" href="#example"></a> shows some fields with names related
 
 For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
 
-### Desing results
+### The idea
+
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
+There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
+
+The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+
 
  Showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
 
@@ -732,12 +705,14 @@ One of the main inspirations was the following image:
 Complete mood board; see appendix <a class="xref" href="#mood-board"></a>
 
 
-### Technical design results
+### Back-end 
+
 <a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+
 The next paragraphs explain the database, the API, the SQL query and the website. 
 
 
-### The web application
+### Front-end
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
 
 Some screenshots of how it looks. The first figure is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
@@ -790,39 +765,6 @@ On average objective A got a 3.7, objective B 3.6 and C the lowest score of 3.3.
 
 For the total answer overview see appendix $$$. 
 
-### Remarks on the questionnaire
-
-- Works logical, though information is missing.
-- Make the pop-up disappear when the mouse moves away.
-- I miss a total overview of the page.
-- Finish line, not working.. 
-- The elevation graph should follow the x,y of mouse instead of following just x.
-- Text window sometimes conflicts with the layer selector.
-- Cursor on the map synchronies with the moving circle on the line.
-- Also point selection, not only line.
-- Ugly button on the introduction page.
-- I would like to know more about the different map layers.
-- Drawing button for the line is hard to find.
-- While waiting, put a waiting sign.
-- You would expect the information about the field to pop up when the moving circle is on the field, instead of the mouse.
-- Ask people for collaboration, for example make a text-editor do the texts. 
-- Typography was hard to read. 
-- A lot of introduction text.
-- Looks like the focus is more on the height then on the names. 
-- Drawing the line and clicking was difficult, had to get used to it. Nice view into height differences. Though I don't understand the origin of the field names yet. The line shows weird peaks, I would like to know what this is. 
-- I would like to have this for the area I live in.  
-- With long lines, the names are on top of each other.
-- Clicking last point of the line to finish it was difficult to find.
-- Nice that you really learn something about the names through the information.
-- Put the year on the map. 
-- Some targeted assignments would help understanding the field-names better. 
-- Nice, I would like to have this were I am personally living.
-- More locations would be nice. 
-- Layout of the map is nice, but some this could be made more readable. 
-- Continue!
-- Unpredictable behaviour with drawing the line.
-- Can't get the results good on the screen.
-- Text at the bottom is not readable. 
 
 # Discussion
 
@@ -1239,6 +1181,9 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
       }
 
 
+## Questionnaire for testing the application
+![Alt text](img/Vragenlijst Veldnamen Applicatie.jpg) 
+
 
 ## Variations on the main idea
 
@@ -1255,5 +1200,37 @@ Giving colors or patterns to the fields according to the soil property. Like a *
 
 - Link stories provided to the line, so popups with provided stories from the book.
 
-## Questionnaire for testing the application
-![Alt text](img/Vragenlijst Veldnamen Applicatie.jpg) 
+
+## Remarks on the questionnaire
+
+- Works logical, though information is missing.
+- Make the pop-up disappear when the mouse moves away.
+- I miss a total overview of the page.
+- Finish line, not working.. 
+- The elevation graph should follow the x,y of mouse instead of following just x.
+- Text window sometimes conflicts with the layer selector.
+- Cursor on the map synchronies with the moving circle on the line.
+- Also point selection, not only line.
+- Ugly button on the introduction page.
+- I would like to know more about the different map layers.
+- Drawing button for the line is hard to find.
+- While waiting, put a waiting sign.
+- You would expect the information about the field to pop up when the moving circle is on the field, instead of the mouse.
+- Ask people for collaboration, for example make a text-editor do the texts. 
+- Typography was hard to read. 
+- A lot of introduction text.
+- Looks like the focus is more on the height then on the names. 
+- Drawing the line and clicking was difficult, had to get used to it. Nice view into height differences. Though I don't understand the origin of the field names yet. The line shows weird peaks, I would like to know what this is. 
+- I would like to have this for the area I live in.  
+- With long lines, the names are on top of each other.
+- Clicking last point of the line to finish it was difficult to find.
+- Nice that you really learn something about the names through the information.
+- Put the year on the map. 
+- Some targeted assignments would help understanding the field-names better. 
+- Nice, I would like to have this were I am personally living.
+- More locations would be nice. 
+- Layout of the map is nice, but some this could be made more readable. 
+- Continue!
+- Unpredictable behaviour with drawing the line.
+- Can't get the results good on the screen.
+- Text at the bottom is not readable. 
