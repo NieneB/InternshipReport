@@ -85,9 +85,9 @@ As stated by Deal:
 
 In the cultural heritage field, the temporal dimension plays an important role to explore data. (Cerasuolo, Cutugno, & Leano, 2012) Spatial-temporal data visualization assumes and important role in the data presentation to users. The three dimensional data form of geo data (spatial, temporal and descriptive) helps users understand and gain knowledge in the discovery process.
 
- The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names-in-drenthe"> chapter $$ </a>. 
+ The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names"> chapter 2.1 </a>. 
  
- This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location-project-waag-society"> see section $$ </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
+ This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location"> see section 2.2.2 </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
  
 ## Objectives
 The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands.  To achieve this the following sub-objectives have been defined:
@@ -103,7 +103,7 @@ The third chapter shows the field-name data provided by the RCE  which forms the
 The fourth and fifth chapter provide per sub-objective, the methods and results. 
 In the last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recommendation for further  development.
 
-<a class="xref" href="#reportstruct"> Figure $$ </a>  illustrates the structure of this report. 
+<a class="xref" href="#reportstruct"> Figure 2. </a>  illustrates the structure of this report. 
 
 <figure id="reportstruct" >
   <img src="img/reportstructure.png"/>
@@ -172,14 +172,14 @@ The data of the field-names can be regarded as a source of the H&L project. This
 Geospatial data is data with a location, a connection to a location and oriented by their geographical relationships. Geo data has a nature of threefold: spatial, temporal and descriptive.
 The spatial dimension can be used to interpret the spatial dimensions and relation of data entities, an absolute and enclosed *space* wherein the geographic phenomena exists. The temporal dimension can be used to interpret the change in the data through time. The thematic dimension is to interpret what the data is about, a property that can be measured and assigned. The data component only concerns the raw observational data, with location, time and attributes. (Mennis et al., 2000; Nöllenburg, 2007) 
 
-Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. See<a class="xref" href="#chain"> figure $$</a>. From the real world we go to data and all the modifications to the data to eventually visualized if, either on a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
+Geo-visualization is a combination of communication, scientific information visualization, geographic information systems and cartography. It comes after the collection of data, transformations and analysis. See<a class="xref" href="#chain"> figure 5</a>. From the real world we go to data and all the modifications to the data to eventually visualized if, either on a computer or on paper. The perception of people will interpreted the data and turns the data into knowledge. In general, every map is a selective representation of reality and subjected to the interpretation of the human eyes. (Dibiase et al., 1992; MacEachren & Kraak, 2001) 
 
 <figure id="chain">
   <img src="img/chain.jpg"/>
   <figcaption> Geo processing chain and visualization series </figcaption>
 </figure>
 
-Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In <a class="xref" href="#chain">figure $$</a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
+Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In <a class="xref" href="#chain">figure 5</a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
 
 In the following sections, some forms and frameworks of geospatial visalization will be explained. Starting to the first forms of static cartographic visualizations, to dynamic and animated maps. Eventually to web0based map, providing posibilities for interaction and user-centered designs. 
 
@@ -197,7 +197,7 @@ A few forms of dynamic geo-visualization can be named:
 - Animation
 - Interaction
 
-There are two categories  of dynamic map display; temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization thenKöbben & Yaman. An overview of the possible forms is shown in <a class="xref" href="#catphenom"> table $$</a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  
+There are two categories  of dynamic map display; temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization thenKöbben & Yaman. An overview of the possible forms is shown in <a class="xref" href="#catphenom"> table 1</a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  
 
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
@@ -353,7 +353,7 @@ The number, type and arrangements of the different views depend on the task, the
   <figcaption> Hook model </figcaption>
 </figure>
 
-To engage the target group into a application the hook model will be explained. <a class="xref" href="#hook"> Figure $$ </a>This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
+To engage the target group into a application the hook model will be explained. <a class="xref" href="#hook"> Figure 6. </a> This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
 
 # The Data
@@ -404,7 +404,7 @@ Based on this the total research location is determined, consisting of the munic
   <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
 </figure>
 
-The field names are already categorized in a previous study by the RCE . The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in <a class='xref' href="#field-name-cat"> table $$ </a>. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
+The field names are already categorized in a previous study by the RCE . The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in <a class='xref' href="#field-name-cat"> table 4 </a>. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
 
 <p class="table" id="field-name-cat"> Field-name categories </p>
 
@@ -459,7 +459,7 @@ For the field-names the data collection has been done in previous studies. For t
   <figcaption>Methodology overview</figcaption>
 </figure>
 
-This research will be a design-oriented research. See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. 
+This research will be a design-oriented research. See <a class="xref" href="#method">figure 9</a> for an overview of the working procedure and where the specific objectives are addressed. 
 First the design objectives are defined for the prototype application (objective 1). With the data provided by the RCE a small data exploration will be conducted to form an idea and make a design. This will process will be more iterative and chaotic then the overview shows. For design, exploration and requirements emerge in a mixed process. 
 The main focus will be builing tre prototype application. (objective 2). Both the front-end and back-end design will be done by the conducting researcher as part of a learning experience for the internship project.
 In the end the prototype will shortly be tested to evealuate the research requirements and goal. (objective 3)
@@ -474,7 +474,7 @@ Design and prototype
 Test and evaluate
 
 A literature research is done into geo visualization techniques and already available methods. Going from the conventional cartographic techniques to the modern techniques. Including animation and change. Also literature about building geo-web applications and the available techniques will be consulted. Toadd  knowledge and experience from preceding researches to the delepment of the design requirements.
-This can be found in <a class="xref" href="#Background"> chapter $$. Background theory </a>
+This can be found in <a class="xref" href="#background-theory"> chapter 2. Background theory </a>
 
  Several objectives will be set  in the following categories:
  - Design goals
@@ -505,8 +505,6 @@ The front-end is the presentation layer, so the webpage. A product of HTML, CSS 
 The back-end is the data and data access layer of the application. The products will be a database, a API and the pre-processed data. 
 
 Evetually this will all from the protype-product of this research.
-
-
 
 ### Data exploration
 
