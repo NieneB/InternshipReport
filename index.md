@@ -349,7 +349,7 @@ The number, type and arrangements of the different views depend on the task, the
 ### User centered geospatial visualization or Customer engagement
 
 <figure class="text-wrap-right" id="hook">
-  <img src="img/hookmodel.jpg" width=100px/>
+  <img src="img/hookmodel.jpg" width="200px"/>
   <figcaption> Hook model </figcaption>
 </figure>
 
@@ -404,7 +404,7 @@ Based on this the total research location is determined, consisting of the munic
   <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
 </figure>
 
-The field names are already categorized in a previous study by the RCE by $$$. The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in <a class='xref' href="#field-name-cat"> table $$</a>. In the <a class="xref" href="categories-field-names-form-rce"> appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
+The field names are already categorized in a previous study by the RCE . The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in <a class='xref' href="#field-name-cat"> table $$ </a>. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
 
 <p class="table" id="field-name-cat"> Field-name categories </p>
 
@@ -462,7 +462,7 @@ For the field-names the data collection has been done in previous studies. For t
 This research will be a design-oriented research. See <a class="xref" href="#method">figure $$</a> for an overview of the working procedure and where the specific objectives are addressed. 
 First the design objectives are defined for the prototype application (objective 1). With the data provided by the RCE a small data exploration will be conducted to form an idea and make a design. This will process will be more iterative and chaotic then the overview shows. For design, exploration and requirements emerge in a mixed process. 
 The main focus will be builing tre prototype application. (objective 2). Both the front-end and back-end design will be done by the conducting researcher as part of a learning experience for the internship project.
-In the end the prototype will shortly be tested to evealuate the research requirements and goal. 
+In the end the prototype will shortly be tested to evealuate the research requirements and goal. (objective 3)
 
 Most creative choices and decisions will be taken by the researcher and her preferences.
 
@@ -548,12 +548,6 @@ See <a class ="xref" href="#"> appendix </a>  for table with all the tiles used.
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values. 
 
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels. 
-
-<figure class="textWrapL"  >
-<img src="img/ahnpreprocessing.jpg "/>
-<figcaption>  Flowchart AHN2 raster processing </figcaption>	
-</figure>
-
 
 #### Kadaster parcels 1830
 Data from the cadastre were also supplied by the RCE, showing the plots and parcels as they were in 1830. And can be used to refer the fieldnames to. The dataset is in projection RDnew(EPSG28992).
@@ -687,47 +681,39 @@ For the long term a investment in the field-name application could be the adding
 
 ## Results Sub-objective 2. Building the prototype web-application
 
-Figure $$ shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
-The next paragraphs explain the database, the API, the SQL query and the website. 
+The result is a webpage with a geovisualization. Including, 
+1. a map showing the area, where a line can be drawn to locate the position of the transect line. With navigational functionalities for the map.
+2. A graphic transect line that can be explored. Including information about the field-names. 
+3. An explanation about how the application works.
+4. Other interactive features to navigate through the webpage.
+
+For this is needed some data, about the study area, the field-names, the height and water names. Also additional stories and explanation texts about the meaning and origin of the field-names. Possible additional pictures of the landscape characteristics.
+
+To connect the data to the webpage a back-end structure is needed with an API and a Database. 
+
+See <a class="xref" href="#method"> figure $$ </a> for the structure of the technical application design.
 
 <figure id="mehtod"  >
   <img src="img/webpage_model.jpg" />
   <figcaption>Prototype application overview</figcaption>
 </figure>
 
-### From requirements to design: The idea
+### Data exploration
 
-For this is needed:
+Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
 
-**Webpage**
-A map showing the area, where a line can be drawn to locate the position of the transect line.
-A area where the defined transect line will be drawn and can be explored.
-A explanation about how the application works.
-Other interactive features to navigate through the webpage.
+Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
 
-**Data**
-Data about the height of the study area and all the field-names with its categories.
-Additional stories and explanation texts about the meaning and origin of the field-names.
-Additional pictures of the landscape characteristics.
+<figure id="example" class="text-wrap-left"  >
+  <img src="img/hoogte_voorbeeld.jpg">
+  <figcaption> Field-names example of names with height indication on the height map </figcaption>
+</figure>
 
-**Backend**
-Linking the data with the webpage. See paragraphs <a class="xref" href="#back-end-processes">.
+For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
 
-Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, as stated in objective B1, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
+### Desing results
 
-Several ideas came up to do this, as many characteristics are of influence. The main goal for the visualization can be stated as:
-> Visualize the meaning and origin of the field name by showing its relation with its direct environment.
-
-The first ideas:
-
-- Showing soil related field names on a soil map. This can be a current or old soil map.
-- Showing height related field names on a height map.
-- Showing ground water levels in relation to field names about water, swamps and soil types.
-- Vegetation types, present on a field in the current situation vs what the field-name tells us about the historic vegetation.
-- Showing names with relation to wind direction, in their position relative to the closest town or city.
-
-#### Main idea
-Eventually one of the ideas was chosen. Namely, showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
+ Showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
 
 In order to include this in the visualization, showing the polygons on a map won't be sufficient. Chosen is to draw a transect of the height data and indicate the names of the fields on this.
 
@@ -746,21 +732,10 @@ One of the main inspirations was the following image:
 Complete mood board; see appendix <a class="xref" href="#mood-board"></a>
 
 
+### Technical design results
+<a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+The next paragraphs explain the database, the API, the SQL query and the website. 
 
-### Data exploration
-Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
-
-<figure id="example" class="text-wrap-left"  >
-  <img src="img/hoogte_voorbeeld.jpg">
-  <figcaption> Field-names example of names with height indication on the height map </figcaption>
-</figure>
-
-Though, field-names are only related to its direct environment, as far as the naked eye could see, for it is human invented. The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
-
-
-<p class="fig">  Amount of field names with a specific category, before and after categorization in R </p>
-
-![](/Users/waag/Documents/MGI_Stage/0_Stage_verslag/pict/Graph_amount_categories.jpg)
 
 ### The web application
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
