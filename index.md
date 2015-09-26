@@ -1169,7 +1169,7 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 	
 <h2 class ="nocount">SQL adjustments fieldnames</h2>
 
-<p class="code"> SQL adjustments </p>
+
     -- UPDATE veldnamen3 SET naam = naam_2 WHERE naam IS NULL;
     -- UPDATE veldnamen3 SET atoto_co_3 = code_3 WHERE atoto_co_3 IS NULL;
     -- UPDATE veldnamen3 SET atoto_co_2 = code_2 WHERE atoto_co_2 IS NULL;
@@ -1242,11 +1242,13 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
       }
 
 
-<h2 class ="nocount">Questionnaire for testing the application
-![Alt text](img/Vragenlijst Veldnamen Applicatie.jpg) 
+	  
+<h2 class ="nocount">Questionnaire for testing the application </h2>
+
+![Alt text](/img/Vragenlijst Veldnamen Applicatie.jpg) 
 
 
-<h2 class ="nocount">Variations on the main idea
+<h2 class ="nocount">Variations on the main idea </h>
 
 For also on this main idea some variations can be made, these will be listed here.
 
@@ -1265,9 +1267,13 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 <h2 class ="nocount">Remarks on the questionnaire </h2>
 
 - Works logical, though information is missing.
+
 - Make the pop-up disappear when the mouse moves away.
+
 - I miss a total overview of the page.
+
 - Finish line, not working.. 
+
 - The elevation graph should follow the x,y of mouse instead of following just x.
 - Text window sometimes conflicts with the layer selector.
 - Cursor on the map synchronies with the moving circle on the line.
@@ -1277,11 +1283,13 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Drawing button for the line is hard to find.
 - While waiting, put a waiting sign.
 - You would expect the information about the field to pop up when the moving circle is on the field, instead of the mouse.
+
 - Ask people for collaboration, for example make a text-editor do the texts. 
 - Typography was hard to read. 
 - A lot of introduction text.
 - Looks like the focus is more on the height then on the names. 
 - Drawing the line and clicking was difficult, had to get used to it. Nice view into height differences. Though I don't understand the origin of the field names yet. The line shows weird peaks, I would like to know what this is. 
+
 - I would like to have this for the area I live in.  
 - With long lines, the names are on top of each other.
 - Clicking last point of the line to finish it was difficult to find.
@@ -1297,184 +1305,195 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Text at the bottom is not readable.
 
 
+
 <h2 class="nocount"> Loading data into the PostGIS database </h2>
 
 <p class="fig"> Loading data into the database</p>
+
 ![Alt text](/img/loading_Data.jpg ) 
 
 <p class="code"> Loading data in the database </p>
 
 	
-	Shp2pgsql
-	➜  ~ shp2pgsql -s 28992 /<path name> /veldnamen.shp veldnamen | psql -U user -d veldnamen
+		Shp2pgsql
+		➜  ~ shp2pgsql -s 28992 /<path name> /veldnamen.shp veldnamen | psql -U user -d veldnamen
+				
+		Raster2pgsql
+		➜  ~ raster2pgsql -s 28992 -I -C /<path name>/ahn2*.tif public.ahn2 | psql -d veldnamen
 			
-	Raster2pgsql
-	➜  ~ raster2pgsql -s 28992 -I -C /<path name>/ahn2*.tif public.ahn2 | psql -d veldnamen
-		
-		
-
+			
 
 <h2 class="nocount"> Request & Response for transect line </h2>
 
-<p class="code">  Leaflet map initializing </p>
-  
+ 
 <p class="code">  D3 request coordinates and drawing transect path  </p>
 
-    d3.json('transect?linestring=' + coordinates, function(json){
-      console.log("requesting line from database");
-      console.log(json)
-      var line = d3.select("#line")
-      line.selectAll(".transect")
-        .data(linestring)
-        .enter()
-        .append("path")
-        .attr("class", "transect")
-        .attr("d", lineFunction(json))
-        .attr("stroke", "#2B2118")
-        .attr("stroke-width", 3)
-        .attr("fill", "none");
-		
-  
+		d3.json('transect?linestring=' + coordinates, function(json){
+		  console.log("requesting line from database");
+		  console.log(json)
+		  var line = d3.select("#line")
+		  line.selectAll(".transect")
+			.data(linestring)
+			.enter()
+			.append("path")
+			.attr("class", "transect")
+			.attr("d", lineFunction(json))
+			.attr("stroke", "#2B2118")
+			.attr("stroke-width", 3)
+			.attr("fill", "none");
+			
+	  
 After a line is drawn on the Leaflet map with Leafleat Draw, the coordinates  of the line are inserted into the request ($1) as a LINESTRING format. The line is in WGS84 (EPSG4326) and needs to be converted to RDNew(EPSG28992) in order to extract the locationt with the other data at the right location.
 
 <p class="code"> Request & Response for transect line </p>
-  
-  app.get('/transect', function (req, res) {
-    query(queries.transect, ['LINESTRING (' + req.query.linestring + ')'] , function(err, result) {
-      if (err) {
-        res.status(500).send(err);
-      } else {
-        res.send(result.rows.map(function(row) {
-          row.geometry = JSON.parse(row.geometry);
-          return row;
-        }));
-      }
-    })
-  });
- 
+	  
+	  app.get('/transect', function (req, res) {
+		query(queries.transect, ['LINESTRING (' + req.query.linestring + ')'] , function(err, result) {
+		  if (err) {
+			res.status(500).send(err);
+		  } else {
+			res.send(result.rows.map(function(row) {
+			  row.geometry = JSON.parse(row.geometry);
+			  return row;
+			}));
+		  }
+		})
+	  });
+	 
 <p class="code"> The line</p>
 
-    	WITH line AS
-      -- Create line geometry
-      (SELECT ST_Transform(ST_GeomFromText($1 , 4326), 28992) AS geom),
+			WITH line AS
+		  -- Create line geometry
+		  (SELECT ST_Transform(ST_GeomFromText($1 , 4326), 28992) AS geom),
 
 The line is then cut into parts of 10 meter and points are generated with its percentage location along the line. 
+
 <p class="code"> Point and percentage at every 10 m along the line</p>
-    linemesure AS
-      (SELECT ST_AddMeasure(line.geom, 0, ST_Length(line.geom)) as linem,
-      generate_series(0, ST_Length(line.geom)::int, 10) as i
-      FROM line),
-    
-    points2d AS
-      (SELECT ST_GeometryN(ST_LocateAlong(linem, i), 1) AS geom, (i*100/ST_Length(linem)) as percentage
-      FROM linemesure),
+
+		linemesure AS
+		  (SELECT ST_AddMeasure(line.geom, 0, ST_Length(line.geom)) as linem,
+		  generate_series(0, ST_Length(line.geom)::int, 10) as i
+		  FROM line),
+		
+		points2d AS
+		  (SELECT ST_GeometryN(ST_LocateAlong(linem, i), 1) AS geom, (i*100/ST_Length(linem)) as percentage
+		  FROM linemesure),
 
 This array of points is intersected with the  AHN table to ext rat the height value for every point. 
+
 <p class="code"> Get height per point</p>
-    AHN AS
-    -- Get DEM elevation for each
-      (SELECT p.geom AS geom, ST_Value(ahn.rast, 1, p.geom) AS heights, percentage
-      FROM ahn, points2d p
-      WHERE ST_Intersects(ahn.rast, p.geom)),
+
+		AHN AS
+		-- Get DEM elevation for each
+		  (SELECT p.geom AS geom, ST_Value(ahn.rast, 1, p.geom) AS heights, percentage
+		  FROM ahn, points2d p
+		  WHERE ST_Intersects(ahn.rast, p.geom)),
 
 Also the points are intersected with the field names table to see if a points falls into a field, and wchih name and category code it belongs to. 
+
 <p class="code">  Get field name for intersecting points</p>
-    fields AS
-        (SELECT naam AS naam, code_1_ AS category1, code_2 AS category2, ST_Intersection(p.geom, veldnamen2.geom) AS geoms
-            	FROM veldnamen2, points2d p 
-            	WHERE ST_Intersects(veldnamen2.geom, p.geom)),
-            	
+
+		fields AS
+			(SELECT naam AS naam, code_1_ AS category1, code_2 AS category2, ST_Intersection(p.geom, veldnamen2.geom) AS geoms
+					FROM veldnamen2, points2d p 
+					WHERE ST_Intersects(veldnamen2.geom, p.geom)),
+					
+					
 Then the points are intersected with the water topology table to see if a points falls into a water body, and wich name and category code it belongs to. 
 
 <p class="code">  Get field name for intersecting points</p>
 
-    --Get Water inersects
-    waters As
-    (SELECT naamnl AS waternaam, typewater AS typewater, identifica AS waterId, ST_Intersection(p.geom, water.geom) AS geomz
-    FROM water, points2d p
-    WHERE ST_Intersects(water.geom, p.geom)),
+		--Get Water inersects
+		waters As
+		(SELECT naamnl AS waternaam, typewater AS typewater, identifica AS waterId, ST_Intersection(p.geom, water.geom) AS geomz
+		FROM water, points2d p
+		WHERE ST_Intersects(water.geom, p.geom)),
 
 In the end all point that fall into a field or water body are joined to the total amount of points to contain the whole range of points. 
 
 <p class="code">  Join all outcomes</p>
-    points AS
-    (SELECT *  FROM AHN LEFT OUTER JOIN fields ON (AHN.geom = fields.geoms)),
-    
-    points1 AS
-    (SELECT * FROM points LEFT OUTER JOIN waters ON (points.geom = waters.geomz))
+
+		points AS
+		(SELECT *  FROM AHN LEFT OUTER JOIN fields ON (AHN.geom = fields.geoms)),
+		
+		points1 AS
+		(SELECT * FROM points LEFT OUTER JOIN waters ON (points.geom = waters.geomz))
 
 This is all send back as one complete GeoJSON response. 
+
 <p class="code">  final GeoJSON response</p>
-    -- Make points:
-    SELECT ST_AsGeoJSON(ST_MakePoint(ST_X(ST_Transform(ST_SetSRID(geom, 28992),4326)), ST_Y(ST_Transform(ST_SetSRID(geom, 28992),4326)), heights)) 
-    AS geometry, naam, heights, percentage , category1, category2, waternaam, typewater, waterID
-    FROM points1
-  
- Eventually the response of the request will be a GeoJSON. An example of the GeoJSON array is shown in code figure $$$ .
+
+		-- Make points:
+		SELECT ST_AsGeoJSON(ST_MakePoint(ST_X(ST_Transform(ST_SetSRID(geom, 28992),4326)), ST_Y(ST_Transform(ST_SetSRID(geom, 28992),4326)), heights)) 
+		AS geometry, naam, heights, percentage , category1, category2, waternaam, typewater, waterID
+		FROM points1
+	  
+ Eventually the response of the request will be a GeoJSON. An example of the GeoJSON array is shown below.
  
 <p class="code">  Example GeoJSON response</p>
-    [
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    6.6089395293246,
-                    53.0818691708253,
-                    8.05700016021729
-                ]
-            },
-            "naam": "Zuurpol (de)",
-            "heights": 8.05700016021729,
-            "percentage": 0.826035566357403,
-            "category1": "A1",
-            "category2": null,
-            "waternaam": null,
-            "typewater": null,
-            "waterid": null
-        },
-        {…},
-        {…},
-        {
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    6.62981923722014,
-                    53.0856490864126,
-                    4.8439998626709
-                ]
-            },
-            "naam": "Gryze Steen",
-            "heights": 4.8439998626709,
-            "percentage": 55.5813292359005,
-            "category1": null,
-            "category2": null,
-            "waternaam": null,
-            "typewater": "meer, plas, ven, vijver",
-            "waterid": "NL.TOP10NL.128375900"
-        },
-        {…},
-    ]
-	
-	
-	<h2 class="nocount"> Leaflet map initializing </h2>
-	
-    var basemaps ={ 
-      "_1830": L.tileLayer('http://s.map5.nl/map/gast/tiles/tmk_1850/EPSG900913/{z}/{x}/{y}.png' ),
-      "_2015": L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
-      "Hoogte": L.tileLayer('http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg')
-    }
 
-    var map = new L.map('map', {
-      maxZoom: 15,
-      minZoom: 12,
-      layers: basemaps._1830
-    });
+		[
+			{
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						6.6089395293246,
+						53.0818691708253,
+						8.05700016021729
+					]
+				},
+				"naam": "Zuurpol (de)",
+				"heights": 8.05700016021729,
+				"percentage": 0.826035566357403,
+				"category1": "A1",
+				"category2": null,
+				"waternaam": null,
+				"typewater": null,
+				"waterid": null
+			},
+			{…},
+			{…},
+			{
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						6.62981923722014,
+						53.0856490864126,
+						4.8439998626709
+					]
+				},
+				"naam": "Gryze Steen",
+				"heights": 4.8439998626709,
+				"percentage": 55.5813292359005,
+				"category1": null,
+				"category2": null,
+				"waternaam": null,
+				"typewater": "meer, plas, ven, vijver",
+				"waterid": "NL.TOP10NL.128375900"
+			},
+			{…},
+		]
+	
+	
+<h2 class="nocount"> Leaflet map initializing </h2>
+		
+		var basemaps ={ 
+		  "_1830": L.tileLayer('http://s.map5.nl/map/gast/tiles/tmk_1850/EPSG900913/{z}/{x}/{y}.png' ),
+		  "_2015": L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
+		  "Hoogte": L.tileLayer('http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg')
+		}
 
-    map.setView([53.079529, 6.614894], 14);
-    map.setMaxBounds([
-      [52.861743, 6.458972],
-      [53.202277, 6.958035]
-    ]);
+		var map = new L.map('map', {
+		  maxZoom: 15,
+		  minZoom: 12,
+		  layers: basemaps._1830
+		});
+
+		map.setView([53.079529, 6.614894], 14);
+		map.setMaxBounds([
+		  [52.861743, 6.458972],
+		  [53.202277, 6.958035]
+		]);
 
 	
 	
