@@ -1244,7 +1244,7 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 	
 <h2 class ="nocount">Questionnaire for testing the application </h2>
 
-![Alt text](/img/Vragenlijst Veldnamen Applicatie.jpg) 
+![Alt text](img\Vragenlijst Veldnamen Applicatie.jpg) 
 
 <h2 class ="nocount">Variations on the main idea </h>
 
@@ -1308,7 +1308,7 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 
 <p class="fig"> Loading data into the database</p>
 
-![Alt text](/img/loading_Data.jpg ) 
+![Alt text](img/loading_Data.jpg ) 
 
 <p class="code"> Loading data in the database </p>
 
