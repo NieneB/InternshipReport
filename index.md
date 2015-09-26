@@ -85,9 +85,9 @@ As stated by Deal:
 
 In the cultural heritage field, the temporal dimension plays an important role to explore data. (Cerasuolo, Cutugno, & Leano, 2012) Spatial-temporal data visualization assumes and important role in the data presentation to users. The three dimensional data form of geo data (spatial, temporal and descriptive) helps users understand and gain knowledge in the discovery process.
 
- The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names"> chapter $$ </a>. 
+ The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names"> chapter 2.1. </a>. 
  
- This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location"> see section $$ </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
+ This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location-project"> see section 2.2.</a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
  
 ## Objectives
 The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands.  To achieve this the following sub-objectives have been defined:
@@ -98,9 +98,9 @@ The overall objective of this study is to build an attractive web-application fo
 
 ## Report structure
 This report will exist of 7 chapters, including this introduction chapter.  Explaining how the prototype web-application came established.
-The <a class ="xref" href=""> second chapter</a> explains some concepts as background information. First , the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
-The <a class ="xref" href="">third chapter </a> shows the field-name data provided by the RCE  which forms the case study for this research.
-The <a class ="xref" href=""> fourth </a> and<a class ="xref" href=""> fifth chapter </a> provide per sub-objective, the methods and results. 
+The <a class="xref" href="#background-theory"> second chapter</a> explains some concepts as background information. First , the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
+The <a class="xref" href="#the-data">third chapter </a> shows the field-name data provided by the RCE  which forms the case study for this research.
+The <a class="xref" href="#method"> fourth </a> and<a class="xref" href="#results"> fifth chapter </a> provide per sub-objective, the methods and results. 
 In the last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recommendation for further  development.
 
 <a class="xref" href="#reportstruct"> Figure 2. </a>  illustrates the structure of this report. 
@@ -117,7 +117,7 @@ After this, a summary of some geo-visualization techniques and frameworks will b
 
 ## Field-names
 
-A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage <a class = "xref" href="" > (see next section $$ ) </a> and it exist only in people's memory. There for field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th / 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arises for field-names as they can tell us how the landscape used to look in the 18th century. A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system.
+A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage <a class = "xref" href="#intangible-cultural-heritage" > (see next section 2.1.1.) </a> and it exist only in people's memory. There for field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th / 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arises for field-names as they can tell us how the landscape used to look in the 18th century. A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system.
 
 Field-names tells us how the landscape used to look, which soil types, vegetation types or animals occurred. They link to specific landmarks or environmental characteristics of the direct village surroundings. The origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. They can be used for landscape design and planning, knowledge for historical research and inspiration source for artist.
 (Spek et al., 2009; “Veldnamen - Encyclopedie Drenthe Online,”)
@@ -148,7 +148,7 @@ For this research takes place in the scope of the Heritage and Location[H&L] pro
   <figcaption>Waag Society </figcaption>
 </figure>
 
-Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project <a class="xref" href=""> (see next section $$) </a> is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
+Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project <a class="xref" href="#heritage-and-location"> (see next section 2.2.2) </a> is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
 
 ###Heritage and Location
@@ -443,12 +443,12 @@ This can be found in <a class="xref" href="#background-theory"> chapter 2. Backg
  
 ## Sub-objective 2. Building the prototype web-application 
 
-<figure class="text-wrap-right">
+<figure id="steps" class="text-wrap-right">
 	<img src="img/buildproto-01.png" width= "350px"/>
 	<figcaption> Steps building the prototype application </figcaption>
 </figure>
 
-In order to build a prototype the design requirements have to be translated to a design. <a class="xref" href="#"> Figure $$ </a> shows the steps that will be taken in order to develop. 
+In order to build a prototype the design requirements have to be translated to a design. <a class="xref" href="#steps"> Figure 10</a> shows the steps that will be taken in order to develop. 
 
 First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
 From this several ideas will be produced and the best will be chosen to continue with.  Decisions and choices will be made on the personal preferences of the researcher and her supervisors. 
@@ -478,7 +478,7 @@ Eventually, the field-names that had no category assigned, in the previous resea
 
 The classification was done in R. See <a class="xref" href="#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
 
-The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table $$ </a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
+The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table 4</a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
 
 <p class="table" id="field-name-cat"> Field-name categories </p>
 
@@ -573,7 +573,9 @@ Because the objectives were used in defining the statements, it tests if the app
 
 Because there is not a official testing group available, the participants will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  
 
- <a class="xref" href="#QandO">Table $$</a> shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#" > chapter $$ </a> . The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix $$</a>. 
+ <a class="xref" href="#QandO">Table 5 </a> 
+ shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#results-sub-objective-1.-the-design-requirements" > chapter 5.1  </a> 
+ . The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix $$</a>. 
 
 <p class="table" id="QandO"> Questions and Objectives </p>
 
@@ -689,7 +691,7 @@ Several ideas came up to do this, as many characteristics are of influence, the 
 - Vegetation types, present on a field in the current situation vs what the fieldname tells us about the historic vegetation.
 - Showing names with relation to wind direction, in their position relative to the closest town or city.
 
-<a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. 
+<a class="xref" href="#example">Figure 12 </a> shows some fields with names related to height. 
 Some fields do indicate small increases or decreases in the in relation to the area around. The *Bult* and the *Hooge Akker* are clearly on higher ground then the fields to the West. Where de *zwarte kuil*  indicates that it is a lower field.
 
 ### The idea
@@ -733,24 +735,25 @@ The result is a webpage with a geo-visualization. Including,
 
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen </a>.
 
-Some screenshots of how it looks. The first <a class = "xref" href="" > figure $$ </a> is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
+Some screenshots of how it looks. The first <a class="xref" href="#welcomescreen" > figure 14</a> 
+is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
-<figure>
+<figure id="welcomescreen" >
   <img src="img/welcomescreen.png">
   <figcaption>Welcome screen </figcaption>
 </figure>
 
-The next <a class = "xref" href="" > figure $$ </a> shows how the screen looks when entering the application. An example line is already given to show the user what is possible. 
+The next <a class="xref" href="#openingscreen" > figure 15</a> shows how the screen looks when entering the application. An example line is already given to show the user what is possible. 
 
-<figure>
+<figure id="openingscreen" >
   <img src="img/mapopeningscreen.png">
   <figcaption>Map status in beginning </figcaption>
 </figure>
 
-The <a class = "xref" href="" > figure $$ </a> shows the drop-down panel with multiple background layers. If the user mover the mouse over the drop-down menu this will appear. Then they can click on the preferred layer. 
+The <a class="xref" href="#panel" > figure 16 </a> shows the drop-down panel with multiple background layers. If the user mover the mouse over the drop-down menu this will appear. Then they can click on the preferred layer. 
 The image after that shows the information panel that will appear when the mouse moves over one of the fields. The name and category of the field is given, with some supplementing information if available. 
 
-<figure>
+<figure id="panel" >
   <img src="img/mapspanel.png">
   <img src="img/mapinfo.png">
   <figcaption>Map functionalities with mouse over. </figcaption>
@@ -771,7 +774,7 @@ The user can click on the line button to start drawing a line.
 
 ### Back-end 
 
-See <a class="xref" href="#method2"> figure $$ </a> for the overall setup of the back-end system. 
+See <a class="xref" href="#method2"> figure 19. </a> for the overall setup of the back-end system. 
 
 <figure id="method2"  >
   <img src="img/webpage_model.jpg" />
