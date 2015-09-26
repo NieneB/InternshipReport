@@ -531,6 +531,7 @@ From one of the possible findings of the data exploration the main idea will fol
 
 ### Front-end
 For the front-end development the following programming languages and packages were used:
+
 - JavaScript
 - HTML
 - CSS
@@ -664,6 +665,11 @@ The target group must feel:
 
 ### Data exploration
 
+<figure id="example" class="text-wrap-left"  >
+  <img src="img/hoogte_voorbeeld.jpg">
+  <figcaption> Field-names example of names with height indication on the height map </figcaption>
+</figure>
+
 Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, the geographical surrounding in relation to the name has to be shown. 
 
 Several ideas came up to do this, as many characteristics are of influence, the following ideas were shortly explored:
@@ -674,15 +680,8 @@ Several ideas came up to do this, as many characteristics are of influence, the 
 - Vegetation types, present on a field in the current situation vs what the fieldname tells us about the historic vegetation.
 - Showing names with relation to wind direction, in their position relative to the closest town or city.
 
-
 <a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. 
 Some fields do indicate small increases or decreases in the in relation to the area around. The *Bult* and the *Hooge Akker* are clearly on higher ground then the fields to the West. Where de *zwarte kuil*  indicates that it is a lower field.
-
-<figure id="example" class="text-wrap-left"  >
-  <img src="img/hoogte_voorbeeld.jpg">
-  <figcaption> Field-names example of names with height indication on the height map </figcaption>
-</figure>
-
 
 ### The idea
 For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like *Bultakker* (bump field) tells us that this field lies higher than its surrounding fields, not what the exact altitude it is.
@@ -701,7 +700,7 @@ The field names are historic but do not contain a change in time. Therefore the 
 Interactivity will be added to the transect line, letting the user define the transect line themselves and explore the different objects located on and around the transect line.
 
 #### Mood board
-For the layout, ideas and colour use a mood board was made. Including inspiration pictures from the Internet. Search terms used are:** living heritage, cultural heritage, transect  and old transect map**
+For the layout, ideas and colour use a mood board was made. Including inspiration pictures from the Internet. Search terms used are: ** living heritage, cultural heritage, transect  and old transect map**
 One of the main inspirations was the following image:
 
 <figure>
@@ -713,7 +712,7 @@ One of the main inspirations was the following image:
 Complete mood board; see <a class="xref" href="#mood-board">appendix  $$ </a>
 
 Custom fonts were explored to add to the feeling of the design. Website used is www.fontsquirrel.com
-. 
+
 
 ### Front-end
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
@@ -780,6 +779,7 @@ See <a class="xref" href="#method2"> figure $$ </a> for the structure of the tec
 
 
 ## Results Sub-objective 3. Evaluating the web-application
+
 ### Outcome questionnaire
 $$ people were asked to use the application and fill in the small questionnaire. The graph below shows the outcome of each question. With 5 being positive and 1 being negative.
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
@@ -935,12 +935,13 @@ Not the best way to visualize the correlation which the field-names have to thei
 
 <h1 class="nocount" >Appendix</h1>
 
-## Mood board
+<h2 class ="nocount">  Mood board </h2>
 
 ![Alt text](img/Moodboard-01.jpg)
 ![Alt text](img/Moodboard-02.jpg)
 
-## Categories field-names form RCE
+<h2 class ="nocount"> Categories field-names form RCE </h2>
+
 <table>
 <tr> <th>	Lemming Code	</th> <th>	Category 	</th> <th>	Category Code	</th> <th>	Lemming	</th> <th>	Name Alternatives	</th> <th>	Count first Code	</th> <th>	Count second Code	</th> </tr>
 <tr> <td>	A1	</td> <td>	Relief	</td> <td>	A	</td> <td>	berg	</td> <td>	bergen|bergje|barg	</td> <td>	210	</td> <td>	38	</td> </tr>
@@ -1108,7 +1109,7 @@ Not the best way to visualize the correlation which the field-names have to thei
 </table>
 
 
-## AHN tiles downloaded:
+<h2 class ="nocount">AHN tiles downloaded: </h2>
 
 ahn2_5_07cz1.tif	ahn2_5_12en1.tif
 ahn2_5_07cz2.tif	ahn2_5_12en2.tif
@@ -1133,11 +1134,12 @@ ahn2_5_12dz1.tif	ahn2_5_12en2.tif
 ahn2_5_12dz2.tif	ahn2_5_12ez1.tif
 ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
-## R sript converting files to shapefile.
+<h2 class ="nocount">R sript converting files to shapefile. </h2>
+
 	filenames <- list.files()
 	filenames <- list.files(filenames , pattern = "*.TAB" ,full.names = T)
 
-	## x = list of folder files # cat = category folder
+	x = list of folder files # cat = category folder
 	exportToShape <- function(x, cat){
 	  for(i in 1:length(x)){
 	      name <- x[i]
@@ -1152,7 +1154,8 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 	}
 	exportToShape(filenames, "overig")
 	
-## SQL adjustments fieldnames
+<h2 class ="nocount">SQL adjustments fieldnames</h2>
+
 <p class="code"> SQL adjustments </p>
     -- UPDATE veldnamen3 SET naam = naam_2 WHERE naam IS NULL;
     -- UPDATE veldnamen3 SET atoto_co_3 = code_3 WHERE atoto_co_3 IS NULL;
@@ -1170,7 +1173,7 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 
 	
-## R script detecting categories
+<h2 class ="nocount">R script detecting categories </h2>
 
       library(sp)
       library(raster)
@@ -1226,11 +1229,11 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
       }
 
 
-## Questionnaire for testing the application
+<h2 class ="nocount">Questionnaire for testing the application
 ![Alt text](img/Vragenlijst Veldnamen Applicatie.jpg) 
 
 
-## Variations on the main idea
+<h2 class ="nocount">Variations on the main idea
 
 For also on this main idea some variations can be made, these will be listed here.
 
@@ -1246,7 +1249,7 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Link stories provided to the line, so popups with provided stories from the book.
 
 
-## Remarks on the questionnaire
+<h2 class ="nocount">Remarks on the questionnaire </h2>
 
 - Works logical, though information is missing.
 - Make the pop-up disappear when the mouse moves away.
