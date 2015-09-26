@@ -1246,7 +1246,7 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 ![Alt text](img\Vragenlijst Veldnamen Applicatie.jpg) 
 
-<h2 class ="nocount">Variations on the main idea </h>
+<h2 class ="nocount">Variations on the main idea </h2>
 
 For also on this main idea some variations can be made, these will be listed here.
 
