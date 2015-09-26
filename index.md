@@ -370,7 +370,7 @@ This information is highly important for nature conservation and heritage preser
 
 Further reference about the field names in Drenthe can be found in the book “Van Jeruzalem tot Ezelakker, Levende veldnamenatlas van de Drentse Aa”.  (Spek et al., 2009)
 
-The dataset contains in total 1747 polygons with a field-name. Projection Rd new. EPSG28992
+The datasets contain in total 1747 polygons with a field-name. Projection Rd new. EPSG28992
 
 This results in the following coverage of field names:
 
@@ -404,53 +404,7 @@ Based on this the total research location is determined, consisting of the munic
   <figcaption>Research area, location in the Netherlands and the municipalities</figcaption>
 </figure>
 
-The field names are already categorized in a previous study by the RCE . The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation. These categories are given in <a class='xref' href="#field-name-cat"> table 4 </a>. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
-
-<p class="table" id="field-name-cat"> Field-name categories </p>
-
-<table>
-    <tr>
-        <th colspan="1">Code</th>
-        <th colspan="1">Category</th>
-        <th >Count old</th>
-        <th >Count new</th>
-    </tr>
-    <tr>
-      <td>A</td><td> Altitude </td><td>116</td><td>1109</td>
-    </tr>
-    <tr>
-      <td>B</td><td> Soil type </td><td>79</td><td>551</td>
-    </tr>
-    <tr>
-      <td>C</td><td>Water related names</td><td>33</td><td>199</td>
-    </tr>
-    <tr>
-      <td>D</td><td>River valleys and swamps</td><td>270</td><td>926</td>
-    </tr>
-    <tr>
-      <td>E</td><td>Forest</td><td>175</td><td>3146</td>
-    </tr>
-    <tr>
-      <td>F</td><td>Drift-sand fields</td><td>59</td><td>223</td>
-    </tr>
-    <tr>
-      <td>G</td><td> Wild animals</td><td>38</td><td>181</td>
-    </tr>
-    <tr>
-      <td>O</td><td>Miscellaneous</td><td>0</td><td>85</td>
-    </tr>
-    <tr>
-      <td>W</td><td>Wind direction</td><td>0</td><td>165</td>
-    </tr>
-    <tr>
-      <td colspan="2">Total</td>
-      <td>770</td>
-            <td>6585</td>
-    </tr>
-</table>
-
-For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done.
-
+Some of the field names are categorized in a previous study by the RCE . The categories give a meaning to the name, of which environmental characteristic was of influence on the name creation.
 
 # Method
 
@@ -495,8 +449,9 @@ This can be found in <a class="xref" href="#background-theory"> chapter 2. Backg
 	<figcaption> Steps building the prototype application </figcaption>
 </figure>
 
-In order to build a prototype the design requirements have to be translated to a design. <a class="xref" href="#"> Figure $$ </a> shows the steps that will be taken in order to develop. First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
+In order to build a prototype the design requirements have to be translated to a design. <a class="xref" href="#"> Figure $$ </a> shows the steps that will be taken in order to develop. 
 
+First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
 From this several ideas will be produced and the best will be chosen to continue with.  Decisions and choices will be made on the personal preferences of the researcher and her supervisors. 
 
 When the idea is settled a front-end and back-end situation for the application have to be developed.  Both will be developed by the researcher.  Decisions and choices will be made on the developed goals and requirements, the background theory, personal preference and experience knowledge of supervisors.
@@ -507,24 +462,86 @@ The back-end is the data and data access layer of the application. The products 
 Eventually this will all from the porotype-product of this research.
 
 ### Data exploration
+Before the data could be explored it first had to be pre-processed a bit.  When all data was complete and showed a good coverage of the area and the field-names, a search into possible interesting visualizations was done. 
+
+All the field-name data was delivered in separate .DAT files and scattered over several folders and sources. In order to work with the files in Qgis all the files needed to be converted to shape-files. This was done in R.  In Qgis, manually the attribute names needed were changed in one standardized name in order to merge all the data together. 
+
+<figure>
+	<img src="img/fieldnames_preprocessing.jpg"/>
+	<figcaption> Flowchart field-name dataset processing </figcaption>
+</figure> 
+
+For scripts see the <a class ="xref" href="#">  appendix. $$ </a>
+
+After mergeing the datasets it resulted into a lot of overlapping areas, so instead,  the field-names were all linked to the Kadaster dataset from 1830. Now a single layer of polygons with multiple names is the result. This was done by spatially joining the datasets, or joining by the Kadaster ID’s which most of the datasets contained. The ID contained; municipality, sheet map number, parcel number. 
+
+Eventually, the field-names that had no category assigned, in the previous research by the RCE, had to be classified as well. This to have more coverage and amount of field-names.
+
+The classification was done in R. See <a class="xref" href=#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
+
+The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table $$ </a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
+
+<p class="table" id="field-name-cat"> Field-name categories </p>
+
+<table>
+    <tr>
+        <th colspan="1">Code</th>
+        <th colspan="1">Category</th>
+        <th >Count old</th>
+        <th >Count new</th>
+    </tr>
+    <tr>
+      <td>A</td><td> Altitude </td><td>116</td><td>1109</td>
+    </tr>
+    <tr>
+      <td>B</td><td> Soil type </td><td>79</td><td>551</td>
+    </tr>
+    <tr>
+      <td>C</td><td>Water related names</td><td>33</td><td>199</td>
+    </tr>
+    <tr>
+      <td>D</td><td>River valleys and swamps</td><td>270</td><td>926</td>
+    </tr>
+    <tr>
+      <td>E</td><td>Forest</td><td>175</td><td>3146</td>
+    </tr>
+    <tr>
+      <td>F</td><td>Drift-sand fields</td><td>59</td><td>223</td>
+    </tr>
+    <tr>
+      <td>G</td><td> Wild animals</td><td>38</td><td>181</td>
+    </tr>
+    <tr>
+      <td>O</td><td>Miscellaneous</td><td>0</td><td>85</td>
+    </tr>
+    <tr>
+      <td>W</td><td>Wind direction</td><td>0</td><td>165</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>770</td>
+            <td>6585</td>
+    </tr>
+</table>
+
+After this, in Qgis several names and possiblities were explored. Looking into combinations of categories, locations of specific names and this in relation to the height and water bodies. Locations in accordance to build up areas or land-use type. 
 
 ### The Idea
+From one of the possible findings of the data exploration the main idea will follow. This is made on personal preference, no test were done for this. 
 
 ### Front-end
+For the front-end development the following programming languages and packages were used:
+- JavaScript
+- HTML
+- CSS
 
-Packages needed for building the geo-application will be leaflet and d3.js. And possible leaflet plugins like, Leaflet Draw and Leaflet MiniMap. 
-Leaflet is a JavaScript library for the creation of interactive maps by the founders of OpenStreetMap. Interesting for developers
-is probably the focus on desktop and mobile web browsers, and its use of HTML5. (Steiniger and Hunter 2013)
+JavaScript packages needed for building the geo-application will be Leaflet . Leaflet is a JavaScript library for the creation of interactive maps by the founders of OpenStreetMap. D3.js will be used for the interactivity, this is a graphic drawing package.
 
 Leaflet currently compete with OpenLayers only with respect to the display of map tiles, because OpenLayers offers much more functionality when it comes to interactive and vector-based map- ping tools. Also MapFish provides much more capabilities. For this was not needed for this application, the choice was made for using Leaflet, being light and simple.
 
-Leaflet also has the applicability to install plugins. For letting the user change the background map, the MiniMap plugin was used. 
-
-For building the transect line, d3 is used. A graphic drawing package. The transect line is therefore not a geographic representation but more information display. The geo-data is retained in the underlying data. 
-
+Leaflet also has the applicability to install plugins. The MiniMap plugin lets the user change the background map, and Leaflet Draw enables the creation of lines, polygons and points by the user.
 
 ### Back-end
-
 First both client side and server side are built on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
 
 #### Database
@@ -533,8 +550,7 @@ The open source database PostgreSQL was installed with a PostGIS extension to cr
 Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
 #### API
-A API or application programming interface, is needed to connect the web-application with the data in the PostGis database. 
-For this purpose Brianc node-postgres is used. Done with Node-Postgres for PostgreSQL client for node.js with pure JavaScript bindings. 
+A API or application programming interface, is needed to connect the web-application with the data in the PostGis database.  For this purpose Brianc node-postgres is used. Done with Node-Postgres for PostgreSQL client for node.js with pure JavaScript bindings. 
 
 ## Sub-objective 3. Evaluating prototype web-application
 
