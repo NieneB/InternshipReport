@@ -85,9 +85,9 @@ As stated by Deal:
 
 In the cultural heritage field, the temporal dimension plays an important role to explore data. (Cerasuolo, Cutugno, & Leano, 2012) Spatial-temporal data visualization assumes and important role in the data presentation to users. The three dimensional data form of geo data (spatial, temporal and descriptive) helps users understand and gain knowledge in the discovery process.
 
- The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names"> chapter 2.1 </a>. 
+ The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. Therefor this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only know to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in  <a class="xref" href="#field-names"> chapter $$ </a>. 
  
- This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location"> see section 2.2.2 </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
+ This research is part of an internship at Waag Society for the project of Heritage & Location. ( <a class="xref" href="#heritage-and-location"> see section $$ </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
  
 ## Objectives
 The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands.  To achieve this the following sub-objectives have been defined:
@@ -98,9 +98,9 @@ The overall objective of this study is to build an attractive web-application fo
 
 ## Report structure
 This report will exist of 7 chapters, including this introduction chapter.  Explaining how the prototype web-application came established.
-The second chapter explains some concepts as background information. First , the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
-The third chapter shows the field-name data provided by the RCE  which forms the case study for this research.
-The fourth and fifth chapter provide per sub-objective, the methods and results. 
+The <a class ="xref" href=""> second chapter</a> explains some concepts as background information. First , the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
+The <a class ="xref" href="">third chapter </a> shows the field-name data provided by the RCE  which forms the case study for this research.
+The <a class ="xref" href=""> fourth </a> and<a class ="xref" href=""> fifth chapter </a> provide per sub-objective, the methods and results. 
 In the last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recommendation for further  development.
 
 <a class="xref" href="#reportstruct"> Figure 2. </a>  illustrates the structure of this report. 
@@ -117,7 +117,7 @@ After this, a summary of some geo-visualization techniques and frameworks will b
 
 ## Field-names
 
-A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage (see next section) and it exist only in people's memory. There for field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th / 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arises for field-names as they can tell us how the landscape used to look in the 18th century. A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system.
+A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage <a class = "xref" href="" > (see next section $$ ) </a> and it exist only in people's memory. There for field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th / 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arises for field-names as they can tell us how the landscape used to look in the 18th century. A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system.
 
 Field-names tells us how the landscape used to look, which soil types, vegetation types or animals occurred. They link to specific landmarks or environmental characteristics of the direct village surroundings. The origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. They can be used for landscape design and planning, knowledge for historical research and inspiration source for artist.
 (Spek et al., 2009; “Veldnamen - Encyclopedie Drenthe Online,”)
@@ -148,7 +148,7 @@ For this research takes place in the scope of the Heritage and Location[H&L] pro
   <figcaption>Waag Society </figcaption>
 </figure>
 
-Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project (see next section) is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
+Waag Society is an Institute for art, science and technology. They develop technical interventions for relevant social innovation. In 7 labs they conduct creative research in the form of projects, creative care lab, creative learning lab, future heritage lab, future internet lab, open design lab and open wet-lab. The Heritage & Location project <a class="xref" href=""> (see next section $$) </a> is part of the future internet lab [FIL]. The FIL focuses on the development of big and open data, making internet technology accessible and research the impact of the internet on society.
 (“Waag Society,” n.d.)
 
 ###Heritage and Location
@@ -495,7 +495,7 @@ This can be found in <a class="xref" href="#background-theory"> chapter 2. Backg
 	<figcaption> Steps building the prototype application </figcaption>
 </figure>
 
-In order to build a prototype the design requirements have to be translated to a design. <a> Figure $$ </a> shows the steps that will be taken in order to develop. First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
+In order to build a prototype the design requirements have to be translated to a design. <a class="xref" href="#"> Figure $$ </a> shows the steps that will be taken in order to develop. First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
 
 From this several ideas will be produced and the best will be chosen to continue with.  Desisions and choices will be made on the personal preferences of the researcher and her supervisors. 
 
@@ -668,7 +668,7 @@ See <a class="xref" href="#method"> figure $$ </a> for the structure of the tech
 
 Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
 
-Figure <a class="xref" href="#example"></a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
+<a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
 
 <figure id="example" class="text-wrap-left"  >
   <img src="img/hoogte_voorbeeld.jpg">
@@ -702,7 +702,7 @@ One of the main inspirations was the following image:
   <p>Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg</p>
 </figure>
 
-Complete mood board; see appendix <a class="xref" href="#mood-board"></a>
+Complete mood board; see <a class="xref" href="#mood-board">appendix  $$ </a>
 
 
 ### Back-end 
@@ -715,21 +715,21 @@ The next paragraphs explain the database, the API, the SQL query and the website
 ### Front-end
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
 
-Some screenshots of how it looks. The first figure is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
+Some screenshots of how it looks. The first <a class = "xref" href="" > figure $$ </a> is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
 <figure>
   <img src="img/welcomescreen.png">
   <figcaption>Welcome screen </figcaption>
 </figure>
 
-The next figure shows how the screen looks when entering the application. A example line is already given to show the user what is possible. 
+The next <a class = "xref" href="" > figure $$ </a> shows how the screen looks when entering the application. A example line is already given to show the user what is possible. 
 
 <figure>
   <img src="img/mapopeningscreen.png">
   <figcaption>Map status in beginning </figcaption>
 </figure>
 
-The next figure shows the drop-down panel with multiple background layers. If the user mover the mouse over the drop-down menu this will appear. Then they can click on the preferred layer. 
+The <a class = "xref" href="" > figure $$ </a> shows the drop-down panel with multiple background layers. If the user mover the mouse over the drop-down menu this will appear. Then they can click on the preferred layer. 
 The image after that shows the information panel that will appear when the mouse moves over one of the fields. The name and category of the field is given, with some supplementing information if available. 
 
 <figure>
@@ -763,49 +763,54 @@ On average objective A got a 3.7, objective B 3.6 and C the lowest score of 3.3.
   <figcaption> Results questionnaire </figcaption>
 </figure>
 
-For the total answer overview see appendix $$$. 
+For the total answer overview see <a class="xref" href=""> appendix $$. </a>
 
 
 # Discussion
-
-#####General
-Firs, the short time span of the project, resulted in a product that is not finished. The iterative process had to be followed several times in order to come to a user centred design. Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. The advise and comments received in the end, where very useful but were not implemented any more. This is a pity, for the application could be further improved with the new ideas. One of the new ideas, was splitting up the screen in 3 parts. Firs a screen with information, then scroll through to the next screen, where the user can draw a line. If the line is loaded, a new screen is show with the transect line and the information behind it. If the user wants to go back to either the explanation, or drawing a new line, they can simply scroll up and start over again. This form of websites is called a carousel and starts to become more popular. 
-
+Firs, the short time span of the project, resulted in a product that is not finished. The iterative process had to be followed several times in order to come to a user centred design. 
 In general, the conducting researcher did all steps of the process herself, and a lack for specific skills and knowledge was there. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
 
-#####The data
-The data was provided by the RCE, because this all came in a unknown file structure with no metadata behind the various datasets, the background and quality of the data was not looked in. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. Simply a sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the scripts, starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in appendix <a class="xref" href="#categories-field-names-form-rce"> </a> . Also no human cognition came to pass for the process. Which makes the classification crude.
+## Design requirements
+
+The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to color, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
+
+Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow. For the field-names there are probably a variety of forms to present them. From simply displaying the names on a map, to animated dynamic maps. 
+## Data
+The data was provided by the RCE, because this all came in a unknown file structure with no metadata behind the various datasets, the background and quality of the data was not looked in. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. Simply a sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the scripts, starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in<a class="xref" href="#categories-field-names-form-rce"> appendix $$ </a> . Also no human cognition came to pass for the process. Which makes the classification crude.
+
 The professional knowledge about the data was with the RCE, therefore the focus was more on the visualization and not improving the information in the data. A lack of professional knowledge about the field-names was kept at a low level. 
+
+
   
 Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data, the data could be seen as too detailed. Using pixels of 0.5 m resolution is not really needed for the visualization. The same for the water bodies, these do not need to be that exact. 
 
 Height is the recent height, is this still the same as in 1830?? A lot has changed since.
 
+
 The water topologies used are from 2015. Therefore they do not show correlation with the field names. Some lakes disappeared and new ones appeared. The default background map is a map from 1830, showing a good reference for the field-names. But on the transect line, water bodies show up that cannot be seen on this base layer. When switching to the base layer from the current map, the water bodies do correlate but the field-names are not referenced. 
 
-#####The web application
+## Building the prototype
+Data exploration gave mutlitple ideas, no testing was done which idea would prove the best results. Soly made on personal preferences. 
+
+###Front-end
+
+<!-- idea --> displaying the field-names and show their relation to the environment. The different base maps show the difference between 1830 and now. The transect line, shows the relation between height, vegetation types on certain heights and the distance to rivers in accordance to the field-names. 
+
+<!-- design --> 
+Gets the old feeling intended as the mood-board. Old font was tried but made the names hard to read. So changed back to an easier to read font. 
+
+<!-- technology --> 
 The technology to build the web application was a restricting factor in the implementation of some ideas. For example, displaying the total length of the line, was a hard technical trick and therefore not finished or worked out. Also the panel with the extra base-layers was supposed to show all the time. But the plugin for the miniMap did not support this and there was no time to work around it. 
 On the positive site, the d3 package provided good and simple ways to work with the graphical display of the transect line. It is an easy tool and draws simple svg formats in the browser with the possibility to animate it easily. 
 Also leaflet proved to be quick and simple, providing the basic needs for a map and displaying the geoJSON of the field-names on it. The drawing plugin was also easily edited so only the possibility for drawing a line was enabled. Chancing the text from English to Dutch was more hard and therefore also not implemented in the short time span. 
 
-The database and API do slow down the process. Because the AHN data is really detailed and every 10 meters a point is asked to intersect, the process goes really slow. This could be looked into to improve. Next to that, the user doesn't see a *waiting sign* yet. For the experience of the user they need to know that something **is** happening after their action. Now it looks like nothing goes on. 
 
+###Back-end
+The database and API do slow down the process. Because the AHN data is really detailed and every 10 meters a point is asked to intersect, the process goes really slow. This could be looked into to improve. 
 
-Design
-Gets the old feeling intended as the mood-board. Old font was tried but made the names hard to read. So changed back to an easier to read font. 
+## Evaluating
+Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. The advise and comments received in the end, where very useful but were not implemented any more. 
 
-#####Geo-visualization
-Geo-visualization has proofed a good method for displaying the field-names and show their relation to the environment. The different base maps show the difference between 1830 and now. The transect line, shows the relation between height, vegetation types on certain heights and the distance to rivers in accordance to the field-names. 
-The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to color, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
-
-Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow. For the field-names there are probably a variety of forms to present them. From simply displaying the names on a map, to animated dynamic maps. 
-
-No temporal dimension added.
-more specific stories needed behind the field-names.
-Scale is needed
-Not the best way to visualize the correlation which the field-names have to their surrounding.
-
-#####Testing the application
 The test with the questionnaire was conducted very quickly and not thoroughly. The statements posed may be too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is no saying. The participants are influenced by that they like heritage and understand the project in the bigger picture. participants are biased. 
 Not enough participants. 
 
@@ -813,7 +818,15 @@ The test did provide useful comments and showed clearly where the user got stuck
 
 The score gave a good view that the technical functionalities were not optimal. But the application was perceived attractive and beautiful. 
 
-## Website recommendations
+
+## Recommendations
+
+ One of the new ideas, was splitting up the screen in 3 parts. Firs a screen with information, then scroll through to the next screen, where the user can draw a line. If the line is loaded, a new screen is show with the transect line and the information behind it. If the user wants to go back to either the explanation, or drawing a new line, they can simply scroll up and start over again. This form of websites is called a carousel and starts to become more popular. 
+
+ Next to that, the user doesn't see a *waiting sign* yet. For the experience of the user they need to know that something **is** happening after their action. Now it looks like nothing goes on. 
+more specific stories needed behind the field-names.
+Scale is needed
+
 Because there are sufficient recommendations to be done to improve the web application, they are listed here below. Some are extra ideas, that didn't receive the time to be implemented. Others are recommendations done by the test group. 
 
 * Add more symbols and information behind it.
@@ -829,6 +842,9 @@ Because there are sufficient recommendations to be done to improve the web appli
 
 # Conclusion
 Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
+Not the best way to visualize the correlation which the field-names have to their surrounding.
+
+
 
 <h1 class ="nocount">References</h1> 
 <div id="bib">
