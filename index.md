@@ -542,6 +542,8 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 
 Leaflet also has the applicability to install plugins. The MiniMap plugin lets the user change the background map, and Leaflet Draw enables the creation of lines, polygons and points by the user.
 
+See <a class="xref"href=""> appendix $$ </a> for the Leaflet map initializing code.
+
 ### Back-end
 First both client side and server side are built on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
 
@@ -550,8 +552,16 @@ The open source database PostgreSQL was installed with a PostGIS extension to cr
 
 Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
+See <a class="xref"href=""> appendix $$ </a> for the Shp2psql and Raster2psql lines used. 
+
 #### API
 A API or application programming interface, is needed to connect the web-application with the data in the PostGis database.  For this purpose Brianc node-postgres is used. Done with Node-Postgres for PostgreSQL client for node.js with pure JavaScript bindings. 
+
+https://github.com/brianc/node-postgres
+https://nodejs.org/about/
+
+See <a class="xref"href=""> appendix $$ </a> for the API request and Response lines. 
+The request makes use client response on Leaflet Draw.  The response is send back to JS with d3. 
 
 ## Sub-objective 3. Evaluating prototype web-application
 
@@ -715,7 +725,7 @@ Custom fonts were explored to add to the feeling of the design. Website used is 
 
 
 ### Front-end
-The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
+The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen </a>.
 
 On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
 
@@ -777,6 +787,9 @@ See <a class="xref" href="#method2"> figure $$ </a> for the structure of the tec
   <figcaption>Prototype application overview</figcaption>
 </figure>
 
+In <a class="xref"href=""> appendix $$ </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
+
+The total code can be found on https://github.com/NieneB/veldnamen .
 
 ## Results Sub-objective 3. Evaluating the web-application
 
@@ -1282,3 +1295,186 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Unpredictable behaviour with drawing the line.
 - Can't get the results good on the screen.
 - Text at the bottom is not readable.
+
+
+<h2 class="nocount"> Loading data into the PostGIS database </h2>
+
+<p class="fig"> Loading data into the database</p>
+![Alt text](/img/loading_Data.jpg ) 
+
+<p class="code"> Loading data in the database </p>
+
+	
+	Shp2pgsql
+	➜  ~ shp2pgsql -s 28992 /<path name> /veldnamen.shp veldnamen | psql -U user -d veldnamen
+			
+	Raster2pgsql
+	➜  ~ raster2pgsql -s 28992 -I -C /<path name>/ahn2*.tif public.ahn2 | psql -d veldnamen
+		
+		
+
+
+<h2 class="nocount"> Request & Response for transect line </h2>
+
+<p class="code">  Leaflet map initializing </p>
+  
+<p class="code">  D3 request coordinates and drawing transect path  </p>
+
+    d3.json('transect?linestring=' + coordinates, function(json){
+      console.log("requesting line from database");
+      console.log(json)
+      var line = d3.select("#line")
+      line.selectAll(".transect")
+        .data(linestring)
+        .enter()
+        .append("path")
+        .attr("class", "transect")
+        .attr("d", lineFunction(json))
+        .attr("stroke", "#2B2118")
+        .attr("stroke-width", 3)
+        .attr("fill", "none");
+		
+  
+After a line is drawn on the Leaflet map with Leafleat Draw, the coordinates  of the line are inserted into the request ($1) as a LINESTRING format. The line is in WGS84 (EPSG4326) and needs to be converted to RDNew(EPSG28992) in order to extract the locationt with the other data at the right location.
+
+<p class="code"> Request & Response for transect line </p>
+  
+  app.get('/transect', function (req, res) {
+    query(queries.transect, ['LINESTRING (' + req.query.linestring + ')'] , function(err, result) {
+      if (err) {
+        res.status(500).send(err);
+      } else {
+        res.send(result.rows.map(function(row) {
+          row.geometry = JSON.parse(row.geometry);
+          return row;
+        }));
+      }
+    })
+  });
+ 
+<p class="code"> The line</p>
+
+    	WITH line AS
+      -- Create line geometry
+      (SELECT ST_Transform(ST_GeomFromText($1 , 4326), 28992) AS geom),
+
+The line is then cut into parts of 10 meter and points are generated with its percentage location along the line. 
+<p class="code"> Point and percentage at every 10 m along the line</p>
+    linemesure AS
+      (SELECT ST_AddMeasure(line.geom, 0, ST_Length(line.geom)) as linem,
+      generate_series(0, ST_Length(line.geom)::int, 10) as i
+      FROM line),
+    
+    points2d AS
+      (SELECT ST_GeometryN(ST_LocateAlong(linem, i), 1) AS geom, (i*100/ST_Length(linem)) as percentage
+      FROM linemesure),
+
+This array of points is intersected with the  AHN table to ext rat the height value for every point. 
+<p class="code"> Get height per point</p>
+    AHN AS
+    -- Get DEM elevation for each
+      (SELECT p.geom AS geom, ST_Value(ahn.rast, 1, p.geom) AS heights, percentage
+      FROM ahn, points2d p
+      WHERE ST_Intersects(ahn.rast, p.geom)),
+
+Also the points are intersected with the field names table to see if a points falls into a field, and wchih name and category code it belongs to. 
+<p class="code">  Get field name for intersecting points</p>
+    fields AS
+        (SELECT naam AS naam, code_1_ AS category1, code_2 AS category2, ST_Intersection(p.geom, veldnamen2.geom) AS geoms
+            	FROM veldnamen2, points2d p 
+            	WHERE ST_Intersects(veldnamen2.geom, p.geom)),
+            	
+Then the points are intersected with the water topology table to see if a points falls into a water body, and wich name and category code it belongs to. 
+
+<p class="code">  Get field name for intersecting points</p>
+
+    --Get Water inersects
+    waters As
+    (SELECT naamnl AS waternaam, typewater AS typewater, identifica AS waterId, ST_Intersection(p.geom, water.geom) AS geomz
+    FROM water, points2d p
+    WHERE ST_Intersects(water.geom, p.geom)),
+
+In the end all point that fall into a field or water body are joined to the total amount of points to contain the whole range of points. 
+
+<p class="code">  Join all outcomes</p>
+    points AS
+    (SELECT *  FROM AHN LEFT OUTER JOIN fields ON (AHN.geom = fields.geoms)),
+    
+    points1 AS
+    (SELECT * FROM points LEFT OUTER JOIN waters ON (points.geom = waters.geomz))
+
+This is all send back as one complete GeoJSON response. 
+<p class="code">  final GeoJSON response</p>
+    -- Make points:
+    SELECT ST_AsGeoJSON(ST_MakePoint(ST_X(ST_Transform(ST_SetSRID(geom, 28992),4326)), ST_Y(ST_Transform(ST_SetSRID(geom, 28992),4326)), heights)) 
+    AS geometry, naam, heights, percentage , category1, category2, waternaam, typewater, waterID
+    FROM points1
+  
+ Eventually the response of the request will be a GeoJSON. An example of the GeoJSON array is shown in code figure $$$ .
+ 
+<p class="code">  Example GeoJSON response</p>
+    [
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.6089395293246,
+                    53.0818691708253,
+                    8.05700016021729
+                ]
+            },
+            "naam": "Zuurpol (de)",
+            "heights": 8.05700016021729,
+            "percentage": 0.826035566357403,
+            "category1": "A1",
+            "category2": null,
+            "waternaam": null,
+            "typewater": null,
+            "waterid": null
+        },
+        {…},
+        {…},
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.62981923722014,
+                    53.0856490864126,
+                    4.8439998626709
+                ]
+            },
+            "naam": "Gryze Steen",
+            "heights": 4.8439998626709,
+            "percentage": 55.5813292359005,
+            "category1": null,
+            "category2": null,
+            "waternaam": null,
+            "typewater": "meer, plas, ven, vijver",
+            "waterid": "NL.TOP10NL.128375900"
+        },
+        {…},
+    ]
+	
+	
+	<h2 class="nocount"> Leaflet map initializing </h2>
+	
+    var basemaps ={ 
+      "_1830": L.tileLayer('http://s.map5.nl/map/gast/tiles/tmk_1850/EPSG900913/{z}/{x}/{y}.png' ),
+      "_2015": L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
+      "Hoogte": L.tileLayer('http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg')
+    }
+
+    var map = new L.map('map', {
+      maxZoom: 15,
+      minZoom: 12,
+      layers: basemaps._1830
+    });
+
+    map.setView([53.079529, 6.614894], 14);
+    map.setMaxBounds([
+      [52.861743, 6.458972],
+      [53.202277, 6.958035]
+    ]);
+
+	
+	
