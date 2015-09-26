@@ -340,7 +340,6 @@ Interactivity is one of the key aspects of web-based geo visualization. A map is
 Two main interactive visualization techniques are introduced by Buja et al. form Nöllenburg (2007).
 
 - **Focusing individual views.** The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
-
 - **Linking multiple views.** Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
 This stimulates visual thinking because data can be displayed in different ways and be analysed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
@@ -524,7 +523,7 @@ The script runs through all the field-names and all the possible categories, to 
     </tr>
 </table>
 
-After this, in Qgis several names and possiblities were explored. Looking into combinations of categories, locations of specific names and this in relation to the height and water bodies. Locations in accordance to build up areas or land-use type. 
+After this, in Qgis several names and possibilities were explored. Looking into combinations of categories, locations of specific names and this in relation to the height and water bodies. Locations in accordance to build up areas or land-use type. 
 
 ### The Idea
 From one of the possible findings of the data exploration the main idea will follow. This is made on personal preference, no test were done for this. 
@@ -542,7 +541,7 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 
 Leaflet also has the applicability to install plugins. The MiniMap plugin lets the user change the background map, and Leaflet Draw enables the creation of lines, polygons and points by the user.
 
-See <a class="xref"href=""> appendix $$ </a> for the Leaflet map initializing code.
+See <a class="xref" href="#"> appendix $$ </a> for the Leaflet map initializing code.
 
 ### Back-end
 First both client side and server side are built on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
@@ -552,7 +551,7 @@ The open source database PostgreSQL was installed with a PostGIS extension to cr
 
 Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
-See <a class="xref"href=""> appendix $$ </a> for the Shp2psql and Raster2psql lines used. 
+See <a class="xref" href="#"> appendix $$ </a> for the Shp2psql and Raster2psql lines used. 
 
 #### API
 A API or application programming interface, is needed to connect the web-application with the data in the PostGis database.  For this purpose Brianc node-postgres is used. Done with Node-Postgres for PostgreSQL client for node.js with pure JavaScript bindings. 
@@ -560,7 +559,7 @@ A API or application programming interface, is needed to connect the web-applica
 https://github.com/brianc/node-postgres
 https://nodejs.org/about/
 
-See <a class="xref"href=""> appendix $$ </a> for the API request and Response lines. 
+See <a class="xref" href="#"> appendix $$ </a> for the API request and Response lines. 
 The request makes use client response on Leaflet Draw.  The response is send back to JS with d3. 
 
 ## Sub-objective 3. Evaluating prototype web-application
@@ -686,7 +685,7 @@ Several ideas came up to do this, as many characteristics are of influence, the 
 
 - Showing soil related field names on a soil map. A current or historic soil map.
 - Showing height related field names on a height map. 
-- Showing ground water levelds in relation to field names about water, swomps and soil types. 
+- Showing ground water levels in relation to field names about water, swamps and soil types. 
 - Vegetation types, present on a field in the current situation vs what the fieldname tells us about the historic vegetation.
 - Showing names with relation to wind direction, in their position relative to the closest town or city.
 
@@ -710,13 +709,13 @@ The field names are historic but do not contain a change in time. Therefore the 
 Interactivity will be added to the transect line, letting the user define the transect line themselves and explore the different objects located on and around the transect line.
 
 #### Mood board
-For the layout, ideas and colour use a mood board was made. Including inspiration pictures from the Internet. Search terms used are: ** living heritage, cultural heritage, transect  and old transect map**
+For the layout, ideas and colour use a mood board was made. Including inspiration pictures from the Internet. Search terms used are: **living heritage, cultural heritage, transect  and old transect map**
 One of the main inspirations was the following image:
 
 <figure>
   <img src="img/transect_inspiration-01.jpg">
   <figcaption> Inspiration Picture </figcaption>
-  <p>Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg</p>
+  <p>*Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg *</p>
 </figure>
 
 Complete mood board; see <a class="xref" href="#mood-board">appendix  $$ </a>
@@ -725,20 +724,14 @@ Custom fonts were explored to add to the feeling of the design. Website used is 
 
 
 ### Front-end
-The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen </a>.
-
-On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
-
-The next paragraphs explain the database, the API, the SQL query and the website. 
-
+ 
 The result is a webpage with a geo-visualization. Including, 
 1. a map showing the area, where a line can be drawn to locate the position of the transect line. With navigational functionalities for the map.
 2. A graphic transect line that can be explored. Including information about the field-names. 
 3. An explanation about how the application works.
 4. Other interactive features to navigate through the webpage.
 
-For this is needed some data, about the study area, the field-names, the height and water names. Also additional stories and explanation texts about the meaning and origin of the field-names. Possible additional pictures of the landscape characteristics.
-
+The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen </a>.
 
 Some screenshots of how it looks. The first <a class = "xref" href="" > figure $$ </a> is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
@@ -778,27 +771,38 @@ The user can click on the line button to start drawing a line.
 
 ### Back-end 
 
-<a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. 
-
-See <a class="xref" href="#method2"> figure $$ </a> for the structure of the technical application design.
+See <a class="xref" href="#method2"> figure $$ </a> for the overall setup of the back-end system. 
 
 <figure id="method2"  >
   <img src="img/webpage_model.jpg" />
   <figcaption>Prototype application overview</figcaption>
 </figure>
 
-In <a class="xref"href=""> appendix $$ </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
+On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href=" "> appendix $$ </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+
+In <a class="xref" href="#"> appendix $$ </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
 
 The total code can be found on https://github.com/NieneB/veldnamen .
+
+The database contains the following data:
+
+- Field-names polygons with the names and categories
+- Raster with AHN height data 
+- Water bodies with their names, polygons
 
 ## Results Sub-objective 3. Evaluating the web-application
 
 ### Outcome questionnaire
-$$ people were asked to use the application and fill in the small questionnaire. The graph below shows the outcome of each question. With 5 being positive and 1 being negative.
-Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
+$$ people were asked to use the application and fill in the small questionnaire. The graph below shows the outcome of each question. With 2 and 5 being the most positive and 8 being the most negative.
+Overall the scores are quite high.
+
+Question 2  was  if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
+
 Question 8 got the lowest score, the functionality did not work as the user would expect.
 
-On average objective A got a 3.7, objective B 3.6 and C the lowest score of 3.3. Objective A aimed at the attractiveness of the application, B about understanding the information about the field-names and C the technical side and functionality. 
+On average objective 1 got
+objectie 2 got
+objective 3 got
 
 <figure>
   <img src="img/uitslag_quest.png">
@@ -817,13 +821,13 @@ In general, the conducting researcher did all steps of the process herself, and 
 The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to colour, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
 
 Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow. For the field-names there are probably a variety of forms to present them. From simply displaying the names on a map, to animated dynamic maps. 
+
 ## Data
 The data was provided by the RCE, because this all came in a unknown file structure with no metadata behind the various datasets, the background and quality of the data was not looked in. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. Simply a sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the scripts, starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in<a class="xref" href="#categories-field-names-form-rce"> appendix $$ </a> . Also no human cognition came to pass for the process. Which makes the classification crude.
 
 The professional knowledge about the data was with the RCE, therefore the focus was more on the visualization and not improving the information in the data. A lack of professional knowledge about the field-names was kept at a low level. 
 
 
-  
 Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data, the data could be seen as too detailed. Using pixels of 0.5 m resolution is not really needed for the visualization. The same for the water bodies, these do not need to be that exact. 
 
 Height is the recent height, is this still the same as in 1830?? A lot has changed since.
@@ -1252,26 +1256,18 @@ For also on this main idea some variations can be made, these will be listed her
 
 - Soil properties as colours of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
 Giving colours or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
-
 - Pop-ups with explanations and texts. Linking field-names to textual explanation, adding pictures of the surroundings and landscape characteristics. Vegetation types, animal occurrence.
-
 - Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line. Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field name is connected.
-
 - Creating a small 3d landscape by adding multiple transect lines, stacked in front of each other.
-
 - Link stories provided to the line, so popups with provided stories from the book.
 
 
 <h2 class ="nocount">Remarks on the questionnaire </h2>
 
 - Works logical, though information is missing.
-
 - Make the pop-up disappear when the mouse moves away.
-
 - I miss a total overview of the page.
-
 - Finish line, not working.. 
-
 - The elevation graph should follow the x,y of mouse instead of following just x.
 - Text window sometimes conflicts with the layer selector.
 - Cursor on the map synchronies with the moving circle on the line.
@@ -1281,13 +1277,11 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Drawing button for the line is hard to find.
 - While waiting, put a waiting sign.
 - You would expect the information about the field to pop up when the moving circle is on the field, instead of the mouse.
-
 - Ask people for collaboration, for example make a text-editor do the texts. 
 - Typography was hard to read. 
 - A lot of introduction text.
 - Looks like the focus is more on the height then on the names. 
 - Drawing the line and clicking was difficult, had to get used to it. Nice view into height differences. Though I don't understand the origin of the field names yet. The line shows weird peaks, I would like to know what this is. 
-
 - I would like to have this for the area I live in.  
 - With long lines, the names are on top of each other.
 - Clicking last point of the line to finish it was difficult to find.
@@ -1338,7 +1332,7 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 		.attr("fill", "none");
 	});
 	
-After a line is drawn on the Leaflet map with Leafleat Draw, the coordinates  of the line are inserted into the request ($1) as a LINESTRING format. The line is in WGS84 (EPSG4326) and needs to be converted to RDNew(EPSG28992) in order to extract the locationt with the other data at the right location.
+After a line is drawn on the Leaflet map with Leafleat Draw, the coordinates  of the line are inserted into the request ($1) as a LINESTRING format. The line is in WGS84 (EPSG4326) and needs to be converted to RDNew(EPSG28992) in order to extract the location with the other data at the right location.
 
 <p class="code"> Request & Response for transect line </p>
  
@@ -1398,7 +1392,7 @@ Then the points are intersected with the water topology table to see if a points
 
 <p class="code">  Get field name for intersecting points</p>
 
-	--Get Water inersects
+	--Get Water intersects
 	waters As
 		(SELECT naamnl AS waternaam, typewater AS typewater, identifica AS waterId, ST_Intersection(p.geom, water.geom) AS geomz
 		FROM water, points2d p

@@ -1,60 +1,13 @@
 
-The focus will be on the visual information communication. To turn raw data sets into understandable knowledge on the explanatory level with a user-centered design. The main focus is on the communication for creating knowledge. 
-
-<figure id="mapusecube" class="text-wrap-right">
-  <img src="img/Map_use_cube.jpg">
-  <figcaption> Map use cube from MacEachren and Kraak </figcaption>
-</figure>
-
-They will be elaborated on to specify why the application makes use of Leaflet. 
-
-
-
-
-<!-- ### Visualization of field-names
-### User requirements
-
-The target group must feel:
-
-- U1 Attracted to use the application
-- U2 Attracted to stay and play around with the application
-- U3 Challenged to explore more
-- U4 Discover the meaning of the field-names in relation to their environment
-- U5 Discover interesting stories and surprising facts about the field-names
-- U6 Understand the field-names and their value
-
-### Functional requirements
-
-- F1 The application must be intuitive and simple to use, so it shows quick and surprising results on the actions of the target group.
-- F2 The application must be technically working in an efficient and error-safe way. User friendly.
-
-### Context requirements
-There are no context requirements for this study.
 
 
 
 
 
 #### Fieldnames preprocessing
-All the data was delivered separate .DAT files and scattered over several folders and sources. 
-n order to work with the files in Qgis all the files needed to be converted to shape-files. This was done in R.  In Qgis, manually the attribute names needed were changed in one standardized name in order to merge all the data together. 
 
-<figure>
-	<img src="img/fieldnames_preprocessing.jpg"/>
-	<figcaption> Flowchart field-name dataset processing </figcaption>
-</figure> 
+For the field-names the data collection has been done in previous studies. For this study only specific data transformations were required and so little data analysis was done.
 
-See scripts in <a class ="xref" href="#">  appendix. $$ </a>
-
-Because this resulted into a lot of overlapping areas, instead, the field-names were all linked to the Kadaster dataset from 1830. So a single layer of polygons with multiple names is the result. This was done by spatially joining the datasets, or joining by the Kadaster ID’s which most of the datasets contained. The ID contained; municipality, sheet map number, parcel number. 
-
-Eventually, the field-names that had no category assigned had to be classified as well. The cadastre field-names and .. were not included in the previous research by the RCE, but were added here, to have more coverage and amount of field-names.
-
-The classification was done in R. See <a class="xref" href=#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
-
-The script  runs through all the field-names and all the possible categories, to match which category was applicable.
-
- While reading few of the names, new ideas for a category came up and added. The category wind direction W.
  
 ####AHN
 The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)
@@ -91,3 +44,22 @@ EPSG28992
  <tr> <td>Top10NL_1rW</td></tr>
 </table>
 Only processing was clipped to the research area. No other preprocessing needed other then was used for the AHN. 
+
+
+### Customer engagement
+In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
+When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
+For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighbourhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
+
+
+7.1. Mood board
+7.2. Categories field-names form RCE
+7.3. AHN tiles downloaded:
+7.4. R sript converting files to shapefile.
+7.5. SQL adjustments fieldnames
+7.6. R script detecting categories
+7.7. Questionnaire for testing the application
+7.8. Variations on the main idea
+7.9. Remarks on the questionnaire
+
+
