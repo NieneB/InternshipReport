@@ -126,7 +126,7 @@ Field-names tells us how the landscape used to look, which soil types, vegetatio
 
 The field-names in Drenthe are called living heritage, which is one of the 4 kinds of cultural heritage categories according to *Volkscultuur* institution;
 
-1.  The physical environment. Including monuments, archeology sites and cultural landscapes.
+1.  The physical environment. Including monuments, archelogy sites and cultural landscapes.
 2.  Paper heritage; Stored in archives and libraries in the form of paper documents, maps and books.
 3.  Object collections, owned and displayed by museums. Only focusing on objects.
 4.  Living heritage; habits, traditions, religions and cultural events that people experience.
@@ -163,9 +163,9 @@ The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] , a
 In <a class="xref" href="#schemeHL"> figure 3 </a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
 (“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
-Examples of data that the geocoder contains are; old toponyms, dissapeard villages, geometries of departments form 1830, ubanisation through out the years, municipalities and their origin ect. 
+Examples of data that the geocoder contains are; old toponyms, disappeared villages, geometries of departments form 1830, urbanisation throughout the years, municipalities and their origin etc. 
 
-The data of the field-names can be regarded as a source of the H&L project. This has to be made uniform the system of the geocoder to eventually be able to build easy web-applications on top of the find API.  This has not been done in this research for the poject was not fully developed at the stage. For the future, the data might be taken up into the H&L project.
+The data of the field-names can be regarded as a source of the H&L project. This has to be made uniform the system of the geocoder to eventually be able to build easy web-applications on top of the find API.  This has not been done in this research for the project was not fully developed at the stage. For the future, the data might be taken up into the H&L project.
 
 ##Geo-visualization
 
@@ -179,12 +179,12 @@ Geo-visualization is a combination of communication, scientific information visu
   <figcaption> Geo processing chain and visualization series </figcaption>
 </figure>
 
-Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, whiled visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In <a class="xref" href="#chain">figure 5</a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
+Geographical visualization can be used for 2 purposes; data exploration and information display. (Cartwright et al., 2004)  By interpreting graphic representations new knowledge can be created and this can be distributed by visual communication. The one is exploratory, while visual communication is explanatory. (Dibiase, Maceachren, Krygier, & Reeves, 1992) In <a class="xref" href="#chain">figure 5</a> the geo processing chain is combined with the series of visualization transformations, showing  the position of visualization as exploration and communication. 
 
-In the following sections, some forms and frameworks of geospatial visalization will be explained. Starting to the first forms of static cartographic visualizations, to dynamic and animated maps. Eventually to web0based map, providing posibilities for interaction and user-centered designs. 
+In the following sections, some forms and frameworks of geospatial visualization will be explained. Starting to the first forms of static cartographic visualizations, to dynamic and animated maps. Eventually to web0based map, providing possibilities for interaction and user-centred designs. 
 
 ###Static geospatial visualization
-Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, color, orientation and shape. After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on color, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture, defining directionality, size and density of texture.
+Geo data has three basic symbols to represent the data, points, lines and polygons. Selecting the right graphic characteristic for data display is a challenging issue. Effective symbolization requires human creativity and judgment.  The classic method for cartography is Bertin’s theory. This provides a classified system with four levels of data measurement and a list of graphic symbols that can be assigned to the visual variables. Bertin's graphic variables are locations, size, density/size, texture, colour, orientation and shape. After Bertin, other researchers have added to this method with more graphic variables. Morrison added more specifications on colour, existing out of hue, saturation and value. MacEachren (1995) added the term clarity, build up from crispness, resolution and transparency. Caivano (1990) adds more dimensions on texture, defining directionality, size and density of texture.
 
 Deciding the right graphic variable to be assigned to a certain type of data, helps the viewer in defining the perceptual properties. For example, ordinal data needs the perception of being ordered, quantitative data of being proportional.  While nominal data needs to be perceived as distinct categories. (Bertin, 2000; Caivano, 1990; Dibiase et al., 1992; MacEachren, 1995; Nöllenburg, 2007)
 
@@ -197,7 +197,7 @@ A few forms of dynamic geo-visualization can be named:
 - Animation
 - Interaction
 
-There are two categories  of dynamic map display; temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization thenKöbben & Yaman. An overview of the possible forms is shown in <a class="xref" href="#catphenom"> table 1</a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  
+There are two categories  of dynamic map display; temporal animation and non-temporal animation. In temporal animation, display time and world time are directly related.  While for non-temporal, no direct relation between display time and world time is present.  Kraak and Klomp give a slightly different categorization then Köbben & Yaman. An overview of the possible forms is shown in <a class="xref" href="#catphenom"> table 1</a>. (Dibiase et al., 1992; Köbben & Yaman, 1996; Nöllenburg, 2007)  
 
 <p id="catphenom" class="table"> Categories of possible animations for dynamic phenomena. </p>
 
@@ -261,7 +261,7 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
 		<td> in size or shape </td>
     </tr>
 	<tr>
-		<td> increase/decrease (inerval ratio) </td>
+		<td> increase/decrease (interval ratio) </td>
 	</tr>
 	<tr>
 		<td> grow, shrink </td>
@@ -301,7 +301,7 @@ Dibase states that dynamic variables can be used to emphasize the location of a 
 
 
 ####Animation
-Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly.Animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation.  Animated maps contain dynamic variables such as scene duration, rate of change, scene order and contain hardly any interactive control. (Kobben and Yaman; MacEachren; Ormeling, 1996) 
+Animated use time to add a visual dimension to the display. The scenes in an animation show the state of the data at one moment accordingly. Animation is a form of spatial-temporal visualizations and contains the two categories; temporal animation and non-temporal animation.  Animated maps contain dynamic variables such as scene duration, rate of change, scene order and contain hardly any interactive control. (Kobben and Yaman; MacEachren; Ormeling, 1996) 
 
 Dynamic animated variables are:
   
@@ -331,7 +331,7 @@ OpenLayers is a library for WMS (tiled layers) and WFS (vector layers). It imple
 
 MapFish, is an open source web mapping framework for building rich web-mapping applications. MapFish provides specific tools for creating web services that allows querying and editing geographic objects. (Steiniger & Hunter, 2013)  (http://mapfish.org/)
 
-Leaflet is a web-map service WMS,that returns geo-referenced rasterized maps or tiles. In this context a map is considered a two-dimensional visualization of features in the common formats jpeg or tiff. Leaflet is open-source JavaScript library for  interactive maps. (http://leafletjs.org)
+Leaflet is a web-map service WMS, that returns geo-referenced rasterized maps or tiles. In this context a map is considered a two-dimensional visualization of features in the common formats jpeg or tiff. Leaflet is open-source JavaScript library for  interactive maps. (http://leafletjs.org)
 
 
 ### Interactive geospatial visualization
@@ -342,18 +342,18 @@ Two main interactive visualization techniques are introduced by Buja et al. form
 - **Focusing individual views.** The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
 
 - **Linking multiple views.** Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
-This stimulates visual thinking because data can be displayed in different ways and be analyzed from different perspectives.
+This stimulates visual thinking because data can be displayed in different ways and be analysed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
 (Nöllenburg, 2007)
 
-### User centered geospatial visualization or Customer engagement
+### User centred geospatial visualization or Customer engagement
 
 <figure class="text-wrap-right" id="hook">
   <img src="img/hookmodel.jpg" width="200px"/>
   <figcaption> Hook model </figcaption>
 </figure>
 
-To engage the target group into a application the hook model will be explained. <a class="xref" href="#hook"> Figure 6. </a> This models explains how a user can become *addicted* to a online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
+To engage the target group into an application the hook model will be explained. <a class="xref" href="#hook"> Figure 6. </a> This models explains how a user can become *addicted* to an online product. First there is a trigger, to make the user want to use the application. This could be either an external (e-mail, advertisement) or internal trigger. When using the product, the user can makes actions for which they have to  be rewarded. If a user invest in the system they will likely stay and keep using the system, for they already put time and effort in that particular system.  With multiple rewards and investments the user will go through the process again, for they get internal triggers to perform more actions. 
 
 
 # The Data
@@ -363,7 +363,7 @@ To engage the target group into a application the hook model will be explained. 
   <figcaption> All fields with a field name. </figcaption>
 </figure>
 
-From the *Rijksdients voor Cultureel Erfgoed* of the Netherlands a dataset with living field-names in Drenthe was supplied. This data contains field geometries that have a field-name, a name or toponym given to the plot or area by the people living in the neighborhood from around 1830. These field-names were derived from studies by Naarding and Wieringa, together with het *Drenthse Archief* and *het Meertens-Instituut*. Old toponyms on old maps, tell us a lot, but here they used another source; the memory of the local inhabitants, where generation after generation the field names keep on living. The polygons where drawn by hand or the names were assigned to plots from the cadastre maps from 1830.
+From the *Rijksdients voor Cultureel Erfgoed* of the Netherlands a dataset with living field-names in Drenthe was supplied. This data contains field geometries that have a field-name, a name or toponym given to the plot or area by the people living in the neighbourhood from around 1830. These field-names were derived from studies by Naarding and Wieringa, together with het *Drenthse Archief* and *het Meertens-Instituut*. Old toponyms on old maps, tell us a lot, but here they used another source; the memory of the local inhabitants, where generation after generation the field names keep on living. The polygons where drawn by hand or the names were assigned to plots from the cadastre maps from 1830.
 
 These field-names contain a lot of information about how the landscape used to look. Because most field-names are based on their direct environment. The most important factors influencing the forming of field-names are ; natural relief, natural water and the vegetation structure. (Spek et al., 2009)
 This information is highly important for nature conservation and heritage preservation. (Spek et al., 2009)
@@ -454,26 +454,26 @@ For the field-names the data collection has been done in previous studies. For t
 
 # Method
 
-<figure id="mehtod" class='text-wrap-left' >
+<figure id="method" class='text-wrap-left' >
   <img src="img/flowchart_Method-01.png" width="400px"/>
   <figcaption>Methodology overview</figcaption>
 </figure>
 
 This research will be a design-oriented research. See <a class="xref" href="#method">figure 9</a> for an overview of the working procedure and where the specific objectives are addressed. 
 First the design objectives are defined for the prototype application (objective 1). With the data provided by the RCE a small data exploration will be conducted to form an idea and make a design. This will process will be more iterative and chaotic then the overview shows. For design, exploration and requirements emerge in a mixed process. 
-The main focus will be builing tre prototype application. (objective 2). Both the front-end and back-end design will be done by the conducting researcher as part of a learning experience for the internship project.
-In the end the prototype will shortly be tested to evealuate the research requirements and goal. (objective 3)
+The main focus will be building the prototype application. (objective 2). Both the front-end and back-end design will be done by the conducting researcher as part of a learning experience for the internship project.
+In the end the prototype will shortly be tested to evaluate the research requirements and goal. (objective 3)
 
 Most creative choices and decisions will be taken by the researcher and her preferences.
 
 ## Sub-objective 1. Finding the design requirements.
 
 Analysis of users, task and context. 
-Indentification of requirements
+Identification of requirements
 Design and prototype
 Test and evaluate
 
-A literature research is done into geo visualization techniques and already available methods. Going from the conventional cartographic techniques to the modern techniques. Including animation and change. Also literature about building geo-web applications and the available techniques will be consulted. Toadd  knowledge and experience from preceding researches to the delepment of the design requirements.
+A literature research is done into geo visualization techniques and already available methods. Going from the conventional cartographic techniques to the modern techniques. Including animation and change. Also literature about building geo-web applications and the available techniques will be consulted. To add  knowledge and experience from preceding researches to the development of the design requirements.
 This can be found in <a class="xref" href="#background-theory"> chapter 2. Background theory </a>
 
  Several objectives will be set  in the following categories:
@@ -484,7 +484,7 @@ This can be found in <a class="xref" href="#background-theory"> chapter 2. Backg
  - User requirements
  - contextual requirements
 
- - Assumptions ( user, context, funtional)
+ - Assumptions ( user, context, functional)
 
  (Verschuren and Hartog, 2005)
  
@@ -497,14 +497,14 @@ This can be found in <a class="xref" href="#background-theory"> chapter 2. Backg
 
 In order to build a prototype the design requirements have to be translated to a design. <a class="xref" href="#"> Figure $$ </a> shows the steps that will be taken in order to develop. First the data will be explored, to get an idea of the field-names. Also the literature provided with the field-names will be used to learn more about them. 
 
-From this several ideas will be produced and the best will be chosen to continue with.  Desisions and choices will be made on the personal preferences of the researcher and her supervisors. 
+From this several ideas will be produced and the best will be chosen to continue with.  Decisions and choices will be made on the personal preferences of the researcher and her supervisors. 
 
-When the idea is settled a front-end and back-end situation for the application have to be developed.  Both will be developed by the researcher.  Decisions and choices will be made on the developed goals and requirements, the background theory, personal preference and experience knowlegde of supervisors.
+When the idea is settled a front-end and back-end situation for the application have to be developed.  Both will be developed by the researcher.  Decisions and choices will be made on the developed goals and requirements, the background theory, personal preference and experience knowledge of supervisors.
  
 The front-end is the presentation layer, so the webpage. A product of HTML, CSS and JavaScript for the web application so that a user can see and interact with them directly. 
 The back-end is the data and data access layer of the application. The products will be a database, a API and the pre-processed data. 
 
-Evetually this will all from the protype-product of this research.
+Eventually this will all from the porotype-product of this research.
 
 ### Data exploration
 
@@ -520,20 +520,20 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 
 Leaflet also has the applicability to install plugins. For letting the user change the background map, the MiniMap plugin was used. 
 
-For building the transect line, d3 is used. A graphic drawing package. The transect line is therefor not a geographic representation but more information display. The geo-data is retained in the underlying data. 
+For building the transect line, d3 is used. A graphic drawing package. The transect line is therefore not a geographic representation but more information display. The geo-data is retained in the underlying data. 
 
 
 ### Back-end
 
-First both client side and server side are build on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
+First both client side and server side are built on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
 
 #### Database
-The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters. 
+The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and raster’s. 
 
-Everything was loaded in the dutch projected coordinate system RD new (EPSG:28992)
+Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
 
 #### API
-A API or application programming interface, is needed to conect the web-application with the data in the PostGis database. 
+A API or application programming interface, is needed to connect the web-application with the data in the PostGis database. 
 For this purpose Brianc node-postgres is used. Done with Node-Postgres for PostgreSQL client for node.js with pure JavaScript bindings. 
 
 ## Sub-objective 3. Evaluating prototype web-application
@@ -547,7 +547,7 @@ Because the objectives were used in defining the statements, it tests if the app
 
 Because there is not a official testing group available, the participants will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  
 
- <a class="xref" href="#QandO">Table $$</a> shows the statements asked and the connection with the desing requirements which are in <a class="xref" href="#" > chapter $$ </a> . The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix $$</a>. 
+ <a class="xref" href="#QandO">Table $$</a> shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#" > chapter $$ </a> . The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix $$</a>. 
 
 <p class="table" id="QandO"> Questions and Objectives </p>
 
@@ -644,12 +644,12 @@ The target group must feel:
 ### Customer engagement
 In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
 When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
-For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighborhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
+For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighbourhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 
 ## Results Sub-objective 2. Building the prototype web-application
 
-The result is a webpage with a geovisualization. Including, 
+The result is a webpage with a geo-visualization. Including, 
 1. a map showing the area, where a line can be drawn to locate the position of the transect line. With navigational functionalities for the map.
 2. A graphic transect line that can be explored. Including information about the field-names. 
 3. An explanation about how the application works.
@@ -657,9 +657,9 @@ The result is a webpage with a geovisualization. Including,
 
 For this is needed some data, about the study area, the field-names, the height and water names. Also additional stories and explanation texts about the meaning and origin of the field-names. Possible additional pictures of the landscape characteristics.
 
-See <a class="xref" href="#method"> figure $$ </a> for the structure of the technical application design.
+See <a class="xref" href="#method2"> figure $$ </a> for the structure of the technical application design.
 
-<figure id="mehtod"  >
+<figure id="method2"  >
   <img src="img/webpage_model.jpg" />
   <figcaption>Prototype application overview</figcaption>
 </figure>
@@ -668,14 +668,14 @@ See <a class="xref" href="#method"> figure $$ </a> for the structure of the tech
 
 Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
 
-<a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The Bult and the Hooge Akker are clearly on higher ground then the fields to the West. Where de zwarte kuil  indicates that it is a lower field.
+<a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The *Bult* and the *Hooge Akker* are clearly on higher ground then the fields to the West. Where de *zwarte kuil*  indicates that it is a lower field.
 
 <figure id="example" class="text-wrap-left"  >
   <img src="img/hoogte_voorbeeld.jpg">
   <figcaption> Field-names example of names with height indication on the height map </figcaption>
 </figure>
 
-For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like 'Bultakker' (bump field) tells up that this field lies higher then its surrounding fields, not what the exact altitude it is.
+For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like *Bultakker* (bump field) tells us that this field lies higher than its surrounding fields, not what the exact altitude it is.
 
 ### The idea
 
@@ -683,7 +683,7 @@ The field-name data sets are static data, but will be displayed dynamically and 
 The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
 There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
 
-The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the hight on the line and the position on the map of that specific point so the user can link between the two presentations. 
+The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the height on the line and the position on the map of that specific point so the user can link between the two presentations. 
 
 
  Showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
@@ -693,7 +693,7 @@ In order to include this in the visualization, showing the polygons on a map won
 Interactivity will be added to the transect line, letting the user define the transect line themselves and explore the different objects located on and around the transect line.
 
 #### Mood board
-For design ideas and color use a mood board was made. Pictures from the Internet combined with fonts. Search terms were, living heritage, cultural heritage, transect , old transect map and more.
+For design ideas and colour use a mood board was made. Pictures from the Internet combined with fonts. Search terms were, living heritage, cultural heritage, transect , old transect map and more.
 One of the main inspirations was the following image:
 
 <figure>
@@ -707,7 +707,7 @@ Complete mood board; see <a class="xref" href="#mood-board">appendix  $$ </a>
 
 ### Back-end 
 
-<a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API wich requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+<a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
 
 The next paragraphs explain the database, the API, the SQL query and the website. 
 
@@ -722,7 +722,7 @@ Some screenshots of how it looks. The first <a class = "xref" href="" > figure $
   <figcaption>Welcome screen </figcaption>
 </figure>
 
-The next <a class = "xref" href="" > figure $$ </a> shows how the screen looks when entering the application. A example line is already given to show the user what is possible. 
+The next <a class = "xref" href="" > figure $$ </a> shows how the screen looks when entering the application. An example line is already given to show the user what is possible. 
 
 <figure>
   <img src="img/mapopeningscreen.png">
@@ -735,7 +735,7 @@ The image after that shows the information panel that will appear when the mouse
 <figure>
   <img src="img/mapspanel.png">
   <img src="img/mapinfo.png">
-  <figcaption>Map functionalities with mouseover. </figcaption>
+  <figcaption>Map functionalities with mouse over. </figcaption>
 </figure>
 
 The user can click on the line button to start drawing a line. 
@@ -750,7 +750,7 @@ The user can click on the line button to start drawing a line.
   <figcaption>Example interesting spot </figcaption>
 </figure>
 
-## Results Sub-objectie 3. Evaluating the web-application
+## Results Sub-objective 3. Evaluating the web-application
 ### Outcome questionnaire
 $$ people were asked to use the application and fill in the small questionnaire. The graph below shows the outcome of each question. With 5 being positive and 1 being negative.
 Question 2 about if people were triggered to perform multiple actions was answered the most positive. Also question 5 if the user found the information surprising and interesting scored high.  Meaning that the application was perceived interesting and the user lingered around to discover more.
@@ -772,7 +772,7 @@ In general, the conducting researcher did all steps of the process herself, and 
 
 ## Design requirements
 
-The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to color, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
+The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to colour, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
 
 Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow. For the field-names there are probably a variety of forms to present them. From simply displaying the names on a map, to animated dynamic maps. 
 ## Data
@@ -790,7 +790,7 @@ Height is the recent height, is this still the same as in 1830?? A lot has chang
 The water topologies used are from 2015. Therefore they do not show correlation with the field names. Some lakes disappeared and new ones appeared. The default background map is a map from 1830, showing a good reference for the field-names. But on the transect line, water bodies show up that cannot be seen on this base layer. When switching to the base layer from the current map, the water bodies do correlate but the field-names are not referenced. 
 
 ## Building the prototype
-Data exploration gave mutlitple ideas, no testing was done which idea would prove the best results. Soly made on personal preferences. 
+Data exploration gave multiple ideas, no testing was done which idea would prove the best results. Solley made on personal preferences. 
 
 ###Front-end
 
@@ -809,7 +809,7 @@ Also leaflet proved to be quick and simple, providing the basic needs for a map 
 The database and API do slow down the process. Because the AHN data is really detailed and every 10 meters a point is asked to intersect, the process goes really slow. This could be looked into to improve. 
 
 ## Evaluating
-Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. The advise and comments received in the end, where very useful but were not implemented any more. 
+Though, after the first concept of the application, the time was not found to conduct a good testing round and adjust the application to this. The advice and comments received in the end, where very useful but were not implemented any more. 
 
 The test with the questionnaire was conducted very quickly and not thoroughly. The statements posed may be too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is no saying. The participants are influenced by that they like heritage and understand the project in the bigger picture. participants are biased. 
 Not enough participants. 
@@ -842,7 +842,7 @@ Because there are sufficient recommendations to be done to improve the web appli
 
 # Conclusion
 Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
-Not the best way to visualize the correlation which the field-names have to their surrounding.
+Not the best way to visualize the correlation which the field-names have to their surroundings.
 
 
 
@@ -1205,12 +1205,12 @@ ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
 
 For also on this main idea some variations can be made, these will be listed here.
 
-- Soil properties as colors of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
-Giving colors or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
+- Soil properties as colours of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
+Giving colours or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
 
 - Pop-ups with explanations and texts. Linking field-names to textual explanation, adding pictures of the surroundings and landscape characteristics. Vegetation types, animal occurrence.
 
-- Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line.Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field name is connected.
+- Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line. Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field name is connected.
 
 - Creating a small 3d landscape by adding multiple transect lines, stacked in front of each other.
 
@@ -1249,4 +1249,4 @@ Giving colors or patterns to the fields according to the soil property. Like a *
 - Continue!
 - Unpredictable behaviour with drawing the line.
 - Can't get the results good on the screen.
-- Text at the bottom is not readable. 
+- Text at the bottom is not readable.
