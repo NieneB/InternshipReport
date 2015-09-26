@@ -477,7 +477,7 @@ After mergeing the datasets it resulted into a lot of overlapping areas, so inst
 
 Eventually, the field-names that had no category assigned, in the previous research by the RCE, had to be classified as well. This to have more coverage and amount of field-names.
 
-The classification was done in R. See <a class="xref" href=#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
+The classification was done in R. See <a class="xref" href="#"> appendix $$ </a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
 
 The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table $$ </a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="categories-field-names-form-rce">  appendix $$ </a> a total overview of the categories and the names and alternative names can be found.
 
@@ -657,59 +657,51 @@ The target group must feel:
 
 ### Assumptions
 
-### Customer engagement
-In the field-names application the external trigger would be given by heritage institutions or environmental institutions. Informing the citizens about what interesting information there is to find about the Drentse surroundings. This could be in newsletter, pamphlets, online on their websites or even commercials. 
-When on the site the trigger is the button, to press and go to the map. The action is to draw a line on the map of the users personal interest. After this the transect line is drawn and a lot of interesting information is displayed for the user to explore. This is called the reward. So in order to make the reward worthwhile, the information and transect line have to be visual attractive enough and contain interesting and surprising information. 
-For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighbourhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
+
 
 
 ## Results Sub-objective 2. Building the prototype web-application
 
-The result is a webpage with a geo-visualization. Including, 
-1. a map showing the area, where a line can be drawn to locate the position of the transect line. With navigational functionalities for the map.
-2. A graphic transect line that can be explored. Including information about the field-names. 
-3. An explanation about how the application works.
-4. Other interactive features to navigate through the webpage.
-
-For this is needed some data, about the study area, the field-names, the height and water names. Also additional stories and explanation texts about the meaning and origin of the field-names. Possible additional pictures of the landscape characteristics.
-
-See <a class="xref" href="#method2"> figure $$ </a> for the structure of the technical application design.
-
-<figure id="method2"  >
-  <img src="img/webpage_model.jpg" />
-  <figcaption>Prototype application overview</figcaption>
-</figure>
-
 ### Data exploration
 
-Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, the geographical surrounding in relation to the name has to be shown. Because the field-names are already categorized by a previous study, easily this distinction can be made.
+Because the origin and meaning of field-names are mainly influenced by the geography of its direct environment, like water bodies, streams, soil properties and altitude in relation to its surroundings. In order to visualize this relation, the geographical surrounding in relation to the name has to be shown. 
 
-<a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. Though less clear then the examples above, some fields do indicate small increases or decreases in the in relation to the area around. The *Bult* and the *Hooge Akker* are clearly on higher ground then the fields to the West. Where de *zwarte kuil*  indicates that it is a lower field.
+Several ideas came up to do this, as many characteristics are of influence, the following ideas were shortly explored:
+
+- Showing soil related field names on a soil map. A current or historic soil map.
+- Showing height related field names on a height map. 
+- Showing ground water levelds in relation to field names about water, swomps and soil types. 
+- Vegetation types, present on a field in the current situation vs what the fieldname tells us about the historic vegetation.
+- Showing names with relation to wind direction, in their position relative to the closest town or city.
+
+
+<a class="xref" href="#example">Figure $$</a> shows some fields with names related to height. 
+Some fields do indicate small increases or decreases in the in relation to the area around. The *Bult* and the *Hooge Akker* are clearly on higher ground then the fields to the West. Where de *zwarte kuil*  indicates that it is a lower field.
 
 <figure id="example" class="text-wrap-left"  >
   <img src="img/hoogte_voorbeeld.jpg">
   <figcaption> Field-names example of names with height indication on the height map </figcaption>
 </figure>
 
-For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like *Bultakker* (bump field) tells us that this field lies higher than its surrounding fields, not what the exact altitude it is.
 
 ### The idea
+For the names are human invented they only reach as far as the naked eye could see.  The relation of a field with a name can only be shown in relation to the direct environment, and not on a general overview map. For example, a name like *Bultakker* (bump field) tells us that this field lies higher than its surrounding fields, not what the exact altitude it is.
+Therefore the main idea will be;
 
-The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) 
-The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application. The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
-There will be a set of navigation controls available to the user. Also multiple background layers, form which the user can choose.
+>  Showing the field names in relation to the height. By doing this, it includes names related to altitude, but also water and swamps, for lower areas are more wet then higher areas. As well as vegetation type related names,  which often depend on wet or dry situations or soil properties that depend on altitude. 
 
-The information will be shown in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) The brushing technique is used to highlight the height on the line and the position on the map of that specific point so the user can link between the two presentations. 
+In order to include this in the visualization, showing the polygons on a map won't be sufficient. Chosen is to draw a transect of the height data and indicate the names of the fields on this. So the information will be shown on a simple map and in a transect map. So the same information is shown in multiple views and from different perspectives. (*linking*) 
 
+The field-name data sets are static data, but will be displayed dynamically and interactive. It will let the user explore, and re-discover the information themselves, called *guided discovery*. (Nöllenburg, 2007) Mouse-over actions will show information and stories about the origin of the names. The brushing technique will be used to highlight the height on the line and the position on the map of that specific point so the user can link between the two presentations. 
 
- Showing the field names on a height map. By doing this, it includes also names related to water and swamps, for lower areas are more wet then higher areas. Also vegetation types, dependent on wet or dry situations, will be included for their is a relation.
-
-In order to include this in the visualization, showing the polygons on a map won't be sufficient. Chosen is to draw a transect of the height data and indicate the names of the fields on this.
+ The static display of the field-names will be on the map as simple polygons, to indicate their position and show the user the spatial dimension, the location and sizes of the fields.
+There will be a set of navigation controls for the map available to the user. Also multiple background layers, form which the user can choose for extra information.
+The field names are historic but do not contain a change in time. Therefore the time bar had no relevance in the application.
 
 Interactivity will be added to the transect line, letting the user define the transect line themselves and explore the different objects located on and around the transect line.
 
 #### Mood board
-For design ideas and colour use a mood board was made. Pictures from the Internet combined with fonts. Search terms were, living heritage, cultural heritage, transect , old transect map and more.
+For the layout, ideas and colour use a mood board was made. Including inspiration pictures from the Internet. Search terms used are:** living heritage, cultural heritage, transect  and old transect map**
 One of the main inspirations was the following image:
 
 <figure>
@@ -720,16 +712,24 @@ One of the main inspirations was the following image:
 
 Complete mood board; see <a class="xref" href="#mood-board">appendix  $$ </a>
 
-
-### Back-end 
-
-<a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
-
-The next paragraphs explain the database, the API, the SQL query and the website. 
-
+Custom fonts were explored to add to the feeling of the design. Website used is www.fontsquirrel.com
+. 
 
 ### Front-end
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen</a>.
+
+On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in paragraph $$$. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+
+The next paragraphs explain the database, the API, the SQL query and the website. 
+
+The result is a webpage with a geo-visualization. Including, 
+1. a map showing the area, where a line can be drawn to locate the position of the transect line. With navigational functionalities for the map.
+2. A graphic transect line that can be explored. Including information about the field-names. 
+3. An explanation about how the application works.
+4. Other interactive features to navigate through the webpage.
+
+For this is needed some data, about the study area, the field-names, the height and water names. Also additional stories and explanation texts about the meaning and origin of the field-names. Possible additional pictures of the landscape characteristics.
+
 
 Some screenshots of how it looks. The first <a class = "xref" href="" > figure $$ </a> is the welcome screen. Where information about the field-names is given and the explanation of the how the application works. If the user is ready they can press the button, to go to the map and start the application. 
 
@@ -765,6 +765,19 @@ The user can click on the line button to start drawing a line.
   <img src="img/munnikhemham.png">
   <figcaption>Example interesting spot </figcaption>
 </figure>
+
+
+### Back-end 
+
+<a class="xref" href=""> Figure $$ </a> shows the overall setup of the system. 
+
+See <a class="xref" href="#method2"> figure $$ </a> for the structure of the technical application design.
+
+<figure id="method2"  >
+  <img src="img/webpage_model.jpg" />
+  <figcaption>Prototype application overview</figcaption>
+</figure>
+
 
 ## Results Sub-objective 3. Evaluating the web-application
 ### Outcome questionnaire
