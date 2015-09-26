@@ -160,7 +160,7 @@ The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] , a
   <figcaption> Scheme of Heritage and Location project : Products and Services. </figcaption>
 </figure>
 
-In <a class="xref" href="#schemeHL"> figure 3 </a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
+In <a class="xref" href="#schemeHL"> figure 4 </a> the overview of the H&L project is shown. Starting form the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing funcitons to search through time, location, bounding box, source, toponyms etc. 
 (“erfgeo,” n.d., “Erfgoed & Locatie,” n.d.)
 
 Examples of data that the geocoder contains are; old toponyms, disappeared villages, geometries of departments form 1830, urbanisation throughout the years, municipalities and their origin etc. 
@@ -430,13 +430,11 @@ A literature research is done into geo visualization techniques and already avai
 This can be found in <a class="xref" href="#background-theory"> chapter 2. Background theory </a>
 
  Several objectives will be set  in the following categories:
+ 
  - Design goals
- 
- 
  - Functional requirements
  - User requirements
  - contextual requirements
-
  - Assumptions ( user, context, functional)
 
  (Verschuren and Hartog, 2005)
@@ -574,7 +572,7 @@ Because the objectives were used in defining the statements, it tests if the app
 Because there is not a official testing group available, the participants will be colleagues of the Waag Society, the heritage institutions of the Heritage and Location project and possible, classmates and/or family and friends. This to have a broad general public.  
 
  <a class="xref" href="#QandO">Table 5 </a> 
- shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#results-sub-objective-1.-the-design-requirements" > chapter 5.1  </a> 
+ shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#results-sub-objective-1-the-design-requirements" > chapter 5.1  </a> 
  . The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix $$</a>. 
 
 <p class="table" id="QandO"> Questions and Objectives </p>
@@ -643,9 +641,7 @@ The target group will be defined as the common citizen, living in Drenthe and sh
 ### Design goals
 
 1. The goal is to preserve the living heritage names of Drenthe, which are mostly stored in people’s memory and so will disappear.
-
 2. Give people the possibility to explore them, discover them. For names cannot be found in the real surroundings, only in people’s memory and now given a place to *exist*.
-
 3. Getting the stories out of the raw data and show people the surprising knowledge that stays hidden. Help people explore intangible cultural heritage and so the history of the Dutch landscape. Engage people in something interesting about the landscape.
 
 ### User requirements
@@ -727,11 +723,12 @@ Custom fonts were explored to add to the feeling of the design. Website used is 
 
 ### Front-end
  
-The result is a webpage with a geo-visualization. Including, 
-1. a map showing the area, where a line can be drawn to locate the position of the transect line. With navigational functionalities for the map.
+The result is a webpage with a geo-visualization. Including: 
+
+1. A map showing the area, where a line can be drawn to locate the position of the transect line. With navigational and drawing functionalities for the map.
 2. A graphic transect line that can be explored. Including information about the field-names. 
-3. An explanation about how the application works.
-4. Other interactive features to navigate through the webpage.
+3. A panel showing the information about the field names.
+4. An opening page with explanation about how the application works.
 
 The web application can be found on: <a href="http://maptime.waag.org/veldnamen/"> maptime.waag.org/veldnamen </a>.
 
@@ -785,7 +782,7 @@ On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coord
 
 In <a class="xref" href="#"> appendix $$ </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
 
-The total code can be found on https://github.com/NieneB/veldnamen .
+The total code can be found on <a href=" https://github.com/NieneB/veldnamen/">  https://github.com/NieneB/veldnamen</a>.
 
 The database contains the following data:
 
