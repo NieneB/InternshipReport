@@ -1394,7 +1394,7 @@ This is all send back as one complete GeoJSON response.
 
 <h2 class ="nocount">Questionnaire for testing the application </h2>
 
-![](img\Vragenlijst Veldnamen Applicatie.jpg) 
+![](img/Vragenlijst Veldnamen Applicatie.jpg) 
 
 <h2 class ="nocount">  Mood board </h2>
 
