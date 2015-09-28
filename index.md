@@ -813,16 +813,15 @@ On average the user requirements scored a 3.66. The functional requirements scor
 For the total answer overview see <a class="xref" href="#answers-on-the-questionnaire"> appendix 10</a> and the extra remarks made in <a class="xref" href="#">appendix 11.</a>
 
 # Discussion
-The short time span of the project resulted in a product that is not finished completely, only a rough prototype was produced. the conducting researcher did all steps of the process herself, resulting in time shortage and a lack of specific technical skills and knowledge. The iterative process of a good design oriented research,had to be followed several times in order to come to a user centred design wit a technical working good application. Overall, the first results were promising and the main idea came forth from the results.
+The short time span (4 months) to conduct the research, resulted in a product that is not finished completely. Only a rough prototype was produced. Because the conducting researcher did all steps of the process herself, this resulted in time shortage and a lack of specific technical skills and knowledge. The iterative process of a good design oriented research,had to be followed several times in order to come to a user centred design wit a technical working application. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
+Overall, the first results were promising and the main idea came forth from the results.
 
 Per sub-objective the discussion will be given.
 
 ## Discussion Sub-objective 1. The design requirements
 Not much time was invested in specifying the design objectives and requirements. 
+No research was conducted into the target group.
 
-The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to colour, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
-
-Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow. For the field-names there are probably a variety of forms to present them. From simply displaying the names on a map, to animated dynamic maps. 
 
 ## Discussion on the data
 The data was provided by the RCE, because this all came in a unknown file structure with no meta-data behind the various datasets, the background and quality of the data taken into consideration for this research. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. A simple sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the script which starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in<a class="xref" href="#categories-field-names-form-rce"> appendix 4 </a> . Overall no human cognition came to pass for the process, which makes the classification crude. But the focus was more on the technical development of the application then the correctness of the background information. 
@@ -830,8 +829,8 @@ The data was provided by the RCE, because this all came in a unknown file struct
 The professional knowledge about the data was with the RCE, therefore the focus was more on the visualization and not improving the information in the data. A lack of professional knowledge about the field-names was kept at a low level. 
 
 
-Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data this was still too detailed. Using pixels of 0.5 meter resolution is not really needed for the visualization. The current dataset did provide a good idea for hight indication. 
-
+<!-- Also the AHN processing was quite crude. The no value pixels where crudely run through a default tool of Qgis to fill up. Other possibilities were using another version of the AHN or calculating the water bodies differently. On the other hand for the goal of the data this was still too detailed. Using pixels of 0.5 meter resolution is not really needed for the visualization. The current dataset did provide a good idea for hight indication. 
+ -->
 On the other hand the correspondence between the AHN and the field-names can be discussed for the height is the recent height, while the fields originate from 1800. The question lingers if the altitude difference are still the same as in 1830? A lot could have changed since.The same is valid for the water topologies and the different background maps used. Which all originate from 2015. Therefore they do not show the correct correlation with the field names. Some lakes disappeared and new ones appeared.The same as train and road tracks. 
 The default background map is a map from 1830, showing a good reference for the field-names. But on the transect line, water bodies show up that cannot be seen on this base layer. When switching to the base layer from the current map, the water bodies do correlate but the field-names are not referenced. 
 
@@ -839,12 +838,17 @@ The default background map is a map from 1830, showing a good reference for the 
 Data exploration gave multiple ideas, no testing was done which idea would prove the best results. Solely made on personal preferences. 
 
 ###Front-end
+
+The theoretical framework did bring in some nice techniques that are found back in the application. Like the brushing and linking techniques. However when it comes to colour, patterns, symbol or size selection it was more done in a subjective manner then looking at the theory. It is hard to follow a strict theoretical framework and every visualization and story to be told is an individual case. and so, needs to be designed and created individual. 
+
+Geo-visualization is so broad and there are so many ways in which a dataset can be described that it is not possible to set up a framework in steps to follow. For the field-names there are probably a variety of forms to present them. From simply displaying the names on a map, to animated dynamic maps. 
+
+###Back-end
 The technology to build the web application was a restricting factor in the implementation of some ideas. For example, displaying the total length of the line, was a hard technical trick and therefore not finished or worked out. Also the panel with the extra base-layers was supposed to show all the time. But the plug-in for the miniMap did not support this and there was no time to work around it. 
 On the positive site, the D3 package provided good and simple ways to work with the graphical display of the transect line. It is an easy tool and draws simple SVG formats in the browser with the possibility to animate it easily. 
 Also leaflet proved to be quick and simple, providing the basic needs for a map and displaying the geoJSON of the field-names on it. The drawing plug-in was also easily edited so only the possibility for drawing a line was enabled. Though, changing the text from English to Dutch was more hard and therefore also not implemented in the short time span. 
 Still some minor defaults can be noticed but the overall picture shows a good first idea of the application. 
 
-###Back-end
 The database and API slow down the process of plotting the transect line. The AHN data is too detailed for every 10 meters a point is asked to intersect. This makes the process really slow, especially when long lines are requested.
 
 ## Discussion Sub-objective 3. Evaluating the web-application
@@ -855,33 +859,30 @@ The test with the questionnaire was conducted very quickly and not thoroughly. T
 Overall the application was perceived attractive and beautiful. 
 
 # Conclusion
-Every geo-visualization needs to be looked at individually and specific for that type. A type of story must be selected to tell. 
-Not the best way to visualize the correlation which the field-names have to their surroundings.
+Although the overall time span of the project was too short, a first prototype application was developed. Which already shows the potential of explaining the field-names in correlation to its direct environment.
+There are many more possibilities of visualization to tell the same story. But one type of story had to be selected to tell and develop. If this was the best way to tell the story of the field-names can only be tested if multiple visualizations are developed and compared. Every geo-visualization needs to be looked at individually and developed specifically for the story it needs to tell.
+There are many recommendations to be done on the technical and design part of the prototype. The next section shows some ideas and comments that can easily be implemented when more time was available. 
 
-## Recommendations
-Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
- One of the new ideas, was splitting up the screen in 3 parts. Firs a screen with information, then scroll through to the next screen, where the user can draw a line. If the line is loaded, a new screen is show with the transect line and the information behind it. If the user wants to go back to either the explanation, or drawing a new line, they can simply scroll up and start over again. This form of websites is called a carousel and starts to become more popular. 
+## Recommendations on the application
 
- Next to that, the user doesn't see a *waiting sign* yet. For the experience of the user they need to know that something **is** happening after their action. Now it looks like nothing goes on. 
-more specific stories needed behind the field-names.
-Scale is needed
+There are sufficient recommendations to be done to improve the web application. Some are extra ideas, that didn't receive the time to be implemented yet and others are recommendations done by the test group. 
 
-Because there are sufficient recommendations to be done to improve the web application, they are listed here below. Some are extra ideas, that didn't receive the time to be implemented. Others are recommendations done by the test group. 
+One idea was split the overall layout of the web-page, up in 3 screen parts. First a screen with information, then scroll through to the next screen, where the user can draw a line. If the line is loaded, a new screen is show with the transect line and the information behind it. If the user wants to go back to either the explanation, or drawing a new line, they can simply scroll up and start over again. This form of websites is called a carousel and starts to become more popular. 
 
-* Add more symbols and information behind it.
-* Make the application suitable for multiple browsers.
-* Let the user invest, possible idea: Draw a field and add a field name.
-* Implement more of the thought up ideas to make it more interesting.
-* Add waiting sign while database query is running
-* Make the extra map layers visible always
-* Restructure the web page into a carousel. Giving the information and maps more space on the screen and is for the user more easy to navigate between the different aspects of the application.
-* Lower the water body areas in the AHN dataset for a more beautiful and clear display on the transect line.
+A essential thing to be added is a *waiting sign*. Because the application is rather slow, and the user doesn't see a *waiting sign* yet. The user experiences this now as nothing is happening after their actions. The user they need to know that something **is** happening and will soon get a reward.
+
+Overall, the information in form of text, was not complete. More specific stories  behind the field-names are needed to make it more interesting. Also, images, indicating vegetation types, soil types or any other object related to the field-names, are missing. It will make the transect-line more interesting and appealing.
+
+- The map and transect line need scale indication.
+- Make the application suitable for multiple browsers.
+* Make the extra map layers always visible in front.
 * Find water body data from 1830 instead of 2015. 
-* Make the process more quick by decreasing the level of detail in the data. 
-
+* For user investment, let the user draw a field and add a field-names they know, themselves.
+- Make the water bodies more ecstatically correct, by lowering them beneath the ground-level and fill with blue. 
 
 
 <h1 class ="nocount">References</h1> 
+
 <div id="bib">
  <p> <b>Actueel Hoogtebestand Nederland.</b>  (n.d.). AHN - Actueel Hoogtebestand Nederland - homepage [overzichtspagina]. Retrieved July 13, 2015, from http://www.ahn.nl/index.html</p>
  
@@ -1394,7 +1395,7 @@ This is all send back as one complete GeoJSON response.
 
 <h2 class ="nocount">Questionnaire for testing the application </h2>
 
-![](img/Vragenlijst Veldnamen Applicatie.jpg) 
+![](img\Vragenlijst Veldnamen Applicatie.jpg) 
 
 <h2 class ="nocount">  Mood board </h2>
 
