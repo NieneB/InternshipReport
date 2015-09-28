@@ -52,14 +52,50 @@ When on the site the trigger is the button, to press and go to the map. The acti
 For the long term a investment in the field-name application could be the adding of own field-names. So people that know some old field-names or have current names for particular areas of their neighbourhood can draw them and save them to the system. Contributing to the conservation of the living heritage of field names. 
 
 
-7.1. Mood board
-7.2. Categories field-names form RCE
+1. R sript converting files to shapefile.
+2. SQL adjustments fieldnames
+3. R script detecting categories
+4. Categories field-names form RCE
+5. leaflet initializing 
+6. shape to psql
+7. request response
+8. Questionnaire for testing the application
+9. Mood board
+
+10. Answers questionairre
+11. Remarks on the questionnaire
+
+
 7.3. AHN tiles downloaded:
-7.4. R sript converting files to shapefile.
-7.5. SQL adjustments fieldnames
-7.6. R script detecting categories
-7.7. Questionnaire for testing the application
 7.8. Variations on the main idea
-7.9. Remarks on the questionnaire
+
+
+
+<h2 class ="nocount">AHN tiles downloaded: </h2>
+
+ahn2_5_07cz1.tif	ahn2_5_12en1.tif
+ahn2_5_07cz2.tif	ahn2_5_12en2.tif
+ahn2_5_07dz1.tif	ahn2_5_12ez1.tif
+ahn2_5_07dz2.tif	ahn2_5_12ez2.tif
+ahn2_5_11fz2.tif	    ahn2_5_12fn1.tif
+ahn2_5_12an1.tif	ahn2_5_12fn2.tif
+ahn2_5_12an2.tif	ahn2_5_12fz1.tif
+ahn2_5_12az1.tif	ahn2_5_12fz2.tif
+ahn2_5_12az2.tif	ahn2_5_12gn1.tif
+ahn2_5_12bn1.tif	ahn2_5_12gn2.tif
+ahn2_5_12bn2.tif	ahn2_5_12gz1.tif
+ahn2_5_12bz1.tif	ahn2_5_12gz2.tif
+ahn2_5_12bz2.tif	ahn2_5_12hn1.tif
+ahn2_5_12cn1.tif	ahn2_5_12hn2.tif
+ahn2_5_12cn2.tif	ahn2_5_12hz1.tif
+ahn2_5_12cz1.tif	ahn2_5_17bn2.tif
+ahn2_5_12cz2.tif	ahn2_5_17en1.tif
+ahn2_5_12dn1.tif	ahn2_5_17en2.tif
+ahn2_5_12dn2.tif	ahn2_5_12en1.tif
+ahn2_5_12dz1.tif	ahn2_5_12en2.tif
+ahn2_5_12dz2.tif	ahn2_5_12ez1.tif
+ahn2_5_12fn1.tif	  ahn2_5_12ez2.tif
+
+
 
 
