@@ -856,7 +856,7 @@ Though, after the first concept of the application, the time was not found to co
 
 The test with the questionnaire was conducted very quickly and not thoroughly. The statements posed may be too positively asked. 5 levels might be giving the people an opportunity of choosing 3 which is too neutral. The participants were biased and influenced by that they like heritage and understand the project in the bigger picture. More participants were needed and in the target group description. 
 
-Overall the application was perceived attractive and beautiful. 
+Overall the application was perceived attractive and beautiful. As the scores of the questionnaire are on the positive side. The functionality scored the lowest as the user requirements scored slightly higher. 
 
 # Conclusion
 Although the overall time span of the project was too short, a first prototype application was developed. Which already shows the potential of explaining the field-names in correlation to its direct environment.
@@ -872,6 +872,8 @@ One idea was split the overall layout of the web-page, up in 3 screen parts. Fir
 A essential thing to be added is a *waiting sign*. Because the application is rather slow, and the user doesn't see a *waiting sign* yet. The user experiences this now as nothing is happening after their actions. The user they need to know that something **is** happening and will soon get a reward.
 
 Overall, the information in form of text, was not complete. More specific stories  behind the field-names are needed to make it more interesting. Also, images, indicating vegetation types, soil types or any other object related to the field-names, are missing. It will make the transect-line more interesting and appealing.
+
+Some other small recommendations are:
 
 - The map and transect line need scale indication.
 - Make the application suitable for multiple browsers.
