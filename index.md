@@ -467,15 +467,15 @@ All the field-name data was delivered in separate .DAT files and scattered over 
 	<figcaption> Flowchart field-name dataset processing </figcaption>
 </figure> 
 
-For scripts see the <a class ="xref" href="#r-sript-converting-files-to-shapefile">appendix 1, 2 and 3.</a>
+For scripts see the <a class ="xref" href="#A1">appendix 1, 2 and 3.</a>
 
 After merging the datasets it resulted into a lot of overlapping areas, so instead,  the field-names were all linked to the Kadaster dataset from 1830. Now a single layer of polygons with multiple names is the result. This was done by spatially joining the datasets, or joining by the Kadaster ID’s which most of the datasets contained. The ID contained; municipality, sheet map number, parcel number. 
 
 Eventually, the field-names that had no category assigned, in the previous research by the RCE, had to be classified as well. This to have more coverage and amount of field-names.
 
-The classification was done in R. See <a class="xref" href="#r-script-detecting-categories"> appendix 3</a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
+The classification was done in R. See <a class="xref" href="#A3"> appendix 3</a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
 
-The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table 4</a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="categories-field-names-form-rce">  appendix 4 </a> a total overview of the categories and the names and alternative names can be found.
+The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table 4</a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="#A4">  appendix 4 </a> a total overview of the categories and the names and alternative names can be found.
 
 <p class="table" id="field-name-cat"> Field-name categories </p>
 
@@ -538,7 +538,7 @@ Leaflet currently compete with OpenLayers only with respect to the display of ma
 
 Leaflet also has the applicability to install plug-ins. The MiniMap plug-in lets the user change the background map, and Leaflet Draw enables the creation of lines, polygons and points by the user.
 
-See <a class="xref" href="#leaflet-map-initializing"> appendix 5</a> for the Leaflet map initializing code.
+See <a class="xref" href="#A5"> appendix 5</a> for the Leaflet map initializing code.
 
 ### Back-end
 First both client side and server side are built on one computer as a single seat set-up, in order to develop and test the processes. Once the desired result is achieved, the prototype application will be moved to a server with a database. 
@@ -546,10 +546,10 @@ First both client side and server side are built on one computer as a single sea
 #### Database
 The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters. 
 
-First, the data needed for the application was downloaded and pre-processed. <a class="xref" href="#ahn-tiles-downloaded:"> appendix 6 and 7 </a> $$ shows the pre-processing for the AHN2 data and the water topologies. 
+First, the data needed for the application was downloaded and pre-processed. <a class="xref" href="#A6"> appendix 6 and 7 </a> shows the pre-processing for the AHN2 data and the water topologies. 
 The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000. Only the water bodies were used. 
 
-After pre-processing all the , data was loaded in the database with a dutch projected coordinate system RD new (EPSG:28992) See <a class="xref" href="#loading-data-in-the-database"> appendix 8 </a> for the Shp2psql and Raster2psql lines used. 
+After pre-processing all the data was loaded in the database with a dutch projected coordinate system RD new (EPSG:28992) See <a class="xref" href="#A8"> appendix 8 </a> for the Shp2psql and Raster2psql lines used. 
 
 #### API
 A API or application programming interface, is needed to connect the web-application with the data in the PostGis database.  For this purpose Brianc Node-Postgres is used. Node-Postgresis a PostgreSQL client for node.JS with pure JavaScript bindings. 
@@ -559,7 +559,7 @@ For more info see:
 - https://github.com/brianc/node-postgres
 - https://nodejs.org/about/
 
-See <a class="xref" href="#request-response-for-transect-line"> appendix 9 </a> for the API request and response lines. 
+See <a class="xref" href="#A9"> appendix 9 </a> for the API request and response lines. 
 The request makes use client response on Leaflet Draw.  The response is send back to JS and handled with D3.  Because Leaflet projects in WGS84 (EPSG:4326) the SQL query translates the coordinates to RDnew for intersection with the data in the database. In the end of the SQL query, it transforms it back to WGS84 in order to project the line correctly on the leaflet map again. 
 
 ## Method Sub-objective 3. Evaluating the web-application
@@ -575,7 +575,7 @@ Because there is not a official testing group available, the participants will b
 
 <a class="xref" href="#QandO">Table 5 </a> 
 shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#results-sub-objective-1-the-design-requirements"> chapter 5.1  </a> 
-The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix 10</a>. 
+The complete questionnaire can be found in <a class="xref" href="#A10"> appendix 10</a>. 
 
 <p class="table" id="QandO"> Questions and Objectives </p>
 
@@ -721,7 +721,7 @@ One of the main inspirations was the following image:
   <p>*Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg *</p>
 </figure>
 
-Complete mood board; see <a class="xref" href="#mood-board">appendix 11.</a>
+Complete mood board; see <a class="xref" href="#A11">appendix 11.</a>
 
 Custom fonts were explored to add to the feeling of a old map to the design. Old font was tried but made the names hard to read. So changed back to an easier to read font. Website used is www.fontsquirrel.com
 
@@ -783,9 +783,9 @@ See <a class="xref" href="#method2"> figure 19. </a> for the overall set-up of t
   <figcaption>Prototype application overview</figcaption>
 </figure>
 
-On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href="#request-response-for-transect-line"> appendix 9 </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href="#A9"> appendix 9 </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
 
-In <a class="xref" href="#request-response-for-transect-line"> appendix 9 </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
+In <a class="xref" href="#A9"> appendix 9 </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
 
 The total code can be found on <a href=" https://github.com/NieneB/veldnamen/">  https://github.com/NieneB/veldnamen</a>.
 
@@ -811,7 +811,7 @@ On average the user requirements scored a 3.66. The functional requirements scor
   <figcaption> Results questionnaire </figcaption>
 </figure>
 
-For the total answer overview see <a class="xref" href="#answers-on-the-questionnaire"> appendix 12</a> and the extra remarks made in <a class="xref" href="#">appendix 13.</a>
+For the total answer overview see <a class="xref" href="#A12"> appendix 12</a> and the extra remarks made in <a class="xref" href="#A13">appendix 13.</a>
 
 # Discussion
 The short time span (4 months) to conduct the research, resulted in a product that is not finished completely. Only a rough prototype was produced. Because the conducting researcher did all steps of the process herself, this resulted in time shortage and a lack of specific technical skills and knowledge. The iterative process of a good design oriented research,had to be followed several times in order to come to a user centred design wit a technical working application. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
@@ -825,7 +825,7 @@ No research was conducted into the target group.
 
 
 ## Discussion on the data
-The data was provided by the RCE, because this all came in a unknown file structure with no meta-data behind the various datasets, the background and quality of the data taken into consideration for this research. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. A simple sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the script which starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in<a class="xref" href="#categories-field-names-form-rce"> appendix 4 </a> . Overall no human cognition came to pass for the process, which makes the classification crude. But the focus was more on the technical development of the application then the correctness of the background information. 
+The data was provided by the RCE, because this all came in a unknown file structure with no meta-data behind the various datasets, the background and quality of the data taken into consideration for this research. Also the categorization of the names, without a category assigned yet, was done in a harsh and crude way. A simple sting comparison was done, which also resulted in wrong assigning of categories. For example short words like *val* and *gat* could also appear in names which didn't refer to this particular relief structure. Also the order of the script which starts at the beginning of the table and runs on the order of categories through the possible categories, resulting in more use of names in the category of altitude and forests, then the last category wind direction and miscellaneous. The order of the table and so the order of running the script can be seen in<a class="xref" href="#A4"> appendix 4 </a> . Overall no human cognition came to pass for the process, which makes the classification crude. But the focus was more on the technical development of the application then the correctness of the background information. 
 
 The professional knowledge about the data was with the RCE, therefore the focus was more on the visualization and not improving the information in the data. A lack of professional knowledge about the field-names was kept at a low level. 
 
@@ -945,8 +945,7 @@ Some other small recommendations are:
 
 <h1 class="nocount" >Appendix</h1>
 
-
-<h2 class ="nocount">R script converting files to shape-file. </h2>
+<h2 class ="nocount" id="A1">Annex 1. R script converting files to shape-file. </h2>
 
     filenames <- list.files()
     filenames <- list.files(filenames , pattern = "*.TAB" ,full.names = T)
@@ -966,7 +965,7 @@ Some other small recommendations are:
     }
     exportToShape(filenames, "overig")
 
-<h2 class ="nocount">SQL adjustments field-names</h2>
+<h2 class ="nocount" id="A2">Annex 2. SQL adjustments field-names</h2>
 
     -- UPDATE veldnamen3 SET naam = naam_2 WHERE naam IS NULL;
     -- UPDATE veldnamen3 SET atoto_co_3 = code_3 WHERE atoto_co_3 IS NULL;
@@ -982,7 +981,7 @@ Some other small recommendations are:
     -- ALTER TABLE veldnamen3 RENAME COLUMN atoto_co_3 TO code_3;
 
   
-<h2 class ="nocount">R script detecting categories </h2>
+<h2 class ="nocount" id="A3">Annex 3. R script detecting categories </h2>
 
     library(sp)
     library(raster)
@@ -1038,7 +1037,7 @@ Some other small recommendations are:
     }
     
 
-<h2 class ="nocount"> Categories field-names form RCE </h2>
+<h2 class ="nocount" id="A4">Annex 4. Categories field-names form RCE </h2>
 
 <table>
 <tr> <th>	Lemming Code	</th> <th>	Category 	</th> <th>	Category Code	</th> <th>	Lemming	</th> <th>	Name Alternatives	</th> <th>	Count first Code	</th> <th>	Count second Code	</th> </tr>
@@ -1208,7 +1207,7 @@ Some other small recommendations are:
 
 
 
-<h2 class="nocount"> Leaflet map initializing </h2>
+<h2 class="nocount" id="A5">Annex 5. Leaflet map initializing </h2>
 
     var basemaps ={ 
       "_1830": L.tileLayer('http://s.map5.nl/map/gast/tiles/tmk_1850/EPSG900913/{z}/{x}/{y}.png' ),
@@ -1228,20 +1227,16 @@ Some other small recommendations are:
       [53.202277, 6.958035]
     ]);
 
-<h2 class="nocount"> AHN pre-processing </h2>
+<h2 class="nocount" id="A6">Annex 6. AHN pre-processing </h2>
 
 <figure class="text-wrap-left">
 <p class="fig">  AHN2 from the research area </p>
 <img src="img/ahn.jpg">
 </figure>
 
-The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)
+The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values. The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively.
 
-The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
-
-The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively.
-
-<p class="table"> AHN tiles downloaded:</p>
+<p class="table" id="A7">Annex 7. AHN tiles downloaded:</p>
 
 <table>
  <tr> <td> ahn2_5_07cz1.tif</td> <td>   ahn2_5_12en1.tif </td> </tr>
@@ -1275,10 +1270,10 @@ For use in the application, the transect line looks best when not containing any
   <img src="img/ahnpreprocessing.jpg">
 </figure> 
 
-<h2 class="nocount"> Water topologies pre-processing</h2>
+<h2 class="nocount" id="A8">Annex 8. Water topologies pre-processing</h2>
 
 The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000. From this dataset only the water polygons are used and clipped to the research area. So the names of the water bodies can be included into the application. (“TOP10NL | Publieke Dienstverlening Op de Kaart Loket,” n.d.)
-EPSG28992
+All in EPSG28992. 
 
 <p class="table"> Map sheets Top10NL downloaded </p>
 
@@ -1287,7 +1282,7 @@ EPSG28992
 </table>
 
 
-<h2 class="nocount"> Loading data into the PostGIS database </h2>
+<h2 class="nocount" id="A9">Annex 9. Loading data into the PostGIS database </h2>
 
 <p class="fig"> Loading data into the database</p>
 
@@ -1301,7 +1296,7 @@ EPSG28992
     Raster2pgsql
     ➜  ~ raster2pgsql -s 28992 -I -C /<path name>/ahn2*.tif public.ahn2 | psql -d veldnamen
 
-<h2 class="nocount"> Request & Response for transect line </h2>
+<h2 class="nocount" id="A10">Annex 10. Request & Response for transect line </h2>
 
 <p class="code">  D3 request coordinates and drawing transect path  </p>
 
@@ -1454,17 +1449,17 @@ This is all send back as one complete GeoJSON response.
     ]
 
 
-<h2 class ="nocount">Questionnaire for testing the application </h2>
+<h2 class ="nocount" id="A11">Annex 11. Questionnaire for testing the application </h2>
 
 ![](img\Vragenlijst Veldnamen Applicatie.jpg) 
 
-<h2 class ="nocount">  Mood board </h2>
+<h2 class ="nocount" id="A12">Annex 12.  Mood board </h2>
 
 ![Alt text](img/Moodboard-01.jpg)
 ![Alt text](img/Moodboard-02.jpg)
 
 	
-<h2 class ="nocount">Variations on the main idea </h2>
+<h2 class ="nocount" id="A13">Annex 13. Variations on the main idea </h2>
 
 For also on this main idea some variations can be made, these will be listed here.
 
@@ -1475,11 +1470,11 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Creating a small 3D landscape by adding multiple transect lines, stacked in front of each other.
 - Link stories provided to the line, so pop-ups with provided stories from the book.
 
-<h2 class ="nocount">Answers on the questionnaire </h2>
+<h2 class ="nocount" id="A14">Annex 14. Answers on the questionnaire </h2>
 
 ![](img/antwoorden.jpg)
 
-<h2 class ="nocount">Remarks on the questionnaire </h2>
+<h2 class ="nocount" id="A15">Annex 15. Remarks on the questionnaire </h2>
 
 - Works logical, though information is missing.
 - Make the pop-up disappear when the mouse moves away.
