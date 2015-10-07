@@ -98,12 +98,11 @@ The overall objective of this study is to build an attractive web-application fo
 
 ## Report structure
 This report will exist of 7 chapters, including this introduction chapter.  Explaining how the prototype web-application is established.
-The <a class="xref" href="#background-theory"> second chapter</a> explains some concepts for background information. First , the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
+The <a class="xref" href="#background-theory"> second chapter</a> explains some concepts for background information. First, the field names will be explained as well as the background of the Heritage & location project from Waag Society. After this a summary of some geo-visualization techniques and frameworks will be given. This is composed as a reference for the design requirements and serves as inspiration for the design of the application.  
 The <a class="xref" href="#the-data">third chapter </a> shows the field-name data provided by the RCE  which forms the case study for this research.
 The <a class="xref" href="#method"> fourth </a> and<a class="xref" href="#results"> fifth chapter </a> provide per sub-objective, the methods and results. 
-The last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recommendation for further  development.
-
-<a class="xref" href="#reportstruct"> Figure 2. </a>  illustrates the structure of this report. 
+The last two chapters reflects on the findings and concludes the study as well as providing some suggestions and recommendation for further  development. 
+<a class="xref" href="#reportstruct"> Figure 2</a>  illustrates the structure of this report. 
 
 <figure id="reportstruct" >
   <img src="img/reportstructure.png"/>
@@ -337,8 +336,9 @@ Interactivity is one of the key aspects of web-based geo visualization. A map is
 
 Two main interactive visualization techniques are introduced by Buja et al. from Nöllenburg (2007).
 
-- **Focusing individual views.** The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. 
-- **Linking multiple views.** Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
+**Focusing individual views.** The user can modify the single display and what is seen. Choose the perspective, magnification level and level of detail. For example a set of navigation controls can be provided to zoom, pan and rotate. Layers can be selected to display or different attributes can be available to choose from. (Nöllenburg, 2007)
+
+**Linking multiple views.** Linking means simultaneous highlighting of data items in multiple views in possible different formats. This can be combined with brushing; selecting display objects by pointing on them or encircling them on the screen.
 This stimulates visual thinking because data can be displayed in different ways and be analysed from different perspectives.
 The number, type and arrangements of the different views depend on the task, the user and the available space on the screen or specific interface.
 (Nöllenburg, 2007)
@@ -357,14 +357,14 @@ To engage the target group into an application the hook model will be explained.
 
 <figure class="text-wrap-right">
   <img src="img/allnames.jpg" >
-  <figcaption> All fields with a field name. </figcaption>
+  <figcaption> All fields with a field-name. </figcaption>
 </figure>
 
 From the *Rijksdients voor Cultureel Erfgoed* of the Netherlands a dataset with living field-names in Drenthe was supplied. This data contains field geometries that have a field-name, a name or toponym given to the plot or area by the people living in the neighbourhood from around 1830. These field-names were derived from studies by Naarding and Wieringa, together with het *Drenthse Archief* and *het Meertens-Instituut*. Old toponyms on old maps, tell us a lot, but here they used another source; the memory of the local inhabitants, where generation after generation the field names keep on living. The polygons where drawn by hand or the names were assigned to plots from the cadastre maps from 1830.
 
 The most important factors influencing the forming of field-names are; natural relief, natural water and the vegetation structure. (Spek et al., 2009)
 
-Further reference about the field names in Drenthe can be found in the book “Van Jeruzalem tot Ezelakker, Levende veldnamenatlas van de Drentse Aa”. (Spek et al., 2009)
+Further reference about the field names in Drenthe can be found in the book *“Van Jeruzalem tot Ezelakker, Levende veldnamenatlas van de Drentse Aa”*. (Spek et al., 2009)
 
 The datasets contain in total 1747 polygons with a field-name. Projection Rd new. EPSG28992
 
@@ -473,7 +473,7 @@ After merging the datasets it resulted into a lot of overlapping areas, so inste
 
 Eventually, the field-names that had no category assigned, in the previous research by the RCE, had to be classified as well. This to have more coverage and amount of field-names.
 
-The classification was done in R. See <a class="xref" href="#A3"> appendix 3</a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
+The classification was done in R. See <a class="xref" href="#A3"> appendix 3</a> for the script.  A field-name can consist out of multiple words with a different meaning and multiple categories and lemmings can be assigned to one field-name.  The classification provided by the RCE was used. This contained per category, different codes and alternative words that signifies the same. 
 
 The script runs through all the field-names and all the possible categories, to match which category was applicable. These categories are given in <a class='xref' href="#field-name-cat"> table 4</a> with the amount of classes before  and after the classification in R. In the <a class="xref" href="#A4">  appendix 4 </a> a total overview of the categories and the names and alternative names can be found.
 
@@ -663,7 +663,7 @@ The target group must feel:
 
 ### Context requirements
 
-- Only use of free and open source software is used. 
+- Only free and open source software is used. 
 
 ### Assumptions
 
@@ -675,7 +675,7 @@ The target group must feel:
 
 ### Data exploration
 
-<figure id="example" class="text-wrap-left"  >
+<figure id="example"   >
   <img src="img/hoogte_voorbeeld.jpg">
   <figcaption> Field-names example of names with height indication on the height map </figcaption>
 </figure>
@@ -1364,7 +1364,7 @@ This array of points is intersected with the  AHN table to ext rat the height va
 
 Also the points are intersected with the field names table to see if a points falls into a field, and which name and category code it belongs to. 
 
-<p class="code">  Get field name for intersecting points</p>
+<p class="code">  Get field-name for intersecting points</p>
 
     fields AS
       (SELECT naam AS naam, code_1_ AS category1, code_2 AS category2, ST_Intersection(p.geom, veldnamen2.geom) AS geoms
@@ -1374,7 +1374,7 @@ Also the points are intersected with the field names table to see if a points fa
 
 Then the points are intersected with the water topology table to see if a points falls into a water body, and which name and category code it belongs to. 
 
-<p class="code">  Get field name for intersecting points</p>
+<p class="code">  Get field-name for intersecting points</p>
 
     --Get Water intersects
     waters As
@@ -1466,7 +1466,7 @@ For also on this main idea some variations can be made, these will be listed her
 - Soil properties as colours of the fields. Or pattern of the specific soil type. Like stones, clay, sand etc.
 Giving colours or patterns to the fields according to the soil property. Like a *Stonefield* or *Redfield*.
 - Pop-ups with explanations and texts. Linking field-names to textual explanation, adding pictures of the surroundings and landscape characteristics. Vegetation types, animal occurrence.
-- Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line. Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field name is connected.
+- Adding pictures or symbols of vegetation types and animals on the transect line. As well as houses to indicate towns and cities. Water bodies as blue dips in the transect line. Give more explanation per category or field-name type. Include pictures of trees, shrubs, plants or animals with which the field-name is connected.
 - Creating a small 3D landscape by adding multiple transect lines, stacked in front of each other.
 - Link stories provided to the line, so pop-ups with provided stories from the book.
 
