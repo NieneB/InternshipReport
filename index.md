@@ -1230,52 +1230,50 @@ Some other small recommendations are:
 
 <h2 class="nocount"> AHN pre-processing </h2>
 
+<figure class="text-wrap-left">
+<p class="fig">  AHN2 from the research area </p>
+<img src="img/ahn.jpg">
+</figure>
+
 The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)
 
 The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
 
 The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively.
 
-<figure class="text-wrap-left">
-<p class="fig">  AHN2 from the research area </p>
-<img src="img/ahn.jpg">
-</figure>
-
-
 <p class="table"> AHN tiles downloaded:</p>
 
 <table>
- <tr> <td> ahn2_5_07cz1.tif	</td> <td>   ahn2_5_12en1.tif </td> </tr>
-<tr> <td> ahn2_5_07cz2.tif	</td> <td>   ahn2_5_12en2.tif </td> </tr>
-<tr> <td> ahn2_5_07dz1.tif </td> <td>   ahn2_5_12ez1.tif </td> </tr>
-<tr> <td> ahn2_5_07dz2.tif </td> <td>   ahn2_5_12ez2.tif</td> </tr>
+ <tr> <td> ahn2_5_07cz1.tif</td> <td>   ahn2_5_12en1.tif </td> </tr>
+<tr> <td> ahn2_5_07cz2.tif</td> <td>   ahn2_5_12en2.tif </td> </tr>
+<tr> <td> ahn2_5_07dz1.tif</td> <td>   ahn2_5_12ez1.tif </td> </tr>
+<tr> <td> ahn2_5_07dz2.tif</td> <td>   ahn2_5_12ez2.tif</td> </tr>
 <tr> <td> ahn2_5_11fz2.tif	</td> <td>   ahn2_5_12fn1.tif  </td> </tr>
 <tr> <td> ahn2_5_12an1.tif</td> <td>   ahn2_5_12fn2.tif  </td> </tr>
-<tr> <td> ahn2_5_12an2.tif</td> <td>   ahn2_5_12fz1.tif   </td> </tr>
-<tr> <td> ahn2_5_12az1.tif</td> <td>   ahn2_5_12fz2.tif   </td> </tr>
+<tr> <td> ahn2_5_12an2.tif</td> <td>   ahn2_5_12fz1.tif  </td> </tr>
+<tr> <td> ahn2_5_12az1.tif</td> <td>   ahn2_5_12fz2.tif  </td> </tr>
 <tr> <td> ahn2_5_12az2.tif</td> <td>   ahn2_5_12gn1.tif </td> </tr>
-<tr> <td> ahn2_5_12bn1.tif</td> <td>   ahn2_5_12gn2.tif </td >< /tr>
+<tr> <td> ahn2_5_12bn1.tif</td> <td>   ahn2_5_12gn2.tif </td ></tr>
 <tr> <td> ahn2_5_12bn2.tif</td> <td>   ahn2_5_12gz1.tif </td> </tr>
 <tr> <td> ahn2_5_12bz1.tif</td> <td>   ahn2_5_12gz2.tif </td> </tr>
 <tr> <td> ahn2_5_12bz2.tif</td> <td>   ahn2_5_12hn1.tif </td> </tr>
 <tr> <td> ahn2_5_12cn1.tif</td> <td>   ahn2_5_12hn2.tif </td> </tr>
-<tr> <td> ahn2_5_12cn2.tif</td> <td>   ahn2_5_12hz1.tif  </td> </tr>
-<tr> <td> ahn2_5_12cz1.tif	 </td> <td>   ahn2_5_17bn2.tif</td> </tr>
-<tr> <td> ahn2_5_12cz2.tif</td> <td>   ahn2_5_17en1.tif   </td> </tr>
-<tr> <td> ahn2_5_12dn1.tif</td> <td>   ahn2_5_17en2.tif  </td> </tr>
+<tr> <td> ahn2_5_12cn2.tif</td> <td>   ahn2_5_12hz1.tif </td> </tr>
+<tr> <td> ahn2_5_12cz1.tif</td> <td>   ahn2_5_17bn2.tif </td> </tr>
+<tr> <td> ahn2_5_12cz2.tif</td> <td>   ahn2_5_17en1.tif  </td> </tr>
+<tr> <td> ahn2_5_12dn1.tif</td> <td>   ahn2_5_17en2.tif </td> </tr>
 <tr> <td> ahn2_5_12dn2.tif</td> <td>   ahn2_5_12en1.tif </td> </tr>
 <tr> <td> ahn2_5_12dz1.tif</td> <td>   ahn2_5_12en2.tif </td> </tr>
-<tr> <td> ahn2_5_12dz2.tif</td> <td>   ahn2_5_12ez1.tif  </td> </tr>
-<tr> <td> ahn2_5_12fn1.tif	 </td> <td>   ahn2_5_12ez2.tif</td> </tr>
+<tr> <td> ahn2_5_12dz2.tif</td> <td>   ahn2_5_12ez1.tif </td> </tr>
+<tr> <td> ahn2_5_12fn1.tif	</td> <td>   ahn2_5_12ez2.tif </td> </tr>
 </table>
 
 For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels.
 
-<figure class="text-wrap-right">
+<figure >
   <figcaption>  Flowchart AHN2 raster processing  </figcaption>
   <img src="img/ahnpreprocessing.jpg">
 </figure> 
-
 
 <h2 class="nocount"> Water topologies pre-processing</h2>
 
@@ -1283,6 +1281,7 @@ The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel c
 EPSG28992
 
 <p class="table"> Map sheets Top10NL downloaded </p>
+
 <table>
   <tr> <td>Top10NL_17O</td> <td>Top10NL_1rW</td> <td>Top10NL_1rO</td> <td>Top10NL_1rW</td></tr>
 </table>
