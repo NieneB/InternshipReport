@@ -546,9 +546,10 @@ First both client side and server side are built on one computer as a single sea
 #### Database
 The open source database PostgreSQL was installed with a PostGIS extension to create the needed database. It is currently the most popular free and open source spatial database (Steiniger and Hunter 2013). The PostGIS extension enables geographic objects like shape files and rasters. 
 
-Everything was loaded in the Dutch projected coordinate system RD new (EPSG:28992)
+First, the data needed for the application was downloaded and pre-processed. <a class="xref" href="#ahn-tiles-downloaded:"> appendix 6 and 7 </a> $$ shows the pre-processing for the AHN2 data and the water topologies. 
+The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000. Only the water bodies were used. 
 
-See <a class="xref" href="#loading-data-in-the-database"> appendix 6 </a> for the Shp2psql and Raster2psql lines used. 
+After pre-processing all the , data was loaded in the database with a dutch projected coordinate system RD new (EPSG:28992) See <a class="xref" href="#loading-data-in-the-database"> appendix 8 </a> for the Shp2psql and Raster2psql lines used. 
 
 #### API
 A API or application programming interface, is needed to connect the web-application with the data in the PostGis database.  For this purpose Brianc Node-Postgres is used. Node-Postgresis a PostgreSQL client for node.JS with pure JavaScript bindings. 
@@ -558,8 +559,8 @@ For more info see:
 - https://github.com/brianc/node-postgres
 - https://nodejs.org/about/
 
-See <a class="xref" href="#request-response-for-transect-line"> appendix 7 </a> for the API request and response lines. 
-The request makes use client response on Leaflet Draw.  The response is send back to JS and handled with D3. 
+See <a class="xref" href="#request-response-for-transect-line"> appendix 9 </a> for the API request and response lines. 
+The request makes use client response on Leaflet Draw.  The response is send back to JS and handled with D3.  Because Leaflet projects in WGS84 (EPSG:4326) the SQL query translates the coordinates to RDnew for intersection with the data in the database. In the end of the SQL query, it transforms it back to WGS84 in order to project the line correctly on the leaflet map again. 
 
 ## Method Sub-objective 3. Evaluating the web-application
 
@@ -574,7 +575,7 @@ Because there is not a official testing group available, the participants will b
 
 <a class="xref" href="#QandO">Table 5 </a> 
 shows the statements asked and the connection with the design requirements which are in <a class="xref" href="#results-sub-objective-1-the-design-requirements"> chapter 5.1  </a> 
-The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix 8</a>. 
+The complete questionnaire can be found in <a class="xref" href="#questionnaire-for-testing-the-application"> appendix 10</a>. 
 
 <p class="table" id="QandO"> Questions and Objectives </p>
 
@@ -720,7 +721,7 @@ One of the main inspirations was the following image:
   <p>*Source: https://commons.wikimedia.org/wiki/File:1832_Erie_Canal.jpg *</p>
 </figure>
 
-Complete mood board; see <a class="xref" href="#mood-board">appendix 9.</a>
+Complete mood board; see <a class="xref" href="#mood-board">appendix 11.</a>
 
 Custom fonts were explored to add to the feeling of a old map to the design. Old font was tried but made the names hard to read. So changed back to an easier to read font. Website used is www.fontsquirrel.com
 
@@ -782,9 +783,9 @@ See <a class="xref" href="#method2"> figure 19. </a> for the overall set-up of t
   <figcaption>Prototype application overview</figcaption>
 </figure>
 
-On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href="#request-response-for-transect-line"> appendix 7 </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href="#request-response-for-transect-line"> appendix 9 </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
 
-In <a class="xref" href="#request-response-for-transect-line"> appendix 7 </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
+In <a class="xref" href="#request-response-for-transect-line"> appendix 9 </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
 
 The total code can be found on <a href=" https://github.com/NieneB/veldnamen/">  https://github.com/NieneB/veldnamen</a>.
 
@@ -810,7 +811,7 @@ On average the user requirements scored a 3.66. The functional requirements scor
   <figcaption> Results questionnaire </figcaption>
 </figure>
 
-For the total answer overview see <a class="xref" href="#answers-on-the-questionnaire"> appendix 10</a> and the extra remarks made in <a class="xref" href="#">appendix 11.</a>
+For the total answer overview see <a class="xref" href="#answers-on-the-questionnaire"> appendix 12</a> and the extra remarks made in <a class="xref" href="#">appendix 13.</a>
 
 # Discussion
 The short time span (4 months) to conduct the research, resulted in a product that is not finished completely. Only a rough prototype was produced. Because the conducting researcher did all steps of the process herself, this resulted in time shortage and a lack of specific technical skills and knowledge. The iterative process of a good design oriented research,had to be followed several times in order to come to a user centred design wit a technical working application. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
@@ -1226,6 +1227,65 @@ Some other small recommendations are:
       [52.861743, 6.458972],
       [53.202277, 6.958035]
     ]);
+
+<h2 class="nocount"> AHN pre-processing </h2>
+
+The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)
+
+The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values.
+
+The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively.
+
+<figure class="text-wrap-left">
+<p class="fig">  AHN2 from the research area </p>
+<img src="img/ahn.jpg">
+</figure>
+
+
+<p class="table"> AHN tiles downloaded:</p>
+
+<table>
+ <tr> <td> ahn2_5_07cz1.tif	</td> <td>   ahn2_5_12en1.tif </td> </tr>
+<tr> <td> ahn2_5_07cz2.tif	</td> <td>   ahn2_5_12en2.tif </td> </tr>
+<tr> <td> ahn2_5_07dz1.tif </td> <td>   ahn2_5_12ez1.tif </td> </tr>
+<tr> <td> ahn2_5_07dz2.tif </td> <td>   ahn2_5_12ez2.tif</td> </tr>
+<tr> <td> ahn2_5_11fz2.tif	</td> <td>   ahn2_5_12fn1.tif  </td> </tr>
+<tr> <td> ahn2_5_12an1.tif</td> <td>   ahn2_5_12fn2.tif  </td> </tr>
+<tr> <td> ahn2_5_12an2.tif</td> <td>   ahn2_5_12fz1.tif   </td> </tr>
+<tr> <td> ahn2_5_12az1.tif</td> <td>   ahn2_5_12fz2.tif   </td> </tr>
+<tr> <td> ahn2_5_12az2.tif</td> <td>   ahn2_5_12gn1.tif </td> </tr>
+<tr> <td> ahn2_5_12bn1.tif</td> <td>   ahn2_5_12gn2.tif </td >< /tr>
+<tr> <td> ahn2_5_12bn2.tif</td> <td>   ahn2_5_12gz1.tif </td> </tr>
+<tr> <td> ahn2_5_12bz1.tif</td> <td>   ahn2_5_12gz2.tif </td> </tr>
+<tr> <td> ahn2_5_12bz2.tif</td> <td>   ahn2_5_12hn1.tif </td> </tr>
+<tr> <td> ahn2_5_12cn1.tif</td> <td>   ahn2_5_12hn2.tif </td> </tr>
+<tr> <td> ahn2_5_12cn2.tif</td> <td>   ahn2_5_12hz1.tif  </td> </tr>
+<tr> <td> ahn2_5_12cz1.tif	 </td> <td>   ahn2_5_17bn2.tif</td> </tr>
+<tr> <td> ahn2_5_12cz2.tif</td> <td>   ahn2_5_17en1.tif   </td> </tr>
+<tr> <td> ahn2_5_12dn1.tif</td> <td>   ahn2_5_17en2.tif  </td> </tr>
+<tr> <td> ahn2_5_12dn2.tif</td> <td>   ahn2_5_12en1.tif </td> </tr>
+<tr> <td> ahn2_5_12dz1.tif</td> <td>   ahn2_5_12en2.tif </td> </tr>
+<tr> <td> ahn2_5_12dz2.tif</td> <td>   ahn2_5_12ez1.tif  </td> </tr>
+<tr> <td> ahn2_5_12fn1.tif	 </td> <td>   ahn2_5_12ez2.tif</td> </tr>
+</table>
+
+For use in the application, the transect line looks best when not containing any gaps. Therefore, the no-data values are filled by the fill no-data tool of Qgis. This takes an average of around 100 pixels to calculate the average height of the missing pixels.
+
+<figure class="text-wrap-right">
+  <figcaption>  Flowchart AHN2 raster processing  </figcaption>
+  <img src="img/ahnpreprocessing.jpg">
+</figure> 
+
+
+<h2 class="nocount"> Water topologies pre-processing</h2>
+
+The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000. From this dataset only the water polygons are used and clipped to the research area. So the names of the water bodies can be included into the application. (“TOP10NL | Publieke Dienstverlening Op de Kaart Loket,” n.d.)
+EPSG28992
+
+<p class="table"> Map sheets Top10NL downloaded </p>
+<table>
+  <tr> <td>Top10NL_17O</td> <td>Top10NL_1rW</td> <td>Top10NL_1rO</td> <td>Top10NL_1rW</td></tr>
+</table>
 
 
 <h2 class="nocount"> Loading data into the PostGIS database </h2>
