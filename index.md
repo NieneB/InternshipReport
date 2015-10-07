@@ -48,8 +48,10 @@ The geo-visualization techniques were useful for the representation of the field
 <p><b> Geo-visualization   Heritage   Drenthe   Field names   GIS  </b></p>
 <h2 class ="nocount"> Abbreviations</h2>
 <dl>
+  <dt>AHN</dt><dd>Actueel Hoogtebestand Nederland</dd>
   <dt>H&amp;L</dt><dd>Heritage and Location Project</dd>
   <dt>CH</dt><dd>Cultural Heritage</dd>
+  <dt> FIL </dt> <dd> Future Internet Lab </dd>
   <dt>GIS</dt><dd>Geo Information System</dd>
   <dt>ICH</dt><dd>Intangible Cultural Heritage </dd>
   <dt>RCE</dt><dd>Rijksdienst voor Cultureel Erfgoed</dd>
