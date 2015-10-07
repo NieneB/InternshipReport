@@ -62,8 +62,8 @@ The geo-visualization techniques were useful for the representation of the field
 ##Introduction
 The amount of geospatial data has increased rapidly. Geospatial data is created and used increasingly every day in smart phones, digital maps, satellite navigation systems, websites, services and apps. Almost 60% of all data is geographically referenced. Next to that, the modern computer technologies provide better opportunities for institutions, organizations and citizens to create and use geospatial data. Already a wide range of domains, use geo information systems [GIS] for management and decision-making purposes and the fields of application are still expanding.(Cartwright, Miller, & Pettit, 2004; Hahmann & Burghardt, 2013; MacEachren & Kraak, 2001; Tensen, 2014)
 
-The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. <a class="xref" href= "#dikw"> (see figure 1. )</a>. Often audiences are presented with data instead of information.  According to Nathan Shedroff, successful communications do not present data. Communication is the process to get the story to the audience.
-Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge.  But geo-visualization to inform the general public is still in development. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999 ; Tensen, 2014)
+The magnitude and complexity of data sets with geospatial reference are a challenge in information science. How to transform this data into information and subsequently into knowledge?  Data is a product of research, creation, collection and discovery. It is raw material, often boring, incomplete or inconsequential. It is not yet valuable as communication, for it is not a complete message. <a class="xref" href= "#dikw"> (see figure 1)</a>. Often audiences are presented with data instead of information.  According to Nathan Shedroff, successful communications do not present data. Communication is the process to get the story to the audience.
+Geo-visualization is one of the tools to turn large heterogeneous geo data volumes from information into knowledge.  But geo-visualization to inform the general public is still in development. Geo-visualization integrates scientific visualization, cartography, image analysis, information visualization, data analysis and geographic information systems to provide methods and tools for visual exploration, analysis and presentation of geospatial data. (MacEachren & Kraak, 2001; Shedroff, 1999; Tensen, 2014)
 
 <figure class="text-wrap-right" id="dikw">
   <img src="img/DIKWPyramid.jpg">
@@ -87,7 +87,7 @@ In the cultural heritage field, the temporal dimension plays an important role t
 
  The goal of this research is to build a web-application to visualize geographically referenced intangible cultural heritage [ICH] data. There for this will be a design-oriented research. The context is a dataset of field names that were used by the local citizens around 1800 to refer to specific agricultural fields or areas, in Drenthe, the Netherlands. The information about the landscape that is hidden in the names gives a lot of historic information. Yet, noticeable is that this data is only known to a few selected historians. (Spek, Elerie, & Kosian, 2009) The data was supplied by the *Rijksdienst voor Cultureel Erfgoed* and based on the book *“van Jeruzalem tot Ezelakker, levende veldnamen van de Drentse Aa”*.  More about the data will be described in <a class="xref" href="#field-names"> chapter 2.1. </a>
  
- This research is part of an internship at Waag Society for the project of Heritage & Location. (<a class="xref" href="#heritage-and-location-project"> see section 2.2. </a>) This report describes the work and the results for the development of a web-application for the project Heritage & Location.
+ This research is part of an internship at Waag Society for the project of Heritage & Location. <a class="xref" href="#heritage-and-location-project"> (see section 2.2.) </a> This report describes the work and the results for the development of a web-application for the project Heritage & Location.
  
 ## Objectives
 The overall objective of this study is to build an attractive web-application for the project Heritage & Location to show its potential of visualizing intangible heritage data and preserving them. This will be done by using the case-study of field-names in Drenthe, the Netherlands.  To achieve this, the following sub-objectives have been defined:
@@ -117,7 +117,7 @@ After this, a summary of some geo-visualization techniques and frameworks will b
 ## Field-names
 
 A field-name is a toponym used for a small area of land or a certain surrounding. Mostly arable land, pasture lands, wastelands, uncultivated areas, hills, valleys, woodlands and swampy areas. The names are thought up by the local inhabitants for practical use in communication and spatial orientation. A field-name is often only existing in oral form and originates, develops or disappears while the environment changes. This makes field-names living heritage <a class = "xref" href="#intangible-cultural-heritage" > (see next section 2.1.1.) </a> and it exist only in people's memory. Therefore field-names fade away from daily lives and disappear with new generations. Written documentation of field-names date from the 17th, 18th and 19th century. Some names live through because they were taken up into official cadastre documentations or other landscape documentations. Nowadays, a new interest arises for field-names as they can tell us how the landscape used to look in the 18th century. Field-names contain words from landscape characteristics like which soil types, vegetation types or animals occurred. This link to specific landmarks or environmental characteristics tells us the origin on the name and tells us about how the landscape used to be. This information is highly important for nature conservation and heritage preservation. (Spek et al., 2009) They can be used for landscape design and planning, knowledge for historical research and inspiration source for artist.
-A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system. (Spek et al., 2009; “Veldnamen - Encyclopedie Drenthe Online,”)
+A collection of field-names was gathered by assessing people's memories, old cadastre documents, maps and other collections. This mental map is now made tangible, by documenting as much as possible and digitalizing them into a GIS system. (Spek et al., 2009; Encyclopedie Drenthe Online, n.d.)
 
 ### Intangible Cultural Heritage
 
@@ -129,8 +129,8 @@ The field-names in Drenthe are called living heritage, which is one of the 4 kin
 4.  Living heritage; habits, traditions, religions and cultural events that people experience.
 From: (volkscultuur, nd)
 
-Categories 1, 2 and 3 are tangible substances while category 4 is intangible heritage. UNESCO introduces the concept of intangible heritage data in 2003, to safeguard the importance of intangible cultural heritage and distinct it form tangible heritage and natural heritage. (UNESCO Culture Sector - Intangible Heritage - 2003 Convention , nd)
-Intangible cultural heritage can be shortly explained as all traditions and rituals of normal life, which gives people a sense of identity and continuity. ICH is transmitted from generation to generation and can be constantly recreated by communities due to interaction with their environment. (UNESCO Culture Sector - Intangible Heritage - 2003 Convention , nd; Zeijden, 2011)
+Categories 1, 2 and 3 are tangible substances while category 4 is intangible heritage. UNESCO introduces the concept of intangible heritage data in 2003, to safeguard the importance of intangible cultural heritage and distinct it form tangible heritage and natural heritage. (UNESCO, 2003)
+Intangible cultural heritage can be shortly explained as all traditions and rituals of normal life, which gives people a sense of identity and continuity. ICH is transmitted from generation to generation and can be constantly recreated by communities due to interaction with their environment. (UNESCO, 2003; Zeijden, 2011)
 Intangible heritage is strongly depended on the features of space and influenced by the space. Of course these traditions, habits, etc., have a place where they take place. Or they are about a place, have a spreading, an origin, a continuation and can cover multiple places, through time. (Karavia & Georgopoulos, 2013)
 
 This applies also for the field-names in Drenthe, which is oral living heritage. Originated with a strong influence of the direct environment it exists in.
@@ -158,7 +158,7 @@ The project H&L is owned by the Rijksdienst voor het Cultureel Erfgoed [RCE] and
 </figure>
 
 In <a class="xref" href="#schemeHL"> figure 4 </a> the overview of the H&L project is shown. Starting from the bottom with data sources, like cadastre maps, historical geo data and collections. This will be linked to the historical geocoder in a uniform way. So applications (top of the scheme) can easily search and find the geo data. Providing functions to search through time, location, bounding box, source, toponym etc. 
-(erfgeo, n.d., Erfgoed & Locatie, n.d.)
+(Erfgeo, n.d., Erfgoed & Locatie, n.d.)
 
 Examples of data that the geocoder contains are; old toponyms, disappeared villages, geometries of departments form 1830, urbanisation throughout the years, municipalities and their origin etc.
 
@@ -906,9 +906,9 @@ Some other small recommendations are:
  
  <p> <b>Elwood, S. </b> (2011). Geographic Information Science: Visualization, visual methods, and the geoweb. Progress in Human Geography, 35(3), 401–408. http://doi.org/10.1177/0309132510374250</p>
  
-<p> <b>erfgeo. </b> (n.d.). Retrieved July 22, 2015, from http://erfgeo.nl/</p>
+<p> <b>Erfgeo. </b> (n.d.). Retrieved July 22, 2015, from http://erfgeo.nl/</p>
 
-  <p><b>Erfgoed & Locatie. </b> (n.d.). Retrieved July 22, 2015, from http://erfgoedenlocatie.nl/</p>
+  <p><b>Erfgoed & Locatie</b> (n.d.). Retrieved July 22, 2015, from http://erfgoedenlocatie.nl/</p>
   
 <p>  <b>Hahmann, S., & Burghardt, D.</b>  (2013). How much information is geospatially referenced? Networks and cognition. International Journal of Geographical Information Science, 27(6), 1171–1189. http://doi.org/10.1080/13658816.2012.743664</p>
 
@@ -933,7 +933,8 @@ Some other small recommendations are:
 <p>  <b>Steiniger, S., & Hunter, A. J. S. </b> (2013). The 2012 free and open source GIS software map – A guide to facilitate research, development, and adoption. Computers, Environment and Urban Systems, 39, 136–150. http://doi.org/10.1016/j.compenvurbsys.2012.10.003</p>
 <p>  <b>Tensen, T. </b> (2014). Master Thesis Geo-data animations in television journalism :, 1–87.</p>
  <p> <b>TOP10NL Publieke Dienstverlening Op de Kaart Loket. </b> (n.d.). Retrieved July 13, 2015, from https://www.pdok.nl/nl/producten/pdok-downloads/basis-registratie-topografie/topnl/topnl-actueel/top10nl</p>
- <p> <b>UNESCO Culture Sector - Intangible Heritage - 2003 Convention </b> (n.d.). Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002</p>
+ <p> <b>UNESCO </b> (2003) Culture Sector - Intangible Heritage -  CONVENTION FOR THE SAFEGUARDING
+OF THE INTANGIBLE CULTURAL HERITAGE. Paris, 17 October 20013, Retrieved May 6, 2015, from http://www.unesco.org/culture/ich/index.php?lg=en&pg=00002</p>
 <p>  <b>Veldnamen - Encyclopedie Drenthe Online.</b>  (n.d.). Retrieved July 22, 2015, from http://www.encyclopediedrenthe.nl/Veldnamen</p>
 <p> <b>  Verschuren, P., Hartog, R. </b> (2005) Evaluation in Design-Oriented Research, Department of Methodology, Nijmegen School of Management, Radboud University, Nijmegen </p>
  <p> <b>volkscultuur. </b> (n.d.). Retrieved May 6, 2015, from http://www.volkscultuur.nl/</p>
@@ -992,10 +993,10 @@ Some other small recommendations are:
     swd("/Users/waag/Documents/MGI_Stage/9_veldnamen/10_VeldnamenOrgineel/")
     
     # csv alle categorien en Lemmings
-    categorie <- read.csv(file = 'Categorie_Alles.csv', header = T , sep=","   )
+    categorie <- read.csv(file = "Categorie_Alles.csv", header = T , sep=","   )
     
     # shape-file alle velden + namen
-    velden <- readOGR(dsn = '/Users/waag/Documents/veldnamen.shp', layer = "veldnamen", stringsAsFactors = F)
+    velden <- readOGR(dsn = "/Users/waag/Documents/veldnamen.shp", layer = "veldnamen", stringsAsFactors = F)
     
     # write shape-file back
     writeOGR(obj = velden, dsn = "veldnamen_cat.shp", layer = "veldnamen_cat", driver = "ESRI Shapefile")
@@ -1005,7 +1006,7 @@ Some other small recommendations are:
     ## correctie
     velden$CODE_1[velden$CODE_1 == "D02"] <- "D2"
     velden$CODE_1[velden$CODE_1 == "E04"] <- "E4"
-    velden$CODE_1[velden$CODE_1 == 'G03'] <- "G3"
+    velden$CODE_1[velden$CODE_1 == "G03"] <- "G3"
     velden$CODE_1[velden$CODE_1 == "B03"] <- "B3"
     velden$CODE_1[velden$CODE_1 == "G06"] <- "G6"
     velden$CODE_1[velden$CODE_1 == "G07"] <- "G7"
@@ -1209,12 +1210,12 @@ Some other small recommendations are:
 <h2 class="nocount" id="A5">Annex 5. Leaflet map initializing </h2>
 
     var basemaps ={ 
-      "_1830": L.tileLayer('http://s.map5.nl/map/gast/tiles/tmk_1850/EPSG900913/{z}/{x}/{y}.png' ),
-      "_2015": L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
-      "Hoogte": L.tileLayer('http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg')
+      "_1830": L.tileLayer("http://s.map5.nl/map/gast/tiles/tmk_1850/EPSG900913/{z}/{x}/{y}.png" ),
+      "_2015": L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"),
+      "Hoogte": L.tileLayer("http://s.map5.nl/map/gast/tiles/relief_struct/EPSG900913/{z}/{x}/{y}.jpeg")
     };
 
-    var map = new L.map('map', {
+    var map = new L.map("map", {
       maxZoom: 15,
       minZoom: 12,
       layers: basemaps._1830
@@ -1299,7 +1300,7 @@ All in EPSG28992.
 
 <p class="code">  D3 request coordinates and drawing transect path  </p>
 
-    d3.json('transect?linestring=' + coordinates, function(json){
+    d3.json("transect?linestring=" + coordinates, function(json){
       console.log("requesting line from database");
       console.log(json)
       var line = d3.select("#line")
@@ -1319,8 +1320,8 @@ After a line is drawn on the Leaflet map with Leaflet Draw, the coordinates  of 
 
 <p class="code"> Request & Response for transect line </p>
  
-    app.get('/transect', function (req, res) {
-      query(queries.transect, ['LINESTRING (' + req.query.linestring + ')'] , function(err, result) {
+    app.get("/transect", function (req, res) {
+      query(queries.transect, ["LINESTRING (" + req.query.linestring + ")"] , function(err, result) {
         if (err) {
         res.status(500).send(err);
         } else {
