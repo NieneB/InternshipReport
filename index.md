@@ -1236,7 +1236,7 @@ Some other small recommendations are:
 
 The AHN2 tiles covering the research area were downloaded from nationaalgeoregister.nl to show the relation of the field-names with the environment. The AHN has proved useful for historical research. Small differences in the landscape can be seen in the AHN2 and already historians and archeologist use it to discover old settlements that cant be discovered with the naked eye. (Actueel Hoogtebestand Nederland, n.d.)The AHN is measured with laser altimetry or LIDAR. Laser beams shot from an airplane and localized with GPS. It is measured over several time periods and merged in the end to get a detailed measurement of the height. The eventual end product delivered is corrected to ground level.(maaiveld) So vegetation, buildings and other object do not appear. (Actueel Hoogtebestand Nederland, n.d.) These filtered areas are given no-data values. The raster data has a resolution of 5 meters and a precision of systematic and stochastic error of max 5 cm the projection is RD new ( EPSG28992). (Actueel Hoogtebestand Nederland, n.d.) The maximum and minimum values of the total area are 29.5 and -1.9 meters respectively.
 
-<p class="table" id="A7">Annex 7. AHN tiles downloaded:</p>
+<p class="table" > AHN tiles downloaded:</p>
 
 <table>
  <tr> <td> ahn2_5_07cz1.tif</td> <td>   ahn2_5_12en1.tif </td> </tr>
@@ -1270,7 +1270,7 @@ For use in the application, the transect line looks best when not containing any
   <img src="img/ahnpreprocessing.jpg">
 </figure> 
 
-<h2 class="nocount" id="A8">Annex 8. Water topologies pre-processing</h2>
+<h2 class="nocount" id="A7">Annex 7. Water topologies pre-processing</h2>
 
 The water bodies are downloaded from the open data PDOK.nl. The Top10NLactueel contains all topology of the Netherlands on a scale of 1:25.000. From this dataset only the water polygons are used and clipped to the research area. So the names of the water bodies can be included into the application. (“TOP10NL | Publieke Dienstverlening Op de Kaart Loket,” n.d.)
 All in EPSG28992. 
@@ -1282,7 +1282,7 @@ All in EPSG28992.
 </table>
 
 
-<h2 class="nocount" id="A9">Annex 9. Loading data into the PostGIS database </h2>
+<h2 class="nocount" id="A8">Annex 8. Loading data into the PostGIS database </h2>
 
 <p class="fig"> Loading data into the database</p>
 
@@ -1296,7 +1296,7 @@ All in EPSG28992.
     Raster2pgsql
     ➜  ~ raster2pgsql -s 28992 -I -C /<path name>/ahn2*.tif public.ahn2 | psql -d veldnamen
 
-<h2 class="nocount" id="A10">Annex 10. Request & Response for transect line </h2>
+<h2 class="nocount" id="A9">Annex 9. Request & Response for transect line </h2>
 
 <p class="code">  D3 request coordinates and drawing transect path  </p>
 
@@ -1449,17 +1449,17 @@ This is all send back as one complete GeoJSON response.
     ]
 
 
-<h2 class ="nocount" id="A11">Annex 11. Questionnaire for testing the application </h2>
+<h2 class ="nocount" id="A10">Annex 10. Questionnaire for testing the application </h2>
 
 ![](img\Vragenlijst Veldnamen Applicatie.jpg) 
 
-<h2 class ="nocount" id="A12">Annex 12.  Mood board </h2>
+<h2 class ="nocount" id="A11">Annex 11.  Mood board </h2>
 
 ![Alt text](img/Moodboard-01.jpg)
 ![Alt text](img/Moodboard-02.jpg)
 
 	
-<h2 class ="nocount" id="A13">Annex 13. Variations on the main idea </h2>
+<h2 class ="nocount" id="A12">Annex 12. Variations on the main idea </h2>
 
 For also on this main idea some variations can be made, these will be listed here.
 
@@ -1470,11 +1470,11 @@ Giving colours or patterns to the fields according to the soil property. Like a 
 - Creating a small 3D landscape by adding multiple transect lines, stacked in front of each other.
 - Link stories provided to the line, so pop-ups with provided stories from the book.
 
-<h2 class ="nocount" id="A14">Annex 14. Answers on the questionnaire </h2>
+<h2 class ="nocount" id="A13">Annex 13. Answers on the questionnaire </h2>
 
 ![](img/antwoorden.jpg)
 
-<h2 class ="nocount" id="A15">Annex 15. Remarks on the questionnaire </h2>
+<h2 class ="nocount" id="A14">Annex 14. Remarks on the questionnaire </h2>
 
 - Works logical, though information is missing.
 - Make the pop-up disappear when the mouse moves away.
