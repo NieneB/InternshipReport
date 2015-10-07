@@ -783,7 +783,7 @@ See <a class="xref" href="#method2"> figure 19. </a> for the overall set-up of t
   <figcaption>Prototype application overview</figcaption>
 </figure>
 
-On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href="#A9"> appendix 9 </a>. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line. This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
+On the web page a line can be drawn by LeafletDraw on the Leaflet map. The coordinates of this line are edited to a line string format and parsed into a SQL query. This query is explained in <a class="xref" href="#A9"> appendix 9 </a> code snippet 2 and 3. This query is asked to the API which requests the data from the PostGIS database. The response is a geoJSON array containing the heights on every 10 meters of the line (code snippet 11). This data is parsed back to the script of the website and used to draw the transect line and all the other characteristics needed. 
 
 In <a class="xref" href="#A9"> appendix 9 </a> the code of the communication between the front-end and back-end is given.  As well as an example of the leaflet map and the d3 compilation of the request. 
 
@@ -811,7 +811,7 @@ On average the user requirements scored a 3.66. The functional requirements scor
   <figcaption> Results questionnaire </figcaption>
 </figure>
 
-For the total answer overview see <a class="xref" href="#A12"> appendix 12</a> and the extra remarks made in <a class="xref" href="#A13">appendix 13.</a>
+For the total answer overview see <a class="xref" href="#A13"> appendix 13</a> and the extra remarks made in <a class="xref" href="#A14">appendix 14.</a>
 
 # Discussion
 The short time span (4 months) to conduct the research, resulted in a product that is not finished completely. Only a rough prototype was produced. Because the conducting researcher did all steps of the process herself, this resulted in time shortage and a lack of specific technical skills and knowledge. The iterative process of a good design oriented research,had to be followed several times in order to come to a user centred design wit a technical working application. Recommended would be to outsource certain parts of the development of an application to professionals with specific aimed skills. 
