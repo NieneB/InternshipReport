@@ -38,10 +38,10 @@ EPSG28992
 
 <p class="table"> Map sheets Top10NL downloaded </p>
 <table>
-<tr> <td>Top10NL_17O</td> </tr>
- <tr>  <td>Top10NL_1rW</td></tr>
- <tr> <td>Top10NL_1rO</td></tr>
- <tr> <td>Top10NL_1rW</td></tr>
+<tr> <td>Top10NL_17O</td> 
+  <td>Top10NL_1rW</td>
+ <td>Top10NL_1rO</td>
+ <td>Top10NL_1rW</td></tr>
 </table>
 Only processing was clipped to the research area. No other preprocessing needed other then was used for the AHN. 
 
